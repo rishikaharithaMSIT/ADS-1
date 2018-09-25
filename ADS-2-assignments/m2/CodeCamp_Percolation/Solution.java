@@ -25,7 +25,10 @@ class Percolation {
 		}
 		if (r > 1 && isOpen(r - 1, c)) {
 			wqu.union(getIndex(r, c), getIndex(r - 1, c));
-		}		
+		}
+		if (r < s && isOpen(r + 1, c)) {
+			wqu.union(getIndex(r, c), getIndex(r + 1 , c));
+		}	
 	}
 
 
