@@ -17,8 +17,11 @@ class Percolation {
 	public void open(int r, int c) {
 		if (isOpen(r, c)) return;
 		matrix[r - 1][c - 1] = true;
-		
+		if (r == 1) {
+			wqu.union(t, getIndex(r, c));
+		}		
 	}
+
 
 	public boolean isOpen(int r, int c) {
 		return matrix[r - 1][c - 1];
