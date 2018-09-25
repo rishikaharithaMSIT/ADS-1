@@ -1,39 +1,50 @@
-import java.util.*;
-// public class Percolation {
-//    public Percolation(int n)                // create n-by-n grid, with all sites blocked
-//    public    void open(int row, int col)    // open site (row, col) if it is not open already
-//    public boolean isOpen(int row, int col)  // is site (row, col) open?
-//    public boolean isFull(int row, int col)  // is site (row, col) full?
-//    public     int numberOfOpenSites()       // number of open sites
-//    public boolean percolates()              // does the system percolate?
-// }
+import java.util.Scanner;
+import java.util.Arrays;
 
-
-// You can implement the above API to solve the problem
 class Percolation {
-	public Percolation(int n) {
-		System.out.println(n);
+	static boolean[][] matrix;
+	WeightedQuickUnionUF wqu;
+	int t = 0;
+	int b;
+	int s;
+	public Percolation(int size) {
+		matrix = new boolean[size][size];
+		s = size;
+		b = size * size + 1;
+		wqu = new WeightedQuickUnionUF(size * size + 2);
 	}
-	public    void open(int row, int col) {
 
+	public void open(int r, int c) {
+		if (isOpen(r, c)) return;
+		matrix[r - 1][c - 1] = true;
+		
 	}
-	public boolean isOpen(int row, int col) {
-		return true;
+
+	public boolean isOpen(int r, int c) {
+		return matrix[r - 1][c - 1];
 	}
-	public boolean isFull(int row, int col) {
-		return true;
+
+	public boolean isFull(int r, int c) {
+		return wqu.connected(t, getIndex(r, c));
 	}
-	public     int numberOfOpenSites() {
-		return -1;
-	}
+
 	public boolean percolates() {
-		return true;
+		return wqu.connected(t, b);
+	}
+
+	public int getIndex(int r, int c) {
+		return ((r - 1) * s) + c;
 	}
 }
+
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int noGrids = scan.nextInt();
-		Percolation p = new Percolation(noGrids);
+		int size = scan.nextInt();
+		Percolation percolation = new Percolation(size);
+		while (scan.hasNext()) {
+			percolation.open(scan.nextInt(), scan.nextInt());
+		}
+		System.out.println(percolation.percolates());
 	}
 }
