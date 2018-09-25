@@ -19,8 +19,12 @@ class Percolation {
 		matrix[r - 1][c - 1] = true;
 		if (r == 1) {
 			wqu.union(t, getIndex(r, c));
+		}
+		if (r == s) {
+			wqu.union(getIndex(r, c), b);
 		}		
 	}
+
 
 
 	public boolean isOpen(int r, int c) {
