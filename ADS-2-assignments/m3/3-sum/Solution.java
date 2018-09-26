@@ -15,8 +15,8 @@ class Solution {
 
 				int sum = array[i] + array[j];
 				int abc  = 0 - sum;
-				int[] newArray = Arrays.copyOfRange(array, j + 1, size);
-				int isFound = Arrays.binarySearch(newArray, abc);
+				//int[] newArray = Arrays.copyOfRange(array, j + 1, size);
+				int isFound = binarySearch(array, j + 1, size-1, abc);
 				//System.out.println(sum+" - "+ abc);
 				//System.out.println(j);
 				if (isFound >= 0) {
@@ -29,6 +29,31 @@ class Solution {
 		System.out.println(count);
 
 	}
+	public static int binarySearch(int arr[], int l, int r, int x) 
+    { 
+        if (r>=l) 
+        { 
+            int mid = l + (r - l)/2; 
+  
+            // If the element is present at the  
+            // middle itself 
+            if (arr[mid] == x) 
+               return mid; 
+  
+            // If element is smaller than mid, then  
+            // it can only be present in left subarray 
+            if (arr[mid] > x) 
+               return binarySearch(arr, l, mid-1, x); 
+  
+            // Else the element can only be present 
+            // in right subarray 
+            return binarySearch(arr, mid+1, r, x); 
+        } 
+  
+        // We reach here when element is not present 
+        //  in array 
+        return -1; 
+    }
 	// public static long BinarySearch(long ele, long[] array) {
 	// 	int start = 0;
 	// 	int end = array.length - 1;
