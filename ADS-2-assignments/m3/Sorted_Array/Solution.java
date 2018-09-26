@@ -7,7 +7,15 @@ public class Solution {
 			int size2 = Integer.parseInt(scan.nextLine());;
 			String in1 = scan.nextLine();
 			String in2 = scan.nextLine();
-			String in3 = in1+","+in2;
+			String in3 = null;
+			if(in1.equals("")) {
+				in3 = in2;
+			}else if(in2.equals("")) {
+				in3 = in1;
+			}else {
+				in3 = in1+","+in2;
+			}
+			
 			//System.out.println(in3);
 			String[] inp = in3.split(",");
 			int[] array1 = Arrays.stream(inp).mapToInt(Integer::parseInt).toArray();
