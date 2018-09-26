@@ -13,7 +13,7 @@ public class Solution {
 			int[] newarr = new int[sizet];
 			int one = 0;
 			int two = size1;
-			for(int i =0, j= size1; i < sizet;) {
+			for(int i =0, j= 0; i < sizet;) {
 				if(array1[i] > array2[j]) {
 					System.out.println(array2[j]);
 					if (j < size2) j++;
