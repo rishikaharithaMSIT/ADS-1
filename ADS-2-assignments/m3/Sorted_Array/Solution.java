@@ -15,10 +15,13 @@ public class Solution {
 			int two = size1;
 			for(int i =0; i < size1;i++){
 				newarr[one] = array1[i];
+				System.out.println(one);
 				one++;
+
 			}
 			for(int i =0; i < size2;i++){
-				newarr[one-1] = array2[i];
+				newarr[one] = array2[i];
+				System.out.println(one);
 				one++;
 			}
 
