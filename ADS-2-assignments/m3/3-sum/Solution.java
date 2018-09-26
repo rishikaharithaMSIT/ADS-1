@@ -3,22 +3,22 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int size = Integer.parseInt(scan.nextLine());
-		long[] array = new long[size];
+		int[] array = new int[size];
 		for (int i = 0; i < size; i++) {
-			array[i] = Long.parseLong(scan.nextLine());
+			array[i] = Integer.parseInt(scan.nextLine());
 		}
 		Arrays.sort(array);
 		//System.out.println(Arrays.toString(array));
-		long count = 0;
+		int count = 0;
 		for (int i = 0; i < size; i++) {
 			for (int j = i + 1; j < size; j++) {
 
-				long sum = array[i] + array[j];
-				long abc  = 0 - sum;
-				long[] newArray = Arrays.copyOfRange(array, j + 1, size);
-				int isFound = Arrays.binarySearch(newArray, (int)abc);
+				int sum = array[i] + array[j];
+				int abc  = 0 - sum;
+				int[] newArray = Arrays.copyOfRange(array, j + 1, size);
+				int isFound = Arrays.binarySearch(newArray, abc);
 				//System.out.println(sum+" - "+ abc);
-				//System.out.println(isFound);
+				//System.out.println(j);
 				if (isFound > 0) {
 					// System.out.println(count + " co");
 					count++;
