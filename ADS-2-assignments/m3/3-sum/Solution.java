@@ -11,7 +11,6 @@ class Solution {
 		//System.out.println(Arrays.toString(array));
 		int count = 0;
 		for (int i = 0; i < size; i++) {
-
 			for (int j = i + 1; j < size; j++) {
 
 				long sum = array[i] + array[j];
@@ -19,6 +18,7 @@ class Solution {
 				long[] newArray = Arrays.copyOfRange(array, j + 1, size);
 				int isFound = Arrays.binarySearch(newArray, (int)abc);
 				//System.out.println(sum+" - "+ abc);
+				System.out.println(isFound);
 				if (isFound != -1) {
 					// System.out.println(count + " co");
 					count++;
