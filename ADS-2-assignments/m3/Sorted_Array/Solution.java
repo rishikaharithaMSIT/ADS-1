@@ -12,15 +12,27 @@ public class Solution {
 			int[] array1 = Arrays.stream(inp).mapToInt(Integer::parseInt).toArray();
 			int sizet = size1+size2;
 			//System.out.println(sizet);
-			for(int i =0,j = size1;i < sizet;i++) {
+			// for(int i =0,j = size1;j < sizet;) {
+			// 	if(array1[i] > array1[j]) {
+			// 		System.out.println(array1[j] + " " + j);
+			// 		j++;
+					
+			// 	} else {
+			// 		System.out.println(array1[i] + " " + i);
+			// 		if (i < size1)i++;
+					
+			// 	}
+			// }
+			int i =0;
+			int j = size1;
+			while(i <  size1 || j < sizet) {
+				if(array1[i] < array1[j]) {
+					System.out.println(array1[i]);
+					i++;
+				}
 				if(array1[i] > array1[j]) {
-					System.out.println(array1[j] + " " + j);
+					System.out.println(array1[j]);
 					j++;
-					
-				} else {
-					System.out.println(array1[i] + " " + i);
-					if (i < size1)i++;
-					
 				}
 			}
 		}
