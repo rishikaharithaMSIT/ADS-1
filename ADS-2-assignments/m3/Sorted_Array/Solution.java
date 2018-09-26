@@ -9,8 +9,8 @@ public class Solution {
 			String[] in2 = scan.nextLine().split(",");
 			int[] array1 = Arrays.stream(in1).mapToInt(Integer::parseInt).toArray();
 			int[] array2 = Arrays.stream(in1).mapToInt(Integer::parseInt).toArray();
-			int sizet = size1+size2;
-			int[] newarr = new int[sizet];
+			int sizet = size1+size2+1;
+			int[] newarr = new int[sizet+1];
 			System.out.println(sizet + "size");
 			int one = 0;
 			int two = size1;
