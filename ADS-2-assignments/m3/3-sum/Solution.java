@@ -8,6 +8,7 @@ class Solution {
 			array[i] = Integer.parseInt(scan.nextLine());
 		}
 		Arrays.sort(array);
+		//System.out.println(Arrays.toString(array));
 		int count = 0;
 		for (int i = 0; i < size; i++) {
 			for (int j = i + 1; j < size; j++) {
@@ -16,6 +17,7 @@ class Solution {
 				if (isFound) count++;
 			}
 		}
+		System.out.println("hai");
 		System.out.println(count);
 
 	}
