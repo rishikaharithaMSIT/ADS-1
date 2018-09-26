@@ -26,15 +26,23 @@ public class Solution {
 			// }
 			int i =0;
 			int j = size1;
-
-			while(i <  size1 && j < sizet) {
-				if(array1[i] < array1[j]) {
-					System.out.print(array1[i] + ",");
-					if (i <= size1) i++;
-				}else if (array1[i] > array1[j]){
-					System.out.print(array1[j] + ",");
-					j++;
+			int c = 0;
+			while(c < sizet) {
+				if(i < size1) {
+						if(array1[i] < array1[j]) {
+						System.out.print(array1[i] + ",");
+						c++;
+						if (i <= size1) i++;
+					}else if (array1[i] > array1[j]){
+						System.out.print(array1[j] + ",");
+						c++;
+						j++;
+					}
+				}else if (j < sizet) {
+					System.out.println(array1[j]);
+					c++;
 				}
+				
 			}
 			//System.out.println(array1[sizet-1]);
 
