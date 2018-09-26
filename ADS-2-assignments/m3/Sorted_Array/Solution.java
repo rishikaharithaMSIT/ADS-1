@@ -18,7 +18,7 @@ public class Solution {
 				one++;
 			}
 			for(int i =0; i < size2;i++){
-				newarr[one] = array2[i];
+				newarr[one-1] = array2[i];
 				one++;
 			}
 
