@@ -11,15 +11,15 @@ public class Solution {
 			String[] inp = in3.split(",");
 			int[] array1 = Arrays.stream(inp).mapToInt(Integer::parseInt).toArray();
 			int sizet = size1+size2;
-			System.out.println(sizet);
+			//System.out.println(sizet);
 			for(int i =0,j = size1;i < sizet;i++) {
-				if(array1[i] > array1[j]) {
-					System.out.println(array1[j]);
-					j++;
-					
-				} else {
+				if(array1[i] < array1[j]) {
 					System.out.println(array1[i]);
 					i++;
+					
+				} else {
+					System.out.println(array1[j]);
+					j++;
 					
 				}
 			}
