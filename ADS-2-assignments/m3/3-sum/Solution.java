@@ -11,14 +11,18 @@ class Solution {
 		//System.out.println(Arrays.toString(array));
 		int count = 0;
 		for (int i = 0; i < size; i++) {
-			for (int j = i + 1; j < size; j++) {
+			
+			for (int j = 0; j < size; j++) {
+				System.out.println(j);
 				int sum = array[i] + array[j];
-				boolean isFound = BinarySearch(0 - sum, array);
+				int abc  = 0 - sum;
+				System.out.println(sum+" - "+ abc);
+				//boolean isFound = BinarySearch(0 - sum, array);
 
-				if (isFound == false) {
-					System.out.println(count);
-					count++;
-				}
+				// if (isFound == false) {
+				// 	//System.out.println(count);
+				// 	count++;
+				// }
 			}
 		}
 		System.out.println("hai");
