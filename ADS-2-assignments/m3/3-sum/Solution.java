@@ -18,8 +18,8 @@ class Solution {
 				long[] newArray = Arrays.copyOfRange(array, j + 1, size);
 				int isFound = Arrays.binarySearch(newArray, (int)abc);
 				//System.out.println(sum+" - "+ abc);
-				System.out.println(isFound);
-				if (isFound != -1) {
+				//System.out.println(isFound);
+				if (isFound > 0) {
 					// System.out.println(count + " co");
 					count++;
 				}
