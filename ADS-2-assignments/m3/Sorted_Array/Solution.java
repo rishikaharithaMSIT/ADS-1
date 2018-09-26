@@ -15,7 +15,7 @@ public class Solution {
 			for(int i =0, j= size1; i < size1 && j <sizet;) {
 				if(array1[i] > array1[j]) {
 					System.out.println(array1[j]);
-					j++;
+					if(j < sizet) j++;
 				}
 				else {
 					System.out.println(array1[i]);
