@@ -12,13 +12,15 @@ public class Solution {
 			int[] array1 = Arrays.stream(inp).mapToInt(Integer::parseInt).toArray();
 			int sizet = size1+size2;
 
-			for(int i =0;i < sizet-1;i++) {
-				if(array1[i] > array1[i+size1]) {
-					System.out.println(array1[i+size1]);
+			for(int i =0,j = size1;i < sizet-1;i++) {
+				if(array1[i] > array1[j]) {
+					System.out.println(array1[j]);
+					j++;
 					
 				}
 				else {
 					System.out.println(array1[i]);
+					i++;
 					
 				}
 			}
