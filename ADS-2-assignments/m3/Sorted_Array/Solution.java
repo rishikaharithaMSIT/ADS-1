@@ -13,9 +13,18 @@ public class Solution {
 			int[] newarr = new int[sizet];
 			int one = 0;
 			int two = size1;
-			for(int i =0, j= 0; i < sizet;) {
-				if(array1[i] > array2[j]) {
-					System.out.println(array2[j]);
+			for(int i =0; i < size1;i++){
+				newarr[one] = array1[i];
+				one++;
+			}
+			for(int i =0; i < size2;i++){
+				newarr[one] = array2[i];
+				one++;
+			}
+
+			for(int i =0, j= size1; i < sizet;) {
+				if(array1[i] > array1[j]) {
+					System.out.println(array1[j]);
 					if (j < size2) j++;
 				}
 				else {
