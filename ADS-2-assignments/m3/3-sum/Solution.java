@@ -14,7 +14,11 @@ class Solution {
 			for (int j = i + 1; j < size; j++) {
 				int sum = array[i] + array[j];
 				boolean isFound = BinarySearch(0 - sum, array);
-				if (isFound) count++;
+
+				if (isFound == false) {
+					System.out.println(count);
+					count++;
+				}
 			}
 		}
 		System.out.println("hai");
