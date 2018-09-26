@@ -26,16 +26,17 @@ public class Solution {
 			// }
 			int i =0;
 			int j = size1;
+
 			while(i <  size1 && j < sizet) {
 				if(array1[i] < array1[j]) {
 					System.out.print(array1[i] + ",");
-					if (i < size1) i++;
+					if (i <= size1) i++;
 				}else if (array1[i] > array1[j]){
 					System.out.print(array1[j] + ",");
 					j++;
 				}
 			}
-			System.out.println(array1[sizet-1]);
+			//System.out.println(array1[sizet-1]);
 
 		}
 	}
