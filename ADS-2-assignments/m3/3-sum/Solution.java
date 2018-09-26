@@ -17,12 +17,12 @@ class Solution {
 				int sum = array[i] + array[j];
 				int abc  = 0 - sum;
 				System.out.println(sum+" - "+ abc);
-				//boolean isFound = BinarySearch(0 - sum, array);
+				boolean isFound = BinarySearch(0 - sum, array);
 
-				// if (isFound == false) {
-				// 	//System.out.println(count);
-				// 	count++;
-				// }
+				if (isFound == false) {
+					//System.out.println(count);
+					count++;
+				}
 			}
 		}
 		System.out.println("hai");
