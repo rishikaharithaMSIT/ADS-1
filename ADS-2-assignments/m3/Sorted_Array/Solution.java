@@ -39,7 +39,12 @@ public class Solution {
 						j++;
 					}
 				}else if (j < sizet) {
-					System.out.print(array1[j] + ",");
+					if(j == sizet-1) {
+						System.out.print(array1[j]);
+					}else {
+				 		System.out.print(array1[j] + ",");
+					}
+
 					j++;
 					c++;
 				}
