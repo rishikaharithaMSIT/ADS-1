@@ -19,7 +19,7 @@ class Solution {
 				int isFound = Arrays.binarySearch(newArray, abc);
 				//System.out.println(sum+" - "+ abc);
 				//System.out.println(j);
-				if (isFound > 0) {
+				if (isFound >= 0) {
 					// System.out.println(count + " co");
 					count++;
 				}
