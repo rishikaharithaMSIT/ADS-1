@@ -11,12 +11,12 @@ class Solution {
 		//System.out.println(Arrays.toString(array));
 		int count = 0;
 		for (int i = 0; i < size; i++) {
-			
-			for (int j = 0; j < size; j++) {
-				
+
+			for (int j = i + 1; j < size; j++) {
+
 				long sum = array[i] + array[j];
 				long abc  = 0 - sum;
-				
+
 				int isFound = Arrays.binarySearch(array, abc);
 				//System.out.println(sum+" - "+ abc);
 				if (isFound != -1) {
@@ -33,7 +33,7 @@ class Solution {
 	// 	int start = 0;
 	// 	int end = array.length - 1;
 	// 	int mid = ((start + end) / 2);
-	// 	if(array.length == 1 && ele == array[array.length-1]) return array.length-1; 
+	// 	if(array.length == 1 && ele == array[array.length-1]) return array.length-1;
 	// 	while (start != end) {
 	// 		mid = (start + end) / 2;
 	// 		if (ele == array[mid]) {
