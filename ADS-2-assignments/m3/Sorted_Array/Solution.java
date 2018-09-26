@@ -8,6 +8,7 @@ public class Solution {
 			String in1 = scan.nextLine();
 			String in2 = scan.nextLine();
 			String in3 = in1+","+in2;
+			System.out.println(in3);
 			String[] inp = in3.split(",");
 			int[] array1 = Arrays.stream(inp).mapToInt(Integer::parseInt).toArray();
 			int sizet = size1+size2;
