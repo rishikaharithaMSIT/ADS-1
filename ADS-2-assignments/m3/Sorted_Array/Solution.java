@@ -27,13 +27,14 @@ public class Solution {
 			int j = size1;
 			while(i <  size1 && j < sizet) {
 				if(array1[i] < array1[j]) {
-					System.out.println(array1[i]);
+					System.out.print(array1[i] + ",");
 					if (i < size1) i++;
-				}else {
-					System.out.println(array1[j]);
+				}else if (array1[i] > array1[j]){
+					System.out.print(array1[j] + ",");
 					j++;
 				}
 			}
+
 		}
 	}
 }
