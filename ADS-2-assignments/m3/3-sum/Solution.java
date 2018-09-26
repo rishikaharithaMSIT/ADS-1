@@ -52,14 +52,16 @@ public final class Solution {
 	 * @param      x  The arguments
 	 * @return     int 
 	 */
-	public static int binarySearch(final int arr[], int l,
-	                               int r, final int x) {
+	public static int binarySearch(final int arr[], final int l,
+	                               final int r, final int x) {
 		if (r >= l) {
 			int mid = l + (r - l) / 2;
-			if (arr[mid] == x)
+			if (arr[mid] == x) {
 				return mid;
-			if (arr[mid] > x)
+			}
+			if (arr[mid] > x) {
 				return binarySearch(arr, l, mid - 1, x);
+			}
 			return binarySearch(arr, mid + 1, r, x);
 		}
 		return -1;
