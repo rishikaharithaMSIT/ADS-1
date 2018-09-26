@@ -29,8 +29,7 @@ public class Solution {
 				if(array1[i] < array1[j]) {
 					System.out.println(array1[i]);
 					i++;
-				}
-				if(array1[i] > array1[j]) {
+				}else {
 					System.out.println(array1[j]);
 					j++;
 				}
