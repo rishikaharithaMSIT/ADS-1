@@ -44,8 +44,16 @@ public final class Solution {
 		System.out.println(count);
 
 	}
-	public static int binarySearch(int arr[], int l,
-	                               int r, int x) {
+
+	/**
+	 * @param      arr  The arguments
+	 * @param      l  The arguments
+	 * @param      r  The arguments
+	 * @param      x  The arguments
+	 * @return     int 
+	 */
+	public static int binarySearch(final int arr[], int l,
+	                               int r, final int x) {
 		if (r >= l) {
 			int mid = l + (r - l) / 2;
 			if (arr[mid] == x)
