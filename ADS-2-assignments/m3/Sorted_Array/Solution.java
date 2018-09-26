@@ -11,6 +11,7 @@ public class Solution {
 			int[] array2 = Arrays.stream(in1).mapToInt(Integer::parseInt).toArray();
 			int sizet = size1+size2;
 			int[] newarr = new int[sizet];
+			System.out.println(sizet + "size");
 			int one = 0;
 			int two = size1;
 			for(int i =0; i < size1;i++){
