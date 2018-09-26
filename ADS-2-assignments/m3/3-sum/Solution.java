@@ -16,11 +16,11 @@ class Solution {
 				System.out.println(j);
 				int sum = array[i] + array[j];
 				int abc  = 0 - sum;
-				System.out.println(sum+" - "+ abc);
+				
 				boolean isFound = BinarySearch(0 - sum, array);
-
-				if (isFound == false) {
-					//System.out.println(count);
+				System.out.println(sum+" - "+ abc);
+				if (isFound == true) {
+					System.out.println(count + " co");
 					count++;
 				}
 			}
@@ -31,7 +31,7 @@ class Solution {
 	}
 	public static boolean BinarySearch(int ele, int[] array) {
 		int start = 0;
-		int end = array.length - 1;
+		int end = array.length-1;
 		int mid = (start + end) / 2;
 		
 		while (start != end) {
