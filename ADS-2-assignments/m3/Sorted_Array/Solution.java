@@ -25,10 +25,10 @@ public class Solution {
 			// }
 			int i =0;
 			int j = size1;
-			while(i <  size1 || j < sizet) {
+			while(i <  size1 && j < sizet) {
 				if(array1[i] < array1[j]) {
 					System.out.println(array1[i]);
-					i++;
+					if (i < size1) i++;
 				}else {
 					System.out.println(array1[j]);
 					j++;
