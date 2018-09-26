@@ -12,7 +12,7 @@ public class Solution {
 			int[] array1 = Arrays.stream(inp).mapToInt(Integer::parseInt).toArray();
 			int sizet = size1+size2;
 
-			for(int i =0, j= size1; i== size1-1 && j == sizet-1;) {
+			for(int i =0, j= size1; i < size1 && j < sizet;) {
 				if(array1[i] > array1[j]) {
 					System.out.println(array1[j]);
 					if(j < sizet) j++;
