@@ -19,7 +19,7 @@ public class Solution {
 				}
 				else {
 					System.out.println(array1[i]);
-					i++;
+					if(i < size1) i++;
 				}
 			}
 		}
