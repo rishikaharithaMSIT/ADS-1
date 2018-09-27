@@ -10,7 +10,7 @@ public class Solution {
 			for(int i =0; i< line.length;i++) {
 				stack.push(line[i]);
 			}
-
+			stack.printStack();
 		}
 	}
 }
