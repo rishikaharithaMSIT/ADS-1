@@ -9,7 +9,8 @@ public class Solution {
 			for(int i =0;i<line.length;i++){
 				switch(line[i]) {
 					case "*" :
-
+						int a = stack.pop();
+						System.out.println(a);
 						break;
 					case "-" :
 						break;
