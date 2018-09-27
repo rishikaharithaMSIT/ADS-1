@@ -10,7 +10,7 @@ public class Solution {
 			for(int i =0; i< line.length;i++) {
 				stack.push(line[i]);
 			}
-			
+
 		}
 	}
 }
@@ -23,8 +23,19 @@ class Stack{
 		size = 0;
 	}
 	public void push(String ele){
-		s[size] = ele;
-		size++;
+		try{
+			s[size] = ele;
+			size++;
+		} catch (Exception e) {
+			resize();
+			s[size] = ele;
+			size++;
+
+		}
+		
+	}
+	public void resize() {
+		s = Arrays.copyOf(s , size * 2);
 	}
 	public String pop() {
 		String item =  s[size-1];
