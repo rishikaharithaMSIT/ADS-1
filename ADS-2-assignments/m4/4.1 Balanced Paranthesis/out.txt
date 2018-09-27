@@ -4172,3 +4172,67 @@ NO
 NO
 YES
 YES
+
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+NO
+YES
+YES
+YES
+NO
+
+Your Output: 
+NO
+YES
+YES
+YES
+NO
+
+----------------------------------------
+Result: 3/4 testcases passed.
+Starting audit...
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:4:33: Parameter args should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:12: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:17:43: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:23: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:24: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:28:43: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:39:43: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:50:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:52:26: 'else' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:52:26: '}' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:61: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:62:15: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:62:18: Variable 's' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:63:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:63:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:64:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:65:32: '50' is a magic number. [MagicNumber]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:68:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:68:26: Parameter ele should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:81:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:84:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:85:36: ',' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:87:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m4\4.1 Balanced Paranthesis\Solution.java:93:9: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 32 errors.
+
+
+[master def5ec6] "check_style_score -> 3 of 4 passed. style score: 0/1 "
+ 5 files changed, 4228 insertions(+), 18 deletions(-)
+ rewrite ADS-2-assignments/m4/4.1 Balanced Paranthesis/Solution.class (99%)
+ rewrite ADS-2-assignments/m4/4.1 Balanced Paranthesis/Stack.class (73%)
+ create mode 100644 ADS-2-assignments/m4/4.1 Balanced Paranthesis/out.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+

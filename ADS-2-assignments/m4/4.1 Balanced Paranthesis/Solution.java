@@ -47,10 +47,10 @@ public class Solution {
 				}
 
 			}
-			if(flag) {
-				System.out.println("NO");
-			}else {
+			if(!flag && stack.isEmpty()) {
 				System.out.println("YES");
+			}else{
+				System.out.println("NO");
 			}
 
 
