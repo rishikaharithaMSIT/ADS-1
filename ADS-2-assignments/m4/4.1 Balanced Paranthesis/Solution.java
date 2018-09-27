@@ -10,7 +10,7 @@ public class Solution {
 			for(int i =0; i< line.length;i++) {
 				stack.push(line[i]);
 			}
-			stack.printStack();
+			Arrays.toString(stack.s);
 		}
 	}
 }
@@ -43,7 +43,5 @@ class Stack{
 		size--;
 		return item;
 	}
-	public String printStack(){
-		return Arrays.toString(s);
-	}
+	
 }
