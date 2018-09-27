@@ -10,13 +10,23 @@ public class Solution {
 				switch(line[i]) {
 					case "*" :
 						int a = stack.pop();
-						System.out.println(a);
+						int b = stack.pop();
+						stack.push(a*b);
 						break;
 					case "-" :
+						a = stack.pop();
+						b = stack.pop();
+						stack.push(a-b);
 						break;
 					case "/":
+						a = stack.pop();
+						b = stack.pop();
+						stack.push(a/b);
 						break;
 					case "+" :
+						a = stack.pop();
+						b = stack.pop();
+						stack.push(a+b);
 						break;
 					default:
 						stack.push(Integer.parseInt(line[i]));
