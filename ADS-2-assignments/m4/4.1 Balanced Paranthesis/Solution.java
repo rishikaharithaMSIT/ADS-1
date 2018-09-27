@@ -43,4 +43,7 @@ class Stack{
 		size--;
 		return item;
 	}
+	public String printStack(){
+		return Arrays.toString(s);
+	}
 }
