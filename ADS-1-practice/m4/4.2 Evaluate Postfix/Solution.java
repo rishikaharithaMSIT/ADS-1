@@ -9,6 +9,7 @@ public class Solution {
 			for(int i =0;i<line.length;i++){
 				switch(line[i]) {
 					case "*" :
+
 						break;
 					case "-" :
 						break;
@@ -43,6 +44,11 @@ class Stack {
 		first = newnode;
 	}
 
+	public int pop(){
+		int item = first.data;
+		first = first.next;
+		return item;
+	}
 	public void printList() 
     { 
         Node tnode = first; 
