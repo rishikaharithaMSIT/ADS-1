@@ -1,7 +1,21 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-public class Solution {
-    public static void main(String[] args) {
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int testcases = Integer.parseInt(scan.nextLine());
         while (scan.hasNext()) {
@@ -9,59 +23,60 @@ public class Solution {
             Stack stack =  new Stack();
             boolean flag = false;
             for (int i = 0; i < line.length; i++) {
-                if (line[i].equals("{") || line[i].equals("[") || line[i].equals("(")) {
+                if (line[i].equals("{") || line[i].equals("[")
+                        || line[i].equals("(")) {
                     stack.push(line[i]);
                 }
-                if (line[i].equals("}")) { 
+                if (line[i].equals("}")) {
                     String a;
-                    if(stack.isEmpty()) {
+                    if (stack.isEmpty()) {
                         flag = true;
                         break;
                     }
-                    if(!stack.isEmpty()) {
+                    if (!stack.isEmpty()) {
                         a = stack.pop();
                         if (!a.equals("{")) {
-                        flag = true;
-                        break;
+                            flag = true;
+                            break;
+                        }
                     }
-                    }                    
-                    
+
                 }
                 if (line[i].equals("]")) {
                     String a;
-                    if(stack.isEmpty()) {
+                    if (stack.isEmpty()) {
                         flag = true;
                         break;
                     }
-                    if(!stack.isEmpty()) {
+                    if (!stack.isEmpty()) {
                         a = stack.pop();
                         if (!a.equals("[")) {
-                        flag = true;
-                        break;
+                            flag = true;
+                            break;
+                        }
                     }
-                    }
-                    
+
                 }
                 if (line[i].equals(")")) {
                     String a;
-                    if(stack.isEmpty()) {
+                    if (stack.isEmpty()) {
                         flag = true;
                         break;
                     }
-                    if(!stack.isEmpty()) {
+                    if (!stack.isEmpty()) {
                         a = stack.pop();
                         if (!a.equals("(")) {
-                        flag = true;
-                        break;
+                            flag = true;
+                            break;
+                        }
                     }
-                    }
-                    
+
                 }
 
             }
-            if(!flag && stack.isEmpty()) {
+            if (!flag && stack.isEmpty()) {
                 System.out.println("YES");
-            }else{
+            } else {
                 System.out.println("NO");
             }
 
@@ -70,45 +85,3 @@ public class Solution {
     }
 }
 
-class Stack {
-    String[] s;
-    int size;
-    Stack() {
-        s = new String[50];
-        size = 0;
-    }
-    public void push(String ele) {
-        try {
-            s[size] = ele;
-            size++;
-            //System.out.println(Arrays.toString(s));
-        } catch (Exception e) {
-            resize();
-            s[size] = ele;
-            size++;
-
-        }
-
-    }
-    boolean isEmpty() {
-        return size == 0;
-    }
-    public void resize() {
-        s = Arrays.copyOf(s , size * 2);
-    }
-    public String pop() {
-        String item =  s[size - 1];
-        s[size - 1] = null;
-        size--;
-        return item;
-    }
-    public String toString() {
-        String p = "";
-        for (int i = 0; i < size; i++) {
-            p += s[i] + " ";
-        }
-        return p;
-
-    }
-
-}
