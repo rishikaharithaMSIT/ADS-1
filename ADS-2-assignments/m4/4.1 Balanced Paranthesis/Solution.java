@@ -6,7 +6,7 @@ public class Solution {
 		int testcases = Integer.parseInt(scan.nextLine());
 		while(scan.hasNext()) {
 			String[] line = scan.nextLine().split("");
-			System.out.println(line);
+			System.out.println(Arrays.toString(line));
 		}
 	}
 }
