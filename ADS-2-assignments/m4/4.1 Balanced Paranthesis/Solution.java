@@ -8,9 +8,19 @@ public class Solution {
 			String[] line = scan.nextLine().split("");
 			Stack stack =  new Stack();
 			for(int i =0; i< line.length;i++) {
-				stack.push(line[i]);
+				if (line[i].equals("{") || line[i].equals("[") || line[i].equals("(")){
+					stack.push(line[i]);
+				}
+				if (line[i].equals("}")){
+					String a = stack.pop();
+					if(!a.equals("{")) {
+						System.out.println("gone");
+						break;
+					}
+				}
+				
 			}
-			Arrays.toString(stack.s);
+			
 		}
 	}
 }
@@ -26,6 +36,7 @@ class Stack{
 		try{
 			s[size] = ele;
 			size++;
+			//System.out.println(Arrays.toString(s));
 		} catch (Exception e) {
 			resize();
 			s[size] = ele;
@@ -42,6 +53,14 @@ class Stack{
 		s[size-1] = null;
 		size--;
 		return item;
+	}
+	public String toString() {
+		String p = "";
+		for(int i =0;i< size;i++) {
+			p += s[i] + " ";
+		}
+		return p;
+
 	}
 	
 }
