@@ -18,6 +18,7 @@ public class Solution {
 		q.pushLeft(-2);
 		q.pushLeft(-1);
 		q.popLeft();
+		q.popLeft();
 		q.printList();
 
 	}
