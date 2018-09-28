@@ -114,6 +114,10 @@ class Deque<Item> {
 
 	}
 	public void printList() {
+		if(size == 0) {
+			System.out.println("[]");
+			return;
+		}
 		Node tnode = first;
 		String s = "";
 		while (tnode != null) {
