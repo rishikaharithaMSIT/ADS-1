@@ -10,38 +10,52 @@ import java.util.*;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		Deque q = new Deque();
-		q.pushRight(1);
-		q.pushRight(2);
-		q.pushRight(3);
-		q.pushLeft(-3);
-		q.pushLeft(-2);
-		q.pushLeft(-1);
-		q.popLeft();
-		q.popLeft();
-		q.popRight();
-		q.printList();
+		Deque<Integer> q = new Deque<>();
+		while(scan.hasNext()) {
+			String[] line = scan.nextLine().split(" ");
+			switch(line[0]) {
+				case "pushLeft":
+					q.pushLeft(Integer.parseInt(line[1]));
+					break;
+				case "pushRight":
+					q.pushRight(Integer.parseInt(line[1]));
+					break;
+				case "popRight":
+					q.popRight();
+					break;
+				case "popLeft":
+					q.popLeft();
+					break;
+				case "size":
+					System.out.println(q.getSize());
+					break;
+				default :
+			}
+		}
 
 	}
 }
-class Deque {
+class Deque<Item> {
 	Node first = null;
 	Node last = null;
 	int size = 0;
 	class Node {
-		int data;
+		Item data;
 		Node next;
-		Node(int data) {
+		Node(Item data) {
 			this.data = data;
 		}
 	}
 	public boolean isEmpty() {
 		return size == 0;
 	}
-	public void pushRight(int element) {
+	public int getSize(){
+		return size;
+	}
+	public void pushRight(Item element) {
 		Node oldleft = last;
 		last = new Node(element);
-		if(isEmpty()) {
+		if (isEmpty()) {
 			first = last;
 			last.next = null;
 			size++;
@@ -51,12 +65,12 @@ class Deque {
 		oldleft.next = last;
 		size++;
 	}
-	public void pushLeft(int element) {
+	public void pushLeft(Item element) {
 		Node oldright = first;
 		first = new Node(element);
-		if(isEmpty()){
+		if (isEmpty()) {
 			last = first;
-			
+
 			size++;
 			return;
 
@@ -64,29 +78,32 @@ class Deque {
 		first.next = oldright;
 		size++;
 	}
-	public int popLeft() {
-		int d = first.data;
-		if(isEmpty()) {
-			return -1;
+	public Item popLeft() {
+		Item d = first.data;
+		if (isEmpty()) {
+			return null;
 		}
-		first= first.next;
+		first = first.next;
 		size--;
 		return d;
 
 	}
-	public int popRight() {
-		int d  =  last.data;
-		if(isEmpty()) {
-			return -1;
+	public Item popRight() {
+		Item d  =  last.data;
+		if (isEmpty()) {
+			return null;
 		}
 		int s = 0;
 		Node get = first;
-		System.out.println("herre" + size);
-		while(s < size-1) {
-			
+
+		while (s < size - 2) {
+			System.out.println("herre" + size);
 			get = get.next;
+			System.out.println(get.data);
+
 			s++;
 		}
+		last = get;
 		get.next = null;
 		size--;
 		return d;
