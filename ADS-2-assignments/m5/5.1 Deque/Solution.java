@@ -81,8 +81,9 @@ class Deque {
 		}
 		int s = 0;
 		Node get = first;
+		System.out.println("herre");
 		while(s < size-1) {
-			System.out.println("herre");
+			
 			get = get.next;
 			s++;
 		}
