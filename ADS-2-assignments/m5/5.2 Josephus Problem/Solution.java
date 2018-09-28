@@ -11,13 +11,13 @@ public class Solution {
 			createCircle(q, people);
 			q.josephus(people, gap);
 			//q.printList();
-			
+
 
 		}
 	}
-	
+
 	public static void createCircle(Deque<Integer> q, int people) {
-		for(int i = 0;i < people;i++) {
+		for (int i = 0; i < people; i++) {
 			q.push(i);
 		}
 	}
@@ -26,6 +26,7 @@ class Deque<Item> {
 	Node first = null;
 	Node last = null;
 	int size = 0;
+	String print = "";
 	class Node {
 		Item data;
 		Node next;
@@ -54,23 +55,23 @@ class Deque<Item> {
 		size++;
 		//printList();
 	}
-	
+
 	public Item pop(Item person) {
 		Item d = first.data;
 		if (isEmpty()) {
 			return null;
 		}
-		int s =0;
+		int s = 0;
 		Node get = first;
 		Node prev = null;
-		while(s < size){
-			if(get.data == person) {
-				if(first.data == person) {
+		while (s < size) {
+			if (get.data == person) {
+				if (first.data == person) {
 					//System.out.println("\n here " +first.data + " " +first.next.data);
 					first = first.next;
-					int g =0;
+					int g = 0;
 					Node l = first;
-					while(g < size-2){
+					while (g < size - 2) {
 						l = l.next;
 
 						g++;
@@ -98,26 +99,27 @@ class Deque<Item> {
 		return d;
 
 	}
-	public void josephus(int people,int gap) {
-		
+	public void josephus(int people, int gap) {
+
 		Node head = first;
-		while(!isEmpty()) {
-			
+		while (!isEmpty()) {
+
 			int c = 0;
 			while (c < gap - 1) {
-			head = head.next;
-			c++;
+				head = head.next;
+				c++;
 			}
 
-			System.out.print(head.data + " ");
+			print += head.data+" ";
 			//System.out.println("removing: " + head.data);
 			pop(head.data);
 			//printList();
 			head = head.next;
 
 		}
-		System.out.println();
-		
+		print = print.trim();
+		System.out.println(print);
+
 	}
 	public void printList() {
 		Node n = first;
