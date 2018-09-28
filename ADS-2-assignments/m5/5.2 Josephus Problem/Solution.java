@@ -81,6 +81,7 @@ class Deque<Item> {
 			System.out.print(tnode.data + " ");
 			tnode = tnode.next;
 		}
+		System.out.println();
 	}
 
 }
