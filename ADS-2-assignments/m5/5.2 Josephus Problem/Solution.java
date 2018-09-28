@@ -9,8 +9,9 @@ public class Solution {
 			int gap = Integer.parseInt(line[1]);
 			Deque<Integer> q = new Deque<>();
 			createCircle(q, people);
-			q.printList();
 			q.pop(0);
+			q.printList();
+			
 
 		}
 	}
