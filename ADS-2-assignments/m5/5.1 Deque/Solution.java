@@ -19,6 +19,7 @@ public class Solution {
 		q.pushLeft(-1);
 		q.popLeft();
 		q.popLeft();
+		q.popRight();
 		q.printList();
 
 	}
@@ -69,6 +70,7 @@ class Deque {
 			return -1;
 		}
 		first= first.next;
+		size--;
 		return d;
 
 	}
@@ -81,6 +83,7 @@ class Deque {
 		Node get = first;
 		while(s < size-1) {
 			get = get.next;
+			s++;
 		}
 		get.next = null;
 		return d;
