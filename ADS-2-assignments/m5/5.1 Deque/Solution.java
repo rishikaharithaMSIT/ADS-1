@@ -17,7 +17,7 @@ public class Solution {
 		q.pushLeft(-3);
 		q.pushLeft(-2);
 		q.pushLeft(-1);
-		//q.popLeft();
+		q.popLeft();
 		q.printList();
 
 	}
@@ -63,20 +63,16 @@ class Deque {
 		size++;
 	}
 	public int popLeft() {
-		int d = last.data;
+		int d = first.data;
 		if(isEmpty()) {
 			return -1;
 		}
 		int s = 0;
-		Node getNode = first;
-		while(s < size) {
-			getNode = getNode.next;
-			s++;
-		}
-		getNode.next = null;
+		first= first.next;
 		return d;
 
 	}
+
 	public void printList() {
 		Node tnode = first;
 		while (tnode != null) {
