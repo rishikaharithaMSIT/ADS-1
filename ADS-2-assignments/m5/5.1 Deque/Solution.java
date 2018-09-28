@@ -16,9 +16,11 @@ public class Solution {
 			switch(line[0]) {
 				case "pushLeft":
 					q.pushLeft(Integer.parseInt(line[1]));
+					q.printList();
 					break;
 				case "pushRight":
 					q.pushRight(Integer.parseInt(line[1]));
+					q.printList();
 					break;
 				case "popRight":
 					q.popRight();
@@ -97,9 +99,9 @@ class Deque<Item> {
 		Node get = first;
 
 		while (s < size - 2) {
-			System.out.println("herre" + size);
+			//System.out.println("herre" + size);
 			get = get.next;
-			System.out.println(get.data);
+			//System.out.println(get.data);
 
 			s++;
 		}
@@ -111,10 +113,13 @@ class Deque<Item> {
 	}
 	public void printList() {
 		Node tnode = first;
+		String s = "";
 		while (tnode != null) {
-			System.out.print(tnode.data + " ");
+			s += tnode.data + "";
 			tnode = tnode.next;
 		}
+		String[] str = s.split("");
+		System.out.println(Arrays.toString(str));
 	}
 
 }
