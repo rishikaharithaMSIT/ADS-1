@@ -24,9 +24,11 @@ public class Solution {
 					break;
 				case "popRight":
 					q.popRight();
+					q.printList();
 					break;
 				case "popLeft":
 					q.popLeft();
+					q.printList();
 					break;
 				case "size":
 					System.out.println(q.getSize());
