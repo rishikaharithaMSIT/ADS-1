@@ -121,7 +121,7 @@ class Deque<Item> {
 			s++;
 		}
 		last = get;
-		get.next = null;
+		//get.next = null;
 		size--;
 		printList();
 		return d;
