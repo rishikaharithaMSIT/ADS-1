@@ -19,7 +19,7 @@ public class Solution {
 		q.pushLeft(-1);
 		q.popLeft();
 		q.popLeft();
-		//q.popRight();
+		q.popRight();
 		q.printList();
 
 	}
@@ -82,6 +82,7 @@ class Deque {
 		int s = 0;
 		Node get = first;
 		while(s < size-1) {
+			System.out.println("herre");
 			get = get.next;
 			s++;
 		}
