@@ -128,7 +128,7 @@ class Deque<Item> {
 			s += tnode.data + " ";
 			tnode = tnode.next;
 		}
-		s.trim();
+		s = s.trim();
 		System.out.println(s);
 	}
 
