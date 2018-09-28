@@ -68,12 +68,24 @@ class Deque {
 		if(isEmpty()) {
 			return -1;
 		}
-		int s = 0;
 		first= first.next;
 		return d;
 
 	}
+	public int popRight() {
+		int d  =  last.data;
+		if(isEmpty()) {
+			return -1;
+		}
+		int s = 0;
+		Node get = first;
+		while(s < size-1) {
+			get = get.next;
+		}
+		get.next = null;
+		return d;
 
+	}
 	public void printList() {
 		Node tnode = first;
 		while (tnode != null) {
