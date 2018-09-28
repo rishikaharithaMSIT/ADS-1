@@ -17,13 +17,14 @@ public class Solution {
 		q.pushLeft(-3);
 		q.pushLeft(-2);
 		q.pushLeft(-1);
+		//q.popLeft();
 		q.printList();
 
 	}
 }
 class Deque {
-	Node right = null;
-	Node left = null;
+	Node first = null;
+	Node last = null;
 	int size = 0;
 	class Node {
 		int data;
@@ -36,34 +37,48 @@ class Deque {
 		return size == 0;
 	}
 	public void pushRight(int element) {
-		Node oldleft = left;
-		left = new Node(element);
+		Node oldleft = last;
+		last = new Node(element);
 		if(isEmpty()) {
-			right = left;
-			left.next = null;
+			first = last;
+			last.next = null;
 			size++;
 			return;
 		}
-		left.next = null;
-		oldleft.next = left;
+		last.next = null;
+		oldleft.next = last;
 		size++;
 	}
 	public void pushLeft(int element) {
-		Node oldright = right;
-		right = new Node(element);
+		Node oldright = first;
+		first = new Node(element);
 		if(isEmpty()){
-			left = right;
+			last = first;
 			
 			size++;
 			return;
 
 		}
-		right.next = oldright;
+		first.next = oldright;
 		size++;
 	}
+	public int popLeft() {
+		int d = last.data;
+		if(isEmpty()) {
+			return -1;
+		}
+		int s = 0;
+		Node getNode = first;
+		while(s < size) {
+			getNode = getNode.next;
+			s++;
+		}
+		getNode.next = null;
+		return d;
 
+	}
 	public void printList() {
-		Node tnode = right;
+		Node tnode = first;
 		while (tnode != null) {
 			System.out.print(tnode.data + " ");
 			tnode = tnode.next;
