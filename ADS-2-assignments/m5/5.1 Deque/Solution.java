@@ -16,19 +16,19 @@ public class Solution {
 			switch (line[0]) {
 			case "pushLeft":
 				q.pushLeft(Integer.parseInt(line[1]));
-				q.printList();
+				//q.printList();
 				break;
 			case "pushRight":
 				q.pushRight(Integer.parseInt(line[1]));
-				q.printList();
+				//q.printList();
 				break;
 			case "popRight":
 				q.popRight();
-				q.printList();
+				//q.printList();
 				break;
 			case "popLeft":
 				q.popLeft();
-				q.printList();
+				//q.printList();
 				break;
 			case "size":
 				System.out.println(q.getSize());
@@ -63,11 +63,13 @@ class Deque<Item> {
 			first = last;
 			last.next = null;
 			size++;
+			printList();
 			return;
 		}
 		last.next = null;
 		oldleft.next = last;
 		size++;
+		printList();
 	}
 	public void pushLeft(Item element) {
 		Node oldright = first;
@@ -76,11 +78,13 @@ class Deque<Item> {
 			last = first;
 
 			size++;
+			printList();
 			return;
 
 		}
 		first.next = oldright;
 		size++;
+		printList();
 	}
 	public Item popLeft() {
 		if (size == 0) {
@@ -93,6 +97,7 @@ class Deque<Item> {
 		}
 		first = first.next;
 		size--;
+		printList();
 		return d;
 
 	}
@@ -118,11 +123,16 @@ class Deque<Item> {
 		last = get;
 		get.next = null;
 		size--;
+		printList();
 		return d;
+
 
 	}
 	public void printList() {
-		
+		if (size == 0) {
+			System.out.println("[]");
+			return;
+		}
 		Node tnode = first;
 		String s = "";
 		while (tnode != null) {
