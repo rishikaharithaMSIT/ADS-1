@@ -17,8 +17,8 @@ public class Solution {
 		q.pushLeft(-3);
 		q.pushLeft(-2);
 		q.pushLeft(-1);
-		//q.popLeft();
-		//q.popLeft();
+		q.popLeft();
+		q.popLeft();
 		//q.popRight();
 		q.printList();
 
