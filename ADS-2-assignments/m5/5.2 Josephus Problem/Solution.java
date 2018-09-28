@@ -10,12 +10,13 @@ public class Solution {
 			Deque<Integer> q = new Deque<>();
 			createCircle(q, people);
 			q.printList();
+			q.pop(0);
 
 		}
 	}
 	public static void createCircle(Deque<Integer> q, int people) {
 		for(int i = 0;i < people;i++) {
-			q.pushRight(i);
+			q.push(i);
 		}
 	}
 }
@@ -36,7 +37,7 @@ class Deque<Item> {
 	public int getSize() {
 		return size;
 	}
-	public void pushRight(Item element) {
+	public void push(Item element) {
 		Node oldleft = last;
 		last = new Node(element);
 		if (isEmpty()) {
@@ -51,61 +52,27 @@ class Deque<Item> {
 		size++;
 		printList();
 	}
-	public void pushLeft(Item element) {
-		Node oldright = first;
-		first = new Node(element);
-		if (isEmpty()) {
-			last = first;
-
-			size++;
-			printList();
-			return;
-
-		}
-		first.next = oldright;
-		size++;
-		printList();
-	}
-	public Item popLeft() {
-		if (size == 0) {
-			System.out.println("Deck is empty");
-			return null;
-		}
+	
+	public Item pop(Item person) {
 		Item d = first.data;
 		if (isEmpty()) {
 			return null;
 		}
-		first = first.next;
-		size--;
-		printList();
-		return d;
-
-	}
-	public Item popRight() {
-		if (size == 0) {
-			System.out.println("Deck is empty");
-			return null;
-		}
-		Item d  =  last.data;
-		if (isEmpty()) {
-			return null;
-		}
-		int s = 0;
+		int s =0;
 		Node get = first;
+		Node prev = null;
+		while(s < size){
+			if(get.data == person) {
+				System.out.println(get.data);
+				break;
 
-		while (s < size - 2) {
-			//System.out.println("herre" + size);
+			}
+
 			get = get.next;
-			//System.out.println(get.data);
-
 			s++;
 		}
-		last = get;
-		get.next = null;
-		size--;
-		printList();
+		
 		return d;
-
 
 	}
 	public void printList() {
