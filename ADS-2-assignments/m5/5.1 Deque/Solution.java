@@ -129,11 +129,16 @@ class Deque<Item> {
 		Node tnode = first;
 		String s = "";
 		while (tnode != null) {
-			s += tnode.data + "";
+			s += tnode.data + ",";
 			tnode = tnode.next;
 		}
-		String[] str = s.split("");
-		System.out.println(Arrays.toString(str));
+		String[] str = s.split(",");
+		String pr = "[";
+		for(int i = 0;i<size-1;i++) {
+			pr += str[i] + ", ";
+		}
+		pr += str[size-1] + "]";
+		System.out.println(pr);
 	}
 
 }
