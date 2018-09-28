@@ -11,29 +11,29 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Deque<Integer> q = new Deque<>();
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] line = scan.nextLine().split(" ");
-			switch(line[0]) {
-				case "pushLeft":
-					q.pushLeft(Integer.parseInt(line[1]));
-					q.printList();
-					break;
-				case "pushRight":
-					q.pushRight(Integer.parseInt(line[1]));
-					q.printList();
-					break;
-				case "popRight":
-					q.popRight();
-					q.printList();
-					break;
-				case "popLeft":
-					q.popLeft();
-					q.printList();
-					break;
-				case "size":
-					System.out.println(q.getSize());
-					break;
-				default :
+			switch (line[0]) {
+			case "pushLeft":
+				q.pushLeft(Integer.parseInt(line[1]));
+				q.printList();
+				break;
+			case "pushRight":
+				q.pushRight(Integer.parseInt(line[1]));
+				q.printList();
+				break;
+			case "popRight":
+				q.popRight();
+				q.printList();
+				break;
+			case "popLeft":
+				q.popLeft();
+				q.printList();
+				break;
+			case "size":
+				System.out.println(q.getSize());
+				break;
+			default :
 			}
 		}
 
@@ -53,7 +53,7 @@ class Deque<Item> {
 	public boolean isEmpty() {
 		return size == 0;
 	}
-	public int getSize(){
+	public int getSize() {
 		return size;
 	}
 	public void pushRight(Item element) {
@@ -83,6 +83,10 @@ class Deque<Item> {
 		size++;
 	}
 	public Item popLeft() {
+		if (size == 0) {
+			System.out.println("Deck is empty");
+			return null;
+		}
 		Item d = first.data;
 		if (isEmpty()) {
 			return null;
@@ -93,6 +97,10 @@ class Deque<Item> {
 
 	}
 	public Item popRight() {
+		if (size == 0) {
+			System.out.println("Deck is empty");
+			return null;
+		}
 		Item d  =  last.data;
 		if (isEmpty()) {
 			return null;
@@ -114,7 +122,7 @@ class Deque<Item> {
 
 	}
 	public void printList() {
-		if(size == 0) {
+		if (size == 0) {
 			System.out.println("[]");
 			return;
 		}
