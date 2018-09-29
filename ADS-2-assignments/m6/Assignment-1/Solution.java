@@ -1,6 +1,15 @@
 import java.util.Scanner;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
-
+    /**
+     * { function_description }.
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList numberToDigits(String number) {
         LinkedList l = new LinkedList();
         String[] numbers = number.split("");
@@ -10,7 +19,13 @@ class AddLargeNumbers {
         //l.printList();
         return l;
     }
-
+    /**
+     * { function_description }.
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String digitsToNumber(LinkedList list) {
         String number = "";
         //list.printList();
@@ -19,12 +34,17 @@ class AddLargeNumbers {
         }
         return number;
     }
-
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
-
-        //System.out.println(list1.size + " " + list2.size + " size");
         if (list2.size > list1.size) {
             int diff = list2.size - list1.size;
             while (diff > 0) {
@@ -71,8 +91,21 @@ class AddLargeNumbers {
         return result;
     }
 }
-
-public class Solution {
+/**
+ * { item_description }.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //unused.
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -94,6 +127,5 @@ public class Solution {
             break;
         }
     }
-
 }
 
