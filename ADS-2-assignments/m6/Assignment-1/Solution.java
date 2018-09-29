@@ -7,11 +7,16 @@ class AddLargeNumbers {
         for(int i =0;i<numbers.length;i++) {
             l.push(numbers[i]);
         }
+        //l.printList();
         return l;
     }
 
     public static String digitsToNumber(LinkedList list) {
-        return null;
+        String number = "";
+        while(!list.isEmpty()) {
+            list.pop();
+        }
+        return number;
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
@@ -71,6 +76,15 @@ class LinkedList {
         oldlast.next = last;
         last.next = null;
         size++;
+
+    }
+    public String pop(){
+        if(isEmpty()){
+            return null;
+        }
+        String item  = first.data;
+        first = first.next;
+        return item;
 
     }
     public void printList() {
