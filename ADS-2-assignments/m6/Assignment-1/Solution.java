@@ -33,6 +33,14 @@ class AddLargeNumbers {
             s2.push(Integer.parseInt(number));
         }
         System.out.println(s1.size + " " + s2.size + " size");
+        if(s2.size > s1.size) {
+            int diff = s2.size-s1.size;
+            while(diff > 0) {
+                s1.push(0);
+                diff--;
+            }
+        }
+        System.out.println(s1.size + " " + s2.size + " size atferrrrrrrrr");
         String sum = "";
         int carry = 0;
         int s = 0; 
