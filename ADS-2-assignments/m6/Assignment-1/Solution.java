@@ -3,6 +3,9 @@ class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
         LinkedList l = new LinkedList();
+        l.push("1");
+        l.push("2");
+        l.printList();
         return l;
     }
 
@@ -40,7 +43,41 @@ public class Solution {
     
 }
 class LinkedList {
-    LinkedList() {
-        System.out.println("inist");
+    Node first = null;
+    Node last = null;
+    int size = 0;
+    class Node {
+        String data;
+        Node next;
+        Node(String data) {
+            this.data = data; 
+        }
+    }
+    public boolean isEmpty() {
+        return size == 0;
+    }
+    public void push(String element){
+        Node newnode = new Node(element);
+        if(isEmpty()) {
+            first = newnode;
+            last = first;
+            last.next = null;
+            size++;
+            return;
+        }
+        Node oldlast = last;
+        last = newnode;
+        oldlast.next = last;
+        last.next = null;
+        size++;
+
+    }
+    public void printList() {
+        Node tnode = first;       
+        while (tnode != null) {
+            System.out.print(tnode.data + " ");
+            tnode = tnode.next;
+        }
+        
     }
 }
