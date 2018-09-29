@@ -43,7 +43,8 @@ class AddLargeNumbers {
             s2.push(Integer.parseInt(number));
         }
 
-        s1.printList();        
+        s1.printList();
+        System.out.println();        
         s2.printList();
         System.out.println("-----------");
         String sum = "";
@@ -54,7 +55,7 @@ class AddLargeNumbers {
             carry = s / 10;
             if(s1.size == 0) {
                 System.out.print(s%10);
-                System.out.print(s/10);
+                if(s/10 != 0) System.out.print(s/10);
             }
             else {
                 System.out.print(s % 10);
