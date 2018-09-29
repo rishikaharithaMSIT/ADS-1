@@ -3,9 +3,10 @@ class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
         LinkedList l = new LinkedList();
-        l.push("1");
-        l.push("2");
-        l.printList();
+        String[] numbers = number.split("");
+        for(int i =0;i<numbers.length;i++) {
+            l.push(numbers[i]);
+        }
         return l;
     }
 
