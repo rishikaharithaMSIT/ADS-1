@@ -23,7 +23,19 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
-
+        System.out.println(list1.size + " " + list2.size + " size");
+        if(list2.size > list1.size) {
+            int diff = list2.size-list1.size;
+            while(diff > 0) {
+                list1.push("0");
+                diff--;
+            }
+        }
+        list1.printList();
+        
+        list2.printList();
+        
+        System.out.println(list1.size + " " + list2.size + " size atferrrrrrrrr");
         while (!list1.isEmpty()) {
             String number = list1.pop();
             s1.push(Integer.parseInt(number));
@@ -32,15 +44,7 @@ class AddLargeNumbers {
             String number = list2.pop();
             s2.push(Integer.parseInt(number));
         }
-        System.out.println(s1.size + " " + s2.size + " size");
-        if(s2.size > s1.size) {
-            int diff = s2.size-s1.size;
-            while(diff > 0) {
-                s1.push(0);
-                diff--;
-            }
-        }
-        System.out.println(s1.size + " " + s2.size + " size atferrrrrrrrr");
+
         String sum = "";
         int carry = 0;
         int s = 0; 
@@ -131,6 +135,7 @@ class LinkedList {
             System.out.print(tnode.data + " ");
             tnode = tnode.next;
         }
+        System.out.println();
 
     }
 }
