@@ -13,6 +13,7 @@ class AddLargeNumbers {
 
     public static String digitsToNumber(LinkedList list) {
         String number = "";
+        //list.printList();
         while(!list.isEmpty()) {
             list.pop();
         }
@@ -82,8 +83,9 @@ class LinkedList {
         if(isEmpty()){
             return null;
         }
-        String item  = first.data;
+        String item = first.data;
         first = first.next;
+        size--;
         return item;
 
     }
