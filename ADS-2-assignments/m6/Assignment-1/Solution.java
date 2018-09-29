@@ -23,6 +23,7 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
+
         while (!list1.isEmpty()) {
             String number = list1.pop();
             s1.push(Integer.parseInt(number));
@@ -31,6 +32,7 @@ class AddLargeNumbers {
             String number = list2.pop();
             s2.push(Integer.parseInt(number));
         }
+        System.out.println(s1.size + " " + s2.size + " size");
         String sum = "";
         int carry = 0;
         int s = 0; 
