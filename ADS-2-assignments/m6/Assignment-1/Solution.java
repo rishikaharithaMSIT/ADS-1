@@ -27,13 +27,11 @@ class AddLargeNumbers {
         if(list2.size > list1.size) {
             int diff = list2.size-list1.size;
             while(diff > 0) {
-                list1.push("0");
+                s1.push(0);
                 diff--;
             }
         }
-        list1.printList();
         
-        list2.printList();
         
         System.out.println(list1.size + " " + list2.size + " size atferrrrrrrrr");
         while (!list1.isEmpty()) {
@@ -45,6 +43,9 @@ class AddLargeNumbers {
             s2.push(Integer.parseInt(number));
         }
 
+        s1.printList();        
+        s2.printList();
+        System.out.println("-----------");
         String sum = "";
         int carry = 0;
         int s = 0; 
