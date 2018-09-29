@@ -67,7 +67,11 @@ class AddLargeNumbers {
         }
         //System.out.print(s);
         //System.out.println(sum);
-        LinkedList result = numberToDigits(sum);
+        String ans = "";
+        for(int i = sum.length()-1;i>=0;i--){
+            ans += sum.charAt(i);
+        }
+        LinkedList result = numberToDigits(ans);
         return result;
     }
 }
