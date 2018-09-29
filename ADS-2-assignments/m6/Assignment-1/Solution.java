@@ -71,19 +71,19 @@ class AddLargeNumbers {
 
         String sum = "";
         int carry = 0;
-        int s = 0;
+        int digitSum = 0;
         while (!s1.isEmpty()) {
-            s = s1.pop() + s2.pop() + carry;
-            carry = s / ten;
+            digitSum = s1.pop() + s2.pop() + carry;
+            carry = digitSum / ten;
             if (s1.size == 0) {
                 //System.out.print(s%10);
-                sum += (s % ten) + "";
-                if (s / ten != 0) {
+                sum += (digitSum % ten) + "";
+                if (digitSum / ten != 0) {
                     //System.out.print(s/10);
-                    sum += (s / ten) + "";
+                    sum += (digitSum / ten) + "";
                 }
             } else {
-                sum += (s % ten) + "";
+                sum += (digitSum % ten) + "";
                 //System.out.print(s % 10);
             }
 
