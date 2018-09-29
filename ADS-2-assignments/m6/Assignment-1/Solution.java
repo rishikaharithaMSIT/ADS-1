@@ -37,13 +37,9 @@ class AddLargeNumbers {
         while (!s1.isEmpty()) {
             s = s1.pop() + s2.pop() + carry;
             carry = s / 10;
-            if(s1.size == 1) {
-                int ss = s;
-                while(ss>0){
-                    int rem = ss%10;
-                    ss = ss /10;
-                    System.out.print(rem);
-                }
+            if(s1.size == 0) {
+                System.out.print(s%10);
+                System.out.print(s/10);
             }
             else {
                 System.out.print(s % 10);
