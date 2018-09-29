@@ -1,10 +1,10 @@
 import java.util.Scanner;
 class AddLargeNumbers {
-    
+
     public static LinkedList numberToDigits(String number) {
         LinkedList l = new LinkedList();
         String[] numbers = number.split("");
-        for(int i =0;i<numbers.length;i++) {
+        for (int i = 0; i < numbers.length; i++) {
             l.push(numbers[i]);
         }
         //l.printList();
@@ -14,7 +14,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(LinkedList list) {
         String number = "";
         //list.printList();
-        while(!list.isEmpty()) {
+        while (!list.isEmpty()) {
             number += list.pop();
         }
         return number;
@@ -23,20 +23,35 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
-        while(!list1.isEmpty()) {
+        while (!list1.isEmpty()) {
             String number = list1.pop();
             s1.push(Integer.parseInt(number));
         }
-        while(!list2.isEmpty()) {
+        while (!list2.isEmpty()) {
             String number = list2.pop();
             s2.push(Integer.parseInt(number));
         }
-        s1.printList();
-        System.out.println();
-        System.out.println(s1.pop() + " item");
-        System.out.println(s1.pop() + " item");
-        s2.printList();
-        return new LinkedList();        
+        String sum = "";
+        int carry = 0;
+        int s = 0; 
+        while (!s1.isEmpty()) {
+            s = s1.pop() + s2.pop() + carry;
+            carry = s / 10;
+            if(s1.size == 1) {
+                int ss = s;
+                while(ss>0){
+                    int rem = ss%10;
+                    ss = ss /10;
+                    System.out.print(rem);
+                }
+            }
+            else {
+                System.out.print(s % 10);
+            }
+            
+        }
+        //System.out.print(s);
+        return new LinkedList();
     }
 }
 
@@ -46,23 +61,23 @@ public class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        switch(input){
-            case "numberToDigits":
-                LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
-                LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
-                System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
-                System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
-                break;
+        switch (input) {
+        case "numberToDigits":
+            LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
+            LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
+            System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
+            System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
+            break;
 
-            case "addLargeNumbers":
-                pDigits = AddLargeNumbers.numberToDigits(p);
-                qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                System.out.println(AddLargeNumbers.digitsToNumber(result));
-                break;
+        case "addLargeNumbers":
+            pDigits = AddLargeNumbers.numberToDigits(p);
+            qDigits = AddLargeNumbers.numberToDigits(q);
+            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+            System.out.println(AddLargeNumbers.digitsToNumber(result));
+            break;
         }
     }
-    
+
 }
 class LinkedList {
     Node first = null;
@@ -72,15 +87,15 @@ class LinkedList {
         String data;
         Node next;
         Node(String data) {
-            this.data = data; 
+            this.data = data;
         }
     }
     public boolean isEmpty() {
         return size == 0;
     }
-    public void push(String element){
+    public void push(String element) {
         Node newnode = new Node(element);
-        if(isEmpty()) {
+        if (isEmpty()) {
             first = newnode;
             last = first;
             last.next = null;
@@ -94,8 +109,8 @@ class LinkedList {
         size++;
 
     }
-    public String pop(){
-        if(isEmpty()){
+    public String pop() {
+        if (isEmpty()) {
             return null;
         }
         String item = first.data;
@@ -105,16 +120,17 @@ class LinkedList {
 
     }
     public void printList() {
-        Node tnode = first;       
+        Node tnode = first;
         while (tnode != null) {
             System.out.print(tnode.data + " ");
             tnode = tnode.next;
         }
-        
+
     }
 }
 class Stack {
     Node first = null;
+    int size = 0;
     class Node {
         int data;
         Node next;
@@ -122,17 +138,22 @@ class Stack {
             this.data = data;
         }
     }
-
+    public boolean isEmpty() {
+        return size == 0;
+    }
     public void push(int ele) {
         Node newnode = new Node(ele);
         newnode.next = first;
         first = newnode;
+        size++;
     }
 
     public int pop() {
         int item = first.data;
         first = first.next;
+        size--;
         return item;
+        
     }
     public void printList() {
         Node tnode = first;
