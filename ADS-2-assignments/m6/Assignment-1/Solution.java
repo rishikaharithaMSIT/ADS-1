@@ -25,16 +25,14 @@ class AddLargeNumbers {
         Stack s2 = new Stack();
 
         //System.out.println(list1.size + " " + list2.size + " size");
-        if(list2.size > list1.size) {
-            int diff = list2.size-list1.size;
-            while(diff > 0) {
+        if (list2.size > list1.size) {
+            int diff = list2.size - list1.size;
+            while (diff > 0) {
                 s1.push(0);
                 diff--;
             }
         }
-        
-        
-        //System.out.println(list1.size + " " + list2.size + " size atferrrrrrrrr");
+
         while (!list1.isEmpty()) {
             String number = list1.pop();
             s1.push(Integer.parseInt(number));
@@ -44,33 +42,31 @@ class AddLargeNumbers {
             s2.push(Integer.parseInt(number));
         }
 
-        
         String sum = "";
         int carry = 0;
-        int s = 0; 
+        int s = 0;
         while (!s1.isEmpty()) {
             s = s1.pop() + s2.pop() + carry;
             carry = s / 10;
-            if(s1.size == 0) {
+            if (s1.size == 0) {
                 //System.out.print(s%10);
-                sum += (s%10)+"";
-                if(s/10 != 0) {
+                sum += (s % 10) + "";
+                if (s / 10 != 0) {
                     //System.out.print(s/10);
-                    sum += (s/10)+"";
+                    sum += (s / 10) + "";
                 }
-            }
-            else {
-                sum += (s%10)+"";
+            } else {
+                sum += (s % 10) + "";
                 //System.out.print(s % 10);
             }
-            
+
         }
-        //System.out.print(s);
-        //System.out.println(sum);
+
         String ans = "";
-        for(int i = sum.length()-1;i>=0;i--){
+        for (int i = sum.length() - 1; i >= 0; i--) {
             ans += sum.charAt(i);
         }
+
         LinkedList result = numberToDigits(ans);
         return result;
     }
@@ -148,40 +144,5 @@ class LinkedList {
         }
         System.out.println();
 
-    }
-}
-class Stack {
-    Node first = null;
-    int size = 0;
-    class Node {
-        int data;
-        Node next;
-        Node(int data) {
-            this.data = data;
-        }
-    }
-    public boolean isEmpty() {
-        return size == 0;
-    }
-    public void push(int ele) {
-        Node newnode = new Node(ele);
-        newnode.next = first;
-        first = newnode;
-        size++;
-    }
-
-    public int pop() {
-        int item = first.data;
-        first = first.next;
-        size--;
-        return item;
-        
-    }
-    public void printList() {
-        Node tnode = first;
-        while (tnode != null) {
-            System.out.print(tnode.data + " ");
-            tnode = tnode.next;
-        }
     }
 }
