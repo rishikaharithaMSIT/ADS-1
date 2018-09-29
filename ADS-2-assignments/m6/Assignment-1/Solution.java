@@ -4,6 +4,12 @@ import java.util.Scanner;
  */
 class AddLargeNumbers {
     /**
+     * Constructs the object.
+     */
+    private AddLargeNumbers() {
+
+    }
+    /**
      * { function_description }.
      *
      * @param      number  The number
@@ -43,6 +49,7 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+        final int ten = 10;
         Stack s1 = new Stack();
         Stack s2 = new Stack();
         if (list2.size > list1.size) {
@@ -67,16 +74,16 @@ class AddLargeNumbers {
         int s = 0;
         while (!s1.isEmpty()) {
             s = s1.pop() + s2.pop() + carry;
-            carry = s / 10;
+            carry = s / ten;
             if (s1.size == 0) {
                 //System.out.print(s%10);
-                sum += (s % 10) + "";
-                if (s / 10 != 0) {
+                sum += (s % ten) + "";
+                if (s / ten != 0) {
                     //System.out.print(s/10);
-                    sum += (s / 10) + "";
+                    sum += (s / ten) + "";
                 }
             } else {
-                sum += (s % 10) + "";
+                sum += (s % ten) + "";
                 //System.out.print(s % 10);
             }
 
