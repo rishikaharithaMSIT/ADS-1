@@ -32,7 +32,7 @@ final class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String digitsToNumber(LinkedList list) {
+    public static String digitsToNumber(final LinkedList list) {
         String number = "";
         //list.printList();
         while (!list.isEmpty()) {
@@ -48,7 +48,8 @@ final class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+            final LinkedList list2) {
         final int ten = 10;
         Stack s1 = new Stack();
         Stack s2 = new Stack();
@@ -113,7 +114,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -129,9 +130,11 @@ public final class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+            LinkedList result = AddLargeNumbers.addLargeNumbers(
+                                    pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
+        default :
         }
     }
 }
