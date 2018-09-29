@@ -23,7 +23,8 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
-        System.out.println(list1.size + " " + list2.size + " size");
+
+        //System.out.println(list1.size + " " + list2.size + " size");
         if(list2.size > list1.size) {
             int diff = list2.size-list1.size;
             while(diff > 0) {
@@ -33,7 +34,7 @@ class AddLargeNumbers {
         }
         
         
-        System.out.println(list1.size + " " + list2.size + " size atferrrrrrrrr");
+        //System.out.println(list1.size + " " + list2.size + " size atferrrrrrrrr");
         while (!list1.isEmpty()) {
             String number = list1.pop();
             s1.push(Integer.parseInt(number));
@@ -43,10 +44,7 @@ class AddLargeNumbers {
             s2.push(Integer.parseInt(number));
         }
 
-        s1.printList();
-        System.out.println();        
-        s2.printList();
-        System.out.println("-----------");
+        
         String sum = "";
         int carry = 0;
         int s = 0; 
@@ -54,15 +52,21 @@ class AddLargeNumbers {
             s = s1.pop() + s2.pop() + carry;
             carry = s / 10;
             if(s1.size == 0) {
-                System.out.print(s%10);
-                if(s/10 != 0) System.out.print(s/10);
+                //System.out.print(s%10);
+                sum += (s%10)+"";
+                if(s/10 != 0) {
+                    //System.out.print(s/10);
+                    sum += (s/10)+"";
+                }
             }
             else {
-                System.out.print(s % 10);
+                sum += (s%10)+"";
+                //System.out.print(s % 10);
             }
             
         }
         //System.out.print(s);
+        System.out.println(sum);
         return new LinkedList();
     }
 }
