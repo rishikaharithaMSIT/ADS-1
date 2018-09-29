@@ -15,7 +15,7 @@ class AddLargeNumbers {
         String number = "";
         //list.printList();
         while(!list.isEmpty()) {
-            list.pop();
+            number += list.pop();
         }
         return number;
     }
