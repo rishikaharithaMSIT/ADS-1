@@ -21,7 +21,22 @@ class AddLargeNumbers {
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-        return new LinkedList();
+        Stack s1 = new Stack();
+        Stack s2 = new Stack();
+        while(!list1.isEmpty()) {
+            String number = list1.pop();
+            s1.push(Integer.parseInt(number));
+        }
+        while(!list2.isEmpty()) {
+            String number = list2.pop();
+            s2.push(Integer.parseInt(number));
+        }
+        s1.printList();
+        System.out.println();
+        System.out.println(s1.pop() + " item");
+        System.out.println(s1.pop() + " item");
+        s2.printList();
+        return new LinkedList();        
     }
 }
 
@@ -96,5 +111,34 @@ class LinkedList {
             tnode = tnode.next;
         }
         
+    }
+}
+class Stack {
+    Node first = null;
+    class Node {
+        int data;
+        Node next;
+        Node(int data) {
+            this.data = data;
+        }
+    }
+
+    public void push(int ele) {
+        Node newnode = new Node(ele);
+        newnode.next = first;
+        first = newnode;
+    }
+
+    public int pop() {
+        int item = first.data;
+        first = first.next;
+        return item;
+    }
+    public void printList() {
+        Node tnode = first;
+        while (tnode != null) {
+            System.out.print(tnode.data + " ");
+            tnode = tnode.next;
+        }
     }
 }
