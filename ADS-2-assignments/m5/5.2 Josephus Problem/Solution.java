@@ -110,7 +110,7 @@ class Deque<Item> {
 				c++;
 			}
 
-			print += head.data+" ";
+			print += head.data + " ";
 			//System.out.println("removing: " + head.data);
 			pop(head.data);
 			//printList();

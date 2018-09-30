@@ -403,65 +403,124 @@ Your Output:
 
 ----------------------------------------
 Result: 0/5 testcases passed.
-Starting audit...
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:19:41: Parameter q should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:19:59: Parameter people should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:20:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:20:31: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:20:42: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:25: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:26:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:26:14: Variable 'first' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:27:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:27:14: Variable 'last' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:28:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:28:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:29: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:30:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:30:22: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:31:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:31:22: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:32:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:32:22: Parameter data should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:32:27: 'data' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:36:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:39:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:42:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:42:26: Parameter element should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:58:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:58:25: Parameter person should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:63:24: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:66:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:66:32: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:67:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:68:35: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:69: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:71:48: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:46: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:55: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:56: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:58: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:30: Parameter people should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:41: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:41: Parameter gap should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:102: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:104:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:120: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:122:9: Missing a Javadoc comment. [JavadocMethod]
-Audit done.
-Checkstyle ends with 56 errors.
+Starting audit...
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:14: Line has trailing spaces. [RegexpSingleline]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:18: Line has trailing spaces. [RegexpSingleline]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:19:41: Parameter q should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:19:59: Parameter people should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:20:20: 'for' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:20:31: ';' is not followed by whitespace. [WhitespaceAfter]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:20:42: ';' is not followed by whitespace. [WhitespaceAfter]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:25: Missing a Javadoc comment. [JavadocType]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:26:9: Missing a Javadoc comment. [JavadocVariable]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:26:14: Variable 'first' must be private and have accessor methods. [VisibilityModifier]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:27:9: Missing a Javadoc comment. [JavadocVariable]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:27:14: Variable 'last' must be private and have accessor methods. [VisibilityModifier]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:28:9: Missing a Javadoc comment. [JavadocVariable]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:28:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:29: Missing a Javadoc comment. [JavadocType]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:30:17: Missing a Javadoc comment. [JavadocVariable]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:30:22: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:31:17: Missing a Javadoc comment. [JavadocVariable]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:31:22: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:32:17: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:32:22: Parameter data should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:32:27: 'data' hides a field. [HiddenField]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:36:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:39:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:42:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:42:26: Parameter element should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:58:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:58:25: Parameter person should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:63:24: '=' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:66:22: 'while' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:66:32: '{' is not preceded with whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:67:27: 'if' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:68:35: 'if' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:69: Line is longer than 80 characters (found 108). [LineLength]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:71:48: '=' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:46: 'while' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:55: '-' is not preceded with whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:56: '-' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:73:58: '{' is not preceded with whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:9: Missing a Javadoc comment. [JavadocMethod]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:30: Parameter people should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:41: ',' is not followed by whitespace. [WhitespaceAfter]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:101:41: Parameter gap should be final. [FinalParameters]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:102: Line has trailing spaces. [RegexpSingleline]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:104:22: 'while' is not followed by whitespace. [WhitespaceAround]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:105: Line has trailing spaces. [RegexpSingleline]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:120: Line has trailing spaces. [RegexpSingleline]
+
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m5\5.2 Josephus Problem\Solution.java:122:9: Missing a Javadoc comment. [JavadocMethod]
+
+Audit done.
+
+Checkstyle ends with 56 errors.
+
 
 
 [master f9b9b69] "check_style_score -> 0 of 5 passed. style score: 0/1 "
