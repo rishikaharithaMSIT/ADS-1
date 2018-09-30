@@ -14,16 +14,16 @@ public final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String testcases = scan.nextLine();
 		while (scan.hasNext()) {
 			String[] line = scan.nextLine().split(" ");
 			int people = Integer.parseInt(line[0]);
 			int gap = Integer.parseInt(line[1]);
-			Deque<Integer> q = new Deque<>();
-			createCircle(q, people);
-			q.josephus(people, gap);
+			Deque<Integer> que = new Deque<>();
+			createCircle(que, people);
+			que.josephus(people, gap);
 			//q.printList();
 
 
@@ -35,9 +35,9 @@ public final class Solution {
 	 * @param      q       The quarter
 	 * @param      people  The people
 	 */
-	public static void createCircle(Deque<Integer> q, int people) {
+	public static void createCircle(Deque<Integer> que, int people) {
 		for (int i = 0; i < people; i++) {
-			q.push(i);
+			que.push(i);
 		}
 	}
 }
