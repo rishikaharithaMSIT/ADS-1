@@ -35,7 +35,8 @@ public final class Solution {
 	 * @param      que       The quarter
 	 * @param      people  The people
 	 */
-	public static void createCircle(final Deque<Integer> que, final int people) {
+	public static void createCircle(final Deque<Integer> que,
+	                                final int people) {
 		for (int i = 0; i < people; i++) {
 			que.push(i);
 		}
