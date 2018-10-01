@@ -8,7 +8,7 @@ public class Solution {
 		while (scan.hasNext()) {
 			String line =  scan.nextLine();
 			if (line.equals("")) {
-				System.out.println("here");
+				System.out.println();
 				st = new Steque<Integer>();
 
 			}
