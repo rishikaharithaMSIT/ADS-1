@@ -16,12 +16,15 @@ public class Solution {
 			switch (tokens[0]) {
 			case "push":
 				st.push(Integer.parseInt(tokens[1]));
+				st.printList();
 				break;
 			case "enqueue":
 				st.enqueue(Integer.parseInt(tokens[1]));
+				st.printList();
 				break;
 			case "pop":
 				st.pop();
+				st.printList();
 				break;
 			default:
 			}
