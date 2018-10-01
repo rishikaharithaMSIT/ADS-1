@@ -41,8 +41,8 @@ class Steque<Item> {
 	public void push(Item element) {
 		Node newnode = new Node(element);
 		if (isEmpty()) {
-			newnode.previous = first;
-			newnode.next = first;
+			newnode.previous = null;
+			newnode.next = null;
 			first = newnode;
 			last = first;
 			size++;
@@ -52,7 +52,7 @@ class Steque<Item> {
 		first = newnode;
 		oldfirst.previous = first;
 		first.next = oldfirst;
-		// first.previous = null;
+		first.previous = null;
 		size++;
 	}
 	/**
@@ -64,10 +64,10 @@ class Steque<Item> {
 	public void enqueue(Item element) {
 		Node newnode = new Node(element);
 		if (isEmpty()) {
-			newnode.previous = last;
-			newnode.next = last;
-			last = newnode;
-			first = last;
+			newnode.previous = null;
+			newnode.next = null;
+			first = newnode;
+			last = first;
 			size++;
 			return;
 		}
@@ -75,7 +75,7 @@ class Steque<Item> {
 		last = newnode;
 		oldlast.next = last;
 		last.previous = oldlast;
-		// last.next = null;
+		last.next = null;
 		size++;
 	}
 	/**
@@ -84,15 +84,15 @@ class Steque<Item> {
 	 *
 	 * @return     returns the item popped from steque.
 	 */
-	public void pop() {
+	public Item pop() {
 		if (isEmpty()) {
-			return ;
+			return null;
 		}
 
 		Item data = first.data;
 		first = first.next;
 		size--;
-		// return data;
+		return data;
 	}
 	/**
 	 * Prints the elements in the Steque.
