@@ -64,8 +64,8 @@ class Steque<Item> {
 	public void enqueue(Item element) {
 		Node newnode = new Node(element);
 		if (isEmpty()) {
-			newnode.previous = null;
-			newnode.next = null;
+			newnode.previous = last;
+			newnode.next = last;
 			first = newnode;
 			last = first;
 			size++;
