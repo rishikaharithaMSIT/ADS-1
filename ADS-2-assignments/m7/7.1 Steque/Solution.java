@@ -83,7 +83,7 @@ class Steque<Item> {
 	}
 	public Item pop() {
 		if (isEmpty()) {
-			System.out.println("Steque is empty.");
+			//System.out.println("Steque is empty.");
 			return null;
 		}
 
@@ -97,6 +97,7 @@ class Steque<Item> {
 	}
 	public void printList() {
 		if(isEmpty()) {
+			System.out.println("Steque is empty.");
 			return;
 		}
 		Node tnode =  first;
