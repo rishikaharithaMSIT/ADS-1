@@ -85,10 +85,7 @@ class Steque<Item> {
 	 * @return     returns the item popped from steque.
 	 */
 	public Item pop() {
-		if (isEmpty()) {
-			return null;
-		}
-
+		
 		Item data = first.data;
 		first = first.next;
 		size--;
