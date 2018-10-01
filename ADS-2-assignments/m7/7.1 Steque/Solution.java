@@ -102,9 +102,10 @@ class Steque<Item> {
 		}
 		Node tnode =  first;
 		while (tnode != last) {
-			System.out.print(tnode.data + " ");
+			System.out.print(tnode.data + ", ");
 			tnode = tnode.next;
 		}
+		System.out.print(tnode.data);
 		System.out.println();
 	}
 }
