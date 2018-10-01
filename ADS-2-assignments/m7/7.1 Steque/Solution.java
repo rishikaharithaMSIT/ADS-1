@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Solution {
 	public static void main(String[] args) {
 		//Steque<Integer> st = new Steque<>();
@@ -44,7 +45,7 @@ class Steque<Item> {
 			this.data = data;
 		}
 	}
-	public Boolean isEmpty() {
+	private Boolean isEmpty() {
 		return size == 0;
 	}
 	public void push(Item element) {
@@ -96,7 +97,7 @@ class Steque<Item> {
 		return data;
 	}
 	public void printList() {
-		if(isEmpty()) {
+		if (isEmpty()) {
 			System.out.println("Steque is empty.");
 			return;
 		}
