@@ -84,12 +84,15 @@ class Steque<Item> {
 	 *
 	 * @return     returns the item popped from steque.
 	 */
-	public Item pop() {
-		
+	public void pop() {
+		if (isEmpty()) {
+			return ;
+		}
+
 		Item data = first.data;
 		first = first.next;
 		size--;
-		return data;
+		// return data;
 	}
 	/**
 	 * Prints the elements in the Steque.
