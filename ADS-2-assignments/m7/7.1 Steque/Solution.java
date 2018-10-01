@@ -1,8 +1,21 @@
 import java.util.Scanner;
-
-public class Solution {
-	public static void main(String[] args) {
-		//Steque<Integer> st = new Steque<>();
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//unused.
+	}
+	/**
+	 * main method to read input.
+	 * Time Complexity : N (one while loop).
+	 *
+	 * @param      args  command line arguments (not used)
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
 		Steque<Integer> st = new Steque<>();
@@ -30,83 +43,5 @@ public class Solution {
 			default:
 			}
 		}
-	}
-}
-
-class Steque<Item> {
-	Node first = null;
-	Node last = null;
-	int size = 0;
-	class Node {
-		Node previous;
-		Node next;
-		Item data;
-		Node(Item data) {
-			this.data = data;
-		}
-	}
-	private Boolean isEmpty() {
-		return size == 0;
-	}
-	public void push(Item element) {
-		Node newnode = new Node(element);
-		if (isEmpty()) {
-			newnode.previous = null;
-			newnode.next = null;
-			first = newnode;
-			last = first;
-			size++;
-			return;
-		}
-		Node oldfirst = first;
-		first = newnode;
-		oldfirst.previous = first;
-		first.next = oldfirst;
-		first.previous = null;
-		size++;
-	}
-	public void enqueue(Item element) {
-		Node newnode = new Node(element);
-		if (isEmpty()) {
-			newnode.previous = null;
-			newnode.next = null;
-			first = newnode;
-			last = first;
-			size++;
-			return;
-		}
-		Node oldlast = last;
-		last = newnode;
-		oldlast.next = last;
-		last.previous = oldlast;
-		last.next = null;
-		size++;
-	}
-	public Item pop() {
-		if (isEmpty()) {
-			//System.out.println("Steque is empty.");
-			return null;
-		}
-
-		Item data = first.data;
-		//System.out.println("poppp");
-		first = first.next;
-
-		//System.out.println("poppp uuuuuuuuu");
-		size--;
-		return data;
-	}
-	public void printList() {
-		if (isEmpty()) {
-			System.out.println("Steque is empty.");
-			return;
-		}
-		Node tnode =  first;
-		while (tnode != last) {
-			System.out.print(tnode.data + ", ");
-			tnode = tnode.next;
-		}
-		System.out.print(tnode.data);
-		System.out.println();
 	}
 }
