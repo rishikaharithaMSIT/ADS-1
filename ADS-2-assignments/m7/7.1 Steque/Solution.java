@@ -4,16 +4,26 @@ public class Solution {
 		//Steque<Integer> st = new Steque<>();
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
+		Steque<Integer> st = new Steque<>();
 		while (scan.hasNext()) {
 			String line =  scan.nextLine();
 			if (line.equals("")) {
-				System.out.println("empty");
-			} else {
-				System.out.println(line);
+				st = new Steque<>();
+			}
+			String[] tokens = line.split(" ");
+			switch (tokens[0]) {
+			case "push":
+				st.push(Integer.parseInt(tokens[1]));
+				break;
+			case "enqueue":
+				st.enqueue(Integer.parseInt(tokens[1]));
+				break;
+			case "pop":
+				st.pop();
+				break;
+			default:
 			}
 		}
-
-
 	}
 }
 
