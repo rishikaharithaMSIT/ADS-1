@@ -66,8 +66,8 @@ class Steque<Item> {
 		if (isEmpty()) {
 			newnode.previous = last;
 			newnode.next = last;
-			first = newnode;
-			last = first;
+			last = newnode;
+			first = last;
 			size++;
 			return;
 		}
