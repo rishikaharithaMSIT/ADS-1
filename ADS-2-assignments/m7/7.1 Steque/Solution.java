@@ -8,6 +8,8 @@ public class Solution {
 		st.printList();
 		System.out.println();
 		st.pop();
+		st.pop();
+		st.pop();
 		st.printList();
 	}
 }
