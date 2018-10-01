@@ -41,8 +41,8 @@ class Steque<Item> {
 	public void push(Item element) {
 		Node newnode = new Node(element);
 		if (isEmpty()) {
-			newnode.previous = null;
-			newnode.next = null;
+			newnode.previous = first;
+			newnode.next = first;
 			first = newnode;
 			last = first;
 			size++;
@@ -52,7 +52,7 @@ class Steque<Item> {
 		first = newnode;
 		oldfirst.previous = first;
 		first.next = oldfirst;
-		first.previous = null;
+		// first.previous = null;
 		size++;
 	}
 	/**
