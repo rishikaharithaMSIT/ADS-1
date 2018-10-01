@@ -6,6 +6,7 @@ public class Solution {
 		st.enqueue(0);
 		st.enqueue(1);
 		st.printList();
+		System.out.println();
 		st.pop();
 		st.printList();
 	}
