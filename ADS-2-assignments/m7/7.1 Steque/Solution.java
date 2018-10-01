@@ -3,6 +3,8 @@ public class Solution {
 		Steque<Integer> st = new Steque<>();
 		st.push(1);
 		st.push(2);
+		st.enqueue(0);
+		st.enqueue(1);
 		st.printList();
 	}
 }
@@ -37,6 +39,23 @@ class Steque<Item> {
 		oldfirst.previous = first;
 		first.next = oldfirst;
 		first.previous = null;
+		size++;
+	}
+	public void enqueue(Item element) {
+		Node newnode = new Node(element);
+		if (isEmpty()) {
+			newnode.previous = null;
+			newnode.next = null;
+			first = newnode;
+			last = first;
+			size++;
+			return;
+		}
+		Node oldlast = last;
+		last = newnode;
+		oldlast.next = last;
+		last.previous = oldlast;
+		last.next = null;
 		size++;
 	}
 	public void printList() {
