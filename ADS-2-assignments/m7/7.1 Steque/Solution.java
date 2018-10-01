@@ -9,7 +9,7 @@ public class Solution {
 			String line =  scan.nextLine();
 			if (line.equals("")) {
 				System.out.println("here");
-				st = new Steque<>();
+				st = new Steque<Integer>();
 
 			}
 			String[] tokens = line.split(" ");
