@@ -75,7 +75,7 @@ class Steque<Item> {
 		last = newnode;
 		oldlast.next = last;
 		last.previous = oldlast;
-		last.next = null;
+		// last.next = null;
 		size++;
 	}
 	/**
