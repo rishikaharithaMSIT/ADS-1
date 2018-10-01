@@ -4,10 +4,15 @@ public class Solution {
 		//Steque<Integer> st = new Steque<>();
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String line =  scan.nextLine();
-			System.out.println(line);
+			if (line.equals("")) {
+				System.out.println("empty");
+			} else {
+				System.out.println(line);
+			}
 		}
+
 
 	}
 }
@@ -62,7 +67,7 @@ class Steque<Item> {
 		size++;
 	}
 	public Item pop() {
-		if(isEmpty()){
+		if (isEmpty()) {
 			System.out.println("Steque is empty.");
 			return null;
 		}
