@@ -93,6 +93,9 @@ class Steque<Item> {
 		return data;
 	}
 	public void printList() {
+		if(isEmpty()) {
+			return;
+		}
 		Node tnode =  first;
 		while (tnode != null) {
 			System.out.print(tnode.data + " ");
