@@ -8,7 +8,9 @@ public class Solution {
 		while (scan.hasNext()) {
 			String line =  scan.nextLine();
 			if (line.equals("")) {
+				System.out.println("here");
 				st = new Steque<>();
+
 			}
 			String[] tokens = line.split(" ");
 			switch (tokens[0]) {
