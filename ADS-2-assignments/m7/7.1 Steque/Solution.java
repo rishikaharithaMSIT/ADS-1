@@ -90,8 +90,9 @@ class Steque<Item> {
 		Item data = first.data;
 		System.out.println("poppp");
 		first = first.next;
-		System.out.println("poppp uuuuuuuuu");
+
 		first.previous = null;
+		System.out.println("poppp uuuuuuuuu");
 		size--;
 		return data;
 	}
