@@ -86,9 +86,11 @@ class Steque<Item> {
 			System.out.println("Steque is empty.");
 			return null;
 		}
-		System.out.println("poppp");
+
 		Item data = first.data;
+		System.out.println("poppp");
 		first = first.next;
+		System.out.println("poppp uuuuuuuuu");
 		first.previous = null;
 		size--;
 		return data;
