@@ -1,16 +1,14 @@
+import java.util.Scanner;
 public class Solution {
 	public static void main(String[] args) {
-		Steque<Integer> st = new Steque<>();
-		st.push(1);
-		st.push(2);
-		st.enqueue(0);
-		st.enqueue(1);
-		st.printList();
-		System.out.println();
-		st.pop();
-		st.pop();
-		st.pop();
-		st.printList();
+		//Steque<Integer> st = new Steque<>();
+		Scanner scan = new Scanner(System.in);
+		int testcases = Integer.parseInt(scan.nextLine());
+		while(scan.hasNext()) {
+			String line =  scan.nextLine();
+			System.out.println(line);
+		}
+
 	}
 }
 
