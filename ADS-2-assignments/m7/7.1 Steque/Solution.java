@@ -6,6 +6,8 @@ public class Solution {
 		st.enqueue(0);
 		st.enqueue(1);
 		st.printList();
+		st.pop();
+		st.printList();
 	}
 }
 
@@ -57,6 +59,17 @@ class Steque<Item> {
 		last.previous = oldlast;
 		last.next = null;
 		size++;
+	}
+	public Item pop() {
+		if(isEmpty()){
+			System.out.println("Steque is empty.");
+			return null;
+		}
+		Item data = first.data;
+		first = first.next;
+		first.previous = null;
+		size--;
+		return data;
 	}
 	public void printList() {
 		Node tnode =  first;
