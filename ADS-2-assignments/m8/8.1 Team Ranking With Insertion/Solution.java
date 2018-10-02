@@ -67,7 +67,9 @@ public final class Solution {
             }
             Cricket temp = cricketList.get(i);
             cricketList.set(i, max);
-            if (index != -1) cricketList.set(index, temp);
+            if (index != -1) {
+                cricketList.set(index, temp);
+            }
         }
 
     }
