@@ -28,7 +28,7 @@ public class Solution {
 		for(int i = 0; i < cricketList.size()-1; i++) {
 			Cricket min = cricketList.get(i);
 			int index = -1;
-			for(int j = i+1;j<cricketList.size()-1;j++) {
+			for(int j = i+1;j<cricketList.size();j++) {
 				if(min.compareTo(cricketList.get(j)) < 0) {
 					min = cricketList.get(j);
 					index = j;
