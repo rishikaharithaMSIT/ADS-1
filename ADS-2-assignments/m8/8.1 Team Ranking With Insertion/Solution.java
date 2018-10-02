@@ -35,9 +35,9 @@ public class Solution {
 				}
 			}
 			System.out.println(max.name);
-			Cricket temp = cricketList.get(i);
-			cricketList.set(i, max);
-			if(index != -1) cricketList.set(index, temp);
+			Cricket temp = cricketList.get(index);
+			cricketList.set(index, max);
+			if(index != -1) cricketList.set(i, temp);
 		}
 		
 	}
