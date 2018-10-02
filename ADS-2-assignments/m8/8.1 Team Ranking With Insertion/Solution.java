@@ -16,9 +16,12 @@ public class Solution {
 
 
 		}
-		System.out.println(cricketList + " before");
+		//System.out.println(cricketList + " before");
 		selectionSort();
-		System.out.println(cricketList + " after");
+		//System.out.println(cricketList + " after");
+		for(int i =0;i<cricketList.size()-1;i++){
+			System.out.print(cricketList.get(i) + ", ");
+		}
 
 
 
@@ -34,7 +37,7 @@ public class Solution {
 					index = j;
 				}
 			}
-			System.out.println(max.name);
+			//System.out.println(max.name);
 			Cricket temp = cricketList.get(i);
 			cricketList.set(i, max);
 			if(index != -1) cricketList.set(index, temp);
