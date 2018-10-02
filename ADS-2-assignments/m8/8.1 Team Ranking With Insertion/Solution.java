@@ -12,6 +12,7 @@ public class Solution {
 			                              Integer.parseInt(tokens[1]),
 			                              Integer.parseInt(tokens[2]),
 			                              Integer.parseInt(tokens[3]));
+			cricketList.add(cricket);
 
 
 		}
@@ -28,11 +29,12 @@ public class Solution {
 			Cricket min = cricketList.get(i);
 			int index = -1;
 			for(int j = i+1;j<cricketList.size()-1;j++) {
-				if(cricketList.get(i).compareTo(cricketList.get(j)) < 0) {
+				if(min.compareTo(cricketList.get(j)) < 0) {
 					min = cricketList.get(j);
 					index = j;
 				}
 			}
+			System.out.println(min.name);
 			Cricket temp = cricketList.get(i);
 			cricketList.add(i, min);
 			if(index != -1) cricketList.add(index, temp);
