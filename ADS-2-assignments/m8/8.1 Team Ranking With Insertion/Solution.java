@@ -28,7 +28,7 @@ public class Solution {
 		for(int i = cricketList.size()-1; i >= 0 ; i--) {
 			Cricket max = cricketList.get(i);
 			int index = -1;
-			for(int j = cricketList.size()-1;j>= i+1;j--) {
+			for(int j = i-1;j >= 0;j--) {
 				if(max.compareTo(cricketList.get(j)) == 1) {
 					max = cricketList.get(j);
 					index = j;
