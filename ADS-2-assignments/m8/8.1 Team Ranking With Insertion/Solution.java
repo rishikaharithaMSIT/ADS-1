@@ -25,19 +25,19 @@ public class Solution {
 	}
 	public static void selectionSort(){
 
-		for(int i = 0; i < cricketList.size(); i++) {
+		for(int i = cricketList.size()-1; i >= 0 ; i--) {
 			Cricket max = cricketList.get(i);
 			int index = -1;
-			for(int j = i+1;j<cricketList.size();j++) {
+			for(int j = cricketList.size();j>= i+1;j--) {
 				if(max.compareTo(cricketList.get(j)) == 1) {
 					max = cricketList.get(j);
 					index = j;
 				}
 			}
 			System.out.println(max.name);
-			Cricket temp = cricketList.get(index);
-			cricketList.set(index, max);
-			if(index != -1) cricketList.set(i, temp);
+			Cricket temp = cricketList.get(i);
+			cricketList.set(i, max);
+			if(index != -1) cricketList.set(index, temp);
 		}
 		
 	}
