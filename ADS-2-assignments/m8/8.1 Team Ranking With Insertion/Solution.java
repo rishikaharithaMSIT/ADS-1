@@ -16,20 +16,21 @@ public final class Solution {
     private static ArrayList<Cricket> cricketList
         = new ArrayList<Cricket>();
     /**
-     * main function to read input
-     * Time Complexity : O(N) (while loop)
+     * main function to read input.
+     * Time Complexity : O(N) (while loop).
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
+        final int three = 3;
         while (scan.hasNext()) {
             String line = scan.nextLine();
             String[] tokens = line.split(",");
             Cricket cricket = new Cricket(tokens[0],
                                           Integer.parseInt(tokens[1]),
                                           Integer.parseInt(tokens[2]),
-                                          Integer.parseInt(tokens[3]));
+                                          Integer.parseInt(tokens[three]));
             cricketList.add(cricket);
         }
 
