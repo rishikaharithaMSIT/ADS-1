@@ -20,7 +20,7 @@ public class Solution {
 		selectionSort();
 		//System.out.println(cricketList + " after");
 		for(int i =0;i<cricketList.size()-1;i++){
-			System.out.print(cricketList.get(i) + ", ");
+			System.out.print(cricketList.get(i).name + ", ");
 		}
 
 
