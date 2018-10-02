@@ -58,7 +58,7 @@ public final class Solution {
     public static void insertionSort() {
         for(int i = cricketList.size()-1;i >=0 ;i--){
             Cricket elem = cricketList.get(i);
-            for(int j = i-1;j <= cricketList.size()-1;j++){
+            for(int j = i-1;j < cricketList.size()-1;j++){
                 if(elem.compareTo(cricketList.get(j)) == -1) {
                     Cricket temp = cricketList.get(j);
                     cricketList.set(j,elem);
