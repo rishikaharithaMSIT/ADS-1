@@ -3,7 +3,7 @@ public class Solution {
 		Cricket c1 = new Cricket(4,3,1);
 		Cricket c2 = new Cricket(4,2,4);
 		Cricket c3 = new Cricket(5,2,4);
-		Cricket c4 = new Cricket(5,2,5);
+		Cricket c4 = new Cricket(5,2,4);
 		
 		System.out.println(c1.compareTo(c2));
 		System.out.println(c3.compareTo(c2));
