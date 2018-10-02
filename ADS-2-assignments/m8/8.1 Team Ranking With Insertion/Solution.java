@@ -11,7 +11,7 @@ public final class Solution {
 
     }
     /**
-     * Array list containing the cricket objects
+     * Array list containing the cricket objects.
      */
     private static ArrayList<Cricket> cricketList
         = new ArrayList<Cricket>();
