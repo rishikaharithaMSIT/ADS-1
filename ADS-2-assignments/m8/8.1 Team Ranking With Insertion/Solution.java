@@ -36,8 +36,8 @@ public class Solution {
 			}
 			System.out.println(min.name);
 			Cricket temp = cricketList.get(i);
-			cricketList.add(i, min);
-			if(index != -1) cricketList.add(index, temp);
+			cricketList.set(i, min);
+			if(index != -1) cricketList.set(index, temp);
 		}
 		
 	}
