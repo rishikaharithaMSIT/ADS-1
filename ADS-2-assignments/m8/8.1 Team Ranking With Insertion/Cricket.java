@@ -29,7 +29,7 @@ class Cricket implements Comparable<Cricket> {
 	 * @return     returns int value
 	 */
 
-	
+
 	public int compareTo(Cricket other) {
 		if (this.wins > other.wins) return 1;
 		if (this.wins < other.wins) return -1;
