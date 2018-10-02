@@ -7,7 +7,7 @@ public class Solution {
 		
 		System.out.println(c1.compareTo(c2));
 		System.out.println(c3.compareTo(c2));
-		System.out.println(c4.compareTo(c3));
+		System.out.println(c3.compareTo(c4));
 
 	}
 }
