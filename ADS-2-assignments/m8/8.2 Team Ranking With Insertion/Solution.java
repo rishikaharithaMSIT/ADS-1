@@ -51,8 +51,8 @@ public final class Solution {
      * method to perform insertion sort
      * Time Complexities .
      * Best - O(N)
-     * Worst - O(N)
-     * Average - O(N)
+     * Worst - O(N^2)
+     * Average - O(N^2)
      *
      */
     public static void insertionSort() {
