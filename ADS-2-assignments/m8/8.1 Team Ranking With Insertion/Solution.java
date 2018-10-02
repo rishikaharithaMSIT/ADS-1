@@ -57,7 +57,7 @@ public final class Solution {
      */
     public static void selectionSort() {
 
-        for (int i = cricketList.size() - 1; i >= 0 ; i--) {
+        for (int i = cricketList.size() - 1; i >= 0; i--) {
             Cricket max = cricketList.get(i);
             int index = -1;
             for (int j = i - 1; j >= 0; j--) {
