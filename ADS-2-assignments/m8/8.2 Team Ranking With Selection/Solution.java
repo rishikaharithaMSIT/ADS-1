@@ -62,7 +62,7 @@ public final class Solution {
                 if(elem.compareTo(cricketList.get(j)) == -1) {
                     Cricket temp = cricketList.get(j);
                     cricketList.set(j,elem);
-                    cricketList.set(i,temp);
+                    cricketList.set(j+1,temp);
                 }
             }
 
