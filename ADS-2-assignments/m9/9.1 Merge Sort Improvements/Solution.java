@@ -32,7 +32,7 @@ public class Solution {
 		//List aux = list.subList(low, high+1);
 		String[] aux = Arrays.copyOfRange(list, low, high + 1);
 		
-		if(aux.length < 8 && aux.length > 1) {
+		if(aux.length < 8) {
 			System.out.println("Insertion sort method invoked...");
 			return insertionSort(aux);
 		}
