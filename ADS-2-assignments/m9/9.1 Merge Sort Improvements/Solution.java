@@ -50,7 +50,7 @@ public final class Solution {
 
 		if (low + 1 >= high) {
 			if (aux.length == 2) {
-				if (aux[0].compareTo(aux[1]) > 0 ) {
+				if (aux[0].compareTo(aux[1]) > 0) {
 					String temp = aux[0];
 					aux[0] = aux[1];
 					aux[1] = temp;
@@ -82,7 +82,8 @@ public final class Solution {
 	 */
 	public static String[] merge(final String[] arr1,
 	                             final String[] arr2) {
-		//System.out.println("in merge function - " + Arrays.toString(a1)
+		//System.out.println("in merge function - " + 
+		//Arrays.toString(a1)
 		// + " - "+ Arrays.toString(a2));
 		int t = arr1.length + arr2.length;
 		int n1 = arr1.length;
@@ -110,7 +111,7 @@ public final class Solution {
 
 		// Traverse both array
 		while (i < n1 && j < n2) {
-			if (arr1[i].compareTo(arr2[j]) < 0 ) {
+			if (arr1[i].compareTo(arr2[j]) < 0) {
 
 				arr3[k++] = arr1[i++];
 			} else {
