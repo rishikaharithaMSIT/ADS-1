@@ -5,22 +5,11 @@ import java.util.Arrays;
 public class Solution {
 
 	public static void main(String[] args) {
-		// String[] list = new String[9];
-		// list[0] = "1";
-		// list[1] = "2";
-		// list[2] = "4";
-		// list[3] = "4";
-		// list[4] = "5";
-		// list[5] = "6";
-		// list[6] = "7";
-		// list[7] = "8";
-		// list[8] = "9";
-		// i
 		Scanner scan = new Scanner(System.in);
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] list = scan.nextLine().split(",");
 			int low  = 0;
-			int high = list.length-1;
+			int high = list.length - 1;
 			list  = sort(list, low, high);
 			System.out.println(Arrays.toString(list));
 			System.out.println();
@@ -31,24 +20,24 @@ public class Solution {
 	public static String[] sort(String[] list, int low, int high) {
 		//List aux = list.subList(low, high+1);
 		String[] aux = Arrays.copyOfRange(list, low, high + 1);
-		
-		if(aux.length <= 8) {
+
+		if (aux.length <= 8) {
 			System.out.println("Insertion sort method invoked...");
 			return insertionSort(aux);
 		}
-		
-		
-			if (low + 1 >= high) {
-				if (aux.length == 2) {
-					if (aux[0].compareTo(aux[1]) > 0 ) {
-						String temp = aux[0];
-						aux[0] = aux[1];
-						aux[1] = temp;
-					}
+
+
+		if (low + 1 >= high) {
+			if (aux.length == 2) {
+				if (aux[0].compareTo(aux[1]) > 0 ) {
+					String temp = aux[0];
+					aux[0] = aux[1];
+					aux[1] = temp;
 				}
-				System.out.println(Arrays.toString(aux));
-				return aux;
 			}
+			System.out.println(Arrays.toString(aux));
+			return aux;
+		}
 		int mid = (low + high) / 2;
 
 		String[] a1 = sort(list, low, mid);
@@ -66,25 +55,25 @@ public class Solution {
 	public static String[] merge(String[] arr1, String[] arr2) {
 		//System.out.println("in merge function - " + Arrays.toString(a1) + " - "+ Arrays.toString(a2));
 
-		
+
 		int t = arr1.length + arr2.length;
 		int n1 = arr1.length;
 		int n2 = arr2.length;
 		String[] arr3 = new String[t];
 		int i = 0, j = 0, k = 0;
 
-		if (arr1[n1-1].compareTo(arr2[0]) < 0 || arr1[n1-1].compareTo(arr2[0]) == 0) {
+		if (arr1[n1 - 1].compareTo(arr2[0]) < 0 || arr1[n1 - 1].compareTo(arr2[0]) == 0) {
 			String[] list =  new String[t];
 			System.out.println("Array is already sorted. So, skipped the call to merge...");
 			int count = 0;
-      
-		    for(int p = 0; p<arr1.length; p++) { 
-		        list[p] = arr1[p];
-		        count++;
-		    } 
-		    for(int l = 0;l<arr2.length;l++) { 
-		    	   list[count++] = arr2[l];
-		    } 
+
+			for (int p = 0; p < arr1.length; p++) {
+				list[p] = arr1[p];
+				count++;
+			}
+			for (int l = 0; l < arr2.length; l++) {
+				list[count++] = arr2[l];
+			}
 			return list;
 		}
 
@@ -109,35 +98,21 @@ public class Solution {
 	}
 
 	public static String[] insertionSort(String[] arr) {
-		int n = arr.length; 
-        for (int i=1; i<n; ++i) 
-        { 
-            String key = arr[i]; 
-            int j = i-1; 
-  
-            /* Move elements of arr[0..i-1], that are 
-               greater than key, to one position ahead 
-               of their current position */
-            while (j>=0 && (arr[j].compareTo(key)) > 0) 
-            { 
-                arr[j+1] = arr[j]; 
-                j = j-1; 
-            } 
-            arr[j+1] = key; 
-        }
+		int n = arr.length;
+		for (int i = 1; i < n; ++i) {
+			String key = arr[i];
+			int j = i - 1;
+
+			/* Move elements of arr[0..i-1], that are
+			   greater than key, to one position ahead
+			   of their current position */
+			while (j >= 0 && (arr[j].compareTo(key)) > 0) {
+				arr[j + 1] = arr[j];
+				j = j - 1;
+			}
+			arr[j + 1] = key;
+		}
 		return arr;
 	}
 }
 
-
-// class CompareVals implements Comparable<Integer> {
-// 	int value;
-
-
-// 	public int compareTo(Interger other) {
-// 		if (this.value > other.value) return 1;
-// 		if (this.value < other.value) return -1;
-// 		return 0;
-// 	}
-
-// }
