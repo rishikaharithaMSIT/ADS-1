@@ -17,6 +17,7 @@ public class Solution {
 		int low  = 0;
 		int high = 8;
 		list  = sort(list, low, high);
+		System.out.println(Arrays.toString(list));
 
 
 	}
@@ -28,10 +29,10 @@ public class Solution {
 			System.out.println("Insertion sort method invoked...");
 			return insertionSort(aux);
 		}
-		if (sorted) {
-			System.out.println("Array is already sorted. So, skipped the call to merge...");
-			return list;
-		}
+		// if (sorted) {
+		// 	System.out.println("Array is already sorted. So, skipped the call to merge...");
+		// 	return list;
+		// }
 		
 			if (low + 1 >= high) {
 				if (aux.length == 2) {
