@@ -20,7 +20,7 @@ public class Solution {
 		while(scan.hasNext()) {
 			String[] list = scan.nextLine().split(",");
 			int low  = 0;
-			int high = 8;
+			int high = list.length-1;
 			list  = sort(list, low, high);
 			System.out.println(Arrays.toString(list)); 
 		}
