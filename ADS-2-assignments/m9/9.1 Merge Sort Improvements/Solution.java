@@ -77,7 +77,11 @@ public class Solution {
 			String[] list =  new String[t];
 			System.out.println("Array is already sorted. So, skipped the call to merge...");
 			list = Arrays.copyOfRange(arr1,0,n1);
-			
+			int l = 0;
+			for(int m = n1;m<n2;m++) {
+				list[m] = arr2[l];
+				l++;
+			}
 			return list;
 		}
 
