@@ -1,7 +1,6 @@
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.List;
 import java.util.Arrays;
+
 public class Solution {
 
 	public static void main(String[] args) {
@@ -41,30 +40,31 @@ public class Solution {
 		int mid = (low + high) / 2;
 
 		String[] a1 = sort(list, low, mid);
-
-		//System.out.println("sort1 " +  Arrays.toString(a1) + " " + low + " " + mid);
+		//System.out.println("sort1 " +  Arrays.toString(a1)
+		// + " " + low + " " + mid);
 		String[] a2 = sort(list, mid + 1, high);
-
-		//System.out.println("sort2 " +  Arrays.toString(a2) + " " + (mid + 1) + " " + high);
-
+		//System.out.println("sort2 " +  Arrays.toString(a2)
+		// + " " + (mid + 1) + " " + high);
 		String[] a3 = merge(a1, a2);
 		//System.out.println("merge " +  Arrays.toString(a3));
 		return a3;
 
 	}
 	public static String[] merge(String[] arr1, String[] arr2) {
-		//System.out.println("in merge function - " + Arrays.toString(a1) + " - "+ Arrays.toString(a2));
-
-
+		//System.out.println("in merge function - " + Arrays.toString(a1)
+		// + " - "+ Arrays.toString(a2));
 		int t = arr1.length + arr2.length;
 		int n1 = arr1.length;
 		int n2 = arr2.length;
 		String[] arr3 = new String[t];
 		int i = 0, j = 0, k = 0;
 
-		if (arr1[n1 - 1].compareTo(arr2[0]) < 0 || arr1[n1 - 1].compareTo(arr2[0]) == 0) {
+		if (arr1[n1 - 1].compareTo(arr2[0]) < 0
+		        || arr1[n1 - 1].compareTo(arr2[0]) == 0) {
 			String[] list =  new String[t];
-			System.out.println("Array is already sorted. So, skipped the call to merge...");
+			System.out.print("Array is already sorted. ");
+			System.out.print("So, skipped the call to merge...");
+			System.out.println();
 			int count = 0;
 
 			for (int p = 0; p < arr1.length; p++) {
