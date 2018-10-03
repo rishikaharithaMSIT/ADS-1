@@ -1,23 +1,29 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.List;
 import java.util.Arrays;
 public class Solution {
 
 	public static void main(String[] args) {
-		String[] list = new String[9];
-		list[0] = "1";
-		list[1] = "2";
-		list[2] = "4";
-		list[3] = "4";
-		list[4] = "5";
-		list[5] = "6";
-		list[6] = "7";
-		list[7] = "8";
-		list[8] = "9";
-		int low  = 0;
-		int high = 8;
-		list  = sort(list, low, high);
-		System.out.println(Arrays.toString(list));
+		// String[] list = new String[9];
+		// list[0] = "1";
+		// list[1] = "2";
+		// list[2] = "4";
+		// list[3] = "4";
+		// list[4] = "5";
+		// list[5] = "6";
+		// list[6] = "7";
+		// list[7] = "8";
+		// list[8] = "9";
+		// i
+		Scanner scan = new Scanner(System.in);
+		while(scan.hasNext()) {
+			String[] list = scan.nextLine().split(",");
+			int low  = 0;
+			int high = 8;
+			list  = sort(list, low, high);
+			System.out.println(Arrays.toString(list)); 
+		}
 
 
 	}
@@ -49,12 +55,12 @@ public class Solution {
 
 		String[] a1 = sort(list, low, mid);
 
-		System.out.println("sort1 " +  Arrays.toString(a1) + " " + low + " " + mid);
+		//System.out.println("sort1 " +  Arrays.toString(a1) + " " + low + " " + mid);
 		String[] a2 = sort(list, mid + 1, high);
 
-		System.out.println("sort2 " +  Arrays.toString(a2) + " " + (mid + 1) + " " + high);
+		//System.out.println("sort2 " +  Arrays.toString(a2) + " " + (mid + 1) + " " + high);
 		String[] a3 = merge(a1, a2);
-		System.out.println("merge " +  Arrays.toString(a3));
+		//System.out.println("merge " +  Arrays.toString(a3));
 		return a3;
 
 	}
