@@ -22,7 +22,8 @@ public class Solution {
 			int low  = 0;
 			int high = list.length-1;
 			list  = sort(list, low, high);
-			System.out.println(Arrays.toString(list)); 
+			System.out.println(Arrays.toString(list));
+			System.out.println();
 		}
 
 
@@ -30,15 +31,12 @@ public class Solution {
 	public static String[] sort(String[] list, int low, int high) {
 		//List aux = list.subList(low, high+1);
 		String[] aux = Arrays.copyOfRange(list, low, high + 1);
-		boolean sorted = isSorted(list);
+		
 		if(aux.length < 8) {
 			System.out.println("Insertion sort method invoked...");
 			return insertionSort(aux);
 		}
-		// if (sorted) {
-		// 	System.out.println("Array is already sorted. So, skipped the call to merge...");
-		// 	return list;
-		// }
+		
 		
 			if (low + 1 >= high) {
 				if (aux.length == 2) {
@@ -59,6 +57,7 @@ public class Solution {
 		String[] a2 = sort(list, mid + 1, high);
 
 		//System.out.println("sort2 " +  Arrays.toString(a2) + " " + (mid + 1) + " " + high);
+
 		String[] a3 = merge(a1, a2);
 		//System.out.println("merge " +  Arrays.toString(a3));
 		return a3;
@@ -66,11 +65,21 @@ public class Solution {
 	}
 	public static String[] merge(String[] arr1, String[] arr2) {
 		//System.out.println("in merge function - " + Arrays.toString(a1) + " - "+ Arrays.toString(a2));
+
+		
 		int t = arr1.length + arr2.length;
 		int n1 = arr1.length;
 		int n2 = arr2.length;
 		String[] arr3 = new String[t];
 		int i = 0, j = 0, k = 0;
+
+		if (arr1[n1-1].compareTo(arr2[0]) < 0 || arr1[n1-1].compareTo(arr2[0]) == 0) {
+			String[] list =  new String[t];
+			System.out.println("Array is already sorted. So, skipped the call to merge...");
+			list = Arrays.copyOfRange(arr1,0,n1);
+			list = Arrays.copyOfRange(arr2,n1,n2);
+			return list;
+		}
 
 		// Traverse both array
 		while (i < n1 && j < n2) {
@@ -92,19 +101,24 @@ public class Solution {
 		return true;
 	}
 
-	public static String[] insertionSort(String[] list) {
-		for (int i = list.length - 1; i >= 0; i--) {
-			String elem = list[i];
-			for (int j = i + 1; j <= list.length - 1; j++) {
-				if (elem.compareTo(list[j]) == -1) {
-					String temp = list[j];
-					list[j] =  elem;
-					list[j - 1] = temp;
-				}
-			}
-
-		}
-		return list;
+	public static String[] insertionSort(String[] arr) {
+		int n = arr.length; 
+        for (int i=1; i<n; ++i) 
+        { 
+            String key = arr[i]; 
+            int j = i-1; 
+  
+            /* Move elements of arr[0..i-1], that are 
+               greater than key, to one position ahead 
+               of their current position */
+            while (j>=0 && (arr[j].compareTo(key)) > 0) 
+            { 
+                arr[j+1] = arr[j]; 
+                j = j-1; 
+            } 
+            arr[j+1] = key; 
+        }
+		return arr;
 	}
 }
 
