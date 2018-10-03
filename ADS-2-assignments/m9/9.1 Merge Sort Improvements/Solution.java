@@ -15,7 +15,7 @@ public final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
 			String[] list = scan.nextLine().split(",");
@@ -102,15 +102,20 @@ public final class Solution {
 
 		// Traverse both array
 		while (i < n1 && j < n2) {
-			if (arr1[i].compareTo(arr2[j]) < 0 )
+			if (arr1[i].compareTo(arr2[j]) < 0 ){
+
 				arr3[k++] = arr1[i++];
-			else
+			}
+			else {
 				arr3[k++] = arr2[j++];
+			}
 		}
-		while (i < n1)
+		while (i < n1) {
 			arr3[k++] = arr1[i++];
-		while (j < n2)
+		}
+		while (j < n2) {
 			arr3[k++] = arr2[j++];
+		}
 		return arr3;
 	}
 	public static boolean isSorted(final String[] array) {
