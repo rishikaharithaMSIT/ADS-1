@@ -41,8 +41,8 @@ public final class Solution {
 	                            final int low, final  int high) {
 		//List aux = list.subList(low, high+1);
 		String[] aux = Arrays.copyOfRange(list, low, high + 1);
-
-		if (aux.length <= 8) {
+		final int eight = 8;
+		if (aux.length <= eight) {
 			System.out.println("Insertion sort method invoked...");
 			return insertionSort(aux);
 		}
@@ -110,11 +110,10 @@ public final class Solution {
 
 		// Traverse both array
 		while (i < n1 && j < n2) {
-			if (arr1[i].compareTo(arr2[j]) < 0 ){
+			if (arr1[i].compareTo(arr2[j]) < 0 ) {
 
 				arr3[k++] = arr1[i++];
-			}
-			else {
+			} else {
 				arr3[k++] = arr2[j++];
 			}
 		}
