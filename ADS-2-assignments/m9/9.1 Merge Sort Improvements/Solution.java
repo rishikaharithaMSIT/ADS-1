@@ -1,8 +1,20 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-public class Solution {
-
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
@@ -16,7 +28,17 @@ public class Solution {
 
 
 	}
-	public static String[] sort(String[] list, int low, int high) {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      list  The list
+	 * @param      low   The low
+	 * @param      high  The high
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static String[] sort(final String[] list,
+	                            final int low, final  int high) {
 		//List aux = list.subList(low, high+1);
 		String[] aux = Arrays.copyOfRange(list, low, high + 1);
 
@@ -50,7 +72,8 @@ public class Solution {
 		return a3;
 
 	}
-	public static String[] merge(String[] arr1, String[] arr2) {
+	public static String[] merge(final String[] arr1,
+	                             final String[] arr2) {
 		//System.out.println("in merge function - " + Arrays.toString(a1)
 		// + " - "+ Arrays.toString(a2));
 		int t = arr1.length + arr2.length;
@@ -90,22 +113,20 @@ public class Solution {
 			arr3[k++] = arr2[j++];
 		return arr3;
 	}
-	public static boolean isSorted(String[] array) {
+	public static boolean isSorted(final String[] array) {
 		for (int i = 0; i < array.length - 1; i++) {
-			if (array[i].compareTo(array[i + 1]) > 0 ) return false;
+			if (array[i].compareTo(array[i + 1]) > 0 ) {
+				return false;
+			}
 		}
 		return true;
 	}
 
-	public static String[] insertionSort(String[] arr) {
+	public static String[] insertionSort(final String[] arr) {
 		int n = arr.length;
 		for (int i = 1; i < n; ++i) {
 			String key = arr[i];
 			int j = i - 1;
-
-			/* Move elements of arr[0..i-1], that are
-			   greater than key, to one position ahead
-			   of their current position */
 			while (j >= 0 && (arr[j].compareTo(key)) > 0) {
 				arr[j + 1] = arr[j];
 				j = j - 1;
