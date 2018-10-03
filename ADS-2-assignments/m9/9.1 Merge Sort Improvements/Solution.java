@@ -11,7 +11,8 @@ public final class Solution {
 
     }
     /**
-     * { function_description }.
+     * main function to take in input.
+     * Time complexity : O(N).
      *
      * @param      args  The arguments
      */
@@ -29,7 +30,11 @@ public final class Solution {
 
     }
     /**
-     * { function_description }.
+     * function to sort the array
+     * Time Complexity:
+     * Best : O(NlogN)
+     * Worst : O(NlogN)
+     * Average : O(NlogN)
      *
      * @param      list  The list
      * @param      low   The low
@@ -73,12 +78,16 @@ public final class Solution {
 
     }
     /**
-     * { function_description }.
+     * to merge two sorted arrays.
+     * Time Complexity:
+     * Best : O(N)
+     * Worst : O(N)
+     * Average : O(N)
      *
      * @param      arr1  The arr 1
      * @param      arr2  The arr 2
      *
-     * @return     { description_of_the_return_value }
+     * @return     string array
      */
     public static String[] merge(final String[] arr1,
                                  final String[] arr2) {
@@ -128,6 +137,10 @@ public final class Solution {
     }
     /**
      * Determines if sorted.
+     * Time Complexity:
+     * Best : O(N)
+     * Worst : O(N)
+     * Average : O(N)
      *
      * @param      array  The array
      *
@@ -142,7 +155,11 @@ public final class Solution {
         return true;
     }
     /**
-     * { function_description }.
+     * insertion sort.
+     * Time Complexity:
+     * Best : O(N)
+     * Worst : O(N^2)
+     * Average : O(N^2)
      *
      * @param      arr   The arr
      *
