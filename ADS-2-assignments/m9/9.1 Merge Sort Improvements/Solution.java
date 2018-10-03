@@ -76,12 +76,15 @@ public class Solution {
 		if (arr1[n1-1].compareTo(arr2[0]) < 0 || arr1[n1-1].compareTo(arr2[0]) == 0) {
 			String[] list =  new String[t];
 			System.out.println("Array is already sorted. So, skipped the call to merge...");
-			list = Arrays.copyOfRange(arr1,0,n1);
-			int l = 0;
-			for(int m = n1;m<n2;m++) {
-				list[m] = arr2[l];
-				l++;
-			}
+			int count = 0;
+      
+		    for(int p = 0; p<arr1.length; p++) { 
+		        list[p] = arr1[p];
+		        count++;
+		    } 
+		    for(int l = 0;l<arr2.length;l++) { 
+		    	   list[count++] = arr2[l];
+		    } 
 			return list;
 		}
 
