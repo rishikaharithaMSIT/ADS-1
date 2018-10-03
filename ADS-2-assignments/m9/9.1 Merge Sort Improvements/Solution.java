@@ -30,7 +30,7 @@ public final class Solution {
 
     }
     /**
-     * function to sort the array
+     * function to sort the array.
      * Time Complexity:
      * Best : O(NlogN)
      * Worst : O(NlogN)
