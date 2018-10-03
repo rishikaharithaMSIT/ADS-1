@@ -72,6 +72,14 @@ public final class Solution {
 		return a3;
 
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      arr1  The arr 1
+	 * @param      arr2  The arr 2
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] merge(final String[] arr1,
 	                             final String[] arr2) {
 		//System.out.println("in merge function - " + Arrays.toString(a1)
@@ -118,6 +126,13 @@ public final class Solution {
 		}
 		return arr3;
 	}
+	/**
+	 * Determines if sorted.
+	 *
+	 * @param      array  The array
+	 *
+	 * @return     True if sorted, False otherwise.
+	 */
 	public static boolean isSorted(final String[] array) {
 		for (int i = 0; i < array.length - 1; i++) {
 			if (array[i].compareTo(array[i + 1]) > 0 ) {
@@ -126,7 +141,13 @@ public final class Solution {
 		}
 		return true;
 	}
-
+	/**
+	 * { function_description }.
+	 *
+	 * @param      arr   The arr
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] insertionSort(final String[] arr) {
 		int n = arr.length;
 		for (int i = 1; i < n; ++i) {
