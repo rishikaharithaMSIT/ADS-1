@@ -11,8 +11,8 @@ Your Output:
 3 2
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e oldprev
-LinkedList$Node@1ef7fe8e oldnext
+3 oldprev
+3 oldnext
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertAt(Solution.java:75)
 	at Solution.main(Solution.java:14)
@@ -39,8 +39,8 @@ Your Output:
 3 2
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e oldprev
-LinkedList$Node@1ef7fe8e oldnext
+3 oldprev
+3 oldnext
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertAt(Solution.java:75)
 	at Solution.main(Solution.java:14)
@@ -55,8 +55,8 @@ Your Output:
 3 2
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e oldprev
-LinkedList$Node@1ef7fe8e oldnext
+3 oldprev
+3 oldnext
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertAt(Solution.java:75)
 	at Solution.main(Solution.java:14)
