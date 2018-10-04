@@ -49,7 +49,8 @@ class LinkedList<Gen> {
 		if(isEmpty()) {
 			newnode.next = null;
 			first = newnode;
-			last = newnode;			
+			last = newnode;
+			this.tnode = first;			
 			size++;
 			return;
 		}
@@ -88,11 +89,11 @@ class LinkedList<Gen> {
 	}
 	public void printList() {
 		
-		while(tnode != last) {
-			System.out.print(tnode.data + " ");
-			tnode = tnode.next;
+		while(this.tnode != last) {
+			System.out.print(this.tnode.data + " ");
+			this.tnode = this.tnode.next;
 		}
-		System.out.print(tnode.data);
+		System.out.print(this.tnode.data);
 		System.out.println();
 	}
 }
