@@ -48,5 +48,6 @@ Expected Output:
 No elements to reverse.
 Your Output: 
 0size
+entered
 No elements to reverse.
 ----------------------------------------
