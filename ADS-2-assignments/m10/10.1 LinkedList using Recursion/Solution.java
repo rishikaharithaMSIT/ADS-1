@@ -101,7 +101,9 @@ class LinkedList<Gen> {
 	}
 
 	public Node reverse(Node first) {
-		if (first == null || first.next == null) return first;
+		if (first == null || first.next == null) {
+			last = first;
+			return first;}
 		Node f = reverse(first.next);
 		first.next.next = first;
 		first.next = null;
