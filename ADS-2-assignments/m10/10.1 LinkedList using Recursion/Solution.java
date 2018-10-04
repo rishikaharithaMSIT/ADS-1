@@ -56,15 +56,15 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		// if(index == size) {
-		// 	System.out.println("size");
-		// 	Node oldlast = last;
-		// 	last = newnode;
-		// 	oldlast.next = last;
-		// 	last.next = null;
-		// 	size++;
-		// 	return;
-		// }
+		if(index == size) {
+			System.out.println("size");
+			Node oldlast = last;
+			last = newnode;
+			oldlast.next = last;
+			last.next = null;
+			size++;
+			return;
+		}
 		if(index == 1) {
 			Node oldprev = tnode;
 			System.out.println(oldprev.data + " in oldprev");
@@ -86,10 +86,11 @@ class LinkedList<Gen> {
 		}
 		
 		
-		tnode = tnode.next;
+		
 		System.out.println(tnode.data + " tnode data");
 		index--;
 		insertAt(index, element);
+		tnode = tnode.next;
 		
 	}
 	public void printList() {
