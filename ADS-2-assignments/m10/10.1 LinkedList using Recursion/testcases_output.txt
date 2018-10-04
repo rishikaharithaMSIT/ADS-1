@@ -10,26 +10,25 @@ Your Output:
 2 zero
 2 size
 3 2
-size
-3 size
-3 2 4
 3 in oldprev
 2 in oldnext
+3 size
+3 4 2
+4 tnode data
+3 zero
 4 size
-3 6 2 4
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-7 tnode data
+6 3 4 2
+3 tnode data
+6 zero
+7 6 3 4 2
 7 in oldprev
 6 in oldnext
-3 7 9 6 2 4
+7 9 6 3 4 2
 9 tnode data
 6 tnode data
-2 tnode data
-2 in oldprev
-4 in oldnext
-3 7 9 6 2 11 4
+6 in oldprev
+3 in oldnext
+7 9 6 11 3 4 2
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -52,26 +51,25 @@ Your Output:
 2 zero
 2 size
 3 2
-size
-3 size
-3 2 4
 3 in oldprev
 2 in oldnext
+3 size
+3 4 2
+4 tnode data
+3 zero
 4 size
-3 6 2 4
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-7 tnode data
+6 3 4 2
+3 tnode data
+6 zero
+7 6 3 4 2
 7 in oldprev
 6 in oldnext
-3 7 9 6 2 4
+7 9 6 3 4 2
 9 tnode data
 6 tnode data
-2 tnode data
-2 in oldprev
-4 in oldnext
-3 7 9 6 2 11 4
+6 in oldprev
+3 in oldnext
+7 9 6 11 3 4 2
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -82,24 +80,23 @@ Your Output:
 2 zero
 2 size
 3 2
-size
-3 size
-3 2 4
 3 in oldprev
 2 in oldnext
+3 size
+3 4 2
+4 tnode data
+3 zero
 4 size
-3 6 2 4
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-7 tnode data
+6 3 4 2
+3 tnode data
+6 zero
+7 6 3 4 2
 7 in oldprev
 6 in oldnext
-3 7 9 6 2 4
+7 9 6 3 4 2
 9 tnode data
 6 tnode data
-2 tnode data
-2 in oldprev
-4 in oldnext
-3 7 9 6 2 11 4
+6 in oldprev
+3 in oldnext
+7 9 6 11 3 4 2
 ----------------------------------------
