@@ -24,7 +24,7 @@ class LinkedList<Gen> {
 	Node oldprev = null;
 	Node oldnext = null;
 	int start = 0;
-	Node tnode = first.next;
+	Node tnode = first;
 
 	class Node{
 		Node next;
@@ -45,7 +45,7 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		if(index == 1) {
+		if(index == 2) {
 			Node oldprev = tnode;
 			Node oldnext = tnode.next;
 			oldprev.next = newnode;
