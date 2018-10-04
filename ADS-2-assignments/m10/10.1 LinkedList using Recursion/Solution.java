@@ -51,4 +51,12 @@ class LinkedList<Gen> {
 		}
 
 	}
+	public void printList() {
+		Node tnode = first;
+		while(tnode != null) {
+			System.out.print(tnode.data + " ");
+			tnode = tnode.next;
+		}
+		System.out.println();
+	}
 }
