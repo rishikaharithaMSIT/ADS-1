@@ -96,23 +96,16 @@ class LinkedList<Gen> {
 		first = first.next;
 		return getNode(first,index);
 	}
-	void reverse(){
-		if (isEmpty()) {
-			System.out.println("zero");
-			return;
-		}
-		if (first.next == null) {
-			head = first;
-			head.next = prev;
-			first = head;
-			prev = null;
-			return;
-		}
-		temp = first;
-		first = first.next;
-		temp.next = prev;
-		prev = temp;
-		reverse();
+	void reverse() {
+		first = reverse(first);
+	}
+
+	public Node reverse(Node first) {
+		if (first == null || first.next == null) return first;
+		Node f = reverse(first.next);
+		first.next.next = first;
+		first.next = null;
+		return f;
 	}
 
 	public void printList() {
