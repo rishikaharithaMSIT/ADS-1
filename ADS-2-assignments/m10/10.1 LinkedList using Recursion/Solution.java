@@ -1,28 +1,35 @@
+import java.util.Scanner;
 public class Solution{
 	public static void main(String[] args) {
 		LinkedList<Integer> l = new LinkedList<>();
 
-		l.insertAt(0,2);
-		System.out.println(l.size + " size");
-		l.printList();
-		l.insertAt(0,3);
-		System.out.println(l.size + " size");
-		l.printList();
-		l.insertAt(2,4);
-		System.out.println(l.size + " size");
-		l.printList();
-		l.insertAt(1,6);
-		System.out.println(l.size + " size");
-		l.printList();
-		l.insertAt(1,7);
-		l.printList();
-		l.insertAt(2,9);
-		l.printList();
-		l.insertAt(4,11);
-		l.printList();
-		l.reverse();
-		System.out.println("----------");
-		l.printList();
+		Scanner scan = new Scanner(System.in);
+		
+		while (scan.hasNext()) {
+			String line = scan.nextLine();
+			String[] tokens = line.split(" ");
+			switch (tokens[0]) {
+			case "insertAt":
+				try {
+					l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+					l.printList();
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+
+				break;
+			case "reverse":
+				try {
+					l.reverse();
+					l.printList();
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				break;
+			default:
+			    break;	
+			}
+		}
 	}
 }
 class LinkedList<Gen> {
@@ -47,11 +54,11 @@ class LinkedList<Gen> {
 	public boolean isEmpty(){
 		return size == 0;
 	}
-	public void insertAt(int index, Gen element) {
+	public void insertAt(int index, Gen element) throws Exception {
 		Node newnode = new Node(element);
-		if(index < 0) {
-			System.out.println("return");
-			return;
+		if (index > size || index < 0) {
+			throw new Exception("Can't insert at this position.");
+			// return;
 		}
 		if(isEmpty()) {
 			newnode.next = null;
@@ -96,7 +103,10 @@ class LinkedList<Gen> {
 		first = first.next;
 		return getNode(first,index);
 	}
-	void reverse() {
+	void reverse() throws Exception{
+		if (isEmpty()) {
+			throw new Exception("No elements to reverse.");
+		}
 		first = reverse(first);
 	}
 
