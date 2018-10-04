@@ -33,6 +33,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:48:23: Parameter index should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:48:34: Parameter element should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:72:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:92:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:91:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 35 errors.

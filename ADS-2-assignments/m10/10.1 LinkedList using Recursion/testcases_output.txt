@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 5
 7, 5
@@ -8,10 +8,9 @@ Your Output:
 5
 7, 5
 7, 6, 5
-entered here hekko
 5, 6, 7
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 5
 7, 5
@@ -30,7 +29,6 @@ Your Output:
 5
 7, 5
 7, 9, 5
-entered here hekko
 5, 9, 7
 Can't insert at this position.
 Can't insert at this position.
@@ -40,7 +38,6 @@ Can't insert at this position.
 75, 71, 5, 9, 27, 17, 7
 75, 71, 5, 9, 27, 66, 17, 7
 75, 71, 5, 9, 27, 32, 66, 17, 7
-entered here hekko
 7, 17, 66, 32, 27, 9, 5, 71, 75
 ----------------------------------------
 ########## Testcase 2: Passed ##########

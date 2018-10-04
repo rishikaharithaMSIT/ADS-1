@@ -75,7 +75,6 @@ class Linkedlist {
 			throw new Exception("No elements to reverse.");
 		}
 		if (firstCopy.next == null) {
-			System.out.println("entered here hekko");
 			first = firstCopy;
 			first.next = prev;
 			firstCopy = first;
