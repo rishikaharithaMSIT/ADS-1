@@ -108,17 +108,16 @@ class LinkedList<Gen> {
 	void reverse() throws Exception {
 		System.out.println(size + "size");
 		if (size == 0) {
-			System.out.println("entered");
 			throw new Exception("No elements to reverse.");
 		}
 		if (test.next == null) {
-			System.out.println("entered");
 			first = test;
 			first.next = prev;
 			test = first;
 			prev = null;
 			return;
 		}
+		System.out.println(first.data + "val");
 		System.out.println(test.data + "val");
 		temp = test;
 		test = test.next;
