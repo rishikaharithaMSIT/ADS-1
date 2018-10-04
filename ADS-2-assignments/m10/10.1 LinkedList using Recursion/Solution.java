@@ -58,11 +58,14 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		// if(index == 1) {
-			
-		// 	size++;
-		// 	return;
-		// }
+		if(index == 1) {
+			Node oldprev = first;
+			Node oldnext = first.next;
+			oldprev.next = newnode;
+			newnode.next = oldnext;
+			size++;
+			return;
+		}
 		if(index == 0) {
 			
 			Node oldfirst = first;
