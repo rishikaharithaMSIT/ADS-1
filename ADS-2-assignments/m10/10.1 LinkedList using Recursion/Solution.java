@@ -44,7 +44,7 @@ class LinkedList<Gen> {
 	}
 	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
-		if(index < 0) {
+		if(index < 0 || tnode == null) {
 			System.out.println("return");
 			return;
 		}
@@ -75,7 +75,7 @@ class LinkedList<Gen> {
 			//oldprev.next = newnode;
 			//newnode.next = oldnext;
 			old.next = newnode;
-			newnode.next = null;
+			newnode.next = tnode;
 			size++;
 			return;
 		}
