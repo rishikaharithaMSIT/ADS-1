@@ -11,6 +11,9 @@ public class Solution{
 		l.insertAt(2,4);
 		System.out.println(l.size + " size");
 		l.printList();
+		l.insertAt(1,6);
+		System.out.println(l.size + " size");
+		l.printList();
 	}
 }
 class LinkedList<Gen> {
@@ -30,6 +33,7 @@ class LinkedList<Gen> {
 	}
 	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
+
 		if(isEmpty()) {
 			first = newnode;
 			last = newnode;
@@ -55,7 +59,26 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-
+		int start = 1;
+		Node tnode = first;
+		while(index < start){
+			Node oldprev = null;
+			Node oldnext = null;
+			if(start == index-1) {
+				oldprev = tnode;
+				oldnext = tnode.next;
+			}
+			if(start == index) {
+				newnode.previous = oldprev;
+				oldprev.next = newnode;
+				newnode.next = oldnext;
+				oldnext.previous = newnode;
+				size++;
+				return;
+			}
+			tnode = tnode.next;
+			start++;
+		}
 	}
 	public void printList() {
 		Node tnode = first;
