@@ -107,12 +107,9 @@ class LinkedList<Gen> {
 		if (isEmpty()) {
 			throw new Exception("No elements to reverse.");
 		}
+		last = first;
 		first = reverse(first);
-		Node tnode = first;
-		while (tnode.next != null) {
-			tnode = tnode.next;
-		}
-		last = tnode;
+		last.next = null;
 	}
 
 	public Node reverse(Node first) {
@@ -122,7 +119,7 @@ class LinkedList<Gen> {
 		Node f = reverse(first.next);
 		first.next.next = first;		
 		first.next = null;
-		
+
 		return f;
 	}
 
