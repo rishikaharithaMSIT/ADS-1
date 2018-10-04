@@ -48,7 +48,7 @@ class LinkedList<Gen> {
 		if(index == 1) {
 			Node oldprev = tnode;
 			Node oldnext = tnode.next;
-			tnode.next = newnode;
+			oldprev.next = newnode;
 			newnode.next = oldnext;
 			size++;
 			return;
