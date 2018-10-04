@@ -49,15 +49,15 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		// if(index == size) {
-		// 	System.out.println("size");
-		// 	Node oldlast = last;
-		// 	last = newnode;
-		// 	oldlast.next = last;
-		// 	last.next = null;
-		// 	size++;
-		// 	return;
-		// }
+		if(index == size) {
+			System.out.println("size");
+			Node oldlast = last;
+			last = newnode;
+			oldlast.next = last;
+			last.next = null;
+			size++;
+			return;
+		}
 		// if(index == 1) {
 			
 		// 	size++;
