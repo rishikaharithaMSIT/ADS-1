@@ -61,8 +61,9 @@ class LinkedList<Gen> {
 		if(index == 1) {
 			
 			Node oldprev = tnode;
-			System.out.println("one");
+
 			Node oldnext = tnode.next;
+			System.out.println("one");
 			oldprev.next = newnode;
 			newnode.next = oldnext;
 			size++;

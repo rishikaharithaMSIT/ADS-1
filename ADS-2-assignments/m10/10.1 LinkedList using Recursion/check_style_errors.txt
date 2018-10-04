@@ -51,11 +51,11 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:62: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:63:30: 'oldprev' hides a field. [HiddenField]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:65:30: 'oldnext' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:71:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:79: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:84: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:86:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:87:22: 'tnode' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:88:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:72:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:80: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:85: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:87:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:88:22: 'tnode' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:89:22: 'while' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 58 errors.
