@@ -73,10 +73,10 @@ class LinkedList<Gen> {
 			return;
 		}
 		
-		// System.out.println(tnode.data + " tnode data");
-		// tnode = tnode.next;
-		// index--;
-		// insertAt(index, element);
+		System.out.println(tnode.data + " tnode data");
+		first = first.next;
+		index--;
+		insertAt(index, element);
 		
 	}
 	public void printList() {

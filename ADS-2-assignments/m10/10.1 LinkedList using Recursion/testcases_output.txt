@@ -13,8 +13,9 @@ Your Output:
 size
 3 size
 3 2 4
-3 size
-3 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:76)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -40,8 +41,9 @@ Your Output:
 size
 3 size
 3 2 4
-3 size
-3 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:76)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -55,6 +57,7 @@ Your Output:
 size
 3 size
 3 2 4
-3 size
-3 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:76)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
