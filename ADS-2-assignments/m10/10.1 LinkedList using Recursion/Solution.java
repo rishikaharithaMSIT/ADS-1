@@ -40,7 +40,7 @@ class LinkedList<Gen> {
 	Node old = null;
 	Node oldnext = null;
 	int start = 0;
-	Node tnode;
+	Node tnode = first;
 	Node prev;
 	Node temp;
 	Node head;
@@ -54,11 +54,11 @@ class LinkedList<Gen> {
 	public boolean isEmpty(){
 		return size == 0;
 	}
-	public void insertAt(int index, Gen element) throws Exception {
+	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
-		if (index > size || index < 0) {
-			throw new Exception("Can't insert at this position.");
-			// return;
+		if(index < 0) {
+			System.out.println("return");
+			return;
 		}
 		if(isEmpty()) {
 			newnode.next = null;
@@ -69,7 +69,7 @@ class LinkedList<Gen> {
 			return;
 		}
 		if(index == size) {
-			//System.out.println("size");
+			System.out.println("size");
 			Node oldlast = last;
 			last = newnode;
 			oldlast.next = last;
@@ -81,7 +81,7 @@ class LinkedList<Gen> {
 		if(index == 0) {
 			
 			Node oldfirst = first;
-			//System.out.println(oldfirst.data + " zero");
+			System.out.println(oldfirst.data + " zero");
 			first = newnode;
 			first.next = oldfirst;
 			this.tnode = first;
@@ -103,25 +103,21 @@ class LinkedList<Gen> {
 		first = first.next;
 		return getNode(first,index);
 	}
-	void reverse() throws Exception {
-		if (size == 0) {
+	void reverse() throws Exception{
+		if (isEmpty()) {
 			throw new Exception("No elements to reverse.");
 		}
-		if (tnode.next == null) {
-			last = tnode;
-			first = tnode;
-			first.next = prev;
-			tnode = first;
+		first = reverse(first);
+	}
 
-			prev = null;
-			last = prev;
-			return;
-		}
-		temp = tnode;
-		tnode = tnode.next;
-		temp.next = prev;
-		prev = temp;		
-		reverse();
+	public Node reverse(Node first) {
+		if (first == null || first.next == null) {
+			last = first;
+			return first;}
+		Node f = reverse(first.next);
+		first.next.next = first;
+		first.next = null;
+		return f;
 	}
 
 	public void printList() {
