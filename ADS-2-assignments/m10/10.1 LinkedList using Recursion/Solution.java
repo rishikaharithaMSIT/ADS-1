@@ -21,6 +21,7 @@ public class Solution{
 		l.insertAt(4,11);
 		l.printList();
 		l.reverse();
+		l.printList();
 	}
 }
 class LinkedList<Gen> {
@@ -32,7 +33,9 @@ class LinkedList<Gen> {
 	Node oldnext = null;
 	int start = 0;
 	Node tnode = first;
-
+	Node prev;
+	Node temp;
+	Node head;
 	class Node{
 		Node next;
 		Gen data;
@@ -92,10 +95,23 @@ class LinkedList<Gen> {
 		first = first.next;
 		return getNode(first,index);
 	}
-	public void reverse() {
-		if(first!=null)	{
-			
+	void reverse(){
+		if (isEmpty()) {
+			System.out.println("zero");
+			return;
 		}
+		if (first.next == null) {
+			head = first;
+			head.next = prev;
+			first = head;
+			prev = null;
+			return;
+		}
+		temp = first;
+		first = first.next;
+		temp.next = prev;
+		prev = temp;
+		reverse();
 	}
 
 	public void printList() {
