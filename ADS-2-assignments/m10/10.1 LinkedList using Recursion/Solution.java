@@ -40,7 +40,7 @@ class LinkedList<Gen> {
 	Node old = null;
 	Node oldnext = null;
 	int start = 0;
-	Node tnode = first;
+	Node tnode;
 	Node prev;
 	Node temp;
 	Node head;
