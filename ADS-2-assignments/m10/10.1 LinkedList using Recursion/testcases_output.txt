@@ -29,8 +29,8 @@ one
 3 2 4
 4 tnode data
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:97)
-	at LinkedList.insertAt(Solution.java:99)
+	at LinkedList.insertAt(Solution.java:98)
+	at LinkedList.insertAt(Solution.java:100)
 	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -73,8 +73,8 @@ one
 3 2 4
 4 tnode data
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:97)
-	at LinkedList.insertAt(Solution.java:99)
+	at LinkedList.insertAt(Solution.java:98)
+	at LinkedList.insertAt(Solution.java:100)
 	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -105,7 +105,7 @@ one
 3 2 4
 4 tnode data
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:97)
-	at LinkedList.insertAt(Solution.java:99)
+	at LinkedList.insertAt(Solution.java:98)
+	at LinkedList.insertAt(Solution.java:100)
 	at Solution.main(Solution.java:21)
 ----------------------------------------

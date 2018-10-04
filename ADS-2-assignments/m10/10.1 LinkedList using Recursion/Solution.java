@@ -64,6 +64,7 @@ class LinkedList<Gen> {
 			oldlast.next = last;
 			last.next = null;
 			this.tnode = first;
+			this.old = tnode;
 			size++;
 			return;
 		}
