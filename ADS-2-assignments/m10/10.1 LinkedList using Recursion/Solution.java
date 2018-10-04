@@ -16,6 +16,8 @@ public class Solution{
 		l.printList();
 		l.insertAt(1,7);
 		l.printList();
+		l.insertAt(2,9);
+		l.printList();
 	}
 }
 class LinkedList<Gen> {
