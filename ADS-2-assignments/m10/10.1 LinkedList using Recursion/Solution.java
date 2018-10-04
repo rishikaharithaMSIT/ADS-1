@@ -59,7 +59,7 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		int start = 1;
+		int start = 0;
 		Node tnode = first;
 		while(index >= start){
 			Node oldprev = null;
