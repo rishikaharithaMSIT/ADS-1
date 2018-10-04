@@ -116,7 +116,9 @@ class LinkedList<Gen> {
 			return first;}
 		Node f = reverse(first.next);
 		first.next.next = first;
+		
 		first.next = null;
+		last = first;
 		return f;
 	}
 
