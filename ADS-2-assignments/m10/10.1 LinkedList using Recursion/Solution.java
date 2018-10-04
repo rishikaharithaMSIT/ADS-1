@@ -93,8 +93,11 @@ class LinkedList<Gen> {
 		return getNode(first,index);
 	}
 	public void reverse() {
-		System.out.println(last.data);
+		if(first!=null)	{
+			
+		}
 	}
+
 	public void printList() {
 		Node tnode = first;
 		while(tnode != last) {
