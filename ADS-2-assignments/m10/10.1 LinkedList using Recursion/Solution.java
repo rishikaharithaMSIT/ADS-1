@@ -27,7 +27,6 @@ class LinkedList<Gen> {
 	Node tnode = first;
 
 	class Node{
-		Node previous;
 		Node next;
 		Gen data;
 		Node(Gen data){
@@ -39,34 +38,29 @@ class LinkedList<Gen> {
 	}
 	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
-		// if(index < 0) {
-		// 	return;
-		// }
 		if(isEmpty()) {
-			first = newnode;
-			last = newnode;
-			newnode.previous = null;
 			newnode.next = null;
+			first = newnode;
+			last = newnode;			
+			size++;
+			return;
+		}
+		if(index == 1) {
+			Node oldprev = tnode;
+			Node oldnext = tnode.next;
+			tnode.next = newnode;
+			newnode.next = oldnext;
 			size++;
 			return;
 		}
 		if(index == 0) {
-			Node oldfirst = tnode.previous;
+			Node oldfirst = first;
 			first = newnode;
-			first.previous = null;
 			first.next = oldfirst;
 			size++;
 			return;
 		}
-		if(index == size) {
-			Node oldlast = last;
-			last = newnode;
-			last.previous = oldlast;
-			last.next = null;
-			oldlast.next = last;
-			size++;
-			return;
-		}
+		
 
 		tnode = tnode.next;
 		index--;
