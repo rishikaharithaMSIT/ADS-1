@@ -44,7 +44,7 @@ class LinkedList<Gen> {
 	}
 	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
-		if(index < 0) {
+		if(index < 0 || tnode == null) {
 			System.out.println("return");
 			return;
 		}
