@@ -82,7 +82,7 @@ class LinkedList<Gen> {
 		}
 		
 		System.out.println(first.data + " tnode data");
-		first = first.next;
+		tnode = tnode.next;
 		index--;
 		insertAt(index, element);
 		
