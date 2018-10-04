@@ -13,12 +13,12 @@ Your Output:
 size
 3 size
 3 2 4
-3
+2
 3 size
 3 2 4
-3
-3 2 4
 2
+3 2 4
+4
 3 2 4
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertAt(Solution.java:93)
@@ -48,12 +48,12 @@ Your Output:
 size
 3 size
 3 2 4
-3
+2
 3 size
 3 2 4
-3
-3 2 4
 2
+3 2 4
+4
 3 2 4
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertAt(Solution.java:93)
@@ -71,12 +71,12 @@ Your Output:
 size
 3 size
 3 2 4
-3
+2
 3 size
 3 2 4
-3
-3 2 4
 2
+3 2 4
+4
 3 2 4
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertAt(Solution.java:93)
