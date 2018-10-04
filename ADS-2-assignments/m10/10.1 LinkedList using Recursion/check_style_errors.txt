@@ -80,7 +80,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:106:38: '}' at column 17 should have line break before. [RightCurly]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:106:38: '}' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:113:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:114:22: 'tnode' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:115:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:115:22: 'tnode' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 83 errors.
+Checkstyle ends with 82 errors.
