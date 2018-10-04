@@ -13,9 +13,8 @@ Your Output:
 3 2 4
 3 oldprev
 2 oldnext
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:75)
-	at Solution.main(Solution.java:14)
+4 size
+3 6 2 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -41,9 +40,8 @@ Your Output:
 3 2 4
 3 oldprev
 2 oldnext
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:75)
-	at Solution.main(Solution.java:14)
+4 size
+3 6 2 4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -57,7 +55,6 @@ Your Output:
 3 2 4
 3 oldprev
 2 oldnext
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:75)
-	at Solution.main(Solution.java:14)
+4 size
+3 6 2 4
 ----------------------------------------

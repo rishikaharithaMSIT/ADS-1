@@ -61,9 +61,10 @@ class LinkedList<Gen> {
 		}
 		int start = 0;
 		Node tnode = first;
+		Node oldprev = null;
+		Node oldnext = null;
 		while(index >= start){
-			Node oldprev = null;
-			Node oldnext = null;
+			
 			if(start == index-1) {
 				oldprev = tnode;
 				System.out.println(oldprev.data + " oldprev");  
