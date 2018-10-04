@@ -27,8 +27,8 @@ class LinkedList<Gen> {
 	Node last = null;
 	int size = 0;
 
-	Node old = null;
-	
+	Node oldprev = null;
+	Node oldnext = null;
 	int start = 0;
 	Node tnode = first;
 
@@ -52,8 +52,7 @@ class LinkedList<Gen> {
 			newnode.next = null;
 			first = newnode;
 			last = newnode;
-			this.tnode = first;
-			this.old = this.tnode;			
+			this.tnode = first;			
 			size++;
 			return;
 		}
@@ -67,9 +66,9 @@ class LinkedList<Gen> {
 			return;
 		}
 		if(index == 1) {
-			Node oldprev = this.old;
+			Node oldprev = tnode;
 			System.out.println(oldprev.data + " in oldprev");
-			Node oldnext = tnode;
+			Node oldnext = tnode.next;
 			System.out.println(oldnext.data + " in oldnext");
 			oldprev.next = newnode;
 			newnode.next = oldnext;
@@ -83,11 +82,10 @@ class LinkedList<Gen> {
 			first = newnode;
 			first.next = oldfirst;
 			this.tnode = first;
-			this.old = this.tnode;
 			size++;
 			return;
 		}
-		this.old = this.tnode;		
+				
 		tnode = tnode.next;
 		System.out.println(tnode.data + " tnode data");
 		index--;
