@@ -52,7 +52,8 @@ class LinkedList<Gen> {
 			newnode.next = null;
 			first = newnode;
 			last = newnode;
-			this.tnode = first;			
+			this.tnode = first;
+			this.old = tnode;			
 			size++;
 			return;
 		}
