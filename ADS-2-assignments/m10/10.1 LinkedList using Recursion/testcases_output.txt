@@ -5,8 +5,11 @@ Expected Output:
 7, 6, 5
 5, 6, 7
 Your Output: 
+1 size
 2 
+2 size
 3 2 
+2 size
 3 2
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -25,15 +28,21 @@ Can't insert at this position.
 75, 71, 5, 9, 27, 32, 66, 17, 7
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
+1 size
 2 
+2 size
 3 2 
+2 size
 3 2
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
+1 size
 2 
+2 size
 3 2 
+2 size
 3 2
 ----------------------------------------

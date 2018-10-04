@@ -3,10 +3,13 @@ public class Solution{
 		LinkedList<Integer> l = new LinkedList<>();
 
 		l.insertAt(0,2);
+		System.out.println(l.size + " size");
 		l.printList();
 		l.insertAt(0,3);
+		System.out.println(l.size + " size");
 		l.printList();
 		l.insertAt(2,4);
+		System.out.println(l.size + " size");
 		l.printList();
 	}
 }
