@@ -13,23 +13,9 @@ Your Output:
 size
 3 size
 3 2 4
-3 in oldprev
-2 in oldnext
-4 size
-3 6 2 4
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-3 tnode data
-3 in oldprev
-7 in oldnext
-3 9 7 6 2 4
-9 tnode data
-9 tnode data
-9 tnode data
-9 in oldprev
-7 in oldnext
-3 9 11 7 6 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:71)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -55,23 +41,9 @@ Your Output:
 size
 3 size
 3 2 4
-3 in oldprev
-2 in oldnext
-4 size
-3 6 2 4
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-3 tnode data
-3 in oldprev
-7 in oldnext
-3 9 7 6 2 4
-9 tnode data
-9 tnode data
-9 tnode data
-9 in oldprev
-7 in oldnext
-3 9 11 7 6 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:71)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -85,21 +57,7 @@ Your Output:
 size
 3 size
 3 2 4
-3 in oldprev
-2 in oldnext
-4 size
-3 6 2 4
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-3 tnode data
-3 in oldprev
-7 in oldnext
-3 9 7 6 2 4
-9 tnode data
-9 tnode data
-9 tnode data
-9 in oldprev
-7 in oldnext
-3 9 11 7 6 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:71)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
