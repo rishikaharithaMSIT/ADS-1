@@ -24,7 +24,7 @@ class LinkedList<Gen> {
 	Node oldprev = null;
 	Node oldnext = null;
 	int start = 0;
-	Node tnode = first;
+	Node tnode = first.next;
 
 	class Node{
 		Node next;
