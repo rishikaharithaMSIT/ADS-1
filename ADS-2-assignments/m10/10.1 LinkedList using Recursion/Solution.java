@@ -66,18 +66,18 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		if(index == 1) {
-			Node oldprev = old;
-			System.out.println(old.data + " in old");
-			System.out.println(tnode.data + " in oldprev");
-			//Node oldnext = tnode.next;
-			//System.out.println(oldnext.data + " in oldnext");
-			//oldprev.next = newnode;
-			//newnode.next = oldnext;
+		// if(index == 1) {
+		// 	Node oldprev = old;
+		// 	System.out.println(old.data + " in old");
+		// 	System.out.println(tnode.data + " in oldprev");
+		// 	//Node oldnext = tnode.next;
+		// 	//System.out.println(oldnext.data + " in oldnext");
+		// 	//oldprev.next = newnode;
+		// 	//newnode.next = oldnext;
 			
-			size++;
-			return;
-		}
+		// 	size++;
+		// 	return;
+		// }
 		if(index == 0) {
 			
 			Node oldfirst = first;
@@ -89,11 +89,7 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		this.old = tnode;		
-		tnode = tnode.next;
-		System.out.println(tnode.data + " tnode data");
-		index--;
-		insertAt(index, element);
+		System.out.println("Here");
 
 		
 	}
