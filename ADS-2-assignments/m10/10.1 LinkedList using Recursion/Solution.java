@@ -93,6 +93,7 @@ class LinkedList<Gen> {
 		Node n = inNode.next;
 		inNode.next=newnode;
 		newnode.next = n;
+		size++;
 		return;
 
 		
