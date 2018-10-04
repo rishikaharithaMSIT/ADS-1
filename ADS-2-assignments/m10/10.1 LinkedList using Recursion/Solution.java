@@ -39,7 +39,9 @@ class LinkedList<Gen> {
 	}
 	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
-
+		if(index < 0) {
+			return;
+		}
 		if(isEmpty()) {
 			first = newnode;
 			last = newnode;
