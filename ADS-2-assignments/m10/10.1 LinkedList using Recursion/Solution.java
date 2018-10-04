@@ -112,8 +112,9 @@ class LinkedList<Gen> {
 			first = tnode;
 			first.next = prev;
 			tnode = first;
-			last = prev;
+
 			prev = null;
+			last = prev;
 			return;
 		}
 		temp = tnode;
