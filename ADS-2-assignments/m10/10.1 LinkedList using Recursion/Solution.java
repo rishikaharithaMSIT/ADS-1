@@ -103,21 +103,22 @@ class LinkedList<Gen> {
 		first = first.next;
 		return getNode(first,index);
 	}
-	void reverse() throws Exception{
+	void reverse() throws Exception {
 		if (isEmpty()) {
 			throw new Exception("No elements to reverse.");
 		}
-		first = reverse(first);
-	}
-
-	public Node reverse(Node first) {
-		if (first == null || first.next == null) {
-			last = first;
-			return first;}
-		Node f = reverse(first.next);
-		first.next.next = first;
-		first.next = null;
-		return f;
+		if (first.next == null) {
+			first = first;
+			first.next = prev;
+			first = first;
+			prev = null;
+			return;
+		}
+		temp = first;
+		first = first.next;
+		temp.next = prev;
+		prev = temp;
+		reverse();
 	}
 
 	public void printList() {

@@ -61,14 +61,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:101:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:104:38: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:106:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:106:40: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:113:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:113:29: Parameter first should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:113:34: 'first' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:116:38: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:116:38: '}' at column 17 should have line break before. [RightCurly]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:116:38: '}' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:123:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:125:22: 'tnode' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:124:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:126:22: 'tnode' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 71 errors.
+Checkstyle ends with 64 errors.
