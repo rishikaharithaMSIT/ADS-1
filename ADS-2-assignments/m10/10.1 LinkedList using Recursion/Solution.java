@@ -58,11 +58,11 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		if(index == 1) {
+		// if(index == 1) {
 			
-			size++;
-			return;
-		}
+		// 	size++;
+		// 	return;
+		// }
 		if(index == 0) {
 			System.out.println("zero");
 			Node oldfirst = first;
