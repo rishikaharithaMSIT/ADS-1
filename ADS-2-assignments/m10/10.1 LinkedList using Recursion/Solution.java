@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Solution{
 	public static void main(String[] args) {
-		LinkedList<Integer> l = new LinkedList<>();
+		Linkedlist l = new Linkedlist();
 
 		Scanner scan = new Scanner(System.in);
 		
@@ -32,96 +32,58 @@ public class Solution{
 		}
 	}
 }
-class LinkedList<Gen> {
+class Linkedlist {
 	Node first = null;
-	Node last = null;
+	Node firstCopy;
+	Node prev;
+	Node temp;
 	int size = 0;
-
-	Node old = null;
-	Node oldnext = null;
-	int start = 0;
-	Node tnode = first;
-	Node prev = null;
-	Node temp = null;
-	// Node head;
-	class Node{
+	class Node {		
 		Node next;
-		Gen data;
-		Node(Gen data){
+		int data;
+		Node(int data) {
 			this.data = data;
 		}
 	}
-	public boolean isEmpty(){
-		return size == 0;
-	}
-	public void insertAt(int index, Gen element) throws Exception {
+	void insertAt(int index, int element) throws Exception {
 		Node newnode = new Node(element);
 		if (index > size || index < 0) {
 			throw new Exception("Can't insert at this position.");
 			// return;
 		}
-		if(isEmpty()) {
-			newnode.next = null;
+		if (index == 1) {
+			newnode.next = firstCopy.next;
+			firstCopy.next = newnode;
+			firstCopy = first;
+			size++;
+			return;
+		}
+		if (index == 0) {
+			newnode.next = firstCopy;
 			first = newnode;
-			last = newnode;
-			this.tnode = first;			
+			firstCopy =  first;
 			size++;
 			return;
 		}
-		if(index == size) {
-			//System.out.println("size");
-			Node oldlast = last;
-			last = newnode;
-			oldlast.next = last;
-			last.next = null;
-			this.tnode = first;
-			size++;
-			return;
-		}
-		if(index == 0) {
-			
-			Node oldfirst = first;
-			//System.out.println(oldfirst.data + " zero");
-			first = newnode;
-			first.next = oldfirst;
-			this.tnode = first;
-			this.old = tnode;
-			size++;
-			return;
-		}
-		Node inNode = getNode(first, index);
-		Node n = inNode.next;
-		inNode.next=newnode;
-		newnode.next = n;
-		size++;
-		return;
-
-		
-	}
-	public Node getNode(Node first, int index) {
-		if(index == 1) return first;
+		firstCopy = firstCopy.next;
 		index--;
-		first = first.next;
-		return getNode(first,index);
+		insertAt(index, element);
 	}
-	Node test = first;
 	void reverse() throws Exception {
-		System.out.println(size + "size");
+		//System.out.println(size + "size");
 		if (size == 0) {
 			throw new Exception("No elements to reverse.");
 		}
-		if (test.next == null) {
+		if (firstCopy.next == null) {
 			System.out.println("entered here hekko");
-			first = test;
+			first = firstCopy;
 			first.next = prev;
-			test = first;
+			firstCopy = first;
 			prev = null;
 			return;
 		}
-		System.out.println(first.data + "val");
-		System.out.println(test.data + "val");
-		temp = test;
-		test = test.next;
+		temp = firstCopy;
+		firstCopy = firstCopy.next;
 		temp.next = prev;
 		prev = temp;
 		reverse();
