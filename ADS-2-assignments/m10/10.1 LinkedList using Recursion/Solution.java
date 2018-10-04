@@ -62,9 +62,10 @@ class LinkedList<Gen> {
 			
 			Node oldprev = tnode;			
 			Node oldnext = null;
-			if(oldprev != null) oldnext = tnode.next;
-			
-			oldprev.next = newnode;
+			if(oldprev != null){
+				oldnext = tnode.next;
+				oldprev.next = newnode;
+			} 		
 			newnode.next = oldnext;
 			size++;
 			return;
