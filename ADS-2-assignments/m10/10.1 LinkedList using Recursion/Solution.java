@@ -112,6 +112,7 @@ class LinkedList<Gen> {
 			first = tnode;
 			first.next = prev;
 			tnode = first;
+			last = prev;
 			prev = null;
 			return;
 		}
@@ -120,7 +121,6 @@ class LinkedList<Gen> {
 		temp.next = prev;
 		prev = temp;		
 		reverse();
-		last = tnode; 
 	}
 
 	public void printList() {
