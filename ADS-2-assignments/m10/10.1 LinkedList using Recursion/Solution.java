@@ -90,7 +90,10 @@ class LinkedList<Gen> {
 			return;
 		}
 		Node inNode = getNode(first, index);
-		System.out.println(inNode.next.data);
+		Node n = inNode.next;
+		inNode.next=newnode;
+		newnode.next = n;
+		return;
 
 		
 	}
