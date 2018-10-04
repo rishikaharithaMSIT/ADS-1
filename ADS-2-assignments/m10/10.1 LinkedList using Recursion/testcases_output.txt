@@ -13,15 +13,16 @@ Your Output:
 size
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e
+3
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e
+3
 3 2 4
-LinkedList$Node@6f79caec
+2
 3 2 4
-null
-3 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:93)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -47,15 +48,16 @@ Your Output:
 size
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e
+3
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e
+3
 3 2 4
-LinkedList$Node@6f79caec
+2
 3 2 4
-null
-3 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:93)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -69,13 +71,14 @@ Your Output:
 size
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e
+3
 3 size
 3 2 4
-LinkedList$Node@1ef7fe8e
+3
 3 2 4
-LinkedList$Node@6f79caec
+2
 3 2 4
-null
-3 2 4
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:93)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
