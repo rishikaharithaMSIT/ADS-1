@@ -38,9 +38,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:33:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:41:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:49:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:49:33: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:49:34: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:59:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m10\10.1 LinkedList using Recursion\Solution.java:61:22: 'while' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 43 errors.
+Checkstyle ends with 41 errors.
