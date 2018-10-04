@@ -112,11 +112,11 @@ class LinkedList<Gen> {
 
 	public void printList() {
 		Node tnode = first;
-		while(tnode != last) {
+		while(tnode != null) {
 			System.out.print(tnode.data + " ");
 			tnode = tnode.next;
 		}
-		System.out.print(tnode.data);
+		//System.out.print(tnode.data);
 		System.out.println();
 	}
 }
