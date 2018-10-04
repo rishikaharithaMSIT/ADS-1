@@ -10,7 +10,7 @@ Your Output:
 size
 2 size
 2 3
-2 tnode data
+3 tnode data
 size
 3 size
 2 3 4
@@ -19,12 +19,12 @@ size
 2 3 6 4
 3 in oldprev
 2 3 7 6 4
-3 tnode data
+7 tnode data
 7 in oldprev
 2 3 7 9 6 4
-7 tnode data
 9 tnode data
 6 tnode data
+4 tnode data
 4 in oldprev
 2 3 7 9 6 4
 ----------------------------------------
@@ -49,7 +49,7 @@ Your Output:
 size
 2 size
 2 3
-2 tnode data
+3 tnode data
 size
 3 size
 2 3 4
@@ -58,12 +58,12 @@ size
 2 3 6 4
 3 in oldprev
 2 3 7 6 4
-3 tnode data
+7 tnode data
 7 in oldprev
 2 3 7 9 6 4
-7 tnode data
 9 tnode data
 6 tnode data
+4 tnode data
 4 in oldprev
 2 3 7 9 6 4
 ----------------------------------------
@@ -76,7 +76,7 @@ Your Output:
 size
 2 size
 2 3
-2 tnode data
+3 tnode data
 size
 3 size
 2 3 4
@@ -85,12 +85,12 @@ size
 2 3 6 4
 3 in oldprev
 2 3 7 6 4
-3 tnode data
+7 tnode data
 7 in oldprev
 2 3 7 9 6 4
-7 tnode data
 9 tnode data
 6 tnode data
+4 tnode data
 4 in oldprev
 2 3 7 9 6 4
 ----------------------------------------
