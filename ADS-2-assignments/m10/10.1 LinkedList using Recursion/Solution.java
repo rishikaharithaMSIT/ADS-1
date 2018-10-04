@@ -1,8 +1,23 @@
 import java.util.Scanner;
-public class Solution{
+/**
+ * Class for solution.
+ */
+public final class Solution{
+	/**
+	 * Constructs the object.
+	 */
+	private Solution(){
+
+	}
+	/**
+	 * main function. read input
+	 * Time Complexity: O(N).
+	 * 
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		LinkedList l = new LinkedList();
-
 		Scanner scan = new Scanner(System.in);
 		
 		while (scan.hasNext()) {
@@ -16,7 +31,6 @@ public class Solution{
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
-
 				break;
 			case "reverse":
 				try {

@@ -1,9 +1,15 @@
+/**
+ * List of linkeds.
+ */
 class LinkedList {
 	Node first = null;
 	Node firstCopy;
 	Node prev;
 	Node temp;
 	int size = 0;
+	/**
+	 * Class for node.
+	 */
 	class Node {		
 		Node next;
 		int data;
@@ -11,11 +17,22 @@ class LinkedList {
 			this.data = data;
 		}
 	}
+	/**
+	 * to insert at given index.
+	 * Time Complexity :
+	 * Best : O(1)
+	 * Worst : O(N)
+	 * Average : O(N)
+	 *
+	 * @param      index      The index
+	 * @param      element    The element
+	 *
+	 * @throws     Exception  { exception_description }
+	 */
 	void insertAt(int index, int element) throws Exception {
 		Node newnode = new Node(element);
 		if (index > size || index < 0) {
 			throw new Exception("Can't insert at this position.");
-			// return;
 		}
 		if (index == 1) {
 			newnode.next = firstCopy.next;
@@ -35,6 +52,15 @@ class LinkedList {
 		index--;
 		insertAt(index, element);
 	}
+	/**
+	 * to reverse Linked list.
+	 *Time Complexity :
+	 * Best : O(1)
+	 * Worst : O(N)
+	 * Average : O(N) 
+	 *
+	 * @throws     Exception  { exception_description }
+	 */
 	void reverse() throws Exception {
 		//System.out.println(size + "size");
 		if (size == 0) {
