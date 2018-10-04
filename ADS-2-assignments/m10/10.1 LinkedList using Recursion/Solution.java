@@ -21,6 +21,7 @@ public class Solution{
 		l.insertAt(4,11);
 		l.printList();
 		l.reverse();
+		System.out.println("----------");
 		l.printList();
 	}
 }
