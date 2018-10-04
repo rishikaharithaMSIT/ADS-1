@@ -3,9 +3,11 @@ public class Solution{
 		LinkedList<Integer> l = new LinkedList<>();
 
 		l.insertAt(0,2);
+		l.printList();
 		l.insertAt(0,3);
+		l.printList();
 		l.insertAt(2,4);
-		
+		l.printList();
 	}
 }
 class LinkedList<Gen> {
