@@ -65,26 +65,9 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		if(start > index) {
-			return;
-		}
-		if(start == index-1) {
-				oldprev = tnode;
-				System.out.println(oldprev.data + " oldprev");  
-				oldnext = tnode.next;
-				System.out.println(oldnext.data + " oldnext");
-		}
-		if(start == index) {
-				newnode.previous = oldprev;
-				oldprev.next = newnode;
-				newnode.next = oldnext;
-				oldnext.previous = newnode;
-				size++;
-				return;
-		}
 
 		tnode = tnode.next;
-		start++;
+		index--;
 		insertAt(index, element);
 		
 	}
