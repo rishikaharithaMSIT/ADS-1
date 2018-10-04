@@ -18,8 +18,8 @@ public class Solution{
 		l.printList();
 		l.insertAt(2,9);
 		l.printList();
-		l.insertAt(4,11);
-		l.printList();
+		// l.insertAt(4,11);
+		// l.printList();
 	}
 }
 class LinkedList<Gen> {
@@ -44,7 +44,7 @@ class LinkedList<Gen> {
 	}
 	public void insertAt(int index, Gen element) {
 		Node newnode = new Node(element);
-		if(index < 0 || tnode == null) {
+		if(index < 0) {
 			System.out.println("return");
 			return;
 		}

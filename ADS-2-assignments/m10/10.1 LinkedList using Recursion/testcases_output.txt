@@ -5,11 +5,19 @@ Expected Output:
 7, 6, 5
 5, 6, 7
 Your Output: 
-return
-0 size
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.printList(Solution.java:98)
-	at Solution.main(Solution.java:7)
+1 size
+2
+2 zero
+2 size
+3 2
+size
+3 size
+3 2 4
+4 size
+3 6 2 4
+3 7 6 2 4
+3 tnode data
+3 9 7 6 2 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -27,19 +35,35 @@ Can't insert at this position.
 75, 71, 5, 9, 27, 32, 66, 17, 7
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
-return
-0 size
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.printList(Solution.java:98)
-	at Solution.main(Solution.java:7)
+1 size
+2
+2 zero
+2 size
+3 2
+size
+3 size
+3 2 4
+4 size
+3 6 2 4
+3 7 6 2 4
+3 tnode data
+3 9 7 6 2 4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
-return
-0 size
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.printList(Solution.java:98)
-	at Solution.main(Solution.java:7)
+1 size
+2
+2 zero
+2 size
+3 2
+size
+3 size
+3 2 4
+4 size
+3 6 2 4
+3 7 6 2 4
+3 tnode data
+3 9 7 6 2 4
 ----------------------------------------
