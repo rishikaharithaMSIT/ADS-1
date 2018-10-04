@@ -70,10 +70,12 @@ class LinkedList<Gen> {
 			Node oldprev = old;
 			System.out.println(old.data + " in old");
 			System.out.println(tnode.data + " in oldprev");
-			Node oldnext = tnode.next;
-			System.out.println(oldnext.data + " in oldnext");
-			oldprev.next = newnode;
-			newnode.next = oldnext;
+			//Node oldnext = tnode.next;
+			//System.out.println(oldnext.data + " in oldnext");
+			//oldprev.next = newnode;
+			//newnode.next = oldnext;
+			old.next = newnode;
+			newnode.next = null;
 			size++;
 			return;
 		}

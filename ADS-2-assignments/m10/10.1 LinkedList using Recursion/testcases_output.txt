@@ -15,29 +15,10 @@ size
 3 2 4
 3 in old
 3 in oldprev
-2 in oldnext
 4 size
-3 6 2 4
-3 in old
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-7 tnode data
-3 in old
-7 in oldprev
-6 in oldnext
-3 9 6 2 4
-6 tnode data
-2 tnode data
-4 tnode data
-2 in old
-4 in oldprev
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:74)
-	at LinkedList.insertAt(Solution.java:95)
-	at LinkedList.insertAt(Solution.java:95)
-	at LinkedList.insertAt(Solution.java:95)
-	at Solution.main(Solution.java:21)
+3 6 Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.printList(Solution.java:104)
+	at Solution.main(Solution.java:16)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -65,29 +46,10 @@ size
 3 2 4
 3 in old
 3 in oldprev
-2 in oldnext
 4 size
-3 6 2 4
-3 in old
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-7 tnode data
-3 in old
-7 in oldprev
-6 in oldnext
-3 9 6 2 4
-6 tnode data
-2 tnode data
-4 tnode data
-2 in old
-4 in oldprev
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:74)
-	at LinkedList.insertAt(Solution.java:95)
-	at LinkedList.insertAt(Solution.java:95)
-	at LinkedList.insertAt(Solution.java:95)
-	at Solution.main(Solution.java:21)
+3 6 Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.printList(Solution.java:104)
+	at Solution.main(Solution.java:16)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -103,27 +65,8 @@ size
 3 2 4
 3 in old
 3 in oldprev
-2 in oldnext
 4 size
-3 6 2 4
-3 in old
-3 in oldprev
-6 in oldnext
-3 7 6 2 4
-7 tnode data
-3 in old
-7 in oldprev
-6 in oldnext
-3 9 6 2 4
-6 tnode data
-2 tnode data
-4 tnode data
-2 in old
-4 in oldprev
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:74)
-	at LinkedList.insertAt(Solution.java:95)
-	at LinkedList.insertAt(Solution.java:95)
-	at LinkedList.insertAt(Solution.java:95)
-	at Solution.main(Solution.java:21)
+3 6 Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.printList(Solution.java:104)
+	at Solution.main(Solution.java:16)
 ----------------------------------------
