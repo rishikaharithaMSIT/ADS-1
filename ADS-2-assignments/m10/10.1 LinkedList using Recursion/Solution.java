@@ -118,9 +118,9 @@ class LinkedList<Gen> {
 		temp = tnode;
 		tnode = tnode.next;
 		temp.next = prev;
-		prev = temp;
-		last = prev; 
+		prev = temp;		
 		reverse();
+		last = prev; 
 	}
 
 	public void printList() {
