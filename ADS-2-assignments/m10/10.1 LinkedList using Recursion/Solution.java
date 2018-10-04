@@ -105,7 +105,7 @@ class LinkedList<Gen> {
 	}
 	Node test = first;
 	void reverse() throws Exception {
-		System.out.println("entered here");
+		System.out.println(size + "size");
 		if (size == 0) {
 			throw new Exception("No elements to reverse.");
 		}

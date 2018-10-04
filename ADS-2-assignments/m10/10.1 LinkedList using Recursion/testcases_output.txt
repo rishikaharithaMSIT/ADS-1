@@ -8,7 +8,7 @@ Your Output:
 5
 7, 5
 7, 6, 5
-entered here
+2size
 null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -30,7 +30,7 @@ Your Output:
 5
 7, 5
 7, 9, 5
-entered here
+2size
 null
 Can't insert at this position.
 Can't insert at this position.
@@ -40,13 +40,13 @@ Can't insert at this position.
 75, 71, 7, 9, 27, 5, 17
 75, 71, 7, 9, 27, 5, 17, 66
 75, 71, 7, 9, 27, 32, 5, 17, 66
-entered here
+6size
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
-entered here
+0size
 No elements to reverse.
 ----------------------------------------
