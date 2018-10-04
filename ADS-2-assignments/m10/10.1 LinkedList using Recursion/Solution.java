@@ -15,6 +15,7 @@ public class Solution{
 		System.out.println(l.size + " size");
 		l.printList();
 		l.insertAt(1,7);
+		l.printList();
 	}
 }
 class LinkedList<Gen> {
