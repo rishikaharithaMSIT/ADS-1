@@ -41,8 +41,8 @@ class LinkedList<Gen> {
 	Node oldnext = null;
 	int start = 0;
 	Node tnode = first;
-	Node prev;
-	Node temp;
+	Node prev = null;
+	Node temp = null;
 	// Node head;
 	class Node{
 		Node next;
@@ -115,6 +115,7 @@ class LinkedList<Gen> {
 			prev = null;
 			return;
 		}
+		System.out.println(test.data + "val");
 		temp = test;
 		test = test.next;
 		temp.next = prev;
