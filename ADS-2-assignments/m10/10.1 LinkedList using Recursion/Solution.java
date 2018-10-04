@@ -88,12 +88,12 @@ class LinkedList<Gen> {
 		
 	}
 	public void printList() {
-		
-		while(this.tnode != last) {
-			System.out.print(this.tnode.data + " ");
-			this.tnode = this.tnode.next;
+		Node tnode = first;
+		while(tnode != last) {
+			System.out.print(tnode.data + " ");
+			tnode = tnode.next;
 		}
-		System.out.print(this.tnode.data);
+		System.out.print(tnode.data);
 		System.out.println();
 	}
 }
