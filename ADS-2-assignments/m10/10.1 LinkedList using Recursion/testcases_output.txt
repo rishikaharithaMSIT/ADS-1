@@ -7,33 +7,26 @@ Expected Output:
 Your Output: 
 1 size
 2
-2 zero
+size
 2 size
-3 2
+2 3
+2 tnode data
 size
 3 size
-3 2 4
-2 in oldprev
-4 in oldnext
+2 3 4
+3 in oldprev
 4 size
-3 2 6 4
-2 in oldprev
-6 in oldnext
-3 2 7 6 4
-2 tnode data
+2 3 6 4
+3 in oldprev
+2 3 7 6 4
+3 tnode data
 7 in oldprev
-6 in oldnext
-3 2 7 9 6 4
+2 3 7 9 6 4
 7 tnode data
 9 tnode data
 6 tnode data
 4 in oldprev
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:72)
-	at LinkedList.insertAt(Solution.java:91)
-	at LinkedList.insertAt(Solution.java:91)
-	at LinkedList.insertAt(Solution.java:91)
-	at Solution.main(Solution.java:21)
+2 3 7 9 6 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -53,33 +46,26 @@ Can't insert at this position.
 Your Output: 
 1 size
 2
-2 zero
+size
 2 size
-3 2
+2 3
+2 tnode data
 size
 3 size
-3 2 4
-2 in oldprev
-4 in oldnext
+2 3 4
+3 in oldprev
 4 size
-3 2 6 4
-2 in oldprev
-6 in oldnext
-3 2 7 6 4
-2 tnode data
+2 3 6 4
+3 in oldprev
+2 3 7 6 4
+3 tnode data
 7 in oldprev
-6 in oldnext
-3 2 7 9 6 4
+2 3 7 9 6 4
 7 tnode data
 9 tnode data
 6 tnode data
 4 in oldprev
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:72)
-	at LinkedList.insertAt(Solution.java:91)
-	at LinkedList.insertAt(Solution.java:91)
-	at LinkedList.insertAt(Solution.java:91)
-	at Solution.main(Solution.java:21)
+2 3 7 9 6 4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -87,31 +73,24 @@ No elements to reverse.
 Your Output: 
 1 size
 2
-2 zero
+size
 2 size
-3 2
+2 3
+2 tnode data
 size
 3 size
-3 2 4
-2 in oldprev
-4 in oldnext
+2 3 4
+3 in oldprev
 4 size
-3 2 6 4
-2 in oldprev
-6 in oldnext
-3 2 7 6 4
-2 tnode data
+2 3 6 4
+3 in oldprev
+2 3 7 6 4
+3 tnode data
 7 in oldprev
-6 in oldnext
-3 2 7 9 6 4
+2 3 7 9 6 4
 7 tnode data
 9 tnode data
 6 tnode data
 4 in oldprev
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:72)
-	at LinkedList.insertAt(Solution.java:91)
-	at LinkedList.insertAt(Solution.java:91)
-	at LinkedList.insertAt(Solution.java:91)
-	at Solution.main(Solution.java:21)
+2 3 7 9 6 4
 ----------------------------------------
