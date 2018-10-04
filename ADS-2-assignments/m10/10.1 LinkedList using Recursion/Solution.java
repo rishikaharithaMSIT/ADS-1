@@ -62,6 +62,7 @@ class LinkedList<Gen> {
 			System.out.print(tnode.data + " ");
 			tnode = tnode.next;
 		}
+		System.out.print(tnode.data);
 		System.out.println();
 	}
 }

@@ -6,11 +6,9 @@ Expected Output:
 5, 6, 7
 Your Output: 
 1 size
-2 
-2 size
-3 2 
-3 size
-3 2
+2 Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.printList(Solution.java:65)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -29,20 +27,16 @@ Can't insert at this position.
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
 1 size
-2 
-2 size
-3 2 
-3 size
-3 2
+2 Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.printList(Solution.java:65)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
 1 size
-2 
-2 size
-3 2 
-3 size
-3 2
+2 Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.printList(Solution.java:65)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
