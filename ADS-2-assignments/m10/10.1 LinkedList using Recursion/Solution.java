@@ -87,10 +87,11 @@ class LinkedList<Gen> {
 		
 		
 		
-		System.out.println(tnode.data + " tnode data");
+		
 		index--;
 		insertAt(index, element);
 		tnode = tnode.next;
+		System.out.println(tnode.data + " tnode data");
 		
 	}
 	public void printList() {
