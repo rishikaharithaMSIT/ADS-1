@@ -110,7 +110,7 @@ class LinkedList<Gen> {
 		if (tnode.next == null) {
 			first = tnode;
 			first.next = prev;
-			tnode = head;
+			tnode = first;
 			prev = null;
 			return;
 		}
