@@ -43,7 +43,7 @@ class LinkedList<Gen> {
 	Node tnode = first;
 	Node prev;
 	Node temp;
-	Node head;
+	// Node head;
 	class Node{
 		Node next;
 		Gen data;
@@ -103,24 +103,23 @@ class LinkedList<Gen> {
 		first = first.next;
 		return getNode(first,index);
 	}
-	void reverse() throws Exception{
-		if (isEmpty()) {
+	Node test = first;
+	void reverse() throws Exception {
+		if (size == 0) {
 			throw new Exception("No elements to reverse.");
 		}
-		last = first;
-		first = reverse(first);
-		last.next = null;
-	}
-
-	public Node reverse(Node first) {
-		if (first == null || first.next == null) {			
-			return first;
+		if (test.next == null) {
+			first = test;
+			first.next = prev;
+			test = first;
+			prev = null;
+			return;
 		}
-		Node f = reverse(first.next);
-		first.next.next = first;		
-		first.next = null;
-
-		return f;
+		temp = test;
+		test = test.next;
+		temp.next = prev;
+		prev = temp;
+		reverse();
 	}
 
 	public void printList() {
