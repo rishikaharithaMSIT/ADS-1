@@ -43,7 +43,7 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		if(index == size) {
+		if(index == size-1) {
 			Node oldlast = last;
 			last = newnode;
 			last.previous = oldlast;
