@@ -7,10 +7,9 @@ Expected Output:
 Your Output: 
 1 size
 2
-2 size
-3 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.printList(Solution.java:79)
-	at Solution.main(Solution.java:10)
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:54)
+	at Solution.main(Solution.java:8)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -30,10 +29,9 @@ Can't insert at this position.
 Your Output: 
 1 size
 2
-2 size
-3 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.printList(Solution.java:79)
-	at Solution.main(Solution.java:10)
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:54)
+	at Solution.main(Solution.java:8)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -41,8 +39,7 @@ No elements to reverse.
 Your Output: 
 1 size
 2
-2 size
-3 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.printList(Solution.java:79)
-	at Solution.main(Solution.java:10)
+Exception in thread "main" java.lang.NullPointerException
+	at LinkedList.insertAt(Solution.java:54)
+	at Solution.main(Solution.java:8)
 ----------------------------------------
