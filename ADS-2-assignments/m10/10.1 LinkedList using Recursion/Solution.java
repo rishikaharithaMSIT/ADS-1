@@ -111,6 +111,7 @@ class LinkedList<Gen> {
 			throw new Exception("No elements to reverse.");
 		}
 		if (test.next == null) {
+			System.out.println("entered here hekko");
 			first = test;
 			first.next = prev;
 			test = first;
