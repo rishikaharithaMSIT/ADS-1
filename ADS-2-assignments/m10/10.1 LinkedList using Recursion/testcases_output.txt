@@ -24,6 +24,12 @@ size
 2 in oldprev
 7 in oldnext
 3 2 9 7 6 4
+9 tnode data
+9 tnode data
+9 tnode data
+9 in oldprev
+7 in oldnext
+3 2 9 11 7 6 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -60,6 +66,12 @@ size
 2 in oldprev
 7 in oldnext
 3 2 9 7 6 4
+9 tnode data
+9 tnode data
+9 tnode data
+9 in oldprev
+7 in oldnext
+3 2 9 11 7 6 4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -84,4 +96,10 @@ size
 2 in oldprev
 7 in oldnext
 3 2 9 7 6 4
+9 tnode data
+9 tnode data
+9 tnode data
+9 in oldprev
+7 in oldnext
+3 2 9 11 7 6 4
 ----------------------------------------
