@@ -13,14 +13,14 @@ Your Output:
 size
 3 size
 3 2 4
-Here
+LinkedList$Node@1ef7fe8e
 3 size
 3 2 4
-Here
+LinkedList$Node@1ef7fe8e
 3 2 4
-Here
+LinkedList$Node@6f79caec
 3 2 4
-Here
+null
 3 2 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -47,14 +47,14 @@ Your Output:
 size
 3 size
 3 2 4
-Here
+LinkedList$Node@1ef7fe8e
 3 size
 3 2 4
-Here
+LinkedList$Node@1ef7fe8e
 3 2 4
-Here
+LinkedList$Node@6f79caec
 3 2 4
-Here
+null
 3 2 4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -69,13 +69,13 @@ Your Output:
 size
 3 size
 3 2 4
-Here
+LinkedList$Node@1ef7fe8e
 3 size
 3 2 4
-Here
+LinkedList$Node@1ef7fe8e
 3 2 4
-Here
+LinkedList$Node@6f79caec
 3 2 4
-Here
+null
 3 2 4
 ----------------------------------------

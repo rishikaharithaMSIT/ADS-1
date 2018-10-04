@@ -89,9 +89,15 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		System.out.println("Here");
+		Node inNode = getNode(first, index);
+		System.out.println(inNode);
 
 		
+	}
+	public Node getNode(Node first, int index){
+		if(index == 1) return first;
+		index--;
+		return getNode(first.next,index);
 	}
 	public void printList() {
 		Node tnode = first;
