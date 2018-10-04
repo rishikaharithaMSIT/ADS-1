@@ -69,7 +69,7 @@ class LinkedList<Gen> {
 			return;
 		}
 		if(index == size) {
-			System.out.println("size");
+			//System.out.println("size");
 			Node oldlast = last;
 			last = newnode;
 			oldlast.next = last;
@@ -81,7 +81,7 @@ class LinkedList<Gen> {
 		if(index == 0) {
 			
 			Node oldfirst = first;
-			System.out.println(oldfirst.data + " zero");
+			//System.out.println(oldfirst.data + " zero");
 			first = newnode;
 			first.next = oldfirst;
 			this.tnode = first;
