@@ -115,11 +115,11 @@ class LinkedList<Gen> {
 			prev = null;
 			return;
 		}
-		last = tnode;
 		temp = tnode;
 		tnode = tnode.next;
 		temp.next = prev;
 		prev = temp;
+		last = prev; 
 		reverse();
 	}
 
