@@ -20,6 +20,12 @@ class LinkedList<Gen> {
 	Node first = null;
 	Node last = null;
 	int size = 0;
+
+	Node oldprev = null;
+	Node oldnext = null;
+	int start = 0;
+	Node tnode = first;
+
 	class Node{
 		Node previous;
 		Node next;
@@ -59,29 +65,25 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		int start = 0;
-		Node tnode = first;
-		Node oldprev = null;
-		Node oldnext = null;
-		while(index >= start){
-			
-			if(start == index-1) {
+		if(start == index-1) {
 				oldprev = tnode;
 				System.out.println(oldprev.data + " oldprev");  
 				oldnext = tnode.next;
 				System.out.println(oldnext.data + " oldnext");
-			}
-			if(start == index) {
+		}
+		if(start == index) {
 				newnode.previous = oldprev;
 				oldprev.next = newnode;
 				newnode.next = oldnext;
 				oldnext.previous = newnode;
 				size++;
 				return;
-			}
-			tnode = tnode.next;
-			start++;
 		}
+
+		tnode = tnode.next;
+		start++;
+		insertAt(index, element);
+		
 	}
 	public void printList() {
 		Node tnode = first;
