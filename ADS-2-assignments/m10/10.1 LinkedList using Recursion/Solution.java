@@ -51,6 +51,7 @@ class LinkedList<Gen> {
 			last = newnode;
 			last.previous = oldlast;
 			last.next = null;
+			oldlast.next = last;
 			size++;
 			return;
 		}
