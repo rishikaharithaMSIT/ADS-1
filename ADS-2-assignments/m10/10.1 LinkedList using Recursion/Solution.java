@@ -20,6 +20,7 @@ public class Solution{
 		l.printList();
 		l.insertAt(4,11);
 		l.printList();
+		l.reverse();
 	}
 }
 class LinkedList<Gen> {
@@ -56,16 +57,16 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		// if(index == size) {
-		// 	System.out.println("size");
-		// 	Node oldlast = last;
-		// 	last = newnode;
-		// 	oldlast.next = last;
-		// 	last.next = null;
-		// 	this.tnode = first;
-		// 	size++;
-		// 	return;
-		// }
+		if(index == size) {
+			System.out.println("size");
+			Node oldlast = last;
+			last = newnode;
+			oldlast.next = last;
+			last.next = null;
+			this.tnode = first;
+			size++;
+			return;
+		}
 		if(index == 0) {
 			
 			Node oldfirst = first;
@@ -90,6 +91,9 @@ class LinkedList<Gen> {
 		index--;
 		first = first.next;
 		return getNode(first,index);
+	}
+	public void reverse() {
+		System.out.println(last.data);
 	}
 	public void printList() {
 		Node tnode = first;
