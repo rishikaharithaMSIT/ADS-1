@@ -54,11 +54,11 @@ class LinkedList<Gen> {
 	public boolean isEmpty(){
 		return size == 0;
 	}
-	public void insertAt(int index, Gen element) {
+	public void insertAt(int index, Gen element) throws Exception {
 		Node newnode = new Node(element);
-		if(index < 0) {
-			System.out.println("return");
-			return;
+		if (index > size || index < 0) {
+			throw new Exception("Can't insert at this position.");
+			// return;
 		}
 		if(isEmpty()) {
 			newnode.next = null;
@@ -69,7 +69,7 @@ class LinkedList<Gen> {
 			return;
 		}
 		if(index == size) {
-			System.out.println("size");
+			//System.out.println("size");
 			Node oldlast = last;
 			last = newnode;
 			oldlast.next = last;
@@ -81,7 +81,7 @@ class LinkedList<Gen> {
 		if(index == 0) {
 			
 			Node oldfirst = first;
-			System.out.println(oldfirst.data + " zero");
+			//System.out.println(oldfirst.data + " zero");
 			first = newnode;
 			first.next = oldfirst;
 			this.tnode = first;
