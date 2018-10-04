@@ -97,7 +97,8 @@ class LinkedList<Gen> {
 	public Node getNode(Node first, int index){
 		if(index == 1) return first;
 		index--;
-		return getNode(first.next,index);
+		first = first.next;
+		return getNode(first,index);
 	}
 	public void printList() {
 		Node tnode = first;
