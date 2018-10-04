@@ -104,18 +104,18 @@ class LinkedList<Gen> {
 		return getNode(first,index);
 	}
 	void reverse() throws Exception {
-		if (isEmpty()) {
+		if (size == 0) {
 			throw new Exception("No elements to reverse.");
 		}
-		if (first.next == null) {
-			first = first;
+		if (tnode.next == null) {
+			first = tnode;
 			first.next = prev;
-			first = first;
+			tnode = head;
 			prev = null;
 			return;
 		}
-		temp = first;
-		first = first.next;
+		temp = tnode;
+		tnode = tnode.next;
 		temp.next = prev;
 		prev = temp;
 		reverse();
