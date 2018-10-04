@@ -58,16 +58,16 @@ class LinkedList<Gen> {
 			size++;
 			return;
 		}
-		// if(index == 1) {
+		if(index == 1) {
 			
-		// 	Node oldprev = tnode;
-
-		// 	Node oldnext = tnode.next;
-		// 	oldprev.next = newnode;
-		// 	newnode.next = oldnext;
-		// 	size++;
-		// 	return;
-		// }
+			Node oldprev = tnode;
+			System.out.println("one");
+			Node oldnext = tnode.next;
+			oldprev.next = newnode;
+			newnode.next = oldnext;
+			size++;
+			return;
+		}
 		if(index == 0) {
 			System.out.println("zero");
 			Node oldfirst = first;

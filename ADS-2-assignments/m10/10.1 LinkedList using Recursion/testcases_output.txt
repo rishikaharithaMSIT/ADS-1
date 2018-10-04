@@ -13,8 +13,9 @@ zero
 size
 3 size
 3 2 4
+one
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:81)
+	at LinkedList.insertAt(Solution.java:65)
 	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -41,8 +42,9 @@ zero
 size
 3 size
 3 2 4
+one
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:81)
+	at LinkedList.insertAt(Solution.java:65)
 	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -57,7 +59,8 @@ zero
 size
 3 size
 3 2 4
+one
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:81)
+	at LinkedList.insertAt(Solution.java:65)
 	at Solution.main(Solution.java:14)
 ----------------------------------------
