@@ -120,7 +120,7 @@ class LinkedList<Gen> {
 		temp.next = prev;
 		prev = temp;		
 		reverse();
-		last = prev; 
+		last = tnode; 
 	}
 
 	public void printList() {
