@@ -60,14 +60,6 @@ class LinkedList<Gen> {
 		}
 		if(index == 1) {
 			
-			Node oldprev = tnode;			
-			Node oldnext = null;
-			if(oldprev != null){
-				oldnext = tnode.next;
-				oldprev.next = newnode;
-			}
-			tnode = newnode;		
-			tnode.next = oldnext;
 			size++;
 			return;
 		}
@@ -80,7 +72,7 @@ class LinkedList<Gen> {
 			return;
 		}
 		
-
+		System.out.println(tnode.data + " tnode data");
 		tnode = tnode.next;
 		index--;
 		insertAt(index, element);
