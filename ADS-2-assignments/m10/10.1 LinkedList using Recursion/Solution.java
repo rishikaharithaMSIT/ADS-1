@@ -52,7 +52,8 @@ class LinkedList<Gen> {
 			newnode.next = null;
 			first = newnode;
 			last = newnode;
-			this.tnode = first;			
+			this.tnode = first;
+			this.old = this.tnode;			
 			size++;
 			return;
 		}
@@ -82,10 +83,11 @@ class LinkedList<Gen> {
 			first = newnode;
 			first.next = oldfirst;
 			this.tnode = first;
+			this.old = this.tnode;
 			size++;
 			return;
 		}
-		this.old = tnode;		
+		this.old = this.tnode;		
 		tnode = tnode.next;
 		System.out.println(tnode.data + " tnode data");
 		index--;
