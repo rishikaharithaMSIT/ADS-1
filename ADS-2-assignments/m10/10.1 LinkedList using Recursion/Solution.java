@@ -61,7 +61,7 @@ class LinkedList<Gen> {
 		}
 		int start = 1;
 		Node tnode = first;
-		while(index < start){
+		while(index >= start){
 			Node oldprev = null;
 			Node oldnext = null;
 			if(start == index-1) {
