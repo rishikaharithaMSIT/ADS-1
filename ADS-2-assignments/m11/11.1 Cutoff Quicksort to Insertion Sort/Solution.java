@@ -32,7 +32,7 @@ class Solution {
 		}
 		int partition = quickSort(array, low, high);
 		//System.out.println(partition);
-		if(high-low <= cutoff){
+		if(high-low+1 <= cutoff){
 			insertionSort(array);
 			return;
 		}

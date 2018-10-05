@@ -16,7 +16,9 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:24: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:25: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:39: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:28: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:29: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:35:41: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:40:49: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:44:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:44:37: Parameter array should be final. [FinalParameters]
@@ -26,4 +28,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:54: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:61: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 28 errors.
