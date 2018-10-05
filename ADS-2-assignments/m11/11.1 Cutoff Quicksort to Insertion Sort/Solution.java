@@ -30,18 +30,17 @@ class Solution {
 		if (low >= high) {
 			return;
 		}
-		int partition = quickSort(array, low, high);
-		System.out.println(partition);
-		if(high-low+1 <= cutoff){
-			insertionSort(array);
-			return;
-		}
+		int partition = quickSort(array, low, high,cutoff);
+		System.out.println(partition);		
 		sort(array, low, partition - 1, cutoff);
 		sort(array, partition + 1, high,cutoff);
 
 
 	}
-	public static int quickSort(Comparable[] array, int low, int high) {
+	public static int quickSort(Comparable[] array, int low, int high, int cutoff) {
+		if(high-low+1 <= cutoff){
+			insertionSort(array);
+		}
 		Comparable pivot = array[low];
 		int p1 = low;
 		int p2 = high;
