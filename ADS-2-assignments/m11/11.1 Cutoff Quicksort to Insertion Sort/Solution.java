@@ -69,10 +69,11 @@ class Solution {
 		//System.out.println(array[low] + " low");
 		array[p1] = pivot;
 		//System.out.println(array[p1] + " p1");
-		System.out.println(Arrays.toString(array));
+		
 		if(high-low-1 <= cutoff){
 			insertionSort(array,low,high);
-		} 		
+		}
+		System.out.println(Arrays.toString(array));		
 		return p1;
 	}
 }

@@ -33,6 +33,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:48: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:52: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:59: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:72: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:24: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:25: '-' is not followed by whitespace. [WhitespaceAround]
@@ -41,6 +42,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:41: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:74:45: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:74:49: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:75: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 43 errors.
+Checkstyle ends with 44 errors.
