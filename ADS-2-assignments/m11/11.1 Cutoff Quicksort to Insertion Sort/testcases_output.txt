@@ -32,7 +32,7 @@ Your Output:
 [A, E, E, L, M, O, P, R, S, X, T]
 insertionSort called
 insertionSort called
-[A, E, E, L, M, O, P, R, S, T, X] jcbdkcj
+[A, E, E, L, M, O, P, R, S, X, T] jcbdkcj
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 

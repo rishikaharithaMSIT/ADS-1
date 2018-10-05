@@ -12,13 +12,13 @@ class Solution {
 			break;
 		}
 	}
-	public static void insertionSort(Comparable[] array) {
+	public static void insertionSort(Comparable[] array, int low , int high) {
 		System.out.println("insertionSort called");
-        int n = array.length;
-        for (int i = 1; i < n; ++i) {
+        int n = high;
+        for (int i = low+1; i < n; ++i) {
             Comparable key = array[i];
             int j = i - 1;
-            while (j >= 0 && (array[j].compareTo(key)) > 0) {
+            while (j >= low && (array[j].compareTo(key)) > 0) {
                 array[j + 1] = array[j];
                 j = j - 1;
             }
@@ -43,7 +43,7 @@ class Solution {
 		int p1 = low;
 		int p2 = high;
 		if(high-low+1 <= cutoff){
-			insertionSort(array);
+			insertionSort(array,low,high);
 		} else {
 			while (p2 != p1 && p1 < p2) {
 			while (p2 >= low && array[p2].compareTo(pivot) > 0) {
