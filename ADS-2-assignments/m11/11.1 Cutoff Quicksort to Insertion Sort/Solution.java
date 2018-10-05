@@ -13,7 +13,7 @@ class Solution {
 	}
 	public static void insertionSort(Comparable[] array, int low , int high) {
 		System.out.println("insertionSort called");
-        int n = high;
+        int n = high+1;
         for (int i = low+1; i < n; ++i) {
             Comparable key = array[i];
             int j = i - 1;
