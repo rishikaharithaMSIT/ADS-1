@@ -28,7 +28,6 @@ class Solution {
 	public static void sort(Comparable[] array, int low, int high, int cutoff) {
 		if (high-low <= cutoff) {
 			insertionSort(array, low, high);
-			System.out.println(Arrays.toString(array));
 			return;
 		}
 		int partition = quickSort(array, low, high,cutoff);
