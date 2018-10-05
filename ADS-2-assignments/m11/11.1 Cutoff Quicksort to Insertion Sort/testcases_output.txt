@@ -25,22 +25,22 @@ insertionSort called
 insertionSort called
 [A, E, E, I, N, O, Q, S, S, T, U, Y]
 Your Output: 
-[S, O, R, T, E, X, A, M, P, L, E]
 [P, O, R, E, E, L, A, M, S, X, T]
+[A, O, M, E, E, L, P, R, S, X, T]
 [A, O, M, E, E, L, P, R, S, X, T]
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-[A, E, E, L, O, M, P, R, S, T, X] jcbdkcj
-[E, A, S, Y, Q, U, E, S, T, I, O, N]
+[A, E, E, M, O, L, P, R, S, X, T] jcbdkcj
+[E, A, E, Y, Q, U, S, S, T, I, O, N]
 insertionSort called
-[A, E, E, Y, Q, U, S, S, T, I, O, N]
-[A, E, E, N, Q, U, S, S, T, I, O, Y]
+[E, A, E, N, Q, U, S, S, T, I, O, Y]
+[E, A, E, I, N, U, S, S, T, Q, O, Y]
 insertionSort called
 insertionSort called
 insertionSort called
-[A, E, E, I, N, O, Q, S, U, S, T, Y] jcbdkcj
+[E, A, E, I, N, Q, S, S, T, U, O, Y] jcbdkcj
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -84,42 +84,27 @@ insertionSort called
 [all, bad, dug, jam, yet]
 Your Output: 
 insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
 [1, 2, 3, 4, 5, 6, 7] jcbdkcj
-[9, 8, 7, 6, 5, 4, -9, -8, -7]
 [-7, 8, 7, 6, 5, 4, -9, -8, 9]
 [-7, 8, 7, 6, 5, 4, -9, -8, 9]
+insertionSort called
 [-7, -8, 7, 6, 5, 4, -9, 8, 9]
 [-7, -8, 7, 6, 5, 4, -9, 8, 9]
 insertionSort called
-insertionSort called
-insertionSort called
-[-7, -8, -9, 4, 6, 5, 7, 8, 9] jcbdkcj
-insertionSort called
-insertionSort called
-[11121.55, 13212.54, 12122.45, 12123.44] jcbdkcj
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-[egg, few, hut, jay, men] jcbdkcj
+[-7, -8, -9, 5, 6, 4, 7, 8, 9] jcbdkcj
 insertionSort called
+[12122.45, 12123.44, 13212.54, 11121.55] jcbdkcj
 insertionSort called
-insertionSort called
+[egg, few, hut, men, jay] jcbdkcj
 insertionSort called
 [gig, joy, owl, rap, wee] jcbdkcj
 insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
-[fee, tap, tar, was, wad] jcbdkcj
-insertionSort called
-insertionSort called
-insertionSort called
+[fee, tap, wad, was, tar] jcbdkcj
 insertionSort called
 [all, bad, dug, jam, yet] jcbdkcj
 ----------------------------------------
@@ -149,31 +134,19 @@ insertionSort called
 [112, 121, 122, 123, 131, 132, 133]
 Your Output: 
 insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
 [bed, bug, dad, yes, zoo] jcbdkcj
 insertionSort called
+[for, ilk, now, tip, dim] jcbdkcj
+insertionSort called
+[jot, nob, sob, tag, sky] jcbdkcj
+[001, 100, 1, 010, 100, 110, 101]
 insertionSort called
 insertionSort called
-[dim, for, ilk, tip, now] jcbdkcj
+[001, 1, 100, 010, 100, 110, 101] jcbdkcj
+[122, 112, 121, 123, 132, 133, 131]
 insertionSort called
 insertionSort called
-insertionSort called
-insertionSort called
-[jot, nob, sky, tag, sob] jcbdkcj
-[100, 101, 110, 010, 001, 1, 100]
-insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
-[001, 010, 100, 1, 100, 101, 110] jcbdkcj
-[123, 112, 121, 131, 132, 133, 122]
-insertionSort called
-insertionSort called
-insertionSort called
-insertionSort called
-[112, 121, 122, 123, 131, 133, 132] jcbdkcj
+[112, 122, 121, 123, 132, 133, 131] jcbdkcj
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -195,17 +168,20 @@ insertionSort called
 insertionSort called
 [-1, -2, -3, -4, -5, -6, -7, 1, 2, 3, 4, 5, 6, 7]
 Your Output: 
+insertionSort called
 [1234567890] jcbdkcj
+insertionSort called
 [] jcbdkcj
 [-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7]
-[-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7]
+insertionSort called
 [-1, 4, -2, -7, -3, -6, -4, -5, 1, 5, 3, 6, 2, 7]
 [-1, -5, -2, -7, -3, -6, -4, 4, 1, 5, 3, 6, 2, 7]
+[-1, -3, -2, -4, -5, -6, -7, 4, 1, 5, 3, 6, 2, 7]
 insertionSort called
 insertionSort called
 insertionSort called
-[-1, -2, -3, -4, -5, -6, -7, 4, 1, 5, 3, 6, 2, 7]
+[-1, -2, -3, -4, -5, -6, -7, 4, 1, 6, 3, 2, 5, 7]
 insertionSort called
 insertionSort called
-[-1, -2, -3, -4, -5, -6, -7, 4, 1, 2, 6, 3, 5, 7] jcbdkcj
+[-1, -2, -3, -4, -5, -6, -7, 4, 1, 3, 6, 2, 5, 7] jcbdkcj
 ----------------------------------------

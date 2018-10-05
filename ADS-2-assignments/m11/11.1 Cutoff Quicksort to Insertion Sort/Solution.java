@@ -26,7 +26,8 @@ class Solution {
     }
 	// public static void
 	public static void sort(Comparable[] array, int low, int high, int cutoff) {
-		if (low >= high) {
+		if (high-low-1 <= cutoff) {
+			insertionSort(array, low, high);
 			return;
 		}
 		int partition = quickSort(array, low, high,cutoff);
@@ -37,12 +38,7 @@ class Solution {
 
 	}
 	public static int quickSort(Comparable[] array, int low, int high, int cutoff) {
-		if(high-low-1 <= cutoff){
-			insertionSort(array,low,high);
-			
-		}else {
-			System.out.println(Arrays.toString(array));
-		}
+		
 		Comparable pivot = array[low];
 		int p1 = low;
 		int p2 = high;
@@ -74,6 +70,8 @@ class Solution {
 		array[p1] = pivot;
 		//System.out.println(array[p1] + " p1");
 		
+		
+			System.out.println(Arrays.toString(array));
 
 				
 		return p1;
