@@ -36,10 +36,8 @@ Your Output:
 [A, E, E, L, M, O, P, R, S, X, T]
 3
 insertionSort called
-[A, E, E, L, M, O, P, R, S, T, X]
-2
+1
 insertionSort called
-[A, E, E, L, M, O, P, R, S, T, X]
 9
 [A, E, E, L, M, O, P, R, S, T, X] jcbdkcj
 ----------------------------------------
@@ -89,16 +87,12 @@ Your Output:
 [1, 2, 3, 4, 5, 6, 7]
 1
 insertionSort called
-[1, 2, 3, 4, 5, 6, 7]
 2
 insertionSort called
-[1, 2, 3, 4, 5, 6, 7]
 3
 insertionSort called
-[1, 2, 3, 4, 5, 6, 7]
 4
 insertionSort called
-[1, 2, 3, 4, 5, 6, 7]
 5
 [1, 2, 3, 4, 5, 6, 7] jcbdkcj
 ----------------------------------------
@@ -132,10 +126,8 @@ Your Output:
 [bed, bug, dad, yes, zoo]
 1
 insertionSort called
-[bed, bug, dad, yes, zoo]
 2
 insertionSort called
-[bed, bug, dad, yes, zoo]
 3
 [bed, bug, dad, yes, zoo] jcbdkcj
 ----------------------------------------
