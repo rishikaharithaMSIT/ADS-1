@@ -36,9 +36,11 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:24: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:25: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:39: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:28: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:29: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73:41: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:74:45: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:74:49: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:75: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 43 errors.
