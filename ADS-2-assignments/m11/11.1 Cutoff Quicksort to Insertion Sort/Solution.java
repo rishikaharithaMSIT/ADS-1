@@ -16,7 +16,7 @@ class Solution {
         int n = high+1;
         for (int i = low+1; i < n; ++i) {
             Comparable key = array[i];
-            int j = i;
+            int j = i - 1;
             while (j >= low && (array[j].compareTo(key)) > 0) {
                 array[j + 1] = array[j];
                 j = j - 1;
@@ -26,7 +26,7 @@ class Solution {
     }
 	// public static void
 	public static void sort(Comparable[] array, int low, int high, int cutoff) {
-		if (high-low < cutoff) {
+		if (high-low + 1< cutoff) {
 			insertionSort(array, low, high);
 			return;
 		}

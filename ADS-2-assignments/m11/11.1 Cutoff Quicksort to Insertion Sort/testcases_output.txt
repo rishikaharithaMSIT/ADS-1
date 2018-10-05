@@ -36,11 +36,21 @@ insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
-	at Solution.insertionSort(Solution.java:24)
-	at Solution.sort(Solution.java:30)
-	at Solution.sort(Solution.java:36)
-	at Solution.main(Solution.java:10)
+[A, E, E, L, M, O, P, R, S, T, X]
+[E, A, E, Y, Q, U, S, S, T, I, O, N]
+insertionSort called
+[A, E, E, N, Q, U, S, S, T, I, O, Y]
+[A, E, E, I, N, U, S, S, T, Q, O, Y]
+insertionSort called
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+insertionSort called
+[A, E, E, I, N, O, T, S, Q, S, U, Y]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[A, E, E, I, N, O, Q, S, T, S, U, Y]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -87,13 +97,48 @@ Your Output:
 insertionSort called
 [1, 2, 3, 4, 5, 6, 7]
 insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
 insertionSort called
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
-	at Solution.insertionSort(Solution.java:24)
-	at Solution.sort(Solution.java:30)
-	at Solution.sort(Solution.java:36)
-	at Solution.sort(Solution.java:36)
-	at Solution.main(Solution.java:10)
+insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+insertionSort called
+[-7, -8, 7, 6, 5, 4, -9, 8, 9]
+[-7, -8, 7, 6, 5, 4, -9, 8, 9]
+insertionSort called
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
+insertionSort called
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
+[-7, -8, -9, 5, 4, 6, 7, 8, 9]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[-7, -8, -9, 5, 4, 6, 7, 8, 9]
+[12123.44, 11121.55, 12122.45, 13212.54]
+[11121.55, 12123.44, 12122.45, 13212.54]
+insertionSort called
+insertionSort called
+insertionSort called
+[11121.55, 12123.44, 12122.45, 13212.54]
+[egg, few, hut, men, jay]
+insertionSort called
+insertionSort called
+[egg, few, hut, jay, men]
+[rap, joy, gig, owl, wee]
+insertionSort called
+insertionSort called
+[gig, joy, rap, owl, wee]
+[tar, wad, fee, tap, was]
+insertionSort called
+insertionSort called
+[fee, tap, tar, wad, was]
+insertionSort called
+[all, bad, dug, jam, yet]
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -124,13 +169,34 @@ Your Output:
 insertionSort called
 [bed, bug, dad, yes, zoo]
 insertionSort called
+[bed, bug, dad, yes, zoo]
 insertionSort called
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Solution.insertionSort(Solution.java:24)
-	at Solution.sort(Solution.java:30)
-	at Solution.sort(Solution.java:36)
-	at Solution.sort(Solution.java:36)
-	at Solution.main(Solution.java:10)
+insertionSort called
+[bed, bug, dad, yes, zoo]
+insertionSort called
+[dim, for, ilk, now, tip]
+insertionSort called
+[jot, nob, sky, sob, tag]
+[001, 100, 1, 010, 100, 110, 101]
+[001, 100, 1, 010, 100, 110, 101]
+insertionSort called
+[001, 010, 1, 100, 100, 110, 101]
+[001, 1, 010, 100, 100, 110, 101]
+insertionSort called
+insertionSort called
+insertionSort called
+[001, 1, 010, 100, 100, 101, 110]
+insertionSort called
+insertionSort called
+[001, 1, 010, 100, 100, 101, 110]
+[122, 112, 121, 123, 132, 133, 131]
+[121, 112, 122, 123, 132, 133, 131]
+insertionSort called
+insertionSort called
+[112, 121, 122, 123, 133, 131, 132]
+insertionSort called
+insertionSort called
+[112, 121, 122, 123, 131, 133, 132]
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
