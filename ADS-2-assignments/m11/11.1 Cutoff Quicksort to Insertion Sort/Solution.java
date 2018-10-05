@@ -31,7 +31,7 @@ class Solution {
 			return;
 		}
 		int partition = quickSort(array, low, high,cutoff);
-		//System.out.println(partition);		
+		System.out.println(partition);		
 		sort(array, low, partition - 1, cutoff);
 		sort(array, partition + 1, high,cutoff);
 
@@ -71,7 +71,7 @@ class Solution {
 		//System.out.println(array[p1] + " p1");
 		
 		
-			System.out.println(Arrays.toString(array));
+		System.out.println(Arrays.toString(array));
 
 				
 		return p1;
