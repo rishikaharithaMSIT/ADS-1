@@ -16,7 +16,7 @@ class Solution {
         int n = high+1;
         for (int i = low+1; i < n; ++i) {
             Comparable key = array[i];
-            int j = i - 1;
+            int j = i;
             while (j >= low && (array[j].compareTo(key)) > 0) {
                 array[j + 1] = array[j];
                 j = j - 1;
