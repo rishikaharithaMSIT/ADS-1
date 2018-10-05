@@ -30,8 +30,9 @@ Your Output:
 [A, O, M, E, E, L, P, R, S, X, T]
 [A, L, M, E, E, O, P, R, S, X, T]
 [A, E, E, L, M, O, P, R, S, X, T]
-[A, E, E, L, M, O, P, R, S, X, T]
+insertionSort called
 [A, E, E, L, M, O, P, R, S, T, X]
+insertionSort called
 [A, E, E, L, M, O, P, R, S, T, X] jcbdkcj
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -77,10 +78,7 @@ insertionSort called
 Your Output: 
 [1, 2, 3, 4, 5, 6, 7]
 [1, 2, 3, 4, 5, 6, 7]
-[1, 2, 3, 4, 5, 6, 7]
-[1, 2, 3, 4, 5, 6, 7]
-[1, 2, 3, 4, 5, 6, 7]
-[1, 2, 3, 4, 5, 6, 7]
+insertionSort called
 [1, 2, 3, 4, 5, 6, 7] jcbdkcj
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -110,8 +108,7 @@ insertionSort called
 Your Output: 
 [bed, bug, dad, yes, zoo]
 [bed, bug, dad, yes, zoo]
-[bed, bug, dad, yes, zoo]
-[bed, bug, dad, yes, zoo]
+insertionSort called
 [bed, bug, dad, yes, zoo] jcbdkcj
 ----------------------------------------
 ########## Testcase 3: Failed ##########

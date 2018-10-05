@@ -7,20 +7,37 @@ class Solution {
 		while (scan.hasNext()) {
 			int cutoff = Integer.parseInt(scan.nextLine());
 			Comparable[] array = scan.nextLine().split(" ");
-			sort(array, 0, array.length - 1);
+			sort(array, 0, array.length - 1,cutoff);
 			System.out.println(Arrays.toString(array) + " jcbdkcj");
 			break;
 		}
 	}
+	public static void insertionSort(Comparable[] array) {
+		System.out.println("insertionSort called");
+        int n = array.length;
+        for (int i = 1; i < n; ++i) {
+            Comparable key = array[i];
+            int j = i - 1;
+            while (j >= 0 && (array[j].compareTo(key)) > 0) {
+                array[j + 1] = array[j];
+                j = j - 1;
+            }
+            array[j + 1] = key;
+        }
+    }
 	// public static void
-	public static void sort(Comparable[] array, int low, int high) {
+	public static void sort(Comparable[] array, int low, int high, int cutoff) {
 		if (low >= high) {
 			return;
 		}
 		int partition = quickSort(array, low, high);
 		//System.out.println(partition);
-		sort(array, low, partition - 1);
-		sort(array, partition + 1, high);
+		if(high-low <= cutoff){
+			insertionSort(array);
+			return;
+		}
+		sort(array, low, partition - 1, cutoff);
+		sort(array, partition + 1, high,cutoff);
 
 
 	}
