@@ -8,7 +8,7 @@ class Solution {
 			int cutoff = Integer.parseInt(scan.nextLine());
 			Comparable[] array = scan.nextLine().split(" ");
 			sort(array, 0, array.length - 1,cutoff);
-			System.out.println(Arrays.toString(array));
+			System.out.println(Arrays.toString(array) + " jcbdkcj");
 		}
 	}
 	public static void insertionSort(Comparable[] array, int low , int high) {
@@ -37,7 +37,12 @@ class Solution {
 
 	}
 	public static int quickSort(Comparable[] array, int low, int high, int cutoff) {
-		
+		if(high-low-1 <= cutoff){
+			insertionSort(array,low,high);
+			
+		}else {
+			System.out.println(Arrays.toString(array));
+		}
 		Comparable pivot = array[low];
 		int p1 = low;
 		int p2 = high;
@@ -69,11 +74,8 @@ class Solution {
 		array[p1] = pivot;
 		//System.out.println(array[p1] + " p1");
 		
-		if(high-low-1 <= cutoff){
-			insertionSort(array,low,high);
-		}else {
-			System.out.println(Arrays.toString(array));
-		}				
+
+				
 		return p1;
 	}
 }
