@@ -8,7 +8,7 @@ class Solution {
 			int cutoff = Integer.parseInt(scan.nextLine());
 			Comparable[] array = scan.nextLine().split(" ");
 			sort(array, 0, array.length - 1,cutoff);
-			System.out.println(Arrays.toString(array) + " jcbdkcj");
+			System.out.println(Arrays.toString(array));
 		}
 	}
 	public static void insertionSort(Comparable[] array, int low , int high) {
@@ -73,8 +73,7 @@ class Solution {
 			insertionSort(array,low,high);
 		}else {
 			System.out.println(Arrays.toString(array));
-		}
-				
+		}				
 		return p1;
 	}
 }
