@@ -71,8 +71,10 @@ class Solution {
 		
 		if(high-low-1 <= cutoff){
 			insertionSort(array,low,high);
+		}else {
+			System.out.println(Arrays.toString(array));
 		}
-		System.out.println(Arrays.toString(array));		
+				
 		return p1;
 	}
 }
