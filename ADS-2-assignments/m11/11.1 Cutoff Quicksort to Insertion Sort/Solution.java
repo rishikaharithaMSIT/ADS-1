@@ -42,9 +42,7 @@ class Solution {
 		Comparable pivot = array[low];
 		int p1 = low;
 		int p2 = high;
-		if(high-low+1 <= cutoff){
-			insertionSort(array,low,high);
-		} else {
+		
 			while (p2 != p1 && p1 < p2) {
 			while (p2 >= low && array[p2].compareTo(pivot) > 0) {
 				//System.out.println(array[p2] + " is greater than " + pivot + " p2: " + p2);
@@ -72,8 +70,9 @@ class Solution {
 		array[p1] = pivot;
 		//System.out.println(array[p1] + " p1");
 		System.out.println(Arrays.toString(array));
-		}
-		
+		if(high-low+1 <= cutoff){
+			insertionSort(array,low,high);
+		} 		
 		return p1;
 	}
 }
