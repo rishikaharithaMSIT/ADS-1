@@ -16,7 +16,7 @@ class Solution {
 			return;
 		}
 		int partition = quickSort(array, low, high);
-		System.out.println(partition);
+		//System.out.println(partition);
 		sort(array,low,partition-1);
 		sort(array,partition+1,high);
 
@@ -56,7 +56,7 @@ class Solution {
 		//System.out.println(array[low] + " low");
 		array[p1] = pivot;
 		//System.out.println(array[p1] + " p1");
-		//System.out.println(Arrays.toString(array) + " arrayyyy");
+		System.out.println(Arrays.toString(array) + " arrayyyy");
 		return p1;
 	}
 }

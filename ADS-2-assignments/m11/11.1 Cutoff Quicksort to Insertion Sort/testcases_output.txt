@@ -25,13 +25,13 @@ insertionSort called
 insertionSort called
 [A, E, E, I, N, O, Q, S, S, T, U, Y]
 Your Output: 
-8
-6
-0
-5
-3
-2
-10
+[P, O, R, E, E, L, A, M, S, X, T] arrayyyy
+[A, O, M, E, E, L, P, R, S, X, T] arrayyyy
+[A, O, M, E, E, L, P, R, S, X, T] arrayyyy
+[A, L, M, E, E, O, P, R, S, X, T] arrayyyy
+[A, E, E, L, M, O, P, R, S, X, T] arrayyyy
+[A, E, E, L, M, O, P, R, S, X, T] arrayyyy
+[A, E, E, L, M, O, P, R, S, T, X] arrayyyy
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -74,12 +74,12 @@ insertionSort called
 insertionSort called
 [all, bad, dug, jam, yet]
 Your Output: 
-0
-1
-2
-3
-4
-5
+[1, 2, 3, 4, 5, 6, 7] arrayyyy
+[1, 2, 3, 4, 5, 6, 7] arrayyyy
+[1, 2, 3, 4, 5, 6, 7] arrayyyy
+[1, 2, 3, 4, 5, 6, 7] arrayyyy
+[1, 2, 3, 4, 5, 6, 7] arrayyyy
+[1, 2, 3, 4, 5, 6, 7] arrayyyy
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -106,10 +106,10 @@ insertionSort called
 insertionSort called
 [112, 121, 122, 123, 131, 132, 133]
 Your Output: 
-0
-1
-2
-3
+[bed, bug, dad, yes, zoo] arrayyyy
+[bed, bug, dad, yes, zoo] arrayyyy
+[bed, bug, dad, yes, zoo] arrayyyy
+[bed, bug, dad, yes, zoo] arrayyyy
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
