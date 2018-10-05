@@ -31,7 +31,7 @@ class Solution {
 			return;
 		}
 		int partition = quickSort(array, low, high);
-		//System.out.println(partition);
+		System.out.println(partition);
 		if(high-low+1 <= cutoff){
 			insertionSort(array);
 			return;
