@@ -26,8 +26,8 @@ class Solution {
     }
 	// public static void
 	public static void sort(Comparable[] array, int low, int high, int cutoff) {
-		if (low >  high) {
-			//insertionSort(array, low, high);
+		if (high-low <= cutoff) {
+			insertionSort(array, low, high);
 			return;
 		}
 		int partition = quickSort(array, low, high,cutoff);
