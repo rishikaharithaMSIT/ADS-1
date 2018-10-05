@@ -201,7 +201,7 @@ Your Output:
 insertionSort called
 [1234567890]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.quickSort(Solution.java:68)
-	at Solution.sort(Solution.java:33)
+	at Solution.quickSort(Solution.java:70)
+	at Solution.sort(Solution.java:35)
 	at Solution.main(Solution.java:10)
 ----------------------------------------

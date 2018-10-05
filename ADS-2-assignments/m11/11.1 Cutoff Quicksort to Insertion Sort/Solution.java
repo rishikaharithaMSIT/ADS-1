@@ -18,7 +18,9 @@ class Solution {
             Comparable key = array[i];
             int j = i - 1;
             while (j >= low && (array[j].compareTo(key)) > 0) {
+            	Comparable temp = array[j+1];
                 array[j + 1] = array[j];
+                array[j] = temp;
                 j = j - 1;
             }
             array[j + 1] = key;
