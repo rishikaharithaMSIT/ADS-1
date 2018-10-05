@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 [P, O, R, E, E, L, A, M, S, X, T]
 [A, O, M, E, E, L, P, R, S, X, T]
@@ -30,6 +30,8 @@ Your Output:
 [A, O, M, E, E, L, P, R, S, X, T]
 insertionSort called
 [A, L, M, E, E, O, P, R, S, X, T]
+[A, E, E, L, M, O, P, R, S, X, T]
+insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
@@ -41,6 +43,8 @@ insertionSort called
 [A, E, E, I, N, U, S, S, T, Q, O, Y]
 insertionSort called
 [A, E, E, I, N, O, S, S, T, Q, U, Y]
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
@@ -89,6 +93,8 @@ insertionSort called
 Your Output: 
 [1, 2, 3, 4, 5, 6, 7]
 insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
+insertionSort called
 insertionSort called
 [1, 2, 3, 4, 5, 6, 7]
 [-7, 8, 7, 6, 5, 4, -9, -8, 9]
@@ -99,6 +105,8 @@ insertionSort called
 insertionSort called
 [-7, -8, -9, 6, 5, 4, 7, 8, 9]
 [-7, -8, -9, 6, 5, 4, 7, 8, 9]
+insertionSort called
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
 insertionSort called
 insertionSort called
 insertionSort called
@@ -113,14 +121,16 @@ insertionSort called
 insertionSort called
 insertionSort called
 [egg, few, hut, jay, men]
+[rap, joy, gig, owl, wee]
 insertionSort called
-[gig, joy, owl, rap, wee]
+insertionSort called
+[gig, joy, rap, owl, wee]
 insertionSort called
 [fee, tap, tar, wad, was]
 insertionSort called
 [all, bad, dug, jam, yet]
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 [bed, bug, dad, yes, zoo]
 insertionSort called
@@ -147,6 +157,8 @@ insertionSort called
 Your Output: 
 [bed, bug, dad, yes, zoo]
 insertionSort called
+[bed, bug, dad, yes, zoo]
+insertionSort called
 insertionSort called
 [bed, bug, dad, yes, zoo]
 insertionSort called
@@ -155,6 +167,8 @@ insertionSort called
 [jot, nob, sky, sob, tag]
 [001, 100, 1, 010, 100, 110, 101]
 [001, 100, 1, 010, 100, 110, 101]
+insertionSort called
+[001, 010, 1, 100, 100, 110, 101]
 insertionSort called
 insertionSort called
 insertionSort called
@@ -186,18 +200,8 @@ insertionSort called
 Your Output: 
 insertionSort called
 [1234567890]
-insertionSort called
-[]
-[-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7]
-insertionSort called
-[-1, 4, -2, -7, -3, -6, -4, -5, 1, 5, 3, 6, 2, 7]
-[-1, -5, -2, -7, -3, -6, -4, 4, 1, 5, 3, 6, 2, 7]
-[-1, -3, -2, -4, -5, -6, -7, 4, 1, 5, 3, 6, 2, 7]
-insertionSort called
-insertionSort called
-insertionSort called
-[-1, -2, -3, -4, -5, -6, -7, 4, 1, 6, 3, 2, 5, 7]
-insertionSort called
-insertionSort called
-[-1, -2, -3, -4, -5, -6, -7, 4, 1, 2, 3, 6, 5, 7]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.quickSort(Solution.java:68)
+	at Solution.sort(Solution.java:33)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
