@@ -9,7 +9,6 @@ class Solution {
 			Comparable[] array = scan.nextLine().split(" ");
 			sort(array, 0, array.length - 1,cutoff);
 			System.out.println(Arrays.toString(array) + " jcbdkcj");
-			break;
 		}
 	}
 	public static void insertionSort(Comparable[] array, int low , int high) {
