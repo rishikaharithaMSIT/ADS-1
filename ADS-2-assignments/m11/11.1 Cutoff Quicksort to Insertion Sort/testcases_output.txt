@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 [P, O, R, E, E, L, A, M, S, X, T]
 [A, O, M, E, E, L, P, R, S, X, T]
@@ -45,12 +45,10 @@ insertionSort called
 [A, E, E, I, N, O, S, S, T, Q, U, Y]
 [A, E, E, I, N, O, S, S, T, Q, U, Y]
 insertionSort called
-[A, E, E, I, N, O, T, S, Q, S, U, Y]
 insertionSort called
 insertionSort called
 insertionSort called
-insertionSort called
-[A, E, E, I, N, O, Q, S, T, S, U, Y]
+[A, E, E, I, N, O, Q, S, S, T, U, Y]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -97,8 +95,6 @@ Your Output:
 insertionSort called
 [1, 2, 3, 4, 5, 6, 7]
 insertionSort called
-[1, 2, 3, 4, 5, 6, 7]
-insertionSort called
 insertionSort called
 [1, 2, 3, 4, 5, 6, 7]
 [-7, 8, 7, 6, 5, 4, -9, -8, 9]
@@ -111,17 +107,13 @@ insertionSort called
 [-7, -8, -9, 6, 5, 4, 7, 8, 9]
 insertionSort called
 [-7, -8, -9, 4, 5, 6, 7, 8, 9]
-[-7, -8, -9, 5, 4, 6, 7, 8, 9]
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-insertionSort called
-[-7, -8, -9, 5, 4, 6, 7, 8, 9]
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
 [12123.44, 11121.55, 12122.45, 13212.54]
-[11121.55, 12123.44, 12122.45, 13212.54]
-insertionSort called
 insertionSort called
 insertionSort called
 [11121.55, 12123.44, 12122.45, 13212.54]
@@ -133,14 +125,12 @@ insertionSort called
 insertionSort called
 insertionSort called
 [gig, joy, rap, owl, wee]
-[tar, wad, fee, tap, was]
-insertionSort called
 insertionSort called
 [fee, tap, tar, wad, was]
 insertionSort called
 [all, bad, dug, jam, yet]
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 [bed, bug, dad, yes, zoo]
 insertionSort called
@@ -169,8 +159,6 @@ Your Output:
 insertionSort called
 [bed, bug, dad, yes, zoo]
 insertionSort called
-[bed, bug, dad, yes, zoo]
-insertionSort called
 insertionSort called
 [bed, bug, dad, yes, zoo]
 insertionSort called
@@ -181,22 +169,14 @@ insertionSort called
 [001, 100, 1, 010, 100, 110, 101]
 insertionSort called
 [001, 010, 1, 100, 100, 110, 101]
-[001, 1, 010, 100, 100, 110, 101]
 insertionSort called
 insertionSort called
 insertionSort called
-[001, 1, 010, 100, 100, 101, 110]
-insertionSort called
-insertionSort called
-[001, 1, 010, 100, 100, 101, 110]
+[001, 010, 1, 100, 100, 101, 110]
 [122, 112, 121, 123, 132, 133, 131]
-[121, 112, 122, 123, 132, 133, 131]
 insertionSort called
 insertionSort called
-[112, 121, 122, 123, 133, 131, 132]
-insertionSort called
-insertionSort called
-[112, 121, 122, 123, 131, 133, 132]
+[112, 121, 122, 123, 131, 132, 133]
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
