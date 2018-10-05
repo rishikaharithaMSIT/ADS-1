@@ -55,7 +55,7 @@ class Solution {
 				p1++;
 			}
 			if (p2 < p1) {
-				p1--;
+				//p1--;
 				break;
 			}
 			//System.out.println("excahnging : " + array[p1]+ " - " + array[p2]);
