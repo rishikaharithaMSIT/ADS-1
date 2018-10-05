@@ -28,7 +28,7 @@ class Solution {
     }
 	// public static void
 	public static void sort(Comparable[] array, int low, int high, int cutoff) {
-		if (high-low+1 < cutoff) {
+		if (high-low <= cutoff) {
 			insertionSort(array, low, high);
 			return;
 		}
