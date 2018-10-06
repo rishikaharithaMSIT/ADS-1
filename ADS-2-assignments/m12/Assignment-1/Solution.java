@@ -30,12 +30,40 @@ public class Solution {
 
 	}
 	public static void fillVacancies(int vacancies, int unres, int bc, int sc, int st) {
+		//add bc
+		for (int i = 0; i < students.size(); i++) {
+			while(bc > 0) {
+				if(students.get(i).rc.equals("BC")) {
+					vacanciesList.add(students.get(i));
+				}
+				bc--;
+			}
+		}
+		// add sc
+		for (int i = 0; i < students.size(); i++) {
+			while(sc > 0) {
+				if(students.get(i).rc.equals("SC")) {
+					vacanciesList.add(students.get(i));
+				}
+				sc--;
+			}
+		}
+		//add st
+		for (int i = 0; i < students.size(); i++) {
+			while(st > 0) {
+				if(students.get(i).rc.equals("ST")) {
+					vacanciesList.add(students.get(i));
+				}
+				st--;
+			}
+		}
 		for (int i = 0; i < students.size(); i++) {
 			Student s = students.get(i);
 			for (int j = i+1; j < students.size(); j++) {
 				if(s.compareAgain(students.get(j)) == 1) {
+
 					if(!vacanciesList.contains(s)) {
-						vacanciesList.add(s);
+						//vacanciesList.add(s);
 					}					
 				}
 			}

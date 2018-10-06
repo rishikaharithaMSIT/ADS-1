@@ -57,19 +57,6 @@ Shreya,23,SC
 
 -----
 divya,99,ST
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-Aditya,80,ST
-priya,72,SC
-shyam,71,ST
-varsha,66,BC
-yash,61,BC
-Abhishek,60,BC
-Ankit,58,BC
-Manoj,39,SC
-Anjali,38,SC
-Aryan,32,ST
 --------
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -147,23 +134,6 @@ Shreya,23,SC
 
 -----
 divya,99,ST
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-Aditya,80,ST
-priya,72,SC
-shyam,71,ST
-ROHIT,70,SC
-Tanya,66,BC
-varsha,66,BC
-yash,61,BC
-Abhishek,60,BC
-Ankit,58,BC
-Gayatri,58,SC
-Sneha,50,SC
-Manoj,39,SC
-Anjali,38,SC
-Aryan,32,ST
 --------
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -195,8 +165,6 @@ Tanya,66,BC
 Abhishek,60,BC
 
 -----
-Aditya,80,ST
-priya,76,SC
 --------
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -231,8 +199,6 @@ Tanya,66,BC
 Abhishek,60,BC
 
 -----
-tanvi,90,ST
-priya,76,SC
 --------
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -398,22 +364,5 @@ Shreya,23,SC
 
 -----
 divya,99,ST
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-mahesh,87,BC
-Aditya,80,ST
-priya,72,SC
-shyam,71,ST
-ROHIT,70,SC
-Tanya,66,SC
-varsha,66,BC
-Abhishek,60,SC
-Ankit,58,SC
-Gayatri,58,SC
-Sneha,50,SC
-Anjali,38,SC
-Manoj,32,SC
-Aryan,32,ST
 --------
 ----------------------------------------
