@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:13:22: 'while' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 7 errors.

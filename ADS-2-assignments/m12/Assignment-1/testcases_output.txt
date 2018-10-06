@@ -1,0 +1,347 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+Priyanka,70,Open
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+vani,50,Open
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Aditya,80,ST
+priya,72,SC
+Your Output: 
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]
+[priya, 13-08-1993, 21, 40, 11, 72, SC]
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]
+[divya, 29-07-1993, 40, 39, 20, 99, ST]
+[tanvi, 22-01-1994, 38, 33, 19, 90, BC]
+[vani, 13-06-1993, 11, 23, 16, 50, Open]
+[yash, 18-08-1994, 19, 29, 13, 61, BC]
+[Anjali, 16-03-1993, 06, 12, 20, 38, SC]
+[Ankit, 29-04-1993, 08, 34, 16, 58, BC]
+[Shreya, 19-02-1993, 12, 11, 0, 23, SC]
+[shyam, 21-11-1993, 28, 23, 20, 71, ST]
+[riya, 18-12-1994, 32, 31, 20, 83, Open]
+[Deepak, 18-10-1994, 40, 38, 20, 98, Open]
+[Aryan, 12-12-1992, 10, 10, 12, 32, ST]
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]
+[Raj, 16-08-1994, 34, 33, 20, 87, BC]
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]
+[varsha, 01-07-1993, 26, 27, 13, 66, BC]
+[Manoj, 18-11-1995, 09, 24, 06, 39, SC]
+[Ira, 16-07-1993, 33, 40, 20, 93, ST]
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,Open
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+Aditya,80,ST
+priya,72,SC
+Your Output: 
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]
+[priya, 13-08-1993, 21, 40, 11, 72, SC]
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]
+[Tanya, 21-01-1993, 20, 26, 20, 66, BC]
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]
+[divya, 29-07-1993, 40, 39, 20, 99, ST]
+[Amit, 30-01-1993, 36, 20, 14, 70, Open]
+[tanvi, 22-01-1994, 38, 33, 19, 90, BC]
+[mahesh, 16-02-1993, 38, 39, 10, 87, Open]
+[Ishita, 19-05-1993, 40, 40, 19, 99, Open]
+[ROHIT, 24-12-1992, 26, 26, 18, 70, SC]
+[vani, 13-06-1993, 11, 23, 16, 50, Open]
+[yash, 18-08-1994, 19, 29, 13, 61, BC]
+[Anjali, 16-03-1993, 06, 12, 20, 38, SC]
+[Ankit, 29-04-1993, 08, 34, 16, 58, BC]
+[Shreya, 19-02-1993, 12, 11, 0, 23, SC]
+[shyam, 21-11-1993, 28, 23, 20, 71, ST]
+[riya, 18-12-1994, 32, 31, 20, 83, Open]
+[Deepak, 18-10-1994, 40, 38, 20, 98, Open]
+[Sneha, 12-06-1992, 30, 06, 14, 50, SC]
+[Aryan, 12-12-1992, 10, 10, 12, 32, ST]
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]
+[Raj, 16-08-1994, 34, 33, 20, 87, BC]
+[Gayatri, 09-09-1993, 36, 12, 10, 58, SC]
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]
+[varsha, 01-07-1993, 26, 27, 13, 66, BC]
+[Manoj, 18-11-1995, 09, 24, 06, 39, SC]
+[Ira, 16-07-1993, 33, 40, 20, 93, ST]
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+divya,99,Open
+tanvi,90,Open
+Aditya,80,ST
+priya,76,SC
+Ajay,76,Open
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+Abhishek,60,BC
+
+divya,99,Open
+Aditya,80,ST
+priya,76,SC
+Your Output: 
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]
+[priya, 13-08-1993, 32, 33, 11, 76, SC]
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]
+[Tanya, 21-01-1993, 20, 26, 20, 66, BC]
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]
+[divya, 29-07-1993, 40, 39, 20, 99, Open]
+[Amit, 30-01-1993, 36, 20, 14, 70, Open]
+[tanvi, 22-01-1994, 38, 33, 19, 90, Open]
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+divya,99,Open
+tanvi,90,ST
+Aditya,80,Open
+priya,76,SC
+Ajay,76,Open
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+Abhishek,60,BC
+
+divya,99,Open
+tanvi,90,ST
+Aditya,80,Open
+priya,76,SC
+Ajay,76,Open
+Tanya,66,BC
+Your Output: 
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]
+[priya, 13-08-1993, 32, 33, 11, 76, SC]
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]
+[Tanya, 21-01-1993, 20, 26, 20, 66, BC]
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]
+[Aditya, 18-01-1994, 26, 34, 20, 80, Open]
+[divya, 29-07-1993, 40, 39, 20, 99, Open]
+[Amit, 30-01-1993, 36, 20, 14, 70, Open]
+[tanvi, 22-01-1994, 38, 33, 19, 90, ST]
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+divya,99,Open
+tanvi,99,Open
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,Open
+Raj,87,Open
+mahesh,87,Open
+riya,83,Open
+Aditya,80,Open
+priya,76,Open
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+Tanya,72,Open
+ROHIT,70,Open
+Priyanka,70,Open
+varsha,66,Open
+yash,61,Open
+Abhishek,60,Open
+Ankit,58,Open
+Gayatri,58,Open
+vani,50,Open
+Sneha,50,Open
+Aishwarya,48,Open
+Manoj,39,Open
+Anjali,38,Open
+Aryan,32,Open
+shyam,23,Open
+Shreya,23,Open
+
+divya,99,Open
+tanvi,99,Open
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,Open
+Raj,87,Open
+mahesh,87,Open
+riya,83,Open
+Aditya,80,Open
+priya,76,Open
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+Your Output: 
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]
+[priya, 13-08-1993, 25, 40, 11, 76, Open]
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]
+[Tanya, 21-01-1993, 20, 26, 20, 72, Open]
+[Abhishek, 06-05-1993, 08, 37, 15, 60, Open]
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]
+[Aditya, 18-01-1994, 26, 34, 20, 80, Open]
+[divya, 29-07-1993, 40, 39, 20, 99, Open]
+[Amit, 30-01-1993, 36, 29, 11, 76, Open]
+[tanvi, 22-01-1994, 40, 40, 19, 99, Open]
+[mahesh, 16-02-1993, 38, 39, 10, 87, Open]
+[Ishita, 19-05-1993, 40, 40, 19, 99, Open]
+[ROHIT, 24-12-1992, 26, 26, 18, 70, Open]
+[vani, 13-06-1993, 11, 23, 16, 50, Open]
+[yash, 18-08-1994, 19, 29, 13, 61, Open]
+[Anjali, 16-03-1993, 06, 12, 20, 38, Open]
+[Ankit, 29-04-1993, 08, 34, 16, 58, Open]
+[Shreya, 19-02-1993, 12, 11, 0, 23, Open]
+[shyam, 21-11-1993, 12, 11, 0, 23, Open]
+[riya, 18-12-1994, 32, 31, 20, 83, Open]
+[Deepak, 18-10-1994, 40, 38, 20, 98, Open]
+[Sneha, 12-06-1992, 30, 06, 14, 50, Open]
+[Aryan, 12-12-1992, 10, 10, 12, 32, Open]
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]
+[Raj, 16-08-1994, 34, 33, 20, 87, Open]
+[Gayatri, 09-09-1993, 36, 12, 10, 58, Open]
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]
+[varsha, 01-07-1993, 26, 27, 13, 66, Open]
+[Manoj, 18-11-1995, 09, 24, 06, 39, Open]
+[Ira, 16-07-1993, 33, 40, 20, 93, Open]
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+divya,99,ST
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Priyanka,70,Open
+Tanya,66,SC
+varsha,66,BC
+yash,61,Open
+Abhishek,60,SC
+Ankit,58,SC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Anjali,38,SC
+Manoj,32,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+varsha,66,BC
+Your Output: 
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]
+[priya, 13-08-1993, 21, 40, 11, 72, SC]
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]
+[Tanya, 21-01-1993, 20, 26, 20, 66, SC]
+[Abhishek, 06-05-1993, 08, 37, 15, 60, SC]
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]
+[divya, 29-07-1993, 40, 39, 20, 99, ST]
+[Amit, 30-01-1993, 32, 33, 11, 76, Open]
+[tanvi, 22-01-1994, 38, 33, 19, 90, BC]
+[mahesh, 16-02-1993, 38, 39, 10, 87, BC]
+[Ishita, 19-05-1993, 40, 40, 19, 99, Open]
+[ROHIT, 24-12-1992, 26, 26, 18, 70, SC]
+[vani, 13-06-1993, 11, 23, 16, 50, Open]
+[yash, 18-08-1994, 19, 29, 13, 61, Open]
+[Anjali, 16-03-1993, 06, 12, 20, 38, SC]
+[Ankit, 29-04-1993, 08, 34, 16, 58, SC]
+[Shreya, 19-02-1993, 12, 11, 0, 23, SC]
+[shyam, 21-11-1993, 28, 23, 20, 71, ST]
+[riya, 18-12-1994, 32, 31, 20, 83, Open]
+[Deepak, 18-10-1994, 40, 40, 19, 99, Open]
+[Sneha, 12-06-1992, 30, 06, 14, 50, SC]
+[Aryan, 12-12-1992, 10, 10, 12, 32, ST]
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]
+[Raj, 16-08-1994, 34, 33, 20, 87, BC]
+[Gayatri, 09-09-1993, 36, 12, 10, 58, SC]
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]
+[varsha, 01-07-1993, 26, 27, 13, 66, BC]
+[Manoj, 18-11-1995, 09, 11, 12, 32, SC]
+[Ira, 16-07-1993, 33, 40, 20, 93, ST]
+----------------------------------------
