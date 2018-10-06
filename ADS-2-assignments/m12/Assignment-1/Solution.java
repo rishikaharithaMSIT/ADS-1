@@ -34,11 +34,13 @@ public class Solution {
 		int b = 0;
 		int c = 0;
 		int t = 0;
+		int v = 0;
 		for (int i = 0; i < students.size(); i++) {
 			if(b == bc) break;
 			if(students.get(i).rc.equals("BC")) {
 				vacanciesList.add(students.get(i));
 				b++;
+				v++;
 			}
 			
 		}
@@ -48,6 +50,7 @@ public class Solution {
 			if(students.get(i).rc.equals("SC")) {
 				vacanciesList.add(students.get(i));
 				c++;
+				v++;
 			}
 			
 		}
@@ -57,21 +60,20 @@ public class Solution {
 			if(students.get(i).rc.equals("ST")) {
 				vacanciesList.add(students.get(i));
 				t++;
+				v++;
+			}
+			
+		}
+
+		for (int i = 0; i < students.size(); i++) {
+			if(v == vacancies) break;
+			if(!vacanciesList.contains(students.get(i))) {
+				vacanciesList.add(students.get(i));
+				v++;
 			}
 			
 		}
 		
-		//add st
-		// for (int i = 0; i < students.size(); i++) {
-		// 	int si = students.size();
-		// 	while(st > 0) {
-		// 		if(students.get(i).rc.equals("ST")) {
-		// 			vacanciesList.add(students.get(i));
-		// 			st--;
-		// 		}
-				
-		// 	}
-		// }
 		// for (int i = 0; i < students.size(); i++) {
 		// 	Student s = students.get(i);
 		// 	for (int j = i+1; j < students.size(); j++) {

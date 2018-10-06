@@ -58,7 +58,11 @@ Shreya,23,SC
 -----
 priya,72,SC
 divya,99,ST
---------2
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+--------6
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -137,7 +141,12 @@ Shreya,23,SC
 tanvi,90,BC
 priya,72,SC
 divya,99,ST
---------3
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+Raj,87,BC
+mahesh,87,Open
+--------8
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -170,7 +179,8 @@ Abhishek,60,BC
 -----
 priya,76,SC
 Aditya,80,ST
---------2
+divya,99,Open
+--------3
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -207,7 +217,10 @@ Abhishek,60,BC
 Tanya,66,BC
 priya,76,SC
 tanvi,90,ST
---------3
+divya,99,Open
+Aditya,80,Open
+Ajay,76,Open
+--------6
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -288,7 +301,20 @@ shyam,23,Open
 Shreya,23,Open
 
 -----
---------0
+divya,99,Open
+tanvi,99,Open
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,Open
+Raj,87,Open
+mahesh,87,Open
+riya,83,Open
+Aditya,80,Open
+priya,76,Open
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+--------13
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -377,5 +403,14 @@ mahesh,87,BC
 varsha,66,BC
 priya,72,SC
 divya,99,ST
---------6
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+riya,83,Open
+Aditya,80,ST
+Amit,76,Open
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+--------15
 ----------------------------------------
