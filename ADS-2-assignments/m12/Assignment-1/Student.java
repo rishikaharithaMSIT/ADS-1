@@ -166,11 +166,11 @@ class Student implements Comparable<Student> {
      * @param      tmarks  The tmarks
      * @param      rc      The rectangle
      */
-    Student(final String name,
+    Student(final String n,
             final String dob, final String marks1,
             final String marks2, final String marks3,
             final String tmarks, final String rc) {
-        setName(name);
+        this.name = n;
         String[] d = dob.split("-");
         this.day = Integer.parseInt(d[0]);
         this.month = Integer.parseInt(d[1]);
@@ -179,6 +179,7 @@ class Student implements Comparable<Student> {
         setMarks2(Integer.parseInt(marks2));
         setMarks3(Integer.parseInt(marks3));
         setMarkst(Integer.parseInt(tmarks));
+
         
         this.rc = rc;
 
