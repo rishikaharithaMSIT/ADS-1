@@ -57,10 +57,8 @@ Shreya,23,SC
 
 -----
 priya,72,SC
-Manoj,39,SC
-Anjali,38,SC
-Shreya,23,SC
---------4
+divya,99,ST
+--------2
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -137,7 +135,9 @@ Shreya,23,SC
 
 -----
 tanvi,90,BC
---------1
+priya,72,SC
+divya,99,ST
+--------3
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -169,7 +169,8 @@ Abhishek,60,BC
 
 -----
 priya,76,SC
---------1
+Aditya,80,ST
+--------2
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -204,7 +205,9 @@ Abhishek,60,BC
 
 -----
 Tanya,66,BC
---------1
+priya,76,SC
+tanvi,90,ST
+--------3
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -373,14 +376,6 @@ Raj,87,BC
 mahesh,87,BC
 varsha,66,BC
 priya,72,SC
-ROHIT,70,SC
-Tanya,66,SC
-Abhishek,60,SC
-Ankit,58,SC
-Gayatri,58,SC
-Sneha,50,SC
-Anjali,38,SC
-Manoj,32,SC
-Shreya,23,SC
---------14
+divya,99,ST
+--------6
 ----------------------------------------

@@ -35,20 +35,32 @@ public class Solution {
 		int c = 0;
 		int t = 0;
 		for (int i = 0; i < students.size(); i++) {
+			if(b == bc) break;
 			if(students.get(i).rc.equals("BC")) {
 				vacanciesList.add(students.get(i));
 				b++;
 			}
-			if(b == bc) break;
+			
 		}
 		// add sc
 		for (int i = 0; i < students.size(); i++) {
+			if(c == sc) break;
 			if(students.get(i).rc.equals("SC")) {
 				vacanciesList.add(students.get(i));
 				c++;
 			}
-			if(b == sc) break;
+			
 		}
+		//add st
+		for (int i = 0; i < students.size(); i++) {
+			if(t == st) break;
+			if(students.get(i).rc.equals("ST")) {
+				vacanciesList.add(students.get(i));
+				t++;
+			}
+			
+		}
+		
 		//add st
 		// for (int i = 0; i < students.size(); i++) {
 		// 	int si = students.size();
