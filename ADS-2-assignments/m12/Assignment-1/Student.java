@@ -54,40 +54,40 @@ class Student implements Comparable<Student> {
 
 	}
 	public int compareTo(Student other) {
-		if (this.tmarks > other.getTotal()) {
+		if (this.getTotal() > other.getTotal()) {
 			return 1;
 		}
-		if (this.tmarks < other.getTotal()) {
+		if (this.getTotal() < other.getTotal()) {
 			return -1;
 		}
-		if (this.marks3 > other.getMarks3()) {
+		if (this.getMarks3() > other.getMarks3()) {
 			return 1;
 		}
-		if (this.marks3 < other.getMarks3()) {
+		if (this.getMarks3() < other.getMarks3()) {
 			return -1;
 		}
-		if (this.marks2 > other.getMarks2()) {
+		if (this.getMarks2() > other.getMarks2()) {
 			return 1;
 		}
-		if (this.marks2 < other.getMarks2()) {
+		if (this.getMarks2() < other.getMarks2()) {
 			return -1;
 		}
-		if (this.year > other.getYear()) {
+		if (this.getYear() > other.getYear()) {
 			return 1;
 		}
-		if (this.year < other.getYear()) {
+		if (this.getYear() < other.getYear()) {
 			return -1;
 		}
-		if (this.month > other.getMonth()) {
+		if (this.getMonth() > other.getMonth()) {
 			return 1;
 		}
-		if (this.month < other.getMonth()) {
+		if (this.getMonth() < other.getMonth()) {
 			return -1;
 		}
-		if (this.day < other.getDay()) {
+		if (this.getDay() < other.getDay()) {
 			return 1;
 		}
-		if (this.day > other.getDay()) {
+		if (this.getDay() > other.getDay()) {
 			return -1;
 		}
 		return 0;
