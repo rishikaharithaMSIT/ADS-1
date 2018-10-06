@@ -34,7 +34,9 @@ public class Solution {
 			Student s = students.get(i);
 			for (int j = i+1; j < students.size(); j++) {
 				if(s.compareAgain(students.get(j)) == 1) {
-					vacanciesList.add(s);
+					if(!vacanciesList.contains(s)) {
+						vacanciesList.add(s);
+					}					
 				}
 			}
 		}
