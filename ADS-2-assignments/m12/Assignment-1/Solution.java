@@ -46,9 +46,12 @@ public class Solution {
 		for (int i = 0; i < students.size(); i++) {
 			if(b == bc) break;
 			if(students.get(i).rc.equals("BC")) {
-				vacanciesList.add(students.get(i));
-				b++;
-				v++;
+				if(!vacanciesList.contains(students.get(i))) {
+					vacanciesList.add(students.get(i));
+					b++;
+					v++;
+				}
+				
 			}
 			
 		}
@@ -56,9 +59,12 @@ public class Solution {
 		for (int i = 0; i < students.size(); i++) {
 			if(c == sc) break;
 			if(students.get(i).rc.equals("SC")) {
-				vacanciesList.add(students.get(i));
-				c++;
-				v++;
+				if(!vacanciesList.contains(students.get(i))) {
+
+					vacanciesList.add(students.get(i));
+					c++;
+					v++;
+				}
 			}
 			
 		}
@@ -66,9 +72,11 @@ public class Solution {
 		for (int i = 0; i < students.size(); i++) {
 			if(t == st) break;
 			if(students.get(i).rc.equals("ST")) {
-				vacanciesList.add(students.get(i));
-				t++;
-				v++;
+				if(!vacanciesList.contains(students.get(i))) {
+					vacanciesList.add(students.get(i));
+					t++;
+					v++;
+				}
 			}
 			
 		}
