@@ -55,33 +55,12 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-here
-here1 ST
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
 -----
-divya,99,ST
---------1
+priya,72,SC
+Manoj,39,SC
+Anjali,38,SC
+Shreya,23,SC
+--------4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -156,39 +135,8 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-here
-here1 ST
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
 -----
-divya,99,ST
+tanvi,90,BC
 --------1
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -219,19 +167,9 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-here
-here1 Open
-here
-here
-here
-here
-here
-here
-here
-here
-here
 -----
---------0
+priya,76,SC
+--------1
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -264,19 +202,9 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-here
-here1 Open
-here
-here
-here
-here
-here
-here
-here
-here
-here
 -----
---------0
+Tanya,66,BC
+--------1
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -356,38 +284,6 @@ Aryan,32,Open
 shyam,23,Open
 Shreya,23,Open
 
-here
-here1 Open
-here1 Open
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
 -----
 --------0
 ----------------------------------------
@@ -471,38 +367,20 @@ Manoj,32,SC
 Aryan,32,ST
 Shreya,23,SC
 
-here
-here1 ST
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
-here
 -----
-divya,99,ST
---------1
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+varsha,66,BC
+priya,72,SC
+ROHIT,70,SC
+Tanya,66,SC
+Abhishek,60,SC
+Ankit,58,SC
+Gayatri,58,SC
+Sneha,50,SC
+Anjali,38,SC
+Manoj,32,SC
+Shreya,23,SC
+--------14
 ----------------------------------------

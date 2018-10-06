@@ -31,35 +31,35 @@ public class Solution {
 	}
 	public static void fillVacancies(int vacancies, int unres, int bc, int sc, int st) {
 		//add bc
+		int b = 0;
+		int c = 0;
+		int t = 0;
 		for (int i = 0; i < students.size(); i++) {
-			while(bc > 0) {
-				if(students.get(i).rc.equals("BC")) {
-					vacanciesList.add(students.get(i));
-				}
-				bc--;
+			if(students.get(i).rc.equals("BC")) {
+				vacanciesList.add(students.get(i));
+				b++;
 			}
+			if(b == bc) break;
 		}
 		// add sc
 		for (int i = 0; i < students.size(); i++) {
-			System.out.println("here");
-			while(sc > 0) {
-				System.out.println("here1 " + students.get(i).rc);
-				if(students.get(i).rc.equals("SC")) {
-					System.out.println("SCCC" + students.get(i));
-					vacanciesList.add(students.get(i));
-				}
-				sc--;
+			if(students.get(i).rc.equals("SC")) {
+				vacanciesList.add(students.get(i));
+				c++;
 			}
+			if(b == sc) break;
 		}
 		//add st
-		for (int i = 0; i < students.size(); i++) {
-			while(st > 0) {
-				if(students.get(i).rc.equals("ST")) {
-					vacanciesList.add(students.get(i));
-				}
-				st--;
-			}
-		}
+		// for (int i = 0; i < students.size(); i++) {
+		// 	int si = students.size();
+		// 	while(st > 0) {
+		// 		if(students.get(i).rc.equals("ST")) {
+		// 			vacanciesList.add(students.get(i));
+		// 			st--;
+		// 		}
+				
+		// 	}
+		// }
 		// for (int i = 0; i < students.size(); i++) {
 		// 	Student s = students.get(i);
 		// 	for (int j = i+1; j < students.size(); j++) {
