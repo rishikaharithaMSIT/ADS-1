@@ -116,8 +116,10 @@ class Student implements Comparable<Student> {
 	 * @param      tmarks  The tmarks
 	 * @param      rc      The rectangle
 	 */
-	Student(String name, String dob, String marks1,
-	        String marks2, String marks3, String tmarks, String rc) {
+	Student(final String name,
+	        final String dob, final String marks1,
+	        final String marks2, final String marks3,
+	        final String tmarks, final String rc) {
 		this.name = name;
 		String[] d = dob.split("-");
 		this.day = Integer.parseInt(d[0]);
