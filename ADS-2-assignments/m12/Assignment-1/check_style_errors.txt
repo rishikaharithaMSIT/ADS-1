@@ -7,13 +7,12 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:135:27: Parameter m2 should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:143:27: Parameter m3 should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:151:27: Parameter mt should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:161:8: Unused @param tag for 'name'. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:169:26: Expected @param tag for 'n'. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:170:44: 'marks1' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:171:26: 'marks2' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:171:47: 'marks3' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:172:26: 'tmarks' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:172:47: 'rc' hides a field. [HiddenField]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:183: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:154: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:167:44: 'marks1' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:168:26: 'marks2' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:168:47: 'marks3' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:169:26: 'tmarks' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:169:47: 'rc' hides a field. [HiddenField]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:180: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 15 errors.

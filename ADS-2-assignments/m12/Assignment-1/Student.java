@@ -151,14 +151,11 @@ class Student implements Comparable<Student> {
     public void setMarkst(int mt) {
         tmarks = mt;
     }
-    /**
-    public void setRC(String r) {
-        rc = r;
-    }
+    
     /**
      * Constructs the object.
      *
-     * @param      name    The name
+     * @param      n       { parameter_description }
      * @param      dob     The dob
      * @param      marks1  The marks 1
      * @param      marks2  The marks 2
