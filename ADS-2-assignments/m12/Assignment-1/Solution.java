@@ -12,8 +12,13 @@ public final class Solution {
 	private Solution() {
 
 	}
-
+	/**
+	 * students array List.
+	 */
 	private static ArrayList<Student> students = new ArrayList<>();
+	/**
+	 *  Vacancies array list.
+	 */
 	private static ArrayList<Student> vacanciesList = new ArrayList<>();
 
 	/**
@@ -34,13 +39,17 @@ public final class Solution {
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(",");
 			//System.out.println(Arrays.toString(tokens));
-			Student s = new Student(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]);
+			Student s = new Student(tokens[0], tokens[1],
+			                        tokens[2], tokens[3], tokens[4],
+			                        tokens[5], tokens[6]);
 			students.add(s);
 		}
 		selectionSort();
 
 		for (int i = 0; i < students.size(); i++) {
-			System.out.println(students.get(i).getName() + "," + students.get(i).getTotal() + "," + students.get(i).getRC());
+			System.out.println(students.get(i).getName() + ","
+			                   + students.get(i).getTotal() + ","
+			                   + students.get(i).getRC());
 		}
 		System.out.println();
 
@@ -56,7 +65,8 @@ public final class Solution {
 	 * @param      sc         The screen
 	 * @param      st         { parameter_description }
 	 */
-	public static void fillVacancies(int vacancies, int unres, int bc, int sc, int st) {
+	public static void fillVacancies(int vacancies,
+	                                 int unres, int bc, int sc, int st) {
 		//add bc
 		int unres1 = 0;
 		int bc1 = 0;
@@ -121,7 +131,9 @@ public final class Solution {
 
 		for (int i = 0; i < vacanciesList.size(); i++) {
 			if ( i == vacancies) break;
-			System.out.println(vacanciesList.get(i).getName() + "," + vacanciesList.get(i).getTotal() + "," + vacanciesList.get(i).getRC());
+			System.out.println(vacanciesList.get(i).getName()
+			                   + "," + vacanciesList.get(i).getTotal()
+			                   + "," + vacanciesList.get(i).getRC());
 		}
 
 
