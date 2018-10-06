@@ -262,8 +262,8 @@ Amit,76,Open
 Arjun,75,Open
 Your Output: 
 divya,99,Open
-Ishita,99,Open
 tanvi,99,Open
+Ishita,99,Open
 Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
@@ -293,8 +293,8 @@ Shreya,23,Open
 shyam,23,Open
 
 divya,99,Open
-Ishita,99,Open
 tanvi,99,Open
+Ishita,99,Open
 Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
@@ -356,8 +356,8 @@ priya,72,SC
 varsha,66,BC
 Your Output: 
 divya,99,ST
-Ishita,99,Open
 Deepak,99,Open
+Ishita,99,Open
 Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
@@ -387,8 +387,8 @@ Aryan,32,ST
 Shreya,23,SC
 
 divya,99,ST
-Ishita,99,Open
 Deepak,99,Open
+Ishita,99,Open
 Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
