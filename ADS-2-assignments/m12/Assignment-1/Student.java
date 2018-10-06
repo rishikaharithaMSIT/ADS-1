@@ -189,8 +189,8 @@ class Student implements Comparable<Student> {
 		        && other.getRC().equals("Open"))) {
 			return 1;
 		}
-		if ((other.getRC().equals("SC") ||
-		        other.getRC().equals("ST") || other.getRC().equals("BC")
+		if ((other.getRC().equals("SC")
+		        || other.getRC().equals("ST") || other.getRC().equals("BC")
 		        && this.getRC().equals("Open"))) {
 			return -1;
 		}
