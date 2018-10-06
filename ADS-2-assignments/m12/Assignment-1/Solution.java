@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 public class Solution {
 	static ArrayList<Student> students = new ArrayList<>();
+	static ArrayList<Student> vacanciesList = new ArrayList<>();
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int noLines = Integer.parseInt(scan.nextLine());
@@ -24,6 +25,24 @@ public class Solution {
 			System.out.println(students.get(i).name + "," + students.get(i).tmarks + "," + students.get(i).rc);
 		}
 		System.out.println();
+
+		fillVacancies(vacancies, unres, bc, sc, st);
+
+	}
+	public static void fillVacancies(int vacancies, int unres, int bc, int sc, int st) {
+		for (int i = 0; i < students.size(); i++) {
+			Student s = students.get(i);
+			for (int j = i+1; i < students.size(); i++) {
+				if(s.compareAgain(students.get(j)) == 1) {
+					vacanciesList.add(s);
+				}
+			}
+		}
+		System.out.println("-----");
+		for (int i = 0; i < vacanciesList.size(); i++) {
+			System.out.println(vacanciesList.get(i).name + "," + vacanciesList.get(i).tmarks + "," + vacanciesList.get(i).rc);
+		}
+		System.out.println("--------");
 
 	}
 	public static void selectionSort() {
@@ -82,6 +101,16 @@ class Student implements Comparable<Student> {
 		if (this.month > other.month) return -1;
 		if (this.day > other.day) return 1;
 		if (this.day < other.day) return -1;
+		return 0;
+	}
+	public int compareAgain(Student other) {
+		if((this.rc.equals("SC") || this.rc.equals("ST") || this.rc.equals("BC") && other.rc.equals("Open"))) {
+			return 1;
+		}
+		if((other.rc.equals("SC") || other.rc.equals("ST") || other.rc.equals("BC") && this.rc.equals("Open"))) {
+			return -1;
+		}
+
 		return 0;
 	}
 }
