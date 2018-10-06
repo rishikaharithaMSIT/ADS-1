@@ -72,7 +72,7 @@ public class Solution {
 		for (int i = 0; i < vacanciesList.size(); i++) {
 			System.out.println(vacanciesList.get(i).name + "," + vacanciesList.get(i).tmarks + "," + vacanciesList.get(i).rc);
 		}
-		System.out.println("--------");
+		System.out.println("--------" + vacanciesList.size());
 
 	}
 	public static void selectionSort() {
