@@ -56,13 +56,17 @@ Aryan,32,ST
 Shreya,23,SC
 
 -----
+Deepak,98,Open
+riya,83,Open
+Ajay,76,Open
+Arjun,75,Open
 priya,72,SC
 divya,99,ST
-Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
---------6
+Aditya,80,ST
+--------10
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -138,15 +142,20 @@ Aryan,32,ST
 Shreya,23,SC
 
 -----
+Ishita,99,Open
+Deepak,98,Open
+mahesh,87,Open
+riya,83,Open
+Ajay,76,Open
 tanvi,90,BC
 priya,72,SC
 divya,99,ST
-Ishita,99,Open
-Deepak,98,Open
 Ira,93,ST
 Raj,87,BC
-mahesh,87,Open
---------8
+Aditya,80,ST
+Arjun,75,Open
+rahul,73,Open
+--------13
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -177,10 +186,11 @@ Tanya,66,BC
 Abhishek,60,BC
 
 -----
+divya,99,Open
 priya,76,SC
 Aditya,80,ST
-divya,99,Open
---------3
+tanvi,90,Open
+--------4
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -214,13 +224,16 @@ Tanya,66,BC
 Abhishek,60,BC
 
 -----
-Tanya,66,BC
-priya,76,SC
-tanvi,90,ST
 divya,99,Open
 Aditya,80,Open
 Ajay,76,Open
---------6
+Tanya,66,BC
+priya,76,SC
+tanvi,90,ST
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+--------9
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -314,7 +327,14 @@ priya,76,Open
 Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
---------13
+rahul,73,Open
+Tanya,72,Open
+ROHIT,70,Open
+Priyanka,70,Open
+varsha,66,Open
+yash,61,Open
+Abhishek,60,Open
+--------20
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -397,20 +417,28 @@ Aryan,32,ST
 Shreya,23,SC
 
 -----
+Deepak,99,Open
+Ishita,99,Open
+riya,83,Open
+Amit,76,Open
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+Priyanka,70,Open
 tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
 varsha,66,BC
 priya,72,SC
 divya,99,ST
-Deepak,99,Open
-Ishita,99,Open
 Ira,93,ST
-riya,83,Open
 Aditya,80,ST
-Amit,76,Open
-Ajay,76,Open
-Arjun,75,Open
-rahul,73,Open
---------15
+shyam,71,ST
+ROHIT,70,SC
+Tanya,66,SC
+yash,61,Open
+Abhishek,60,SC
+Ankit,58,SC
+Gayatri,58,SC
+--------23
 ----------------------------------------

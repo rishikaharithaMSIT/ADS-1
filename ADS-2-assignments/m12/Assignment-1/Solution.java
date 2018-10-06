@@ -31,10 +31,19 @@ public class Solution {
 	}
 	public static void fillVacancies(int vacancies, int unres, int bc, int sc, int st) {
 		//add bc
+		int u = 0;
 		int b = 0;
 		int c = 0;
 		int t = 0;
 		int v = 0;
+		for (int i = 0; i < students.size(); i++) {
+			if(u == unres) break;
+			if(students.get(i).rc.equals("Open")) {
+				vacanciesList.add(students.get(i));
+				u++;
+			}
+			
+		}
 		for (int i = 0; i < students.size(); i++) {
 			if(b == bc) break;
 			if(students.get(i).rc.equals("BC")) {
