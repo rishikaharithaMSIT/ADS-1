@@ -38,11 +38,9 @@ public class Solution {
 		int v = 0;
 		for (int i = 0; i < students.size(); i++) {
 			if(u == unres) break;
-			if(students.get(i).rc.equals("Open")) {
 				vacanciesList.add(students.get(i));
 				u++;
 				v++;
-			}
 			
 		}
 		for (int i = 0; i < students.size(); i++) {

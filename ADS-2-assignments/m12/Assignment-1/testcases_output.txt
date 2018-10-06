@@ -57,10 +57,10 @@ Shreya,23,SC
 
 -----
 divya,99,ST
+divya,99,ST
 Deepak,98,Open
-riya,83,Open
-Ajay,76,Open
-Arjun,75,Open
+Ira,93,ST
+tanvi,90,BC
 priya,72,SC
 --------6
 ----------------------------------------
@@ -139,12 +139,12 @@ Shreya,23,SC
 
 -----
 divya,99,ST
+divya,99,ST
 Ishita,99,Open
 Deepak,98,Open
+Ira,93,ST
 tanvi,90,BC
-mahesh,87,Open
-riya,83,Open
-Ajay,76,Open
+tanvi,90,BC
 priya,72,SC
 --------8
 ----------------------------------------
@@ -216,9 +216,9 @@ Abhishek,60,BC
 -----
 divya,99,Open
 tanvi,90,ST
+tanvi,90,ST
 Aditya,80,Open
 priya,76,SC
-Ajay,76,Open
 Tanya,66,BC
 --------6
 ----------------------------------------
@@ -398,19 +398,19 @@ Shreya,23,SC
 
 -----
 divya,99,ST
+divya,99,ST
 Deepak,99,Open
 Ishita,99,Open
 Ira,93,ST
 tanvi,90,BC
+tanvi,90,BC
+Raj,87,BC
 Raj,87,BC
 mahesh,87,BC
+mahesh,87,BC
 riya,83,Open
-Ajay,76,Open
-Amit,76,Open
-Arjun,75,Open
-rahul,73,Open
+Aditya,80,ST
 priya,72,SC
-Priyanka,70,Open
 varsha,66,BC
 --------15
 ----------------------------------------
