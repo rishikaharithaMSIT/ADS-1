@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:25: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Student.java:127:26: 'name' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 3 errors.

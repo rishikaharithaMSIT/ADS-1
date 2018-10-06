@@ -23,7 +23,7 @@ class Student implements Comparable<Student> {
      */
     private int tmarks;
     /**
-     * rc
+     * rc.
      */
     private String rc;
     /**
@@ -116,7 +116,7 @@ class Student implements Comparable<Student> {
     /**
      * Constructs the object.
      *
-     * @param      name  The name
+     * @param      n  The name
      * @param      dob   The dob
      * @param      m1    The m 1
      * @param      m2    The m 2
@@ -124,11 +124,11 @@ class Student implements Comparable<Student> {
      * @param      tm    The time
      * @param      r     { parameter_description }
      */
-    Student(final String name,
+    Student(final String n,
             final String dob, final String m1,
             final String m2, final String m3,
             final String tm, final String r) {
-        this.name = name;
+        this.name = n;
         String[] d = dob.split("-");
         this.day = Integer.parseInt(d[0]);
         this.month = Integer.parseInt(d[1]);
