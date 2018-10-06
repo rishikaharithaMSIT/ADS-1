@@ -166,14 +166,13 @@ class Student implements Comparable<Student> {
 		if (this.marks3 < other.marks3) return -1;
 		if (this.marks2 > other.marks2) return 1;
 		if (this.marks2 < other.marks2) return -1;
-		if (this.year > other.year) return 1;
-		if (this.year < other.year) return -1;
-		if (this.month > other.month) return 1;
+		if (this.year < other.year) return 1;
+		if (this.year > other.year) return -1;
+		if (this.month < other.month) return 1;
 		if (this.month > other.month) return -1;
-		if (this.day > other.day) return 1;
-		if (this.day < other.day) return -1;
-		if(this.name.compareToIgnoreCase(other.name) == 1) return 1;
-		if(this.name.compareToIgnoreCase(other.name) < 0) return 1;
+		if (this.day < other.day) return 1;
+		if (this.day > other.day) return -1;
+		
 
 		return 0;
 	}
@@ -184,8 +183,7 @@ class Student implements Comparable<Student> {
 		if((other.rc.equals("SC") || other.rc.equals("ST") || other.rc.equals("BC") && this.rc.equals("Open"))) {
 			return -1;
 		}
-		if(this.name.compareToIgnoreCase(other.name) == 1) return 1;
-		if(this.name.compareToIgnoreCase(other.name) < 0) return 1;
+		
 		return 0;
 	}
 }
