@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 divya,99,ST
 Deepak,98,Open
@@ -55,16 +55,14 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
------
 divya,99,ST
 Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
---------6
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 divya,99,ST
 Ishita,99,Open
@@ -137,7 +135,6 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
------
 divya,99,ST
 Ishita,99,Open
 Deepak,98,Open
@@ -146,9 +143,8 @@ tanvi,90,BC
 Raj,87,BC
 Aditya,80,ST
 priya,72,SC
---------8
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 divya,99,Open
 tanvi,90,Open
@@ -176,13 +172,11 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
------
 divya,99,Open
 Aditya,80,ST
 priya,76,SC
---------3
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 divya,99,Open
 tanvi,90,ST
@@ -213,16 +207,14 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
------
 divya,99,Open
 tanvi,90,ST
 Aditya,80,Open
 priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
---------6
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 divya,99,Open
 tanvi,99,Open
@@ -300,7 +292,6 @@ Aryan,32,Open
 shyam,23,Open
 Shreya,23,Open
 
------
 divya,99,Open
 tanvi,99,Open
 Ishita,99,Open
@@ -314,7 +305,6 @@ priya,76,Open
 Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
---------13
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -396,7 +386,6 @@ Manoj,32,SC
 Aryan,32,ST
 Shreya,23,SC
 
------
 divya,99,ST
 Deepak,99,Open
 Ishita,99,Open
@@ -412,5 +401,4 @@ Arjun,75,Open
 rahul,73,Open
 priya,72,SC
 varsha,66,BC
---------15
 ----------------------------------------

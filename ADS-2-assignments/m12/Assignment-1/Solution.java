@@ -103,12 +103,11 @@ public class Solution {
 		// }
 		sortAgain();
 
-		System.out.println("-----");
 		for (int i = 0; i < vacanciesList.size(); i++) {
 			if( i == vacancies) break;
 			System.out.println(vacanciesList.get(i).name + "," + vacanciesList.get(i).tmarks + "," + vacanciesList.get(i).rc);
 		}
-		System.out.println("--------" + vacanciesList.size());
+		
 
 	}
 	public static void sortAgain() {
