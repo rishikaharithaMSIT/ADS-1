@@ -94,12 +94,31 @@ public class Solution {
 		// 		}
 		// 	}
 		// }
+		sortAgain();
+		
 		System.out.println("-----");
 		for (int i = 0; i < vacanciesList.size(); i++) {
 			System.out.println(vacanciesList.get(i).name + "," + vacanciesList.get(i).tmarks + "," + vacanciesList.get(i).rc);
 		}
 		System.out.println("--------" + vacanciesList.size());
 
+	}
+	public static void sortAgain() {
+		for (int i = vacanciesList.size() - 1; i >= 0; i--) {
+			Student max = vacanciesList.get(i);
+			int index = -1;
+			for (int j = i - 1; j >= 0; j--) {
+				if (max.compareTo(vacanciesList.get(j)) == 1) {
+					max = vacanciesList.get(j);
+					index = j;
+				}
+			}
+			Student temp = vacanciesList.get(i);
+			vacanciesList.set(i, max);
+			if (index != -1) {
+				vacanciesList.set(index, temp);
+			}
+		}
 	}
 	public static void selectionSort() {
 		for (int i = students.size() - 1; i >= 0; i--) {

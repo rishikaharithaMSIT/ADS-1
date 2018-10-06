@@ -56,16 +56,16 @@ Aryan,32,ST
 Shreya,23,SC
 
 -----
-Deepak,98,Open
-riya,83,Open
-Ajay,76,Open
-Arjun,75,Open
-priya,72,SC
 divya,99,ST
+Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
+riya,83,Open
 Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+priya,72,SC
 --------10
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -142,19 +142,19 @@ Aryan,32,ST
 Shreya,23,SC
 
 -----
+divya,99,ST
 Ishita,99,Open
 Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
 mahesh,87,Open
 riya,83,Open
-Ajay,76,Open
-tanvi,90,BC
-priya,72,SC
-divya,99,ST
-Ira,93,ST
-Raj,87,BC
 Aditya,80,ST
+Ajay,76,Open
 Arjun,75,Open
 rahul,73,Open
+priya,72,SC
 --------13
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -187,9 +187,9 @@ Abhishek,60,BC
 
 -----
 divya,99,Open
-priya,76,SC
-Aditya,80,ST
 tanvi,90,Open
+Aditya,80,ST
+priya,76,SC
 --------4
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -225,14 +225,14 @@ Abhishek,60,BC
 
 -----
 divya,99,Open
-Aditya,80,Open
-Ajay,76,Open
-Tanya,66,BC
-priya,76,SC
 tanvi,90,ST
+Aditya,80,Open
+priya,76,SC
+Ajay,76,Open
 rahul,73,Open
 Amit,70,Open
 Priyanka,70,Open
+Tanya,66,BC
 --------9
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -417,25 +417,25 @@ Aryan,32,ST
 Shreya,23,SC
 
 -----
+divya,99,ST
 Deepak,99,Open
 Ishita,99,Open
-riya,83,Open
-Amit,76,Open
-Ajay,76,Open
-Arjun,75,Open
-rahul,73,Open
-Priyanka,70,Open
+Ira,93,ST
 tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
-varsha,66,BC
-priya,72,SC
-divya,99,ST
-Ira,93,ST
+riya,83,Open
 Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
 shyam,71,ST
 ROHIT,70,SC
+Priyanka,70,Open
 Tanya,66,SC
+varsha,66,BC
 yash,61,Open
 Abhishek,60,SC
 Ankit,58,SC
