@@ -41,9 +41,11 @@ public class Solution {
 		}
 		// add sc
 		for (int i = 0; i < students.size(); i++) {
+			System.out.println("here");
 			while(sc > 0) {
+				System.out.println("here1 " + sc);
 				if(students.get(i).rc.equals("SC")) {
-					System.out.println("SCCCCCCC");
+					System.out.println("SCCC");
 					vacanciesList.add(students.get(i));
 				}
 				sc--;
@@ -51,11 +53,8 @@ public class Solution {
 		}
 		//add st
 		for (int i = 0; i < students.size(); i++) {
-			System.out.println("here");
 			while(st > 0) {
-				System.out.println("here 1");
 				if(students.get(i).rc.equals("ST")) {
-					System.out.println("hereeeeeeeeeeeeeeeeeeeeeeeeeee");
 					vacanciesList.add(students.get(i));
 				}
 				st--;
