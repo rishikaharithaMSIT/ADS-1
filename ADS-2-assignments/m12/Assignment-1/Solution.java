@@ -121,12 +121,6 @@ public class Solution {
 			Student max = students.get(i);
 			int index = -1;
 			for (int j = i - 1; j >= 0; j--) {
-				if(max.compareTo(students.get(j)) == 0) {
-					if(max.name.compareTo(students.get(j).name)> 0) {
-						max = students.get(j);
-						index = j;
-					}
-				}
 				if (max.compareTo(students.get(j)) == 1) {
 					max = students.get(j);
 					index = j;
@@ -178,8 +172,9 @@ class Student implements Comparable<Student> {
 		if (this.month > other.month) return -1;
 		if (this.day > other.day) return 1;
 		if (this.day < other.day) return -1;
-		if(this.name.compareTo(other.name) > 0) return 1;
-		if(this.name.compareTo(other.name) < 0) return -1;
+		if(this.name.compareToIgnoreCase(other.name) == 1) return 1;
+		if(this.name.compareToIgnoreCase(other.name) < 0) return 1;
+
 		return 0;
 	}
 	public int compareAgain(Student other) {
