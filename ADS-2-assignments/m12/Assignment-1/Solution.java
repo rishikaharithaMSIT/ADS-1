@@ -20,10 +20,9 @@ public class Solution {
 		}
 		selectionSort();
 
-		for (int i = 0; i < students.size() - 1; i++) {
-			System.out.print(students.get(i).name + ",");
+		for (int i = 0; i < students.size(); i++) {
+			System.out.println(students.get(i).name + "," + students.get(i).tmarks + "," + students.get(i).rc);
 		}
-		System.out.print(students.get(students.size() - 1).name);
 		System.out.println();
 
 	}
