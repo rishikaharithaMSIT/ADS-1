@@ -184,7 +184,8 @@ class Student implements Comparable<Student> {
 		if((other.rc.equals("SC") || other.rc.equals("ST") || other.rc.equals("BC") && this.rc.equals("Open"))) {
 			return -1;
 		}
-		
+		if(this.name.compareToIgnoreCase(other.name) == 1) return 1;
+		if(this.name.compareToIgnoreCase(other.name) < 0) return 1;
 		return 0;
 	}
 }

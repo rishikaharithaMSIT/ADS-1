@@ -112,6 +112,9 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:181:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:184: Line is longer than 80 characters (found 121). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:184:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:187: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:187: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:187:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:188: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:188:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 114 errors.
+Checkstyle ends with 117 errors.
