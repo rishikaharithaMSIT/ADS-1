@@ -90,17 +90,6 @@ public class Solution {
 			
 		}
 		
-		// for (int i = 0; i < students.size(); i++) {
-		// 	Student s = students.get(i);
-		// 	for (int j = i+1; j < students.size(); j++) {
-		// 		if(s.compareAgain(students.get(j)) == 1) {
-
-		// 			if(!vacanciesList.contains(s)) {
-		// 				//vacanciesList.add(s);
-		// 			}					
-		// 		}
-		// 	}
-		// }
 		sortAgain();
 
 		for (int i = 0; i < vacanciesList.size(); i++) {
@@ -183,6 +172,8 @@ class Student implements Comparable<Student> {
 		if (this.month > other.month) return -1;
 		if (this.day > other.day) return 1;
 		if (this.day < other.day) return -1;
+		if(this.name.compareTo(other.name) > 0) return 1;
+		if(this.name.compareTo(other.name) < 0) return -1;
 		return 0;
 	}
 	public int compareAgain(Student other) {
@@ -192,7 +183,7 @@ class Student implements Comparable<Student> {
 		if((other.rc.equals("SC") || other.rc.equals("ST") || other.rc.equals("BC") && this.rc.equals("Open"))) {
 			return -1;
 		}
-
+		
 		return 0;
 	}
 }
