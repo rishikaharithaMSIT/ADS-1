@@ -50,8 +50,11 @@ public class Solution {
 		}
 		//add st
 		for (int i = 0; i < students.size(); i++) {
+			System.out.println("here");
 			while(st > 0) {
+				System.out.println("here 1");
 				if(students.get(i).rc.equals("ST")) {
+					System.out.println("hereeeeeeeeeeeeeeeeeeeeeeeeeee");
 					vacanciesList.add(students.get(i));
 				}
 				st--;
