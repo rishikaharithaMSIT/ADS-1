@@ -111,74 +111,33 @@ class Student implements Comparable<Student> {
         return year;
     }
 
-    /**
-     * Sets the name.
-     *
-     * @param      nam   The nam
-     */
-    public void setName(String nam) {
-        name = nam ;
-    }
-    /**
-     * Sets the marks 1.
-     *
-     * @param      m1    The m 1
-     */
-    public void setMarks1(int m1) {
-        marks1 = m1;
-    }
-    /**
-     * Sets the marks 2.
-     *
-     * @param      m2    The m 2
-     */
-    public void setMarks2(int m2) {
-        marks2 = m2;
-    }
-    /**
-     * Sets the marks 3.
-     *
-     * @param      m3    The m 3
-     */
-    public void setMarks3(int m3) {
-        marks3 = m3;
-    }
-    /**
-     * Sets the markst.
-     *
-     * @param      mt    { parameter_description }
-     */
-    public void setMarkst(int mt) {
-        tmarks = mt;
-    }
-    
+
+
     /**
      * Constructs the object.
      *
-     * @param      n       { parameter_description }
-     * @param      dob     The dob
-     * @param      marks1  The marks 1
-     * @param      marks2  The marks 2
-     * @param      marks3  The marks 3
-     * @param      tmarks  The tmarks
-     * @param      rc      The rectangle
+     * @param      name  The name
+     * @param      dob   The dob
+     * @param      m1    The m 1
+     * @param      m2    The m 2
+     * @param      m3    The m 3
+     * @param      tm    The time
+     * @param      r     { parameter_description }
      */
-    Student(final String n,
-            final String dob, final String marks1,
-            final String marks2, final String marks3,
-            final String tmarks, final String rc) {
-        this.name = n;
+    Student(final String name,
+            final String dob, final String m1,
+            final String m2, final String m3,
+            final String tm, final String r) {
+        this.name = name;
         String[] d = dob.split("-");
         this.day = Integer.parseInt(d[0]);
         this.month = Integer.parseInt(d[1]);
         this.year = Integer.parseInt(d[2]);
-        setMarks1(Integer.parseInt(marks1));
-        setMarks2(Integer.parseInt(marks2));
-        setMarks3(Integer.parseInt(marks3));
-        setMarkst(Integer.parseInt(tmarks));
-
-        
-        this.rc = rc;
+        this.marks1 = Integer.parseInt(m1);
+        this.marks2 = Integer.parseInt(m2);
+        this.marks3 = Integer.parseInt(m3);
+        this.tmarks = Integer.parseInt(tm);
+        this.rc = r;
 
     }
     /**
