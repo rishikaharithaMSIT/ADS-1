@@ -45,7 +45,7 @@ public class Solution {
 			while(sc > 0) {
 				System.out.println("here1 " + sc);
 				if(students.get(i).rc.equals("SC")) {
-					System.out.println("SCCC");
+					System.out.println("SCCC" + students.get(i));
 					vacanciesList.add(students.get(i));
 				}
 				sc--;
