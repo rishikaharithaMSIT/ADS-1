@@ -12,15 +12,41 @@ public class Solution {
 		int sc = Integer.parseInt(scan.nextLine());
 		int st = Integer.parseInt(scan.nextLine());
 
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(",");
 			System.out.println(Arrays.toString(tokens));
-			Student s = new Student(tokens[0],tokens[1],tokens[2],tokens[3],tokens[4],tokens[5],tokens[6]);
+			Student s = new Student(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]);
 			students.add(s);
 		}
+		selectionSort();
+
+		for (int i = 0; i < students.size() - 1; i++) {
+			System.out.print(students.get(i).name + ",");
+		}
+		System.out.print(students.get(students.size() - 1).name);
+		System.out.println();
+
 	}
+	public static void selectionSort() {
+		for (int i = students.size() - 1; i >= 0; i--) {
+			Student max = students.get(i);
+			int index = -1;
+			for (int j = i - 1; j >= 0; j--) {
+				if (max.compareTo(students.get(j)) == 1) {
+					max = students.get(j);
+					index = j;
+				}
+			}
+			Student temp = students.get(i);
+			students.set(i, max);
+			if (index != -1) {
+				students.set(index, temp);
+			}
+		}
+	}
+
 }
-class Student {
+class Student implements Comparable<Student> {
 	String name;
 	int marks1;
 	int marks2;
@@ -31,7 +57,7 @@ class Student {
 	int month;
 	int year;
 
-	Student(String name,String dob, String marks1, String marks2, String marks3, String tmarks, String rc) {
+	Student(String name, String dob, String marks1, String marks2, String marks3, String tmarks, String rc) {
 		this.name = name;
 		String[] d = dob.split("-");
 		this.day = Integer.parseInt(d[0]);
@@ -43,5 +69,20 @@ class Student {
 		this.tmarks = Integer.parseInt(tmarks);
 		this.rc = rc;
 
+	}
+	public int compareTo(Student other) {
+		if (this.tmarks > other.tmarks) return 1;
+		if (this.tmarks < other.tmarks) return -1;
+		if (this.marks3 > other.marks3) return 1;
+		if (this.marks3 < other.marks3) return -1;
+		if (this.marks2 > other.marks2) return 1;
+		if (this.marks2 < other.marks2) return -1;
+		if (this.year > other.year) return 1;
+		if (this.year < other.year) return -1;
+		if (this.month > other.month) return 1;
+		if (this.month > other.month) return -1;
+		if (this.day > other.day) return 1;
+		if (this.day < other.day) return -1;
+		return 0;
 	}
 }

@@ -54,6 +54,7 @@ Your Output:
 [varsha, 01-07-1993, 26, 27, 13, 66, BC]
 [Manoj, 18-11-1995, 09, 24, 06, 39, SC]
 [Ira, 16-07-1993, 33, 40, 20, 93, ST]
+divya,Deepak,Ira,tanvi,Raj,riya,Aditya,Ajay,Arjun,rahul,priya,shyam,Priyanka,varsha,yash,Abhishek,Ankit,vani,Aishwarya,Manoj,Anjali,Aryan,Shreya
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -127,6 +128,7 @@ Your Output:
 [varsha, 01-07-1993, 26, 27, 13, 66, BC]
 [Manoj, 18-11-1995, 09, 24, 06, 39, SC]
 [Ira, 16-07-1993, 33, 40, 20, 93, ST]
+divya,Ishita,Deepak,Ira,tanvi,Raj,mahesh,riya,Aditya,Ajay,Arjun,rahul,priya,shyam,ROHIT,Amit,Priyanka,Tanya,varsha,yash,Abhishek,Ankit,Gayatri,vani,Sneha,Aishwarya,Manoj,Anjali,Aryan,Shreya
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -155,6 +157,7 @@ Your Output:
 [divya, 29-07-1993, 40, 39, 20, 99, Open]
 [Amit, 30-01-1993, 36, 20, 14, 70, Open]
 [tanvi, 22-01-1994, 38, 33, 19, 90, Open]
+divya,tanvi,Aditya,priya,Ajay,rahul,Amit,Priyanka,Tanya,Abhishek
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -186,6 +189,7 @@ Your Output:
 [divya, 29-07-1993, 40, 39, 20, 99, Open]
 [Amit, 30-01-1993, 36, 20, 14, 70, Open]
 [tanvi, 22-01-1994, 38, 33, 19, 90, ST]
+divya,tanvi,Aditya,priya,Ajay,rahul,Amit,Priyanka,Tanya,Abhishek
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -264,6 +268,7 @@ Your Output:
 [varsha, 01-07-1993, 26, 27, 13, 66, Open]
 [Manoj, 18-11-1995, 09, 24, 06, 39, Open]
 [Ira, 16-07-1993, 33, 40, 20, 93, Open]
+divya,tanvi,Ishita,Deepak,Ira,Raj,mahesh,riya,Aditya,priya,Ajay,Amit,Arjun,rahul,Tanya,ROHIT,Priyanka,varsha,yash,Abhishek,Ankit,Gayatri,vani,Sneha,Aishwarya,Manoj,Anjali,Aryan,shyam,Shreya
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -344,4 +349,5 @@ Your Output:
 [varsha, 01-07-1993, 26, 27, 13, 66, BC]
 [Manoj, 18-11-1995, 09, 11, 12, 32, SC]
 [Ira, 16-07-1993, 33, 40, 20, 93, ST]
+divya,Deepak,Ishita,Ira,tanvi,Raj,mahesh,riya,Aditya,Amit,Ajay,Arjun,rahul,priya,shyam,ROHIT,Priyanka,Tanya,varsha,yash,Abhishek,Ankit,Gayatri,vani,Sneha,Aishwarya,Anjali,Manoj,Aryan,Shreya
 ----------------------------------------
