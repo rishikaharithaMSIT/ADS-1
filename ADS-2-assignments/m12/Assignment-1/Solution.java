@@ -14,7 +14,7 @@ public class Solution {
 
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(",");
-			System.out.println(Arrays.toString(tokens));
+			//System.out.println(Arrays.toString(tokens));
 			Student s = new Student(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]);
 			students.add(s);
 		}
