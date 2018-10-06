@@ -43,6 +43,7 @@ public class Solution {
 		for (int i = 0; i < students.size(); i++) {
 			while(sc > 0) {
 				if(students.get(i).rc.equals("SC")) {
+					System.out.println("SCCCCCCC");
 					vacanciesList.add(students.get(i));
 				}
 				sc--;
@@ -60,17 +61,17 @@ public class Solution {
 				st--;
 			}
 		}
-		for (int i = 0; i < students.size(); i++) {
-			Student s = students.get(i);
-			for (int j = i+1; j < students.size(); j++) {
-				if(s.compareAgain(students.get(j)) == 1) {
+		// for (int i = 0; i < students.size(); i++) {
+		// 	Student s = students.get(i);
+		// 	for (int j = i+1; j < students.size(); j++) {
+		// 		if(s.compareAgain(students.get(j)) == 1) {
 
-					if(!vacanciesList.contains(s)) {
-						//vacanciesList.add(s);
-					}					
-				}
-			}
-		}
+		// 			if(!vacanciesList.contains(s)) {
+		// 				//vacanciesList.add(s);
+		// 			}					
+		// 		}
+		// 	}
+		// }
 		System.out.println("-----");
 		for (int i = 0; i < vacanciesList.size(); i++) {
 			System.out.println(vacanciesList.get(i).name + "," + vacanciesList.get(i).tmarks + "," + vacanciesList.get(i).rc);
