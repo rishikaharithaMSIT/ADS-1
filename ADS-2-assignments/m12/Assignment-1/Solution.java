@@ -32,7 +32,7 @@ public class Solution {
 	public static void fillVacancies(int vacancies, int unres, int bc, int sc, int st) {
 		for (int i = 0; i < students.size(); i++) {
 			Student s = students.get(i);
-			for (int j = i+1; i < students.size(); i++) {
+			for (int j = i+1; j < students.size(); j++) {
 				if(s.compareAgain(students.get(j)) == 1) {
 					vacanciesList.add(s);
 				}
