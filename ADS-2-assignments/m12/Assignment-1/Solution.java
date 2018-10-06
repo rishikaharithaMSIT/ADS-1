@@ -41,6 +41,7 @@ public class Solution {
 			if(students.get(i).rc.equals("Open")) {
 				vacanciesList.add(students.get(i));
 				u++;
+				v++;
 			}
 			
 		}
