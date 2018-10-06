@@ -2,21 +2,48 @@
  * Class for student.
  */
 class Student implements Comparable<Student> {
+	/**
+	 * name.
+	 */
 	private String name;
+	/**
+	 * marks1.
+	 */
 	private int marks1;
+	/**
+	 * marks2.
+	 */
 	private int marks2;
+	/**
+	 * marks3.
+	 */
 	private int marks3;
+	/**
+	 * markst.
+	 */
 	private int tmarks;
+	/**
+	 * rc
+	 */
 	private String rc;
+	/**
+	 * day.
+	 */
 	private int day;
+	/**
+	 * month.
+	 */
 	private int month;
+	/**
+	 * year.
+	 */
 	private int year;
 	/**
 	 * Gets the name.
 	 *
 	 * @return     The name.
 	 */
-	public String getName(){
+	public String getName() {
 		return name;
 	}
 	/**
@@ -89,7 +116,8 @@ class Student implements Comparable<Student> {
 	 * @param      tmarks  The tmarks
 	 * @param      rc      The rectangle
 	 */
-	Student(String name, String dob, String marks1, String marks2, String marks3, String tmarks, String rc) {
+	Student(String name, String dob, String marks1,
+	        String marks2, String marks3, String tmarks, String rc) {
 		this.name = name;
 		String[] d = dob.split("-");
 		this.day = Integer.parseInt(d[0]);
@@ -109,7 +137,7 @@ class Student implements Comparable<Student> {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int compareTo(Student other) {
+	public int compareTo(final Student other) {
 		if (this.getTotal() > other.getTotal()) {
 			return 1;
 		}
@@ -155,11 +183,15 @@ class Student implements Comparable<Student> {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int compareAgain(Student other) {
-		if ((this.getRC().equals("SC") || this.getRC().equals("ST") || this.getRC().equals("BC") && other.getRC().equals("Open"))) {
+	public int compareAgain(final Student other) {
+		if ((this.getRC().equals("SC") || this.getRC().equals("ST")
+		        || this.getRC().equals("BC")
+		        && other.getRC().equals("Open"))) {
 			return 1;
 		}
-		if ((other.getRC().equals("SC") || other.getRC().equals("ST") || other.getRC().equals("BC") && this.getRC().equals("Open"))) {
+		if ((other.getRC().equals("SC") ||
+		        other.getRC().equals("ST") || other.getRC().equals("BC")
+		        && this.getRC().equals("Open"))) {
 			return -1;
 		}
 
