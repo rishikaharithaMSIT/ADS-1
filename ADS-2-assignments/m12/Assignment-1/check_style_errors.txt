@@ -26,6 +26,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:35:30: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:36:35: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:45:30: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:46: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:47:35: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:48: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:56:30: 'while' is not followed by whitespace. [WhitespaceAround]
@@ -88,4 +89,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:143: Line is longer than 80 characters (found 121). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m12\Assignment-1\Solution.java:143:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 88 errors.
+Checkstyle ends with 89 errors.

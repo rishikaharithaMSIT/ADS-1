@@ -56,7 +56,7 @@ Aryan,32,ST
 Shreya,23,SC
 
 here
-here1 1
+here1 ST
 here
 here
 here
@@ -157,7 +157,7 @@ Aryan,32,ST
 Shreya,23,SC
 
 here
-here1 1
+here1 ST
 here
 here
 here
@@ -220,7 +220,7 @@ Tanya,66,BC
 Abhishek,60,BC
 
 here
-here1 1
+here1 Open
 here
 here
 here
@@ -265,7 +265,7 @@ Tanya,66,BC
 Abhishek,60,BC
 
 here
-here1 1
+here1 Open
 here
 here
 here
@@ -357,8 +357,8 @@ shyam,23,Open
 Shreya,23,Open
 
 here
-here1 2
-here1 1
+here1 Open
+here1 Open
 here
 here
 here
@@ -472,7 +472,7 @@ Aryan,32,ST
 Shreya,23,SC
 
 here
-here1 1
+here1 ST
 here
 here
 here
