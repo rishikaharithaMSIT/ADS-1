@@ -22,7 +22,7 @@ public final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int noLines = Integer.parseInt(scan.nextLine());
 		int vacancies = Integer.parseInt(scan.nextLine());
@@ -40,7 +40,7 @@ public final class Solution {
 		selectionSort();
 
 		for (int i = 0; i < students.size(); i++) {
-			System.out.println(students.get(i).name + "," + students.get(i).tmarks + "," + students.get(i).rc);
+			System.out.println(students.get(i).getName() + "," + students.get(i).getTotal() + "," + students.get(i).getRC());
 		}
 		System.out.println();
 
@@ -72,7 +72,7 @@ public final class Solution {
 		}
 		for (int i = 0; i < students.size(); i++) {
 			if (bc1 == bc) break;
-			if (students.get(i).rc.equals("BC")) {
+			if (students.get(i).getRC().equals("BC")) {
 				if (!vacanciesList.contains(students.get(i))) {
 					vacanciesList.add(students.get(i));
 					bc1++;
@@ -85,7 +85,7 @@ public final class Solution {
 		// add sc
 		for (int i = 0; i < students.size(); i++) {
 			if (sc1 == sc) break;
-			if (students.get(i).rc.equals("SC")) {
+			if (students.get(i).getRC().equals("SC")) {
 				if (!vacanciesList.contains(students.get(i))) {
 
 					vacanciesList.add(students.get(i));
@@ -98,7 +98,7 @@ public final class Solution {
 		//add st
 		for (int i = 0; i < students.size(); i++) {
 			if (st1 == st) break;
-			if (students.get(i).rc.equals("ST")) {
+			if (students.get(i).getRC().equals("ST")) {
 				if (!vacanciesList.contains(students.get(i))) {
 					vacanciesList.add(students.get(i));
 					st1++;
@@ -121,7 +121,7 @@ public final class Solution {
 
 		for (int i = 0; i < vacanciesList.size(); i++) {
 			if ( i == vacancies) break;
-			System.out.println(vacanciesList.get(i).name + "," + vacanciesList.get(i).tmarks + "," + vacanciesList.get(i).rc);
+			System.out.println(vacanciesList.get(i).getName() + "," + vacanciesList.get(i).getTotal() + "," + vacanciesList.get(i).getRC());
 		}
 
 
