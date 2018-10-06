@@ -11,35 +11,84 @@ class Student implements Comparable<Student> {
 	private int day;
 	private int month;
 	private int year;
-
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName(){
 		return name;
 	}
+	/**
+	 * Gets the marks 1.
+	 *
+	 * @return     The marks 1.
+	 */
 	public int getMarks1() {
 		return marks1;
 	}
+	/**
+	 * Gets the marks 2.
+	 *
+	 * @return     The marks 2.
+	 */
 	public int getMarks2() {
 		return marks2;
 	}
+	/**
+	 * Gets the marks 3.
+	 *
+	 * @return     The marks 3.
+	 */
 	public int getMarks3() {
 		return marks3;
 	}
+	/**
+	 * Gets the total.
+	 *
+	 * @return     The total.
+	 */
 	public int getTotal() {
 		return tmarks;
 	}
 	public String getRC() {
 		return rc;
 	}
+	/**
+	 * Gets the day.
+	 *
+	 * @return     The day.
+	 */
 	public int getDay() {
 		return day;
 	}
+	/**
+	 * Gets the month.
+	 *
+	 * @return     The month.
+	 */
 	public int getMonth() {
 		return month;
 	}
+	/**
+	 * Gets the year.
+	 *
+	 * @return     The year.
+	 */
 	public int getYear() {
 		return year;
 	}
-
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name    The name
+	 * @param      dob     The dob
+	 * @param      marks1  The marks 1
+	 * @param      marks2  The marks 2
+	 * @param      marks3  The marks 3
+	 * @param      tmarks  The tmarks
+	 * @param      rc      The rectangle
+	 */
 	Student(String name, String dob, String marks1, String marks2, String marks3, String tmarks, String rc) {
 		this.name = name;
 		String[] d = dob.split("-");
@@ -53,6 +102,13 @@ class Student implements Comparable<Student> {
 		this.rc = rc;
 
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      other  The other
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int compareTo(Student other) {
 		if (this.getTotal() > other.getTotal()) {
 			return 1;
@@ -92,6 +148,13 @@ class Student implements Comparable<Student> {
 		}
 		return 0;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      other  The other
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int compareAgain(Student other) {
 		if ((this.getRC().equals("SC") || this.getRC().equals("ST") || this.getRC().equals("BC") && other.getRC().equals("Open"))) {
 			return 1;
