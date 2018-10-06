@@ -54,18 +54,42 @@ class Student implements Comparable<Student> {
 
 	}
 	public int compareTo(Student other) {
-		if (this.tmarks > other.getTotal()) return 1;
-		if (this.tmarks < other.getTotal()) return -1;
-		if (this.marks3 > other.getMarks3()) return 1;
-		if (this.marks3 < other.getMarks3()) return -1;
-		if (this.marks2 > other.getMarks2()) return 1;
-		if (this.marks2 < other.getMarks2()) return -1;
-		if (this.year > other.getYear()) return 1;
-		if (this.year < other.getYear()) return -1;
-		if (this.month > other.getMonth()) return 1;
-		if (this.month < other.getMonth()) return -1;
-		if (this.day < other.getDay()) return 1;
-		if (this.day > other.getDay()) return -1;
+		if (this.tmarks > other.getTotal()) {
+			return 1;
+		}
+		if (this.tmarks < other.getTotal()) {
+			return -1;
+		}
+		if (this.marks3 > other.getMarks3()) {
+			return 1;
+		}
+		if (this.marks3 < other.getMarks3()) {
+			return -1;
+		}
+		if (this.marks2 > other.getMarks2()) {
+			return 1;
+		}
+		if (this.marks2 < other.getMarks2()) {
+			return -1;
+		}
+		if (this.year > other.getYear()) {
+			return 1;
+		}
+		if (this.year < other.getYear()) {
+			return -1;
+		}
+		if (this.month > other.getMonth()) {
+			return 1;
+		}
+		if (this.month < other.getMonth()) {
+			return -1;
+		}
+		if (this.day < other.getDay()) {
+			return 1;
+		}
+		if (this.day > other.getDay()) {
+			return -1;
+		}
 		return 0;
 	}
 	public int compareAgain(Student other) {
