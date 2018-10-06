@@ -111,24 +111,51 @@ class Student implements Comparable<Student> {
         return year;
     }
 
-
+    /**
+     * Sets the name.
+     *
+     * @param      nam   The nam
+     */
     public void setName(String nam) {
         name = nam ;
     }
+    /**
+     * Sets the marks 1.
+     *
+     * @param      m1    The m 1
+     */
     public void setMarks1(int m1) {
         marks1 = m1;
     }
-    
+    /**
+     * Sets the marks 2.
+     *
+     * @param      m2    The m 2
+     */
     public void setMarks2(int m2) {
         marks2 = m2;
     }
-    
+    /**
+     * Sets the marks 3.
+     *
+     * @param      m3    The m 3
+     */
     public void setMarks3(int m3) {
         marks3 = m3;
     }
+    /**
+     * Sets the markst.
+     *
+     * @param      mt    { parameter_description }
+     */
     public void setMarkst(int mt) {
         tmarks = mt;
     }
+    /**
+     * Sets the rc.
+     *
+     * @param      r     { parameter_description }
+     */
     public void setRC(String r) {
         rc = r;
     }
@@ -156,7 +183,7 @@ class Student implements Comparable<Student> {
         setMarks2(Integer.parseInt(marks2));
         setMarks3(Integer.parseInt(marks3));
         setMarkst(Integer.parseInt(tmarks));
-        
+
         this.rc = rc;
 
     }
