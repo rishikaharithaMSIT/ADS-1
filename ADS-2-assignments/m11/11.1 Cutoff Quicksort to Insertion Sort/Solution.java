@@ -52,7 +52,7 @@ class Solution {
 		int p1 = low;
 		int p2 = high;
 		
-			while (p1 < p2) {
+			while (true) {
 			while (p2 >= low && array[p2].compareTo(pivot) > 0) {
 				//System.out.println(array[p2] + " is greater than " + pivot + " p2: " + p2);
 				p2--;
