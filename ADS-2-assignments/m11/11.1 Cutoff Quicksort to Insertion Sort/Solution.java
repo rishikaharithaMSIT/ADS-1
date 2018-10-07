@@ -16,7 +16,7 @@ final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int testcases = Integer.parseInt(scan.nextLine());
 		while (scan.hasNext()) {
@@ -44,8 +44,8 @@ final class Solution {
 	 * @param      low    The low
 	 * @param      high   The high
 	 */
-	public static void insertionSort(Comparable[] array,
-	                                 int low , int high) {
+	public static void insertionSort(final Comparable[] array,
+	                                 final int low, final int high) {
 		System.out.println("insertionSort called");
 		int n = high + 1;
 		for (int i = low + 1; i < n; ++i) {
@@ -68,8 +68,8 @@ final class Solution {
 	 * @param      high    The high
 	 * @param      cutoff  The cutoff
 	 */
-	public static void sort(Comparable[] array, int low,
-	                        int high, int cutoff) {
+	public static void sort(final Comparable[] array, final int low,
+	                        final int high, final int cutoff) {
 		if (high - low < cutoff) {
 			insertionSort(array, low, high);
 			return;
@@ -92,8 +92,9 @@ final class Solution {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public static int quickSort(Comparable[] array,
-	                            int low, int high, int cutoff) {
+	public static int quickSort(final Comparable[] array,
+	                            final int low, final int high,
+	                            final int cutoff) {
 
 		Comparable pivot = array[low];
 		int p1 = low;

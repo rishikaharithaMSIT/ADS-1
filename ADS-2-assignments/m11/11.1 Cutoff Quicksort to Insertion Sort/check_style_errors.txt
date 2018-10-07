@@ -1,17 +1,4 @@
 Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:19:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:47:42: Parameter array should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:48:42: Parameter low should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:48:49: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:48:52: Parameter high should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:71:33: Parameter array should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:71:53: Parameter low should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:72:33: Parameter high should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:72:43: Parameter cutoff should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:95:37: Parameter array should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:96:37: Parameter low should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:96:46: Parameter high should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:96:56: Parameter cutoff should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 1 errors.
