@@ -49,7 +49,7 @@ class Solution {
 	public static int quickSort(Comparable[] array, int low, int high, int cutoff) {
 		
 		Comparable pivot = array[low];
-		int p1 = low+1;
+		int p1 = low;
 		int p2 = high;
 		
 			while (p1 < p2) {
