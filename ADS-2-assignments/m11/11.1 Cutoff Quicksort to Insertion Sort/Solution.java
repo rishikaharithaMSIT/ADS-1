@@ -6,12 +6,14 @@ class Solution {
 		int testcases = Integer.parseInt(scan.nextLine());
 		while (scan.hasNext()) {
 			int cutoff = Integer.parseInt(scan.nextLine());
-			Comparable[] array = scan.nextLine().split(" ");
-			if(array.length > 0) {
-				sort(array, 0, array.length - 1,cutoff);
-				System.out.println(Arrays.toString(array));
-			}else {
+			String line = scan.nextLine();
+			
+			if(line.equals("")) {
 				System.out.println("[]");
+			}else {
+				Comparable[] array = line.split(" ");
+				sort(array, 0, array.length - 1,cutoff);
+				System.out.println(Arrays.toString(array));				
 			}
 			
 		}
