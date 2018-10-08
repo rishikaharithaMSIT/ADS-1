@@ -23,7 +23,7 @@ public class Solution {
 				break;
 			case "Float" :
 				stringArr = scan.nextLine().split(",");
-				if(stringArr.equals("")) {
+				if(stringArr[0].equals("")) {
 					System.out.println("false");
 					break;
 				}
