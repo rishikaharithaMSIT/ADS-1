@@ -52,9 +52,6 @@ class MinHeap<Gen extends Comparable<Gen>> {
 	}
 	public boolean isMinHeap() {
 		int flag = 1;
-		if(size == 0) {
-			return false;
-		}
 		if(size == 1) {
 			return true;
 		}
