@@ -23,6 +23,10 @@ public class Solution {
 				break;
 			case "Float" :
 				stringArr = scan.nextLine().split(",");
+				if(stringArr.equals("")) {
+					System.out.println("false");
+					break;
+				}
 				Float[] elementsF = Arrays.asList(stringArr).stream().map(Float::valueOf).toArray(Float[]::new);
 				MinHeap<Float> minHeapFloat = new MinHeap<>(elementsF);
 				isMinHeap = minHeapFloat.isMinHeap();
