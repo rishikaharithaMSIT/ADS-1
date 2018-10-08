@@ -5,22 +5,26 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		String type = scan.nextLine();
 		int testcases = Integer.parseInt(scan.nextLine());
-		switch (type) {
-		case "Integer" :
-			String[] stringArr = scan.nextLine().split(",");
-			Integer[] elements = Arrays.asList(stringArr).stream().map(Integer::valueOf).toArray(Integer[]::new);
-			MinHeap<Integer> minHeap = new MinHeap<>(elements);
-			boolean isMinHeap = minHeap.isMinHeap();
-			System.out.println(isMinHeap);
-			System.out.println(Arrays.toString(elements));
-			break;
-		case "String" :
-			break;
-		case "Double" :
-			break;
-		case "Float" :
-			break;
+		while (testcases > 0) {
+			switch (type) {
+			case "Integer" :
+				String[] stringArr = scan.nextLine().split(",");
+				Integer[] elements = Arrays.asList(stringArr).stream().map(Integer::valueOf).toArray(Integer[]::new);
+				MinHeap<Integer> minHeap = new MinHeap<>(elements);
+				boolean isMinHeap = minHeap.isMinHeap();
+				System.out.println(isMinHeap);
+				System.out.println(Arrays.toString(elements));
+				break;
+			case "String" :
+				break;
+			case "Double" :
+				break;
+			case "Float" :
+				break;
+			}
+			testcases--;
 		}
+
 	}
 }
 
