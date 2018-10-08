@@ -22,5 +22,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:48:17: Parameter array should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:49:35: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:53:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:55:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:58:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 25 errors.

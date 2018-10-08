@@ -52,9 +52,15 @@ class MinHeap<Gen extends Comparable<Gen>> {
 	}
 	public boolean isMinHeap() {
 		int flag = 1;
+		if(size == 0) {
+			return false;
+		}
+		if(size == 1) {
+			return true;
+		}
 		for (int i = size - 1; i > 0; i--) {
 			int halveVal = ((i + 1) / 2) - 1;
-			if (elements[i].compareTo(elements[halveVal]) <= 1) {
+			if (elements[i].compareTo(elements[halveVal]) < 1) {
 				flag = 0;
 				break;
 			}
