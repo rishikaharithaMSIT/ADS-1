@@ -52,7 +52,9 @@ true
 false
 false
 Your Output: 
-
+false
+false
+false
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 

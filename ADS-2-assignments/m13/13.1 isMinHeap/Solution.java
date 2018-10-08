@@ -16,19 +16,24 @@ public class Solution {
 				//System.out.println(Arrays.toString(elements));
 				break;
 			case "String" :
-				stringArr = scan.nextLine().split(",");				
+				stringArr = scan.nextLine().split(",");
 				MinHeap<String> minHeapString = new MinHeap<>(stringArr);
 				isMinHeap = minHeapString.isMinHeap();
 				System.out.println(isMinHeap);
 				break;
 			case "Float" :
 				stringArr = scan.nextLine().split(",");
-				Float[] elementsD = Arrays.asList(stringArr).stream().map(Float::valueOf).toArray(Float[]::new);				
-				MinHeap<Float> minHeapFloat = new MinHeap<>(elementsD);
+				Float[] elementsF = Arrays.asList(stringArr).stream().map(Float::valueOf).toArray(Float[]::new);
+				MinHeap<Float> minHeapFloat = new MinHeap<>(elementsF);
 				isMinHeap = minHeapFloat.isMinHeap();
 				System.out.println(isMinHeap);
 				break;
 			case "Double" :
+				stringArr = scan.nextLine().split(",");
+				Double[] elementsD = Arrays.asList(stringArr).stream().map(Double::valueOf).toArray(Double[]::new);
+				MinHeap<Double> minHeapDouble = new MinHeap<>(elementsD);
+				isMinHeap = minHeapDouble.isMinHeap();
+				System.out.println(isMinHeap);
 				break;
 			}
 			testcases--;
