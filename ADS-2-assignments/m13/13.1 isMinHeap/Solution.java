@@ -13,7 +13,7 @@ public class Solution {
 				MinHeap<Integer> minHeap = new MinHeap<>(elements);
 				boolean isMinHeap = minHeap.isMinHeap();
 				System.out.println(isMinHeap);
-				System.out.println(Arrays.toString(elements));
+				//System.out.println(Arrays.toString(elements));
 				break;
 			case "String" :
 				break;
