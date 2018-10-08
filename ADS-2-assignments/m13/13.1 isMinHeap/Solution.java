@@ -60,7 +60,7 @@ class MinHeap<Gen extends Comparable<Gen>> {
 		}
 		for (int i = size - 1; i > 0; i--) {
 			int halveVal = ((i + 1) / 2) - 1;
-			if (elements[i].compareTo(elements[halveVal]) < 1) {
+			if (elements[i].compareTo(elements[halveVal]) < 0 ) {
 				flag = 0;
 				break;
 			}
