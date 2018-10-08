@@ -21,9 +21,14 @@ public class Solution {
 				isMinHeap = minHeapString.isMinHeap();
 				System.out.println(isMinHeap);
 				break;
-			case "Double" :
-				break;
 			case "Float" :
+				stringArr = scan.nextLine().split(",");
+				Float[] elementsD = Arrays.asList(stringArr).stream().map(Float::valueOf).toArray(Float[]::new);				
+				MinHeap<Float> minHeapFloat = new MinHeap<>(elementsD);
+				isMinHeap = minHeapFloat.isMinHeap();
+				System.out.println(isMinHeap);
+				break;
+			case "Double" :
 				break;
 			}
 			testcases--;
