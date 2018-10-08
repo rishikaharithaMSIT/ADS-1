@@ -9,6 +9,7 @@ public class Solution {
 			case "Integer" :
 				String[] stringArr = scan.nextLine().split(",");
 				Integer[] elements = Arrays.asList(stringArr).stream().map(Integer::valueOf).toArray(Integer[]::new);
+				MinHeap<Integer> minHeap = new MinHeap<>(elements);
 				System.out.println(Arrays.toString(elements));
 				break;
 			case "String" :
