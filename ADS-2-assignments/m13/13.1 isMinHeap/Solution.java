@@ -60,6 +60,7 @@ public final class Solution {
                 isMinHeap = minHeapDouble.isMinHeap();
                 System.out.println(isMinHeap);
                 break;
+            default:
             }
             testcases--;
         }
@@ -72,7 +73,13 @@ public final class Solution {
  * @param      <Gen>  The generate
  */
 class MinHeap<Gen extends Comparable<Gen>> {
+    /**
+     * Genric array type.
+     */
     private Gen[] elements;
+    /**
+     * size of array.
+     */
     private int size;
     /**
      * Constructs the object.

@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:24: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:75:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:76:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:83:27: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:103:62: ')' is preceded with whitespace. [ParenPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:90:27: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m13\13.1 isMinHeap\Solution.java:110:62: ')' is preceded with whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
