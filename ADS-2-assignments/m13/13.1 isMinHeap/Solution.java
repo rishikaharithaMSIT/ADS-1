@@ -21,18 +21,19 @@ public class Solution {
 	}
 }
 
-// class MinHeap<Gen> {
-// 	Gen[] elements;
-// 	int size;
-// 	MinHeap(int len) {
-// 		elements = (Gen[])new Object[len];
-// 		size = 0;
-// 	}
-// 	public void insert(Gen element) {
-// 		elements[size] = element;
-// 		swim();
-// 	}
-// 	public void swim() {
+class MinHeap<Gen> {
+	Gen[] elements;
+	int size;
+	MinHeap(Object[] array) {
+		elements = (Gen[])array;
+		size = 0;
+		System.out.println(Arrays.toString(elements));
+	}
+	public void insert(Gen element) {
+		elements[size] = element;
+		swim();
+	}
+	public void swim() {
 
-// 	}
-// }
+	}
+}
