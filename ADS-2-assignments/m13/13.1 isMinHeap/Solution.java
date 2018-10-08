@@ -87,7 +87,7 @@ class MinHeap<Gen extends Comparable<Gen>> {
      * @param      array  The array
      */
     MinHeap(final Gen[] array) {
-        elements = (Gen[])array;
+        elements = (Gen[]) array;
         size = elements.length;
         //System.out.println(Arrays.toString(elements));
     }
@@ -107,7 +107,7 @@ class MinHeap<Gen extends Comparable<Gen>> {
         }
         for (int i = size - 1; i > 0; i--) {
             int halveVal = ((i + 1) / 2) - 1;
-            if (elements[i].compareTo(elements[halveVal]) < 0 ) {
+            if (elements[i].compareTo(elements[halveVal]) < 0) {
                 flag = 0;
                 break;
             }
