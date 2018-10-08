@@ -16,6 +16,10 @@ public class Solution {
 				//System.out.println(Arrays.toString(elements));
 				break;
 			case "String" :
+				stringArr = scan.nextLine().split(",");				
+				MinHeap<String> minHeapString = new MinHeap<>(stringArr);
+				isMinHeap = minHeapString.isMinHeap();
+				System.out.println(isMinHeap);
 				break;
 			case "Double" :
 				break;
