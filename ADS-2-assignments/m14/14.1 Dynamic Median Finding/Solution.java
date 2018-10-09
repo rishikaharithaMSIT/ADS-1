@@ -20,6 +20,7 @@ class MaxHeap<Gen extends Comparable<Gen>> {
 	}
 	public void insert(Gen element) {
 		maxHeap[size] = element;
+		size++;
 		swim();
 	}
 	public void swim() {
