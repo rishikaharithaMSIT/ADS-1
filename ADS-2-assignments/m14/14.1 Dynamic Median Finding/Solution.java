@@ -146,9 +146,11 @@ class MinHeap {
 				int child2 = (((i + 1) * 2) + 1) - 1;
 				if (minHeap[i] > minHeap[child1]) {
 					exchange(i, child1);
+					break;
 				}
-				else if (minHeap[i] > minHeap[child2]) {
+				if (minHeap[i] > minHeap[child2]) {
 					exchange(i, child2);
+					break;
 				}
 			}
 
