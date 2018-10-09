@@ -3,8 +3,21 @@ import java.util.Scanner;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-public class Solution {
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 
 		//
@@ -78,7 +91,6 @@ public class Solution {
 			}
 
 		}
-
 
 
 		//System.out.println(Arrays.toString(array));
@@ -255,5 +267,3 @@ public class Solution {
 // 	}
 
 // }
-
-
