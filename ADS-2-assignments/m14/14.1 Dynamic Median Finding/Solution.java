@@ -126,6 +126,7 @@ class MinHeap {
 	}
 	public void delete() {
 		exchange(0, size - 1);
+		System.out.println(Arrays.toString(minHeap) + " array");
 		minHeap[size - 1] = 0;
 		size--;
 		sink();
@@ -148,12 +149,12 @@ class MinHeap {
 				int child2 = (((i + 1) * 2) + 1) - 1;
 				if (minHeap[i] > minHeap[child1]) {
 					exchange(i, child1);
-					break;
+					
 				}
 				if (minHeap[i] > minHeap[child2]) {
 					exchange(i, child2);
-					break;
 				}
+				break;
 			}
 
 		}
