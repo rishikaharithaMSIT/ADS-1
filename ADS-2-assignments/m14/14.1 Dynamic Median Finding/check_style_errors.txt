@@ -21,9 +21,13 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:25:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:25:28: Parameter element should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:30:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:38:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:38:30: Parameter i should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:38:37: Parameter j should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:44:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:31:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:37: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:39: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:41:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:41:30: Parameter i should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:41:37: Parameter j should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:47:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:64:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 30 errors.
