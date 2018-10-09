@@ -9,10 +9,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69:59: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69:60: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:70: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:71:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:71:54: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:71:63: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:71:64: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:72: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:152: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:233: Line is longer than 80 characters (found 82). [LineLength]
@@ -161,4 +157,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:695:17: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:696: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 161 errors.
+Checkstyle ends with 157 errors.

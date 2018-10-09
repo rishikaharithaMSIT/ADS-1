@@ -68,7 +68,7 @@ public class Solution {
 			}
 			float median = (element1+element2)/2.0f;
 			
-			System.out.println((element1+element2)/2);
+			System.out.println(median);
 			
 		}
 
