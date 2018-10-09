@@ -18,7 +18,7 @@ public class Solution {
 		mh.delete();
 		mh.printMaxHeap();
 
-
+		System.out.println("--------------------------");
 		min.insert(12);
 		min.printMinHeap();
 		min.insert(13);
