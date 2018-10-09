@@ -48,7 +48,7 @@ public class Solution {
 			array[s] = element;
 			s++;
 		}
-		for (int i = 1; i <= size; i++) {
+		for (int i = 1; i <= size+1; i++) {
 			int[] newarray = Arrays.copyOfRange(array, 0, i);
 			MaxPQ<Integer> mh = new MaxPQ<>(newarray.length);
 			MinPQ<Integer> min = new MinPQ<>(newarray.length);
@@ -56,7 +56,7 @@ public class Solution {
 				mh.insert(newarray[j]);
 				min.insert(newarray[j]);
 			}
-			int size1 = (newarray.length / 2);
+			int size1 = (newarray.length / 2) + 1;
 			//System.out.println(size1);
 			int element1 = 0;
 			int element2 = 0;
@@ -66,9 +66,9 @@ public class Solution {
 				element2 = min.delMin();
 
 			}
-			float median = (element1+element2)/2.0f;			
+			float median = (element1 + element2) / 2.0f;
 			System.out.println(median);
-			
+
 		}
 
 		//System.out.println(Arrays.toString(array));

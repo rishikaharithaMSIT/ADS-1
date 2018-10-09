@@ -4,13 +4,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:8:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:8:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69:59: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:69:60: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:71: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:51:42: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:51:43: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:151: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:232: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:249: Missing a Javadoc comment. [JavadocType]
@@ -158,4 +153,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:694:17: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:695: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 158 errors.
+Checkstyle ends with 153 errors.
