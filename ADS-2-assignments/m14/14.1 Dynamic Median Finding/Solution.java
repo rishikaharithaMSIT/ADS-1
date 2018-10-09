@@ -147,7 +147,7 @@ class MinHeap {
 				if (minHeap[i] > minHeap[child1]) {
 					exchange(i, child1);
 				}
-				if (minHeap[i] > minHeap[child2]) {
+				else if (minHeap[i] > minHeap[child2]) {
 					exchange(i, child2);
 				}
 			}

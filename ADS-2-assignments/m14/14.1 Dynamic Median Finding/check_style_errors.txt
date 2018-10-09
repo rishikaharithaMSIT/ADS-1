@@ -46,6 +46,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:125:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:131:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:142:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:149:33: '}' at column 5 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:158:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:158:30: Parameter i should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:158:37: Parameter j should be final. [FinalParameters]
@@ -53,4 +54,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:172: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:183:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 53 errors.
+Checkstyle ends with 54 errors.
