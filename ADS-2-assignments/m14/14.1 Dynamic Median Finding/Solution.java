@@ -28,14 +28,14 @@ class MaxHeap {
 		swim();
 	}
 	public void swim() {
-		// while(!isMaxHeap()) {
+		while(!isMaxHeap()) {
 			for (int i = size - 1; i > 0; i--) {
 			int halveVal = ((i + 1) / 2) - 1;
 			if (maxHeap[i] > maxHeap[halveVal]) {
 				exchange(i, halveVal);
 			}
 		}	
-		// 
+		}
 		
 	}
 	public void exchange(int i, int j) {
@@ -53,7 +53,7 @@ class MaxHeap {
         for (int i = size - 1; i > 0; i--) {
             int halveVal = ((i + 1) / 2) - 1;
             System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
-            if (maxHeap[i] < maxHeap[halveVal]) {
+            if (maxHeap[i] > maxHeap[halveVal]) {
                 flag = 0;
                 break;
             }
