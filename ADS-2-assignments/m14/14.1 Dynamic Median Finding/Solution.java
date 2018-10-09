@@ -37,16 +37,38 @@ class MaxHeap {
 		size++;
 		swim();
 	}
+	public void delete() {
+		exchange(0, size - 1);
+		maxHeap[size - 1] = 0;
+		size--;
+		sink();
+	}
 	public void swim() {
-		while(!isMaxHeap()) {
+		while (!isMaxHeap()) {
 			for (int i = size - 1; i > 0; i--) {
-			int halveVal = ((i + 1) / 2) - 1;
-			if (maxHeap[i] > maxHeap[halveVal]) {
-				exchange(i, halveVal);
+				int halveVal = ((i + 1) / 2) - 1;
+				if (maxHeap[i] > maxHeap[halveVal]) {
+					exchange(i, halveVal);
+				}
 			}
-		}	
 		}
-		
+
+	}
+	public void sink() {
+		while (!isMaxHeap()) {
+			for (int i = 0; i < size - 1; i++) {
+				int child1 = ((i + 1) * 2) - 1;
+				int child2 = (((i + 1) * 2) + 1) - 1;
+				if (maxHeap[i] < maxHeap[child1]) {
+					exchange(i, child1);
+				}
+				if (maxHeap[i] < maxHeap[child2]) {
+					exchange(i, child2);
+				}
+			}
+
+		}
+
 	}
 	public void exchange(int i, int j) {
 		System.out.println("in exchange");
@@ -56,23 +78,23 @@ class MaxHeap {
 	}
 	public boolean isMaxHeap() {
 
-        int flag = 1;
-        if (size == 1) {
-            return true;
-        }
-        for (int i = size - 1; i > 0; i--) {
-            int halveVal = ((i + 1) / 2) - 1;
-            //System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
-            if (maxHeap[i] > maxHeap[halveVal]) {
-                flag = 0;
-                break;
-            }
-        }
-        if (flag == 0) {
-            return false;
-        }
-        return true;
-    }
+		int flag = 1;
+		if (size == 1) {
+			return true;
+		}
+		for (int i = size - 1; i > 0; i--) {
+			int halveVal = ((i + 1) / 2) - 1;
+			//System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
+			if (maxHeap[i] > maxHeap[halveVal]) {
+				flag = 0;
+				break;
+			}
+		}
+		if (flag == 0) {
+			return false;
+		}
+		return true;
+	}
 	public void printMaxHeap() {
 		System.out.println(Arrays.toString(maxHeap));
 	}
@@ -92,15 +114,15 @@ class MinHeap {
 		swim();
 	}
 	public void swim() {
-		while(!isMinHeap()) {
+		while (!isMinHeap()) {
 			for (int i = size - 1; i > 0; i--) {
-			int halveVal = ((i + 1) / 2) - 1;
-			if (minHeap[i] < minHeap[halveVal]) {
-				exchange(i, halveVal);
+				int halveVal = ((i + 1) / 2) - 1;
+				if (minHeap[i] < minHeap[halveVal]) {
+					exchange(i, halveVal);
+				}
 			}
-		}	
 		}
-		
+
 	}
 	public void exchange(int i, int j) {
 		System.out.println("in exchange");
@@ -110,23 +132,23 @@ class MinHeap {
 	}
 	public boolean isMinHeap() {
 
-        int flag = 1;
-        if (size == 1) {
-            return true;
-        }
-        for (int i = size - 1; i > 0; i--) {
-            int halveVal = ((i + 1) / 2) - 1;
-            //System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
-            if (minHeap[i] < minHeap[halveVal]) {
-                flag = 0;
-                break;
-            }
-        }
-        if (flag == 0) {
-            return false;
-        }
-        return true;
-    }
+		int flag = 1;
+		if (size == 1) {
+			return true;
+		}
+		for (int i = size - 1; i > 0; i--) {
+			int halveVal = ((i + 1) / 2) - 1;
+			//System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
+			if (minHeap[i] < minHeap[halveVal]) {
+				flag = 0;
+				break;
+			}
+		}
+		if (flag == 0) {
+			return false;
+		}
+		return true;
+	}
 	public void printMinHeap() {
 		System.out.println(Arrays.toString(minHeap));
 	}
