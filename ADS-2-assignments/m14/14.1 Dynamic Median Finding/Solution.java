@@ -32,6 +32,7 @@ class MaxHeap {
 		}
 	}
 	public void exchange(int i, int j) {
+		System.out.println("in exchange");
 		int temp = maxHeap[i];
 		maxHeap[i] = maxHeap[j];
 		maxHeap[j] = temp;
