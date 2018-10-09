@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Solution {
 	public static void main(String[] args) {
 		MaxHeap mh = new MaxHeap(10);
+		MinHeap min = new MinHeap(10);
 		mh.insert(12);
 		mh.printMaxHeap();
 		mh.insert(13);
@@ -12,6 +13,15 @@ public class Solution {
 		mh.printMaxHeap();
 		mh.insert(14);
 		mh.printMaxHeap();
+
+		min.insert(12);
+		min.printMinHeap();
+		min.insert(13);
+		min.printMinHeap();
+		min.insert(11);
+		min.printMinHeap();
+		min.insert(14);
+		min.printMinHeap();
 	}
 }
 
@@ -65,6 +75,60 @@ class MaxHeap {
     }
 	public void printMaxHeap() {
 		System.out.println(Arrays.toString(maxHeap));
+	}
+
+}
+
+class MinHeap {
+	int[] minHeap;
+	int size;
+	MinHeap(int len) {
+		minHeap = new int[len];
+		size = 0;
+	}
+	public void insert(int element) {
+		minHeap[size] = element;
+		size++;
+		swim();
+	}
+	public void swim() {
+		while(!isMinHeap()) {
+			for (int i = size - 1; i > 0; i--) {
+			int halveVal = ((i + 1) / 2) - 1;
+			if (minHeap[i] < minHeap[halveVal]) {
+				exchange(i, halveVal);
+			}
+		}	
+		}
+		
+	}
+	public void exchange(int i, int j) {
+		System.out.println("in exchange");
+		int temp = minHeap[i];
+		minHeap[i] = minHeap[j];
+		minHeap[j] = temp;
+	}
+	public boolean isMinHeap() {
+
+        int flag = 1;
+        if (size == 1) {
+            return true;
+        }
+        for (int i = size - 1; i > 0; i--) {
+            int halveVal = ((i + 1) / 2) - 1;
+            //System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
+            if (minHeap[i] < minHeap[halveVal]) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag == 0) {
+            return false;
+        }
+        return true;
+    }
+	public void printMinHeap() {
+		System.out.println(Arrays.toString(minHeap));
 	}
 
 }
