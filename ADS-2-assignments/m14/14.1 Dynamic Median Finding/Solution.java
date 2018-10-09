@@ -39,37 +39,47 @@ public class Solution {
 		// min.delete();
 		// min.printMinHeap();
 		Scanner scan = new Scanner(System.in);
-		int size = Integer.parseInt(scan.nextLine());
-		int[] array = new int[size];
+		int n = scan.nextInt();
 
-		int s = 0;
-		while (s < size) {
-			int element = Integer.parseInt(scan.nextLine());
-			array[s] = element;
-			s++;
-		}
-		for (int i = 1; i <= size+1; i++) {
-			int[] newarray = Arrays.copyOfRange(array, 0, i);
-			MaxPQ<Integer> mh = new MaxPQ<>(newarray.length);
-			MinPQ<Integer> min = new MinPQ<>(newarray.length);
-			for (int j = 0; j < newarray.length; j++) {
-				mh.insert(newarray[j]);
-				min.insert(newarray[j]);
+		MinPQ<Float> min = new MinPQ<Float>(n);
+		MaxPQ<Float> max = new MaxPQ<Float>(n);
+
+		Float median = 0.0f;
+		for (int i = 0; i < n; i++) {
+			Float val = scan.nextFloat();
+			if (val > median) {
+				min.insert(val);
+			} else {
+				max.insert(val);
 			}
-			int size1 = (newarray.length / 2) + 1;
-			//System.out.println(size1);
-			int element1 = 0;
-			int element2 = 0;
-			for (int k = 0; k < size1; k++) {
-				//System.out.println("in while");
-				element1 = mh.delMax();
-				element2 = min.delMin();
+
+			if (min.size() - max.size() > 1) {
+				max.insert(min.delMin());
 
 			}
-			float median = (element1 + element2) / 2.0f;
-			System.out.println(median);
+			if (max.size() - min.size() > 1) {
+				min.insert(max.delMax());
+
+			}
+
+			if (min.size() == max.size()) {
+				median = (min.min() + max.max()) / 2;
+				System.out.println(median);
+			}
+
+			if (max.size() > min.size()) {
+				median = max.max();
+				System.out.println(median);
+			}
+
+			if (min.size() > max.size()) {
+				median = min.min();
+				System.out.println(median);
+			}
 
 		}
+
+
 
 		//System.out.println(Arrays.toString(array));
 		// mh.insert(element);
