@@ -52,7 +52,7 @@ class MaxHeap {
         }
         for (int i = size - 1; i > 0; i--) {
             int halveVal = ((i + 1) / 2) - 1;
-            System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
+            //System.out.println(maxHeap[i]+" - "+ maxHeap[halveVal]);
             if (maxHeap[i] > maxHeap[halveVal]) {
                 flag = 0;
                 break;
