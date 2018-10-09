@@ -41,8 +41,9 @@ public class Solution {
 		MinHeap min = new MinHeap(size);
 
 		while(scan.hasNext()) {
-			mh.insert(Integer.parseInt(scan.nextLine()));
-			min.insert(Integer.parseInt(scan.nextLine()));
+			int element = Integer.parseInt(scan.nextLine());
+			mh.insert(element);
+			min.insert(element);
 		}
 		mh.printMaxHeap();
 		min.printMinHeap();
