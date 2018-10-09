@@ -28,7 +28,7 @@ class MaxHeap {
 		swim();
 	}
 	public void swim() {
-		while(!isMinHeap()) {
+		while(isMaxHeap()) {
 			for (int i = size - 1; i > 0; i--) {
 			int halveVal = ((i + 1) / 2) - 1;
 			if (maxHeap[i] > maxHeap[halveVal]) {
@@ -44,14 +44,14 @@ class MaxHeap {
 		maxHeap[i] = maxHeap[j];
 		maxHeap[j] = temp;
 	}
-	public boolean isMinHeap() {
+	public boolean isMaxHeap() {
         int flag = 1;
         if (size == 1) {
             return true;
         }
         for (int i = size - 1; i > 0; i--) {
             int halveVal = ((i + 1) / 2) - 1;
-            if (maxHeap[i] > maxHeap[halveVal]) {
+            if (maxHeap[i] < maxHeap[halveVal]) {
                 flag = 0;
                 break;
             }
