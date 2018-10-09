@@ -11,9 +11,10 @@ Expected Output:
 5.0
 5.5
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at MaxHeap.<init>(Solution.java:18)
-	at Solution.main(Solution.java:6)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at MaxHeap.swim(Solution.java:29)
+	at MaxHeap.insert(Solution.java:24)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -100018,9 +100019,10 @@ Expected Output:
 50402.0
 50402.0
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at MaxHeap.<init>(Solution.java:18)
-	at Solution.main(Solution.java:6)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at MaxHeap.swim(Solution.java:29)
+	at MaxHeap.insert(Solution.java:24)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -200025,9 +200027,10 @@ Expected Output:
 49704.0
 49703.0
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at MaxHeap.<init>(Solution.java:18)
-	at Solution.main(Solution.java:6)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at MaxHeap.swim(Solution.java:29)
+	at MaxHeap.insert(Solution.java:24)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -201032,7 +201035,8 @@ Expected Output:
 51013.0
 51034.0
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at MaxHeap.<init>(Solution.java:18)
-	at Solution.main(Solution.java:6)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at MaxHeap.swim(Solution.java:29)
+	at MaxHeap.insert(Solution.java:24)
+	at Solution.main(Solution.java:7)
 ----------------------------------------
