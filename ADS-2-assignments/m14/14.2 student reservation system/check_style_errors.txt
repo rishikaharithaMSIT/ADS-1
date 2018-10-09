@@ -1,0 +1,22 @@
+Starting audit...
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:6:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:7:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:8:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:10:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:20:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:23:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:29:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:32:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:35:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:38:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:41:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:44:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:48:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.2 student reservation system\Student.java:69:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 19 errors.
