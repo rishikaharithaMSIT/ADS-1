@@ -1,7 +1,19 @@
 import java.util.Scanner;
-
+/**
+ * class
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		HeapSort sort = new HeapSort();
