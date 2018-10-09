@@ -21,6 +21,9 @@ in exchange
 in exchange
 in exchange
 [13, 12, 11, 0, 0, 0, 0, 0, 0, 0]
+in exchange
+in exchange
+[12, 11, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 13, 0, 0, 0, 0, 0, 0, 0, 0]
 in exchange
@@ -100040,6 +100043,9 @@ in exchange
 in exchange
 in exchange
 [13, 12, 11, 0, 0, 0, 0, 0, 0, 0]
+in exchange
+in exchange
+[12, 11, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 13, 0, 0, 0, 0, 0, 0, 0, 0]
 in exchange
@@ -200059,6 +200065,9 @@ in exchange
 in exchange
 in exchange
 [13, 12, 11, 0, 0, 0, 0, 0, 0, 0]
+in exchange
+in exchange
+[12, 11, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 13, 0, 0, 0, 0, 0, 0, 0, 0]
 in exchange
@@ -201078,6 +201087,9 @@ in exchange
 in exchange
 in exchange
 [13, 12, 11, 0, 0, 0, 0, 0, 0, 0]
+in exchange
+in exchange
+[12, 11, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 [12, 13, 0, 0, 0, 0, 0, 0, 0, 0]
 in exchange
