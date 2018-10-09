@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Solution {
 	public static void main(String[] args) {
+
 		MaxHeap mh = new MaxHeap(10);
 		MinHeap min = new MinHeap(10);
 		mh.insert(12);
@@ -48,11 +49,13 @@ class MaxHeap {
 		size++;
 		swim();
 	}
-	public void delete() {
+	public int delete() {
+		int item = maxHeap[0];
 		exchange(0, size - 1);
 		maxHeap[size - 1] = 0;
 		size--;
 		sink();
+		return item;
 	}
 	public void swim() {
 		while (!isMaxHeap()) {
@@ -124,12 +127,14 @@ class MinHeap {
 		size++;
 		swim();
 	}
-	public void delete() {
+	public int delete() {
+		int item = minHeap[0];
 		exchange(0, size - 1);
 		System.out.println(Arrays.toString(minHeap) + " array");
 		minHeap[size - 1] = 0;
 		size--;
 		sink();
+		return item;
 	}
 	public void swim() {
 		while (!isMinHeap()) {
