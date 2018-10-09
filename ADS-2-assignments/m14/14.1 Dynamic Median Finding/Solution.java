@@ -26,7 +26,7 @@ class MaxHeap {
 	public void swim() {
 		for (int i = size - 1; i > 0; i--) {
 			int halveVal = ((i + 1) / 2) - 1;
-			if (maxHeap[i] < maxHeap[halveVal]) {
+			if (maxHeap[i] > maxHeap[halveVal]) {
 				exchange(i, halveVal);
 			}
 		}
