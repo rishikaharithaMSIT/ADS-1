@@ -27,6 +27,10 @@ public class Solution {
 		min.printMinHeap();
 		min.insert(14);
 		min.printMinHeap();
+		mh.delete();
+		mh.printMaxHeap();
+		mh.delete();
+		mh.printMaxHeap();
 	}
 }
 
