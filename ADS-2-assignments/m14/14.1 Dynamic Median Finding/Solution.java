@@ -27,12 +27,12 @@ public class Solution {
 		min.printMinHeap();
 		min.insert(14);
 		min.printMinHeap();
-		mh.delete();
+		min.delete();
 		System.out.println("del1");
-		mh.printMaxHeap();
+		min.printMinHeap();
 		System.out.println("del2");
-		mh.delete();
-		mh.printMaxHeap();
+		min.delete();
+		min.printMinHeap();
 	}
 }
 
