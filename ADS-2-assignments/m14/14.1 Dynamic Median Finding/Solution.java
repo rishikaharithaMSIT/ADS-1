@@ -8,6 +8,8 @@ public class Solution {
 		mh.printMaxHeap();
 		mh.insert(13);
 		mh.printMaxHeap();
+		mh.insert(11);
+		mh.printMaxHeap();
 	}
 }
 
