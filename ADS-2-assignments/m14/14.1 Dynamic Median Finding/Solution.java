@@ -13,6 +13,7 @@ public class Solution {
 		mh.printMaxHeap();
 		mh.insert(14);
 		mh.printMaxHeap();
+		mh.delete();
 
 		min.insert(12);
 		min.printMinHeap();
