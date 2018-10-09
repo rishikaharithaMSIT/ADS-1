@@ -56,7 +56,7 @@ public class Solution {
 				mh.insert(newarray[j]);
 				min.insert(newarray[j]);
 			}
-			int size1 = (newarray.length / 2) + 1;
+			int size1 = (newarray.length / 2);
 			//System.out.println(size1);
 			int element1 = 0;
 			int element2 = 0;
@@ -66,8 +66,7 @@ public class Solution {
 				element2 = min.delMin();
 
 			}
-			float median = (element1+element2)/2.0f;
-			
+			float median = (element1+element2)/2.0f;			
 			System.out.println(median);
 			
 		}
