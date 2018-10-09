@@ -44,11 +44,13 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:116:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:116:28: Parameter element should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:121:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:132:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:132:30: Parameter i should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:132:37: Parameter j should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:127:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:138:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:146: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:157:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:154:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:154:30: Parameter i should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:154:37: Parameter j should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:160:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:168: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m14\14.1 Dynamic Median Finding\Solution.java:179:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 53 errors.

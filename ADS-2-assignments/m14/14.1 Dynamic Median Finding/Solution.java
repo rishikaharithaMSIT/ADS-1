@@ -118,6 +118,12 @@ class MinHeap {
 		size++;
 		swim();
 	}
+	public void delete() {
+		exchange(0, size - 1);
+		minHeap[size - 1] = 0;
+		size--;
+		sink();
+	}
 	public void swim() {
 		while (!isMinHeap()) {
 			for (int i = size - 1; i > 0; i--) {
@@ -126,6 +132,22 @@ class MinHeap {
 					exchange(i, halveVal);
 				}
 			}
+		}
+
+	}
+	public void sink() {
+		while (!isMinHeap()) {
+			for (int i = 0; i < size - 1; i++) {
+				int child1 = ((i + 1) * 2) - 1;
+				int child2 = (((i + 1) * 2) + 1) - 1;
+				if (minHeap[i] > minHeap[child1]) {
+					exchange(i, child1);
+				}
+				if (minHeap[i] > minHeap[child2]) {
+					exchange(i, child2);
+				}
+			}
+
 		}
 
 	}
