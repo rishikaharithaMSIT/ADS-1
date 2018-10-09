@@ -4,35 +4,47 @@ import java.util.Scanner;
 public class Solution {
 	public static void main(String[] args) {
 
-		MaxHeap mh = new MaxHeap(10);
-		MinHeap min = new MinHeap(10);
-		mh.insert(12);
-		mh.printMaxHeap();
-		mh.insert(13);
-		mh.printMaxHeap();
-		mh.insert(11);
-		mh.printMaxHeap();
-		mh.insert(14);
-		mh.printMaxHeap();
-		mh.delete();
-		mh.printMaxHeap();
-		mh.delete();
-		mh.printMaxHeap();
+		// 
+		// MaxHeap mh = new MaxHeap(10);
+		// MinHeap min = new MinHeap(10);
+		// mh.insert(12);
+		// mh.printMaxHeap();
+		// mh.insert(13);
+		// mh.printMaxHeap();
+		// mh.insert(11);
+		// mh.printMaxHeap();
+		// mh.insert(14);
+		// mh.printMaxHeap();
+		// mh.delete();
+		// mh.printMaxHeap();
+		// mh.delete();
+		// mh.printMaxHeap();
 
-		System.out.println("--------------------------");
-		min.insert(12);
-		min.printMinHeap();
-		min.insert(13);
-		min.printMinHeap();
-		min.insert(11);
-		min.printMinHeap();
-		min.insert(14);
-		min.printMinHeap();
-		min.delete();
-		System.out.println("del1");
-		min.printMinHeap();
-		System.out.println("del2");
-		min.delete();
+		// System.out.println("--------------------------");
+		// min.insert(12);
+		// min.printMinHeap();
+		// min.insert(13);
+		// min.printMinHeap();
+		// min.insert(11);
+		// min.printMinHeap();
+		// min.insert(14);
+		// min.printMinHeap();
+		// min.delete();
+		// System.out.println("del1");
+		// min.printMinHeap();
+		// System.out.println("del2");
+		// min.delete();
+		// min.printMinHeap();
+		Scanner scan = new Scanner(System.in);
+		int size = Integer.parseInt(scan.nextLine());
+		MaxHeap mh = new MaxHeap(size);
+		MinHeap min = new MinHeap(size);
+
+		while(scan.hasNext()) {
+			mh.insert(Integer.parseInt(scan.nextLine()));
+			min.insert(Integer.parseInt(scan.nextLine()));
+		}
+		mh.printMaxHeap();
 		min.printMinHeap();
 	}
 }
