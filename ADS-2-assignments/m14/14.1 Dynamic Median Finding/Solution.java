@@ -45,8 +45,20 @@ public class Solution {
 			mh.insert(element);
 			min.insert(element);
 		}
-		mh.printMaxHeap();
-		min.printMinHeap();
+		int size1 = (size/2)+1;
+		int element1 = 0;
+		int element2 = 0;
+		while(size1 > 0) {
+			element1 = min.delete();
+			element2 = mh.delete();
+			size1--;
+		}
+		if(element1 == element2) {
+			System.out.println(element1);
+		}
+		else {
+			System.out.println((element1+element2)/2);
+		}
 	}
 }
 
