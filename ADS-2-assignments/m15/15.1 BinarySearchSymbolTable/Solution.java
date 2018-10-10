@@ -15,6 +15,7 @@ public class Solution {
 		b.put(2, "A");
 		b.put(5, "B");
 		b.put(5, "C");
+		b.put(1, "R");
 		b.print();
 	}
 }
