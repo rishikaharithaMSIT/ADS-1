@@ -17,7 +17,7 @@ public class Solution {
 		b.print();
 	}
 }
-class BinarySearchST<Key extends Comparable<Key>, Value> {
+class BinarySearchST<Key, Value> {
 	Key[] keys;
 	Value[] values;
 	int size;
