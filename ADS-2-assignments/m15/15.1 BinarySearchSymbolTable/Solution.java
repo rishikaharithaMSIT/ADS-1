@@ -13,10 +13,11 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		BinarySearchST<String, Integer> b = new BinarySearchST<>();
-		b.put("D", 2);
-		b.put("R", 5);
-		b.put("B", 4);
-		b.put("A", 3);
+		String s = "S E A R C H E X A M P L E";
+		String[] str = s.split(" ");
+		for(int i =0;i<str.length;i++){
+			b.put(str[i],i);
+		}
 		System.out.println(b.get("A"));
 		b.print();
 	}

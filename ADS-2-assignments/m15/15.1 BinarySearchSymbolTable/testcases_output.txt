@@ -16,12 +16,21 @@ X 7
 null
 Your Output: 
 index0
+index0
+index0
+index2
 index1
+index3
+index2
+index6
 index0
-index0
-3
-A B D R 
-3 4 2 5
+index4
+index5
+index4
+index2
+8
+A C E H L M P R S X 
+8 4 12 5 11 9 10 3 0 7
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -42,12 +51,21 @@ false
 null
 Your Output: 
 index0
+index0
+index0
+index2
 index1
+index3
+index2
+index6
 index0
-index0
-3
-A B D R 
-3 4 2 5
+index4
+index5
+index4
+index2
+8
+A C E H L M P R S X 
+8 4 12 5 11 9 10 3 0 7
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -73,12 +91,21 @@ true
 T
 Your Output: 
 index0
+index0
+index0
+index2
 index1
+index3
+index2
+index6
 index0
-index0
-3
-A B D R 
-3 4 2 5
+index4
+index5
+index4
+index2
+8
+A C E H L M P R S X 
+8 4 12 5 11 9 10 3 0 7
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -102,12 +129,21 @@ true
 P
 Your Output: 
 index0
+index0
+index0
+index2
 index1
+index3
+index2
+index6
 index0
-index0
-3
-A B D R 
-3 4 2 5
+index4
+index5
+index4
+index2
+8
+A C E H L M P R S X 
+8 4 12 5 11 9 10 3 0 7
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -126,10 +162,19 @@ T 6
 Y 1
 Your Output: 
 index0
+index0
+index0
+index2
 index1
+index3
+index2
+index6
 index0
-index0
-3
-A B D R 
-3 4 2 5
+index4
+index5
+index4
+index2
+8
+A C E H L M P R S X 
+8 4 12 5 11 9 10 3 0 7
 ----------------------------------------
