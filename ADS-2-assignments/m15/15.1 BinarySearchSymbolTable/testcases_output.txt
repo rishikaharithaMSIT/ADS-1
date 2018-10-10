@@ -16,9 +16,9 @@ X 7
 null
 Your Output: 
 8
-X
+S
 R
-1
+2
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -39,9 +39,9 @@ false
 null
 Your Output: 
 8
-X
+S
 R
-1
+2
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -67,9 +67,9 @@ true
 T
 Your Output: 
 8
-X
+S
 R
-1
+2
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -93,9 +93,9 @@ true
 P
 Your Output: 
 8
-X
+S
 R
-1
+2
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -114,7 +114,7 @@ T 6
 Y 1
 Your Output: 
 8
-X
+S
 R
-1
+2
 ----------------------------------------
