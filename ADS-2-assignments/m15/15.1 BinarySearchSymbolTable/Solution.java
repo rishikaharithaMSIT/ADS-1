@@ -114,6 +114,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	public void deleteMin() {
 		keys = Arrays.copyOfRange(keys, 1, size);
 		values = Arrays.copyOfRange(values, 1, size);
+		size--;
 	}
 	public void print() {
 

@@ -19,9 +19,9 @@ Your Output:
 X
 R
 1
-C E H L M P R S X Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at BinarySearchST.print(Solution.java:121)
-	at Solution.main(Solution.java:26)
+C E H L M P R S X 
+4 12 5 11 9 10 3 0 7 true
+4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -45,9 +45,9 @@ Your Output:
 X
 R
 1
-C E H L M P R S X Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at BinarySearchST.print(Solution.java:121)
-	at Solution.main(Solution.java:26)
+C E H L M P R S X 
+4 12 5 11 9 10 3 0 7 true
+4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -76,9 +76,9 @@ Your Output:
 X
 R
 1
-C E H L M P R S X Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at BinarySearchST.print(Solution.java:121)
-	at Solution.main(Solution.java:26)
+C E H L M P R S X 
+4 12 5 11 9 10 3 0 7 true
+4
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -105,9 +105,9 @@ Your Output:
 X
 R
 1
-C E H L M P R S X Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at BinarySearchST.print(Solution.java:121)
-	at Solution.main(Solution.java:26)
+C E H L M P R S X 
+4 12 5 11 9 10 3 0 7 true
+4
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -129,7 +129,7 @@ Your Output:
 X
 R
 1
-C E H L M P R S X Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at BinarySearchST.print(Solution.java:121)
-	at Solution.main(Solution.java:26)
+C E H L M P R S X 
+4 12 5 11 9 10 3 0 7 true
+4
 ----------------------------------------

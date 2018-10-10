@@ -54,6 +54,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:112:33: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:112:34: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:114:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:118:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:119:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 56 errors.
