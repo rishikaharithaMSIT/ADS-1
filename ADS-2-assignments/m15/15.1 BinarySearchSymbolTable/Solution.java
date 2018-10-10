@@ -16,45 +16,45 @@ public class Solution {
 
 		String s = scan.nextLine();
 		String[] str = s.split(" ");
-		for(int i =0;i<str.length;i++){
-			b.put(str[i],i);
+		for (int i = 0; i < str.length; i++) {
+			b.put(str[i], i);
 		}
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] inp = scan.nextLine().split(" ");
-			switch(inp[0]) {
-				case "max":
-					System.out.println(b.max());
-					break;
-				case "floor":
-					System.out.println(b.floor(inp[1]));
-					break;
-				case "rank":
-					System.out.println(b.rank(inp[1]));
-					break;
-				case "deleteMin":
-					b.deleteMin();
-					break;
-				case "contains":
-					System.out.println(b.contains(inp[1]));
-					break;
-				case "keys":
-					b.print();
-					break;
-				case "get":
-					System.out.println(b.get("A"));
-					break;
-				default:
+			switch (inp[0]) {
+			case "max":
+				System.out.println(b.max());
+				break;
+			case "floor":
+				System.out.println(b.floor(inp[1]));
+				break;
+			case "rank":
+				System.out.println(b.rank(inp[1]));
+				break;
+			case "deleteMin":
+				b.deleteMin();
+				break;
+			case "contains":
+				System.out.println(b.contains(inp[1]));
+				break;
+			case "keys":
+				b.print();
+				break;
+			case "get":
+				System.out.println(b.get("A"));
+				break;
+			default:
 			}
 		}
-		
+
 		// System.out.println(b.max());
 		// System.out.println(b.floor("R"));
 		// System.out.println(b.rank("B"));
 		// b.deleteMin();
 		// System.out.println(b.contains("C"));
-		// b.print();		
+		// b.print();
 		// System.out.println(b.get("A"));
-		
+
 	}
 }
 class BinarySearchST<Key extends Comparable<Key>, Value> {
@@ -126,13 +126,16 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	}
 	public Key floor(Key key) {
 		int i = rank(key);
-		if(contains(key)) {
+		if (contains(key)) {
 			return key;
 		}
-		return keys[i-1];
+		if ((i - 1) < 0) {
+			return null;
+		}
+		return keys[i - 1];
 	}
 	public Value get(Key key) {
-		if(contains(key) == true) {
+		if (contains(key) == false) {
 			return null;
 		}
 		int i = rank(key);
@@ -140,7 +143,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		return val;
 	}
 	public Key max() {
-		return keys[size-1];
+		return keys[size - 1];
 	}
 	public void deleteMin() {
 		keys = Arrays.copyOfRange(keys, 1, size);
