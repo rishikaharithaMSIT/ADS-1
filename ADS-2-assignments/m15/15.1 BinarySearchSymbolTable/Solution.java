@@ -11,13 +11,13 @@ import java.util.Comparator;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		BinarySearchST<Integer, String> b = new BinarySearchST<>();
-		b.put(2, "A");
-		b.put(5, "B");
-		b.put(4, "R");
-		b.put(6, "R");
-		b.put(3, "R");
-		b.put(1, "R");
+		BinarySearchST<String, Integer> b = new BinarySearchST<>();
+		b.put("A", 2);
+		b.put("B", 5);
+		b.put("R", 4);
+		// b.put(6, "R");
+		// b.put(3, "R");
+		// b.put(1, "R");
 		b.print();
 	}
 }
