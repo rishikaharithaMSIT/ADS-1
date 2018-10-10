@@ -13,8 +13,8 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		BinarySearchST<Integer, String> b = new BinarySearchST<>();
 		b.put(2, "A");
-		b.put(5, "B");
-		b.put(1, "R");
+		b.put(1, "B");
+		b.put(4, "R");
 		b.print();
 	}
 }
