@@ -74,11 +74,15 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			values[index] = val;
 		} else {
 			Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
+			Value[] valCopy = Arrays.copyOfRange(values, index, size);
 			keys[index] = key;
 			values[index] = val;			
 			size++;
+			int j = index;
 			for(int i = 0;i<keyCopy.length;i++){
-				keys[++index] = keyCopy[i];
+				keys[j] = keyCopy[i];
+				values[j] = valCopy[i];
+				j++;
 			}
 			// System.out.println(index + " - " + (size-1));
 			// System.out.println(keys[index] + " : " + keys[size-1]);
