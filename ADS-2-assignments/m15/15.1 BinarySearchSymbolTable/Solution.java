@@ -18,11 +18,11 @@ public class Solution {
 		b.print();
 	}
 }
-class BinarySearchST<Key, Value> {
+class BinarySearchST<Key extends Comparable<Key>, Value> {
 	Key[] keys;
 	Value[] values;
 	int size;
-	Comparator<Key> comparator;
+	//Comparator<Key> comparator;
 	BinarySearchST() {
 		keys = (Key[])new Object[10];
 		values = (Value[])new Object[10];
@@ -36,28 +36,38 @@ class BinarySearchST<Key, Value> {
 		}
 		return false;
 	}
-	public int rank(Key key){
-		for (int i = 0; i < size; i++) {
-			if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
-				return i;
-			}
+	public int rank(Key key) {
+		// for (int i = 0; i < size; i++) {
+		// 	if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
+		// 		return i;
+		// 	}
+		// }
+		// return -1;
+		int low = 0;
+		int high = size - 1;
+		while (low <= high) {
+			int mid = low + (high - low) / 2;
+			int cmp = key.compareTo(keys[mid]);
+			if      (cmp < 0) high = mid - 1;
+			else if (cmp > 0) low = mid + 1;
+			else return mid;
 		}
-		return -1;
+		return low;
 	}
 	public void put(Key key, Value val) {
+		int index = rank(key);
 		if (contains(key)) {
-			int index = rank(key);
 			values[index] = val;
 		} else {
-			keys[size] = key;
-			values[size] = val;
+			keys[index] = key;
+			values[index] = val;
 			size++;
 		}
 	}
 	public Value get(Key key) {
 		Value val = null;
 		for (int i = 0; i < size; i++) {
-			if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
+			if (keys[i].compareTo(key) == 0) {
 				val = values[i];
 				break;
 			}
@@ -65,6 +75,7 @@ class BinarySearchST<Key, Value> {
 
 		return val;
 	}
+
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
