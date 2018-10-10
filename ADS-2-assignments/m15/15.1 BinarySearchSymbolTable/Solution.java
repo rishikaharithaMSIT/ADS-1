@@ -43,8 +43,8 @@ public final class Solution {
                 break;
             case "keys":
                 //b.print();
-                MyIterable<String> myList = new MyIterable<>(b.keys);
-                for (String i : myList) {
+                MyIterable<Comparable> myList = new MyIterable<>(b.keys);
+                for (Comparable i : myList) {
                     System.out.println(i);
 
                 }
