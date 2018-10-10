@@ -19,7 +19,8 @@ public class Solution {
 			b.put(str[i],i);
 		}
 		System.out.println(b.get("A"));
-		b.print();
+		System.out.println(b.floor("R"));
+		//b.print();
 	}
 }
 class BinarySearchST<Key extends Comparable<Key>, Value> {
@@ -68,7 +69,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	}
 	public void put(Key key, Value val) {
 		int index = rank(key);
-		System.out.println("index" + index);
+		//System.out.println("index" + index);
 		if (contains(key)) {
 			values[index] = val;
 		} else {
