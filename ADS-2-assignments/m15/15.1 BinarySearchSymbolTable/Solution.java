@@ -55,15 +55,24 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		}
 		return low;
 	}
+	public void exchange(int i, int j) {
+		Key tempKey = keys[i];
+		Value tempVal = values[i];
+		keys[i] = keys[j];
+		keys[j] = tempKey;
+		values[i] = values[j];
+		values[j] = tempVal;
+	}
 	public void put(Key key, Value val) {
 		int index = rank(key);
 		if (contains(key)) {
 			values[index] = val;
 		} else {
-			keys[index] = key;
-			values[index] = val;
+			keys[size] = key;
+			values[size] = val;
 			size++;
 		}
+		exchange(index, size-1);
 	}
 	public Value get(Key key) {
 		Value val = null;
