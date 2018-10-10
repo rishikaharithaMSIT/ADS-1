@@ -17,9 +17,6 @@ public class Solution {
 		b.put("R", 5);
 		b.put("B", 4);
 		b.put("A", 3);
-		// b.put(6, "R");
-		// b.put(3, "R");
-		// b.put(1, "R");
 		b.print();
 	}
 }
@@ -76,10 +73,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
 			Value[] valCopy = Arrays.copyOfRange(values, index, size);
 			keys[index] = key;
-			values[index] = val;			
+			values[index] = val;
 			size++;
-			int j = index+1;
-			for(int i = 0;i<keyCopy.length;i++){
+			int j = index + 1;
+			for (int i = 0; i < keyCopy.length; i++) {
 				keys[j] = keyCopy[i];
 				values[j] = valCopy[i];
 				j++;
@@ -88,17 +85,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			// System.out.println(keys[index] + " : " + keys[size-1]);
 			//exchange(index, size-1);
 		}
-		
+
 	}
 	public Value get(Key key) {
-		Value val = null;
-		for (int i = 0; i < size; i++) {
-			if (keys[i].compareTo(key) == 0) {
-				val = values[i];
-				break;
-			}
-		}
-
+		int i = rank(key);
+		Value val = values[i];
 		return val;
 	}
 
