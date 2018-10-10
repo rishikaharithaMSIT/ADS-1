@@ -37,6 +37,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:70:34: Parameter val should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:77: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:79: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:81:38: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:81:39: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:82:28: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:82:39: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:82:40: '<' is not preceded with whitespace. [WhitespaceAround]
@@ -49,4 +51,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:93:26: Parameter key should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:105:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 49 errors.
+Checkstyle ends with 51 errors.

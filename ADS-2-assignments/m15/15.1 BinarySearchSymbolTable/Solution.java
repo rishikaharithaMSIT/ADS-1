@@ -78,7 +78,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			keys[index] = key;
 			values[index] = val;			
 			size++;
-			int j = index;
+			int j = index+1;
 			for(int i = 0;i<keyCopy.length;i++){
 				keys[j] = keyCopy[i];
 				values[j] = valCopy[i];
