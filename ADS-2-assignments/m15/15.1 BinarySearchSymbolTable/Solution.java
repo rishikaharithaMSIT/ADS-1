@@ -17,6 +17,7 @@ public class Solution {
 		b.put("R", 5);
 		b.put("B", 4);
 		b.put("A", 3);
+		System.out.println(b.get("A"));
 		b.print();
 	}
 }
