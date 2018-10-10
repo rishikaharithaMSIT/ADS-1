@@ -68,15 +68,17 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	}
 	public void put(Key key, Value val) {
 		int index = rank(key);
+		System.out.println("index" + index);
 		if (contains(key)) {
 			values[index] = val;
 		} else {
-			keys[size] = key;
-			values[size] = val;			
+
+			keys[index] = key;
+			values[index] = val;			
 			size++;
-			System.out.println(index + " - " + (size-1));
-			System.out.println(keys[index] + " : " + keys[size-1]);
-			exchange(index, size-1);
+			// System.out.println(index + " - " + (size-1));
+			// System.out.println(keys[index] + " : " + keys[size-1]);
+			//exchange(index, size-1);
 		}
 		
 	}

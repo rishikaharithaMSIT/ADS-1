@@ -35,16 +35,11 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:69:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:69:25: Parameter key should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:69:34: Parameter val should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:75: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:77:65: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:77:66: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:78:75: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:78:76: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:79:45: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:79:46: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:81: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:83:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:83:26: Parameter key should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:95:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:77: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:80: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:83: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:85:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:85:26: Parameter key should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:97:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 47 errors.
+Checkstyle ends with 42 errors.
