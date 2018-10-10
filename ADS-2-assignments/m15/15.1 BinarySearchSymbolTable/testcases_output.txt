@@ -48,20 +48,17 @@ O
 false
 null
 Your Output: 
-X
-R
-1
-true
-C 4
-E 12
-H 5
-L 11
-M 9
-P 10
-R 3
-S 0
-X 7
-null
+Y
+O 10
+Q 4
+S 7
+T 8
+U 5
+Y 3
+Y
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BinarySearchST.floor(Solution.java:132)
+	at Solution.main(Solution.java:29)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -87,19 +84,25 @@ true
 T
 Your Output: 
 X
-R
-1
-true
-C 4
-E 12
-H 5
-L 11
-M 9
-P 10
-R 3
+E 10
+L 9
+M 7
+O 1
+P 8
+R 2
 S 0
-X 7
+T 3
+X 5
+0
+0
+0
+0
+0
+9
+9
+true
 null
+T
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -122,20 +125,9 @@ true
 13
 P
 Your Output: 
-X
-R
-1
-true
-C 4
-E 12
-H 5
-L 11
-M 9
-P 10
-R 3
-S 0
-X 7
-null
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at BinarySearchST.put(Solution.java:117)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -153,18 +145,17 @@ S 0
 T 6
 Y 1
 Your Output: 
-X
-R
-1
+M
+7
+Y
+7
 true
-C 4
-E 12
-H 5
-L 11
-M 9
-P 10
-R 3
+B 8
+E 10
+L 9
+M 2
+O 4
 S 0
-X 7
-null
+T 6
+Y 1
 ----------------------------------------
