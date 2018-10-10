@@ -19,8 +19,16 @@ Your Output:
 X
 R
 1
-C E H L M P R S X 
-4 12 5 11 9 10 3 0 7 true
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
+true
 null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -45,8 +53,16 @@ Your Output:
 X
 R
 1
-C E H L M P R S X 
-4 12 5 11 9 10 3 0 7 true
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
+true
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -76,8 +92,16 @@ Your Output:
 X
 R
 1
-C E H L M P R S X 
-4 12 5 11 9 10 3 0 7 true
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
+true
 null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -105,8 +129,16 @@ Your Output:
 X
 R
 1
-C E H L M P R S X 
-4 12 5 11 9 10 3 0 7 true
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
+true
 null
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -129,7 +161,15 @@ Your Output:
 X
 R
 1
-C E H L M P R S X 
-4 12 5 11 9 10 3 0 7 true
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
+true
 null
 ----------------------------------------

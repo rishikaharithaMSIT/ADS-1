@@ -122,11 +122,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
-			System.out.print(keys[i] + " ");
-		}
-		System.out.println();
-		for (int i = 0; i < size; i++) {
-			System.out.print(values[i] + " ");
+			System.out.println(keys[i] + " " + values[i]);
 		}
 	}
 
