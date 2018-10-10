@@ -12,7 +12,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		BinarySearchST<String, Integer> b = new BinarySearchST<>();
-		b.put("A", 2);
+		b.put("D", 2);
 		b.put("R", 5);
 		b.put("B", 4);
 		b.put("A", 3);

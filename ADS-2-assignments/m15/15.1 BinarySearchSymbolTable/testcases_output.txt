@@ -16,13 +16,15 @@ X 7
 null
 Your Output: 
 0 - 0
-A : A
+D : D
 1 - 1
 R : R
-1 - 2
-R : B
-A B R 
-3 4 5
+0 - 2
+D : B
+0 - 3
+B : A
+A R D B 
+3 5 2 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -43,13 +45,15 @@ false
 null
 Your Output: 
 0 - 0
-A : A
+D : D
 1 - 1
 R : R
-1 - 2
-R : B
-A B R 
-3 4 5
+0 - 2
+D : B
+0 - 3
+B : A
+A R D B 
+3 5 2 4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -75,13 +79,15 @@ true
 T
 Your Output: 
 0 - 0
-A : A
+D : D
 1 - 1
 R : R
-1 - 2
-R : B
-A B R 
-3 4 5
+0 - 2
+D : B
+0 - 3
+B : A
+A R D B 
+3 5 2 4
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -105,13 +111,15 @@ true
 P
 Your Output: 
 0 - 0
-A : A
+D : D
 1 - 1
 R : R
-1 - 2
-R : B
-A B R 
-3 4 5
+0 - 2
+D : B
+0 - 3
+B : A
+A R D B 
+3 5 2 4
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -130,11 +138,13 @@ T 6
 Y 1
 Your Output: 
 0 - 0
-A : A
+D : D
 1 - 1
 R : R
-1 - 2
-R : B
-A B R 
-3 4 5
+0 - 2
+D : B
+0 - 3
+B : A
+A R D B 
+3 5 2 4
 ----------------------------------------
