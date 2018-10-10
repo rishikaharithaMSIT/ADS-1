@@ -12,10 +12,11 @@ import java.util.Arrays;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		BinarySearchST<String, Integer> b = new BinarySearchST<>();
+		
 
 		String s = scan.nextLine();
 		String[] str = s.split(" ");
+		BinarySearchST<String, Integer> b = new BinarySearchST<>(str.length);		
 		for (int i = 0; i < str.length; i++) {
 			b.put(str[i], i);
 		}
@@ -62,9 +63,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	Value[] values;
 	int size;
 	//Comparator<Key> comparator;
-	BinarySearchST() {
-		keys = (Key[])new Comparable[10];
-		values = (Value[])new Comparable[10];
+	BinarySearchST(int len) {
+		keys = (Key[])new Comparable[len];
+		values = (Value[])new Comparable[len];
 		size = 0;
 	}
 	public boolean contains(Key key) {
@@ -101,37 +102,28 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		values[i] = values[j];
 		values[j] = tempVal;
 	}
-	public void resize() {
-		keys = Arrays.copyOf(keys, size*2);
-		values = Arrays.copyOf(values, size*2);
-	}
 	public void put(Key key, Value val) {
-		try {
-			int index = rank(key);
-			//System.out.println("index" + index);
-			if (contains(key)) {
-				values[index] = val;
-			} else {
-				Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
-				Value[] valCopy = Arrays.copyOfRange(values, index, size);
-				keys[index] = key;
-				values[index] = val;
-				size++;
-				int j = index + 1;
-				for (int i = 0; i < keyCopy.length && j < size; i++) {
-					keys[j] = keyCopy[i];
-					values[j] = valCopy[i];
-					j++;
-				}
-				// System.out.println(index + " - " + (size-1));
-				// System.out.println(keys[index] + " : " + keys[size-1]);
-				//exchange(index, size-1);
-			}
-		} catch (Exception e) {
-			resize();
-			put(key, val);
-		}
 
+		int index = rank(key);
+		//System.out.println("index" + index);
+		if (contains(key)) {
+			values[index] = val;
+		} else {
+			Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
+			Value[] valCopy = Arrays.copyOfRange(values, index, size);
+			keys[index] = key;
+			values[index] = val;
+			size++;
+			int j = index + 1;
+			for (int i = 0; i < keyCopy.length && j < size; i++) {
+				keys[j] = keyCopy[i];
+				values[j] = valCopy[i];
+				j++;
+			}
+			// System.out.println(index + " - " + (size-1));
+			// System.out.println(keys[index] + " : " + keys[size-1]);
+			//exchange(index, size-1);
+		}
 
 	}
 	public Key floor(Key key) {
