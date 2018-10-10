@@ -55,10 +55,11 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:134:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:134:26: Parameter key should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:135:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:135:34: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:142:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:143:33: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:143:34: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:145:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:150:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 61 errors.
+Checkstyle ends with 62 errors.

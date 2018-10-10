@@ -132,7 +132,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		return keys[i-1];
 	}
 	public Value get(Key key) {
-		if(!contains(key)) {
+		if(contains(key) == false) {
 			return null;
 		}
 		int i = rank(key);
