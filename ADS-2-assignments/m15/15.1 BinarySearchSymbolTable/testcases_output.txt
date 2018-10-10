@@ -15,9 +15,8 @@ S 0
 X 7
 null
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:27)
-	at Solution.main(Solution.java:14)
+2 5 
+A C
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -37,9 +36,8 @@ O
 false
 null
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:27)
-	at Solution.main(Solution.java:14)
+2 5 
+A C
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -64,9 +62,8 @@ true
 5
 T
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:27)
-	at Solution.main(Solution.java:14)
+2 5 
+A C
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -89,9 +86,8 @@ true
 13
 P
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:27)
-	at Solution.main(Solution.java:14)
+2 5 
+A C
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -109,7 +105,6 @@ S 0
 T 6
 Y 1
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:27)
-	at Solution.main(Solution.java:14)
+2 5 
+A C
 ----------------------------------------

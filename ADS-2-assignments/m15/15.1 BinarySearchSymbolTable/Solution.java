@@ -24,8 +24,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	int size;
 	//Comparator<Key> comparator;
 	BinarySearchST() {
-		keys = (Key[])new Object[10];
-		values = (Value[])new Object[10];
+		keys = (Key[])new Comparable[10];
+		values = (Value[])new Comparable[10];
 		size = 0;
 	}
 	public boolean contains(Key key) {
