@@ -8,6 +8,7 @@
 // Iterable<Key> keys() return all keys, in sorted order
 import java.util.Scanner;
 import java.util.Comparator;
+import java.util.Arrays;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -72,10 +73,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		if (contains(key)) {
 			values[index] = val;
 		} else {
-
+			Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
 			keys[index] = key;
 			values[index] = val;			
 			size++;
+			for(int i = 0;i<keyCopy.length;i++){
+				keys[++index] = keyCopy[i];
+			}
 			// System.out.println(index + " - " + (size-1));
 			// System.out.println(keys[index] + " : " + keys[size-1]);
 			//exchange(index, size-1);

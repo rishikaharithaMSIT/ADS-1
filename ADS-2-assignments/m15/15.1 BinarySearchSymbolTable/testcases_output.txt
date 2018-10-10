@@ -19,10 +19,8 @@ index0
 index1
 index0
 index0
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:37)
-	at BinarySearchST.put(Solution.java:72)
-	at Solution.main(Solution.java:18)
+A B D R 
+3 5 null null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -46,10 +44,8 @@ index0
 index1
 index0
 index0
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:37)
-	at BinarySearchST.put(Solution.java:72)
-	at Solution.main(Solution.java:18)
+A B D R 
+3 5 null null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -78,10 +74,8 @@ index0
 index1
 index0
 index0
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:37)
-	at BinarySearchST.put(Solution.java:72)
-	at Solution.main(Solution.java:18)
+A B D R 
+3 5 null null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -108,10 +102,8 @@ index0
 index1
 index0
 index0
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:37)
-	at BinarySearchST.put(Solution.java:72)
-	at Solution.main(Solution.java:18)
+A B D R 
+3 5 null null
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -133,8 +125,6 @@ index0
 index1
 index0
 index0
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:37)
-	at BinarySearchST.put(Solution.java:72)
-	at Solution.main(Solution.java:18)
+A B D R 
+3 5 null null
 ----------------------------------------
