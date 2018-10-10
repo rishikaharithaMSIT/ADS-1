@@ -88,6 +88,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		}
 
 	}
+	public Key floor(Key key) {
+		int i = rank(key);
+		return keys[i-1];
+	}
 	public Value get(Key key) {
 		int i = rank(key);
 		Value val = values[i];
