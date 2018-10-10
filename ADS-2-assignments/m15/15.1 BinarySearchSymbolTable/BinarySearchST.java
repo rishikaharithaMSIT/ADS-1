@@ -1,11 +1,16 @@
 import java.util.Scanner;
 import java.util.Comparator;
 import java.util.Arrays;
-class BinarySearchST<Key extends Comparable<Key>, Value> {
+import java.util.Iterator;
+class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
 	Key[] keys;
 	Value[] values;
-	int size;
-	//Comparator<Key> comparator;
+	int size;  
+ 
+ @Override
+  public Iterator<Key> iterator() {
+    return Arrays.asList(keys).iterator();
+  }
 	BinarySearchST(int len) {
 		keys = (Key[])new Comparable[len];
 		values = (Value[])new Comparable[len];
