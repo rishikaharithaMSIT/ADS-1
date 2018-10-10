@@ -44,10 +44,11 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:88: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:93:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:93:26: Parameter key should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:95:30: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:95:31: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:97:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:97:26: Parameter key should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:103:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:95:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:98:30: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:98:31: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:100:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:100:26: Parameter key should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:106:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 50 errors.
+Checkstyle ends with 51 errors.
