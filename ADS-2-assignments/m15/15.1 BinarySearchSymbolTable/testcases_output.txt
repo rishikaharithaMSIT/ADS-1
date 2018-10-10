@@ -16,7 +16,7 @@ X 7
 null
 Your Output: 
 1 5 2 
-R C A
+R B A
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -37,7 +37,7 @@ false
 null
 Your Output: 
 1 5 2 
-R C A
+R B A
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -63,7 +63,7 @@ true
 T
 Your Output: 
 1 5 2 
-R C A
+R B A
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -87,7 +87,7 @@ true
 P
 Your Output: 
 1 5 2 
-R C A
+R B A
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -106,5 +106,5 @@ T 6
 Y 1
 Your Output: 
 1 5 2 
-R C A
+R B A
 ----------------------------------------
