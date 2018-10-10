@@ -5,9 +5,8 @@ import java.util.Iterator;
 class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
 	Key[] keys;
 	Value[] values;
-	int size;  
- 
- @Override
+	int size;
+	
   public Iterator<Key> iterator() {
     return Arrays.asList(keys).iterator();
   }
