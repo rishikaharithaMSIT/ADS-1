@@ -16,6 +16,7 @@ public class Solution {
 		b.put(5, "B");
 		b.put(5, "C");
 		b.print();
+		System.out.println(b.get(2));
 	}
 }
 class BinarySearchST<Key, Value> {
@@ -46,9 +47,17 @@ class BinarySearchST<Key, Value> {
 			size++;
 		}
 	}
-	// public Value get(Key k) {
+	public Value get(Key key) {
+		Value val = null;
+		for (int i = 0; i < size; i++) {
+			if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
+				val = values[i];
+				break;
+			}
+		}
 
-	// }
+		return val;
+	}
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
