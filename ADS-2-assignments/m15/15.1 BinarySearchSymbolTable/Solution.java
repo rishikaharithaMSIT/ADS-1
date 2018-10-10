@@ -14,6 +14,7 @@ public class Solution {
 		BinarySearchST<Integer, String> b = new BinarySearchST<>();
 		b.put(2, "A");
 		b.put(5, "B");
+		b.put(5, "C");
 		b.print();
 	}
 }
@@ -45,6 +46,9 @@ class BinarySearchST<Key, Value> {
 			size++;
 		}
 	}
+	// public Value get(Key k) {
+
+	// }
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
