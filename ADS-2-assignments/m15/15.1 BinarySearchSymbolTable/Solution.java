@@ -23,7 +23,8 @@ public class Solution {
 		System.out.println(b.floor("R"));
 		System.out.println(b.rank("B"));
 		b.deleteMin();
-		System.out.println();
+		System.out.println(b.contains("C"));
+		System.out.println(b.get("A"));
 		//b.print();
 	}
 }

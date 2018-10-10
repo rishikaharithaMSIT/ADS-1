@@ -19,6 +19,8 @@ Your Output:
 X
 R
 1
+true
+4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -42,6 +44,8 @@ Your Output:
 X
 R
 1
+true
+4
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -70,6 +74,8 @@ Your Output:
 X
 R
 1
+true
+4
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -96,6 +102,8 @@ Your Output:
 X
 R
 1
+true
+4
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -117,4 +125,6 @@ Your Output:
 X
 R
 1
+true
+4
 ----------------------------------------
