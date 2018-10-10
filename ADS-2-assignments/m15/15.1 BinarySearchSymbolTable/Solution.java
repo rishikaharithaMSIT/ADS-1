@@ -48,11 +48,11 @@ class BinarySearchST<Key, Value> {
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
-			System.out.print(keys[i]);
+			System.out.print(keys[i] + " ");
 		}
 		System.out.println();
 		for (int i = 0; i < size; i++) {
-			System.out.print(values[i]);
+			System.out.print(values[i] + " ");
 		}
 	}
 
