@@ -104,6 +104,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		return keys[i-1];
 	}
 	public Value get(Key key) {
+		if(!contains(key)) {
+			return null;
+		}
 		int i = rank(key);
 		Value val = values[i];
 		return val;

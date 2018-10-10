@@ -21,7 +21,7 @@ R
 1
 C E H L M P R S X 
 4 12 5 11 9 10 3 0 7 true
-4
+null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -47,7 +47,7 @@ R
 1
 C E H L M P R S X 
 4 12 5 11 9 10 3 0 7 true
-4
+null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -78,7 +78,7 @@ R
 1
 C E H L M P R S X 
 4 12 5 11 9 10 3 0 7 true
-4
+null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -107,7 +107,7 @@ R
 1
 C E H L M P R S X 
 4 12 5 11 9 10 3 0 7 true
-4
+null
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -131,5 +131,5 @@ R
 1
 C E H L M P R S X 
 4 12 5 11 9 10 3 0 7 true
-4
+null
 ----------------------------------------
