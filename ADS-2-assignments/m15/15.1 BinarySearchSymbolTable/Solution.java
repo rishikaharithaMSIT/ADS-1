@@ -70,6 +70,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			keys[size] = key;
 			values[size] = val;
 			size++;
+			if(size == 1 && index == 1) {
+				index = 2;
+			}
 			System.out.println(index + " - " + (size-1));
 			exchange(index, size-1);
 		}
