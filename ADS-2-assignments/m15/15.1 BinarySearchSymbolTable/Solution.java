@@ -19,6 +19,7 @@ public class Solution {
 			b.put(str[i],i);
 		}
 		System.out.println(b.get("A"));
+		System.out.println(b.max());
 		System.out.println(b.floor("R"));
 		//b.print();
 	}
@@ -102,7 +103,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		Value val = values[i];
 		return val;
 	}
-
+	public Key max() {
+		return keys[size-1];
+	}
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
