@@ -18,7 +18,6 @@ public class Solution {
 		for(int i =0;i<str.length;i++){
 			b.put(str[i],i);
 		}
-		System.out.println(b.get("A"));
 		System.out.println(b.max());
 		System.out.println(b.floor("R"));
 		System.out.println(b.rank("B"));

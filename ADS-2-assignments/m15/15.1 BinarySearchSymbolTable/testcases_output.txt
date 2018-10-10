@@ -15,7 +15,6 @@ S 0
 X 7
 null
 Your Output: 
-8
 X
 R
 1
@@ -49,7 +48,6 @@ O
 false
 null
 Your Output: 
-8
 X
 R
 1
@@ -88,7 +86,6 @@ true
 5
 T
 Your Output: 
-8
 X
 R
 1
@@ -125,7 +122,6 @@ true
 13
 P
 Your Output: 
-8
 X
 R
 1
@@ -157,7 +153,6 @@ S 0
 T 6
 Y 1
 Your Output: 
-8
 X
 R
 1
