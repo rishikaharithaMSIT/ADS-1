@@ -19,16 +19,8 @@ X
 R
 1
 true
-C
-E
-H
-L
-M
-P
-R
-S
-X
-null
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -49,20 +41,8 @@ false
 null
 Your Output: 
 Y
-O
-Q
-S
-T
-U
-Y
-Y
-null
-Y
-null
-O
-1
-false
-null
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -88,25 +68,8 @@ true
 T
 Your Output: 
 X
-E
-L
-M
-O
-P
-R
-S
-T
-X
-0
-0
-0
-0
-0
-9
-9
-true
-5
-T
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -129,24 +92,8 @@ true
 13
 P
 Your Output: 
-B
-C
-E
-H
-I
-L
-M
-N
-P
-R
-S
-X
-Y
-Y
-12
-true
-13
-P
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -169,12 +116,6 @@ null
 Y
 7
 true
-B
-E
-L
-M
-O
-S
-T
-Y
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------

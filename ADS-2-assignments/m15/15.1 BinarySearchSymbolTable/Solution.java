@@ -42,7 +42,12 @@ public final class Solution {
                 System.out.println(b.contains(inp[1]));
                 break;
             case "keys":
-                b.print();
+                //b.print();
+                MyIterable<String> myList = new MyIterable<>(b.keys);
+                for (String i : myList) {
+                    System.out.println(i);
+
+                }
                 break;
             case "get":
                 System.out.println(b.get(inp[1]));

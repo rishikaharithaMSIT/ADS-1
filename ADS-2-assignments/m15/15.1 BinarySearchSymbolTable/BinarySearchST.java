@@ -101,11 +101,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key
 		size--;
 	}
 	public void print() {
-		MyIterable<Key> myList = new MyIterable<>(keys);
-		for (Key i : myList) {
-			System.out.println(i);
-
-		}
+		
 	}
 	// 	for (int i = 0; i < size; i++) {
 	// 		System.out.println(keys[i] + " " + values[i]);
