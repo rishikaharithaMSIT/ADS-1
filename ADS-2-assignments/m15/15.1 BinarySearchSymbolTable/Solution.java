@@ -132,8 +132,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		return keys[i-1];
 	}
 	public Value get(Key key) {
-		if(contains(key) == false) {
-			System.out.println("here");
+		if(contains(key) == true) {
 			return null;
 		}
 		int i = rank(key);

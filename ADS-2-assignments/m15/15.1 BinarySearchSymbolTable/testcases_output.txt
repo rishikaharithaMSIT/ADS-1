@@ -28,8 +28,7 @@ P 10
 R 3
 S 0
 X 7
-here
-null
+4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -102,8 +101,7 @@ X 5
 9
 9
 true
-here
-null
+10
 T
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -131,7 +129,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
 	at BinarySearchST.put(Solution.java:117)
 	at Solution.main(Solution.java:20)
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 M
 null
@@ -148,7 +146,7 @@ T 6
 Y 1
 Your Output: 
 M
-7
+null
 Y
 7
 true
