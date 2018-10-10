@@ -101,27 +101,37 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		values[i] = values[j];
 		values[j] = tempVal;
 	}
+	public void resize() {
+		keys = Arrays.copyOf(keys, size*2);
+		values = Arrays.copyOf(values, size*2);
+	}
 	public void put(Key key, Value val) {
-		int index = rank(key);
-		//System.out.println("index" + index);
-		if (contains(key)) {
-			values[index] = val;
-		} else {
-			Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
-			Value[] valCopy = Arrays.copyOfRange(values, index, size);
-			keys[index] = key;
-			values[index] = val;
-			size++;
-			int j = index + 1;
-			for (int i = 0; i < keyCopy.length && j < size; i++) {
-				keys[j] = keyCopy[i];
-				values[j] = valCopy[i];
-				j++;
+		try {
+			int index = rank(key);
+			//System.out.println("index" + index);
+			if (contains(key)) {
+				values[index] = val;
+			} else {
+				Key[] keyCopy = Arrays.copyOfRange(keys, index, size);
+				Value[] valCopy = Arrays.copyOfRange(values, index, size);
+				keys[index] = key;
+				values[index] = val;
+				size++;
+				int j = index + 1;
+				for (int i = 0; i < keyCopy.length && j < size; i++) {
+					keys[j] = keyCopy[i];
+					values[j] = valCopy[i];
+					j++;
+				}
+				// System.out.println(index + " - " + (size-1));
+				// System.out.println(keys[index] + " : " + keys[size-1]);
+				//exchange(index, size-1);
 			}
-			// System.out.println(index + " - " + (size-1));
-			// System.out.println(keys[index] + " : " + keys[size-1]);
-			//exchange(index, size-1);
+		} catch (Exception e) {
+			resize();
+			put(key, val);
 		}
+
 
 	}
 	public Key floor(Key key) {
