@@ -16,8 +16,8 @@ X 7
 null
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:24)
-	at Solution.main(Solution.java:13)
+	at BinarySearchST.<init>(Solution.java:26)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -38,8 +38,8 @@ false
 null
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:24)
-	at Solution.main(Solution.java:13)
+	at BinarySearchST.<init>(Solution.java:26)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -65,8 +65,8 @@ true
 T
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:24)
-	at Solution.main(Solution.java:13)
+	at BinarySearchST.<init>(Solution.java:26)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -90,8 +90,8 @@ true
 P
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:24)
-	at Solution.main(Solution.java:13)
+	at BinarySearchST.<init>(Solution.java:26)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -110,6 +110,6 @@ T 6
 Y 1
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to java.base/[Ljava.lang.Comparable;
-	at BinarySearchST.<init>(Solution.java:24)
-	at Solution.main(Solution.java:13)
+	at BinarySearchST.<init>(Solution.java:26)
+	at Solution.main(Solution.java:14)
 ----------------------------------------

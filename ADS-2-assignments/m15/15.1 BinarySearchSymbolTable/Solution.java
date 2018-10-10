@@ -7,6 +7,7 @@
 // void deleteMin() delete smallest key
 // Iterable<Key> keys() return all keys, in sorted order
 import java.util.Scanner;
+import java.util.Comparator;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -20,6 +21,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	Key[] keys;
 	Value[] values;
 	int size;
+	Comparator<Key> comparator;
 	BinarySearchST() {
 		keys = (Key[])new Object[10];
 		values = (Value[])new Object[10];
@@ -27,7 +29,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	}
 	public int contains(Key key) {
 		for (int i = 0; i < size; i++) {
-			if (keys[i].compareTo(key) == 0) {
+			if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
 				return i;
 			}
 		}
