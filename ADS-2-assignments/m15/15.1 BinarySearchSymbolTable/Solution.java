@@ -22,6 +22,8 @@ public class Solution {
 		System.out.println(b.max());
 		System.out.println(b.floor("R"));
 		System.out.println(b.rank("B"));
+		b.deleteMin();
+		System.out.println();
 		//b.print();
 	}
 }
@@ -52,7 +54,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 		// return -1;
 		int low = 0;
 		int high = size - 1;
-		while (low < high) {
+		while (low <= high) {
 			int mid = low + (high - low) / 2;
 			int cmp = key.compareTo(keys[mid]);
 			if      (cmp < 0) high = mid - 1;
@@ -107,9 +109,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 	public Key max() {
 		return keys[size-1];
 	}
-	// public void deleteMin() {
-	// 	key
-	// }
+	public void deleteMin() {
+		keys = Arrays.copyOfRange(keys, 1, size);
+		values = Arrays.copyOfRange(values, 1, size);
+	}
 	public void print() {
 
 		for (int i = 0; i < size; i++) {
