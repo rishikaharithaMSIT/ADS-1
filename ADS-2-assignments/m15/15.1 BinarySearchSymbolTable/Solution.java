@@ -41,7 +41,7 @@ public class Solution {
 				b.print();
 				break;
 			case "get":
-				System.out.println(b.get("A"));
+				System.out.println(b.get(inp[1]));
 				break;
 			default:
 			}
