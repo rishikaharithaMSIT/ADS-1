@@ -23,9 +23,10 @@ public class Solution {
 		System.out.println(b.floor("R"));
 		System.out.println(b.rank("B"));
 		b.deleteMin();
+		b.print();
 		System.out.println(b.contains("C"));
 		System.out.println(b.get("A"));
-		//b.print();
+		
 	}
 }
 class BinarySearchST<Key extends Comparable<Key>, Value> {
