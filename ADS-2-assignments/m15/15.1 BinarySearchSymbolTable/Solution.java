@@ -70,8 +70,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			keys[size] = key;
 			values[size] = val;
 			size++;
+			exchange(index, size-1);
 		}
-		exchange(index, size-1);
+		
 	}
 	public Value get(Key key) {
 		Value val = null;
