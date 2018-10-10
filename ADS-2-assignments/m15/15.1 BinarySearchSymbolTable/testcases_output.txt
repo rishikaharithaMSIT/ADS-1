@@ -16,11 +16,13 @@ X 7
 null
 Your Output: 
 0 - 0
+2 - 2
+1 - 1
+5 - 5
+0 - 2
 2 - 1
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:33)
-	at BinarySearchST.put(Solution.java:67)
-	at Solution.main(Solution.java:17)
+1 5 2 
+R B A
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -41,11 +43,13 @@ false
 null
 Your Output: 
 0 - 0
+2 - 2
+1 - 1
+5 - 5
+0 - 2
 2 - 1
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:33)
-	at BinarySearchST.put(Solution.java:67)
-	at Solution.main(Solution.java:17)
+1 5 2 
+R B A
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -71,11 +75,13 @@ true
 T
 Your Output: 
 0 - 0
+2 - 2
+1 - 1
+5 - 5
+0 - 2
 2 - 1
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:33)
-	at BinarySearchST.put(Solution.java:67)
-	at Solution.main(Solution.java:17)
+1 5 2 
+R B A
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -99,11 +105,13 @@ true
 P
 Your Output: 
 0 - 0
+2 - 2
+1 - 1
+5 - 5
+0 - 2
 2 - 1
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:33)
-	at BinarySearchST.put(Solution.java:67)
-	at Solution.main(Solution.java:17)
+1 5 2 
+R B A
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -122,9 +130,11 @@ T 6
 Y 1
 Your Output: 
 0 - 0
+2 - 2
+1 - 1
+5 - 5
+0 - 2
 2 - 1
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.contains(Solution.java:33)
-	at BinarySearchST.put(Solution.java:67)
-	at Solution.main(Solution.java:17)
+1 5 2 
+R B A
 ----------------------------------------

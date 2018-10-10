@@ -68,13 +68,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 			values[index] = val;
 		} else {
 			keys[size] = key;
-			values[size] = val;
-			
-			if(size == 1 && index == 1) {
-				index = 2;
-			}
+			values[size] = val;			
 			size++;
 			System.out.println(index + " - " + (size-1));
+			System.out.println(keys[index] + " - " + keys[size-1]);
 			exchange(index, size-1);
 		}
 		
