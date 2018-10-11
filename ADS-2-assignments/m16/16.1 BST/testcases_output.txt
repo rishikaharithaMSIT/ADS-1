@@ -6,10 +6,9 @@ Your Output:
 ---
 null
 BinaryST$Node@ed17bee
+null
 --
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:80)
-	at Solution.main(Solution.java:10)
+null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -22,10 +21,9 @@ Your Output:
 ---
 null
 BinaryST$Node@ed17bee
+null
 --
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:80)
-	at Solution.main(Solution.java:10)
+null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -36,8 +34,7 @@ Your Output:
 ---
 null
 BinaryST$Node@ed17bee
+null
 --
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:80)
-	at Solution.main(Solution.java:10)
+null
 ----------------------------------------
