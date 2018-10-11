@@ -74,6 +74,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 	public Value get(Keys k) {
 		Node top = root;
 		while (top.left != null && top.right != null) {
+			System.out.println(k + " " + top.key);
 			if (k.compareTo(top.key) < 0) {
 				top = top.left;
 			} else if (k.compareTo(top.key) > 0) {
