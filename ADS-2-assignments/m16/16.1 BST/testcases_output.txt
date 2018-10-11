@@ -7,25 +7,19 @@ Your Output:
 IT - k
 Harry - parent
 +++
-same
+great
+right - Street - Harry
 ++++
 Street - k
-Harry - parent
+IT - parent
 +++
 great
 right - Hello - Harry
-++++
-Hello - k
-Street - parent
-+++
-less
-right - Hello - Harry
-left - Hello - Street
-++++
-Hello - k
-Hello - parent
-+++
-less
+left - Hello - IT
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.getParent(Solution.java:74)
+	at BinaryST.put(Solution.java:46)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -39,25 +33,19 @@ Your Output:
 IT - k
 Harry - parent
 +++
-same
+great
+right - Street - Harry
 ++++
 Street - k
-Harry - parent
+IT - parent
 +++
 great
 right - Hello - Harry
-++++
-Hello - k
-Street - parent
-+++
-less
-right - Hello - Harry
-left - Hello - Street
-++++
-Hello - k
-Hello - parent
-+++
-less
+left - Hello - IT
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.getParent(Solution.java:74)
+	at BinaryST.put(Solution.java:46)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -69,23 +57,17 @@ Your Output:
 IT - k
 Harry - parent
 +++
-same
+great
+right - Street - Harry
 ++++
 Street - k
-Harry - parent
+IT - parent
 +++
 great
 right - Hello - Harry
-++++
-Hello - k
-Street - parent
-+++
-less
-right - Hello - Harry
-left - Hello - Street
-++++
-Hello - k
-Hello - parent
-+++
-less
+left - Hello - IT
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.getParent(Solution.java:74)
+	at BinaryST.put(Solution.java:46)
+	at Solution.main(Solution.java:14)
 ----------------------------------------

@@ -67,8 +67,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:117:48: 'price' hides a field. [HiddenField]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:122:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:122:30: Parameter other should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:123: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:124: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:127:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:128:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 71 errors.
+Checkstyle ends with 69 errors.

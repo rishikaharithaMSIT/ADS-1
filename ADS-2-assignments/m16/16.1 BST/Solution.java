@@ -120,9 +120,10 @@ class Key implements Comparable<Key> {
 		this.price = price;
 	}
 	public int compareTo(Key other) {
-		if (this.name.compareTo(other.name) > 1) return 1;
-		if (this.name.compareTo(other.name) < 1) return -1;
-		return 0;
+		// if (this.name.compareTo(other.name) > 1) return 1;
+		// if (this.name.compareTo(other.name) < 1) return -1;
+		// return 0;
+		return this.name.compareTo(other.name);
 	}
 	public String toString() {
 		return name;
