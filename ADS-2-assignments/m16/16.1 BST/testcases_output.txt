@@ -3,9 +3,12 @@ Expected Output:
 1
 Your Output: 
 1
+++++
+BinaryST$Node@ed17bee
++++
 ---
 null
-BinaryST$Node@ed17bee
+BinaryST$Node@2a33fae0
 null
 --
 Python eric  - Algorithms Bob Sedgewick >0
@@ -19,9 +22,12 @@ Expected Output:
 2
 Your Output: 
 1
+++++
+BinaryST$Node@ed17bee
++++
 ---
 null
-BinaryST$Node@ed17bee
+BinaryST$Node@2a33fae0
 null
 --
 Python eric  - Algorithms Bob Sedgewick >0
@@ -33,9 +39,12 @@ null
 7
 Your Output: 
 1
+++++
+BinaryST$Node@ed17bee
++++
 ---
 null
-BinaryST$Node@ed17bee
+BinaryST$Node@2a33fae0
 null
 --
 Python eric  - Algorithms Bob Sedgewick >0
