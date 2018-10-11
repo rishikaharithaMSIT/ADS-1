@@ -7,7 +7,6 @@ Your Output:
 null
 BinaryST$Node@ed17bee
 --
-Algorithms Bob Sedgewick Algorithms Bob Sedgewick
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.get(Solution.java:80)
 	at Solution.main(Solution.java:10)
@@ -24,7 +23,6 @@ Your Output:
 null
 BinaryST$Node@ed17bee
 --
-Algorithms Bob Sedgewick Algorithms Bob Sedgewick
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.get(Solution.java:80)
 	at Solution.main(Solution.java:10)
@@ -39,7 +37,6 @@ Your Output:
 null
 BinaryST$Node@ed17bee
 --
-Algorithms Bob Sedgewick Algorithms Bob Sedgewick
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.get(Solution.java:80)
 	at Solution.main(Solution.java:10)
