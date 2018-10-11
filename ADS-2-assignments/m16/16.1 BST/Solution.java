@@ -30,8 +30,8 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			size++;
 			return;
 		}
-		//Node parent = getParent(k);
-		//System.out.println(parent.key);
+		Node parent = getParent(k);
+		System.out.println(parent.key);
 
 	}
 
