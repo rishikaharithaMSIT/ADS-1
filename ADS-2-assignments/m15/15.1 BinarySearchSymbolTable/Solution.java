@@ -43,7 +43,7 @@ public final class Solution {
                 break;
             case "keys":
                 //b.print();
-                for(String string : (String[])b.keysOf()) {
+                for(String string : (String[])b.keys) {
                     System.out.println(string + " " + b.get(string));
                 }
                 // MyIterable<Object> myList = new MyIterable<>(b.keys);
