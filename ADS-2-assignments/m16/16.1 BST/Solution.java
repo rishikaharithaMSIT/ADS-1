@@ -1,8 +1,8 @@
 public class Solution {
 	public static void main(String[] args) {
-		Key k = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		Key k = new Key("Hello", "Bob Sedgewick", "6000.0");
 		Key k1 = new Key("Python", "eric", "5000");
-		Key k4 = new Key("Hello","Ajay","200.0");
+		Key k4 = new Key("Algo","Ajay","200.0");
 
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k, 1);

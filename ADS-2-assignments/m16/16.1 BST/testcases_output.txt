@@ -4,17 +4,17 @@ Expected Output:
 Your Output: 
 1
 ++++
-Algorithms Bob Sedgewick
+Hello Bob Sedgewick
 +++
 ++++
-Algorithms Bob Sedgewick
+Hello Bob Sedgewick
 +++
 ---
-null
 BinaryST$Node@de0a01f
+BinaryST$Node@4c75cab9
 null
 --
-Python eric  - Algorithms Bob Sedgewick >0
+Python eric  - Hello Bob Sedgewick >0
 null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -26,17 +26,17 @@ Expected Output:
 Your Output: 
 1
 ++++
-Algorithms Bob Sedgewick
+Hello Bob Sedgewick
 +++
 ++++
-Algorithms Bob Sedgewick
+Hello Bob Sedgewick
 +++
 ---
-null
 BinaryST$Node@de0a01f
+BinaryST$Node@4c75cab9
 null
 --
-Python eric  - Algorithms Bob Sedgewick >0
+Python eric  - Hello Bob Sedgewick >0
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -46,16 +46,16 @@ null
 Your Output: 
 1
 ++++
-Algorithms Bob Sedgewick
+Hello Bob Sedgewick
 +++
 ++++
-Algorithms Bob Sedgewick
+Hello Bob Sedgewick
 +++
 ---
-null
 BinaryST$Node@de0a01f
+BinaryST$Node@4c75cab9
 null
 --
-Python eric  - Algorithms Bob Sedgewick >0
+Python eric  - Hello Bob Sedgewick >0
 null
 ----------------------------------------
