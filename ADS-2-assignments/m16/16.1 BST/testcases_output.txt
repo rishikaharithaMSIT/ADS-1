@@ -18,7 +18,11 @@ BinaryST$Node@4c75cab9
 --
 Python eric  - Hello Bob Sedgewick outside
 Python eric  - Hello Bob Sedgewick >0
-null
+Python eric  - Python eric outside
+Python eric  - Python eric <0
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.get(Solution.java:88)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -43,7 +47,11 @@ BinaryST$Node@4c75cab9
 --
 Python eric  - Hello Bob Sedgewick outside
 Python eric  - Hello Bob Sedgewick >0
-null
+Python eric  - Python eric outside
+Python eric  - Python eric <0
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.get(Solution.java:88)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -66,5 +74,9 @@ BinaryST$Node@4c75cab9
 --
 Python eric  - Hello Bob Sedgewick outside
 Python eric  - Hello Bob Sedgewick >0
-null
+Python eric  - Python eric outside
+Python eric  - Python eric <0
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.get(Solution.java:88)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
