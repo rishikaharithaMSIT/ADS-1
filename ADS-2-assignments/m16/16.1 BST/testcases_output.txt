@@ -3,13 +3,9 @@ Expected Output:
 1
 Your Output: 
 1
-great
-great
-null get
-less
-same
+null
 5 7
-7 get
+7
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -19,13 +15,9 @@ Expected Output:
 2
 Your Output: 
 1
-great
-great
-null get
-less
-same
+null
 5 7
-7 get
+7
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -33,11 +25,7 @@ null
 7
 Your Output: 
 1
-great
-great
-null get
-less
-same
+null
 5 7
-7 get
+7
 ----------------------------------------

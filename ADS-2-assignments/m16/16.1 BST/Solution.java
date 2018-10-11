@@ -10,10 +10,10 @@ public class Solution {
 		bst.put(k2, 2);
 		bst.put(k3, 6);
 		Key g1 = new Key("Hello","Ajay","200.0");
-		System.out.println(bst.get(g1) + " get");
+		System.out.println(bst.get(g1));
 		bst.put(k4,5);
 		bst.put(k4,7);
-		System.out.println(bst.get(g1) + " get");
+		System.out.println(bst.get(g1));
 
 	}
 }
@@ -49,18 +49,18 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 		// System.out.println(parent.key + " - parent");
 		// System.out.println("+++");
 		if (k.compareTo(parent.key) == 0) {
-			System.out.println("same");
+			//System.out.println("same");
 			System.out.println(parent.value + " " + newnode.value);
 			parent.value = newnode.value;
 		} else if (k.compareTo(parent.key) < 0) {
-			System.out.println("less");			
+			//System.out.println("less");			
 			newnode.left = null;
 			newnode.right = null;
 			parent.left = newnode;
 			size++;
 			return;
 		} else if (k.compareTo(parent.key) > 0) {
-			System.out.println("great");				
+			//System.out.println("great");				
 			newnode.left = null;
 			newnode.right = null;
 			parent.right = newnode;
