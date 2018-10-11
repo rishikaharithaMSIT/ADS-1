@@ -8,7 +8,7 @@ great
 null get
 less
 same
-Hello Hello
+5 7
 5 get
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -24,7 +24,7 @@ great
 null get
 less
 same
-Hello Hello
+5 7
 5 get
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -38,6 +38,6 @@ great
 null get
 less
 same
-Hello Hello
+5 7
 5 get
 ----------------------------------------
