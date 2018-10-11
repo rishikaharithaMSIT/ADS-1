@@ -10,10 +10,10 @@ public class Solution {
 		bst.put(k2, 2);
 		bst.put(k3, 6);
 		Key g1 = new Key("Hello","Ajay","200.0");
-		bst.get(g1);
+		System.out.println(bst.get(g1) + " get");
 		bst.put(k4,5);
 		bst.put(k4,7);
-		bst.get(g1);
+		System.out.println(bst.get(g1) + " get");
 
 	}
 }

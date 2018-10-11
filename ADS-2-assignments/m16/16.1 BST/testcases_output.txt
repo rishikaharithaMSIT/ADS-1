@@ -5,8 +5,10 @@ Your Output:
 1
 great
 great
+2 get
 less
 same
+null get
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -18,8 +20,10 @@ Your Output:
 1
 great
 great
+2 get
 less
 same
+null get
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -29,6 +33,8 @@ Your Output:
 1
 great
 great
+2 get
 less
 same
+null get
 ----------------------------------------
