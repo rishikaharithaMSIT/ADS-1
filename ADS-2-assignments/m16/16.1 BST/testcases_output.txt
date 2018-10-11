@@ -5,10 +5,14 @@ Your Output:
 1
 ---
 null
-BinaryST$Node@ed17bee
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:89)
-	at Solution.main(Solution.java:13)
+Street
+null
+--
+---
+null
+Hello
+null
+--
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -20,10 +24,14 @@ Your Output:
 1
 ---
 null
-BinaryST$Node@ed17bee
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:89)
-	at Solution.main(Solution.java:13)
+Street
+null
+--
+---
+null
+Hello
+null
+--
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -33,8 +41,12 @@ Your Output:
 1
 ---
 null
-BinaryST$Node@ed17bee
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:89)
-	at Solution.main(Solution.java:13)
+Street
+null
+--
+---
+null
+Hello
+null
+--
 ----------------------------------------
