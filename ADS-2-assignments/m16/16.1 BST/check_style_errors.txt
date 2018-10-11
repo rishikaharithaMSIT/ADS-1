@@ -26,6 +26,9 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:16:31: Parameter value should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:16:37: 'value' hides a field. [HiddenField]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:21:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:24:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:24:25: Parameter k should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:24:32: Parameter v should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:37: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:55: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:55:37: '>' is followed by an illegal character. [GenericWhitespace]
@@ -50,4 +53,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:66: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:66:19: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 50 errors.
+Checkstyle ends with 53 errors.

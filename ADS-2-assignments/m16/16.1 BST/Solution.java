@@ -21,19 +21,19 @@ class BinaryST<Key, Value> {
 	public boolean isEmpty() {
 		return size == 0;
 	}
-	// public void put(Key k, Value v) {
-	// 	Node newnode = new Node(k, v);
-	// 	if (isEmpty()) {
-	// 		newnode.left = null;
-	// 		newnode.right = null;
-	// 		root = newnode;
-	// 		size++;
-	// 		return;
-	// 	}
-	// 	Node parent = getParent(k);
-	// 	System.out.println(parent.key);
+	public void put(Key k, Value v) {
+		Node newnode = new Node(k, v);
+		if (isEmpty()) {
+			newnode.left = null;
+			newnode.right = null;
+			root = newnode;
+			size++;
+			return;
+		}
+		//Node parent = getParent(k);
+		//System.out.println(parent.key);
 
-	// }
+	}
 	
 	// public Node getParent(Key k) {
 	// 	Node top = root;
