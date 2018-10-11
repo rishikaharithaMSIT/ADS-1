@@ -78,7 +78,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 		System.out.println(top.right);
 		System.out.println(top.right.left);
 		System.out.println("--");
-		while (top.left != null && top.right != null) {
+		while (top.left != null || top.right != null) {
 			System.out.println(k + " " + top.key);
 			if (k.compareTo(top.key) < 0) {
 				top = top.left;
