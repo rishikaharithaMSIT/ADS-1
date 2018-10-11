@@ -59,11 +59,12 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			size++;
 			return;
 		} else if (k.compareTo(parent.key) > 0) {
-			System.out.println("great");				
+							
 			newnode.left = null;
 			newnode.right = null;
 			parent.right = newnode;
 			size++;
+			System.out.println("great");
 			return;
 		}
 
