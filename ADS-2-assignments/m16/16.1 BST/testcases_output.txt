@@ -2,7 +2,6 @@
 Expected Output: 
 1
 Your Output: 
-1
 null
 7
 ----------------------------------------
@@ -13,16 +12,14 @@ Expected Output:
 7
 2
 Your Output: 
-1
 null
 7
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 null
 7
 Your Output: 
-1
 null
 7
 ----------------------------------------

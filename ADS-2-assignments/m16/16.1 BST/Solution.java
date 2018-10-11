@@ -40,7 +40,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			newnode.right = null;
 			root = newnode;
 			size++;
-			System.out.println(root.value);
+			//System.out.println(root.value);
 			return;
 		}
 		Node parent = getParent(k);
