@@ -2,14 +2,14 @@ public class Solution {
 	public static void main(String[] args) {
 		Key k = new Key("Hello", "Bob Sedgewick", "6000.0");
 		Key k1 = new Key("Python", "eric", "5000");
-		Key k4 = new Key("Algo","Ajay","200.0");
-		Key k5 = new Key("Xmas","Ajay","200.0");
+		Key k4 = new Key("Algo", "Ajay", "200.0");
+		Key k5 = new Key("Xmas", "Ajay", "200.0");
 
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k, 1);
 		bst.put(k1, 2);
 		bst.put(k4, 5);
-		bst.put(k5,6);
+		bst.put(k5, 6);
 		Key k3 = new Key("Python", "eric", "5000");
 		System.out.println(bst.get(k3));
 	}
@@ -43,7 +43,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 		Node parent = getParent(k);
 		System.out.println("++++");
 		System.out.println(parent.key);
-		System.out.println("+++");	
+		System.out.println("+++");
 		if (k.compareTo(parent.key) == 0) {
 			parent = newnode;
 		} else if (k.compareTo(parent.key) < 0) {
@@ -85,7 +85,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 		System.out.println(top.right);
 		//System.out.println(top.right.left);
 		System.out.println("--");
-		while (top.left != null || top.right != null){
+		while (top.left != null && top.right != null) {
 			System.out.println(k + "  - " + top.key + " outside");
 			if (k.compareTo(top.key) < 0) {
 				System.out.println(k + "  - " + top.key + " <0");

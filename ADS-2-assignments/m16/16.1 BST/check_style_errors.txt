@@ -4,13 +4,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:2:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:2:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:5:41: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:5:48: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:6:41: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:6:48: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:11:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:12:28: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:12:28: '6' is a magic number. [MagicNumber]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:12:29: '6' is a magic number. [MagicNumber]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:17: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:18:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:18:14: Variable 'root' must be private and have accessor methods. [VisibilityModifier]
@@ -34,12 +29,10 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:33:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:33:25: Parameter k should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:33:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:65:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:65:31: Parameter k should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:81:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:81:26: Parameter k should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:88:62: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:91: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:94: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:97: Line is longer than 80 characters (found 81). [LineLength]
@@ -63,4 +56,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:118: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:121:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 63 errors.
+Checkstyle ends with 56 errors.
