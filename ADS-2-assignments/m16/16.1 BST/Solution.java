@@ -11,7 +11,7 @@ public class Solution {
 		bst.put(k4, 5);
 		bst.put(k5, 6);
 		Key k3 = new Key("Python", "eric", "5000");
-		System.out.println(bst.get(k3));
+		bst.get(k3);
 	}
 }
 class BinaryST<Keys extends Comparable<Keys>, Value> {
@@ -41,9 +41,9 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			return;
 		}
 		Node parent = getParent(k);
-		System.out.println("++++");
-		System.out.println(parent.key);
-		System.out.println("+++");
+		// System.out.println("++++");
+		// System.out.println(parent.key);
+		// System.out.println("+++");
 		if (k.compareTo(parent.key) == 0) {
 			parent = newnode;
 		} else if (k.compareTo(parent.key) < 0) {
@@ -80,11 +80,11 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 	// }
 	public Value get(Keys k) {
 		Node top = root;
-		System.out.println("---");
-		System.out.println(top.left);
-		System.out.println(top.right);
-		//System.out.println(top.right.left);
-		System.out.println("--");
+		// System.out.println("---");
+		// System.out.println(top.left);
+		// System.out.println(top.right);
+		// //System.out.println(top.right.left);
+		// System.out.println("--");
 		while (top.left != null && top.right != null) {
 			if (k.compareTo(top.key) > 0) {
 				top = top.left;

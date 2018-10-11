@@ -1,22 +1,8 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 1
 Your Output: 
 1
-++++
-Hello
-+++
-++++
-Hello
-+++
-++++
-Python
-+++
----
-BinaryST$Node@ed17bee
-BinaryST$Node@2a33fae0
---
-null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -26,20 +12,6 @@ Expected Output:
 2
 Your Output: 
 1
-++++
-Hello
-+++
-++++
-Hello
-+++
-++++
-Python
-+++
----
-BinaryST$Node@ed17bee
-BinaryST$Node@2a33fae0
---
-null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -47,18 +19,4 @@ null
 7
 Your Output: 
 1
-++++
-Hello
-+++
-++++
-Hello
-+++
-++++
-Python
-+++
----
-BinaryST$Node@ed17bee
-BinaryST$Node@2a33fae0
---
-null
 ----------------------------------------
