@@ -18,9 +18,9 @@ class BinaryST<Key, Value> {
 			this.value = value;
 		}
 	}
-	// public boolean isEmpty() {
-	// 	return size == 0;
-	// }
+	public boolean isEmpty() {
+		return size == 0;
+	}
 	// public void put(Key k, Value v) {
 	// 	Node newnode = new Node(k, v);
 	// 	if (isEmpty()) {
