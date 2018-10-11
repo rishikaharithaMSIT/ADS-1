@@ -6,6 +6,8 @@ public class Solution {
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k, 1);
 		bst.put(k1, 2);
+		Key k3 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		System.out.println(bst.get(k3));
 	}
 }
 class BinaryST<Keys extends Comparable<Keys>, Value> {
@@ -65,6 +67,22 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			}
 		}
 		return top;
+	}
+	// public void get(String name, String author, String price) {
+
+	// }
+	public Value get(Keys k) {
+		Node top = root;
+		while (top.left != null && top.right != null) {
+			if (k.compareTo(top.key) < 0) {
+				top = top.left;
+			} else if (k.compareTo(top.key) > 0) {
+				top = top.right;
+			} else {
+				return top.value;
+			}
+		}
+		return null;
 	}
 
 }
