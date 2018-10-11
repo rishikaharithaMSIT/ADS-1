@@ -21,7 +21,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key
 		ArrayList<Key> ar = new ArrayList<>(Arrays.asList(keys));
 		return ar;
 	}
-	public Comparable[] keysOf() {
+	public Object[] keysOf() {
 		return keys;
 	}
 	public boolean contains(Key key) {
