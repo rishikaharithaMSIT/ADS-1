@@ -16,6 +16,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key
 		values = (Value[])new Comparable[len];
 		size = 0;
 	}
+
 	public boolean contains(Key key) {
 		for (int i = 0; i < size; i++) {
 			if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
