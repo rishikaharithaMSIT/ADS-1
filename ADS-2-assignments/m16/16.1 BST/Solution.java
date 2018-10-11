@@ -6,7 +6,7 @@ public class Solution {
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k, 1);
 		bst.put(k1, 2);
-		Key k3 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		Key k3 = new Key("Python","eric","5000");
 		System.out.println(bst.get(k3));
 	}
 }

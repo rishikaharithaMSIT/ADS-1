@@ -6,6 +6,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:2:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:4:43: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:4:50: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:9:43: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:9:50: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:13: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:14:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:14:14: Variable 'root' must be private and have accessor methods. [VisibilityModifier]
@@ -58,4 +60,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:106: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:109:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 58 errors.
+Checkstyle ends with 60 errors.
