@@ -68,7 +68,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 
 	public Node getParent(Keys k) {
 		Node top = root;
-		while (top.left != null && top.right != null) {
+		while (!(top.left == null && top.right == null)) {
 			if (k.compareTo(top.key) < 0) {
 				top = top.left;
 			} else if (k.compareTo(top.key) > 0) {
