@@ -68,4 +68,7 @@ class Key implements Comparable<Key> {
 		if (this.name.compareTo(other.name) < 1) return -1;
 		return 0;
 	}
+	public String toString() {
+		return name + " " + author;
+	}
 }

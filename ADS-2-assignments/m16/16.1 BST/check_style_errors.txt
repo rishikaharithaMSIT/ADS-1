@@ -49,5 +49,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:66:30: Parameter other should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:67: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:68: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m16\16.1 BST\Solution.java:71:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 50 errors.
+Checkstyle ends with 51 errors.
