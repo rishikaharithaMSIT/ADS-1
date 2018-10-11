@@ -3,11 +3,13 @@ public class Solution {
 		Key k = new Key("Hello", "Bob Sedgewick", "6000.0");
 		Key k1 = new Key("Python", "eric", "5000");
 		Key k4 = new Key("Algo","Ajay","200.0");
+		Key k5 = new Key("Xmas","Ajay","200.0");
 
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k, 1);
 		bst.put(k1, 2);
 		bst.put(k4, 5);
+		bst.put(k5,6);
 		Key k3 = new Key("Python", "eric", "5000");
 		System.out.println(bst.get(k3));
 	}
@@ -79,9 +81,9 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 	public Value get(Keys k) {
 		Node top = root;
 		System.out.println("---");
-		System.out.println(top.left);
-		System.out.println(top.right);
-		System.out.println(top.right.left);
+		System.out.println(top.left.key + " -  top left");
+		System.out.println(top.right.key + " -  top right");
+		System.out.println(top.right.left.key + " -  top right left");
 		System.out.println("--");
 		while (!(top.left == null && top.right == null)) {
 
