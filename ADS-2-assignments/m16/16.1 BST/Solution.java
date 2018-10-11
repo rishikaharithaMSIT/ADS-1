@@ -84,6 +84,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 	public Value get(Keys k) {
 		Node top = root;
 		System.out.println("---");
+		System.out.println(top.key);
 		System.out.println(top.left);
 		System.out.println(top.right.key);
 		System.out.println(top.right.right);
