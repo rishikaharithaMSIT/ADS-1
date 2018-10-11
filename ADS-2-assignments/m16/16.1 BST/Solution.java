@@ -91,6 +91,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			} else if (k.compareTo(top.key) < 0) {
 				top = top.right;
 			} else {
+				System.out.println(top.value);
 				return top.value;
 			}
 		}
