@@ -3,20 +3,10 @@ Expected Output:
 1
 Your Output: 
 1
-++++
-IT - k
-Harry - parent
-+++
-great
-++++
-Street - k
-IT - parent
-+++
-great
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.getParent(Solution.java:74)
 	at BinaryST.put(Solution.java:46)
-	at Solution.main(Solution.java:14)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -26,20 +16,10 @@ Expected Output:
 2
 Your Output: 
 1
-++++
-IT - k
-Harry - parent
-+++
-great
-++++
-Street - k
-IT - parent
-+++
-great
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.getParent(Solution.java:74)
 	at BinaryST.put(Solution.java:46)
-	at Solution.main(Solution.java:14)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -47,18 +27,8 @@ null
 7
 Your Output: 
 1
-++++
-IT - k
-Harry - parent
-+++
-great
-++++
-Street - k
-IT - parent
-+++
-great
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.getParent(Solution.java:74)
 	at BinaryST.put(Solution.java:46)
-	at Solution.main(Solution.java:14)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
