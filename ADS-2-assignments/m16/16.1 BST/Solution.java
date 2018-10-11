@@ -119,6 +119,6 @@ class Key implements Comparable<Key> {
 		return 0;
 	}
 	public String toString() {
-		return name + " " + author;
+		return name;
 	}
 }
