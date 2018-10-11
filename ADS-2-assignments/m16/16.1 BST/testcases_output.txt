@@ -6,10 +6,12 @@ Your Output:
 ---
 null
 BinaryST$Node@ed17bee
+null
 --
 ---
 null
 BinaryST$Node@2a33fae0
+null
 --
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -23,10 +25,12 @@ Your Output:
 ---
 null
 BinaryST$Node@ed17bee
+null
 --
 ---
 null
 BinaryST$Node@2a33fae0
+null
 --
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -38,9 +42,11 @@ Your Output:
 ---
 null
 BinaryST$Node@ed17bee
+null
 --
 ---
 null
 BinaryST$Node@2a33fae0
+null
 --
 ----------------------------------------
