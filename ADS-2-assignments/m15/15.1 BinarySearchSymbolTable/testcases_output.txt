@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 X
 R
@@ -19,18 +19,10 @@ X
 R
 1
 true
-C 4
-E 12
-H 5
-L 11
-M 9
-P 10
-R 3
-S 0
-X 7
-null
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Y
 O 10
@@ -49,22 +41,10 @@ false
 null
 Your Output: 
 Y
-O 10
-Q 4
-S 7
-T 8
-U 5
-Y 3
-Y
-null
-Y
-null
-O
-1
-false
-null
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 X
 E 10
@@ -88,27 +68,10 @@ true
 T
 Your Output: 
 X
-E 10
-L 9
-M 7
-O 1
-P 8
-R 2
-S 0
-T 3
-X 5
-0
-0
-0
-0
-0
-9
-9
-true
-5
-T
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 B 0
 C 10
@@ -129,26 +92,10 @@ true
 13
 P
 Your Output: 
-B 0
-C 10
-E 18
-H 11
-I 1
-L 17
-M 15
-N 2
-P 16
-R 9
-S 6
-X 13
-Y 5
-Y
-12
-true
-13
-P
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 M
 null
@@ -169,12 +116,6 @@ null
 Y
 7
 true
-B 8
-E 10
-L 9
-M 2
-O 4
-S 0
-T 6
-Y 1
+Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Comparable; cannot be cast to java.base/[Ljava.lang.String;
+	at Solution.main(Solution.java:46)
 ----------------------------------------
