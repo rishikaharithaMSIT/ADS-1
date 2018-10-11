@@ -44,7 +44,7 @@ public final class Solution {
             case "keys":
                 //b.print();
                 for(String string : b.keys()) {
-                    System.out.println(string);
+                    System.out.println(string + " " + b.get(string));
                 }
                 // MyIterable<Object> myList = new MyIterable<>(b.keys);
                 // for (Object i : myList) {
