@@ -76,6 +76,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 				System.out.println("right - " + k + " - " + top.key);
 				top = top.right;
 			} else {
+				System.out.println("equal - " + k + " - " + top.key);
 				return top;
 			}
 		}
