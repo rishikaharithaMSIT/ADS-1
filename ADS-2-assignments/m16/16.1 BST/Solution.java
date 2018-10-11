@@ -1,18 +1,18 @@
 public class Solution {
 	public static void main(String[] args) {
-		Key k1 = new Key("Harry","JK","600.0,1");
-		Key k2 = new Key("IT","Viswas","400.0");
-		Key k3 = new Key("Street","Kiran","800.0");
-		Key k4 = new Key("Hello","Ajay","200.0");
+		Key k1 = new Key("Harry", "JK", "600.0,1");
+		Key k2 = new Key("IT", "Viswas", "400.0");
+		Key k3 = new Key("Street", "Kiran", "800.0");
+		Key k4 = new Key("Hello", "Ajay", "200.0");
 
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k1, 1);
 		bst.put(k2, 2);
 		bst.put(k3, 6);
-		Key g1 = new Key("Hello","Ajay","200.0");
+		Key g1 = new Key("Hello", "Ajay", "200.0");
 		bst.get(g1);
-		bst.put(k4,5);
-		bst.put(k4,7);
+		bst.put(k4, 5);
+		bst.put(k4, 7);
 		bst.get(g1);
 
 	}
@@ -52,14 +52,14 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			System.out.println("same");
 			parent = newnode;
 		} else if (k.compareTo(parent.key) < 0) {
-			System.out.println("less");			
+			System.out.println("less");
 			newnode.left = null;
 			newnode.right = null;
 			parent.left = newnode;
 			size++;
 			return;
 		} else if (k.compareTo(parent.key) > 0) {
-			System.out.println("great");				
+			System.out.println("great");
 			newnode.left = null;
 			newnode.right = null;
 			parent.right = newnode;
@@ -72,13 +72,13 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 	public Node getParent(Keys k) {
 		Node top = root;
 		while (!(top.left == null && top.right == null)) {
-			if (k.compareTo(top.key) < 0) {
+			if (k.compareTo(top.key) < 0 && top.key != null) {
 				//System.out.println("left - " + k + " - " + top.key);
 				top = top.left;
-			} else if (k.compareTo(top.key) > 0) {
+			} else if (k.compareTo(top.key) > 0 && top.key != null) {
 				//System.out.println("right - " + k + " - " + top.key);
 				top = top.right;
-			} else {
+			} else if (k.compareTo(top.key) == 0) {
 				//System.out.println("equal - " + k + " - " + top.key);
 				return top;
 			}
