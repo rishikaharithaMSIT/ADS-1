@@ -2,7 +2,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Key k = new Key("Algorithms", "Bob Sedgewick", "6000.0");
 		BinaryST<Key, Integer> bst = new BinaryST<>();
-		//bst.put(k, 1);
+		bst.put(k, 1);
 	}
 }
 class BinaryST<Keys extends Comparable<Keys>, Value> {
