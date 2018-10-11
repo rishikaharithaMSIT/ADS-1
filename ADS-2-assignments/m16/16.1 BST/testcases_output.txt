@@ -9,7 +9,7 @@ null get
 less
 same
 5 7
-5 get
+7 get
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -25,7 +25,7 @@ null get
 less
 same
 5 7
-5 get
+7 get
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -39,5 +39,5 @@ null get
 less
 same
 5 7
-5 get
+7 get
 ----------------------------------------
