@@ -16,13 +16,7 @@ Python
 BinaryST$Node@ed17bee
 BinaryST$Node@2a33fae0
 --
-Python  - Hello outside
-Python  - Hello >0
-Python  - Python outside
-Python  - Python <0
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:88)
-	at Solution.main(Solution.java:14)
+null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -45,13 +39,7 @@ Python
 BinaryST$Node@ed17bee
 BinaryST$Node@2a33fae0
 --
-Python  - Hello outside
-Python  - Hello >0
-Python  - Python outside
-Python  - Python <0
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:88)
-	at Solution.main(Solution.java:14)
+null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -72,11 +60,5 @@ Python
 BinaryST$Node@ed17bee
 BinaryST$Node@2a33fae0
 --
-Python  - Hello outside
-Python  - Hello >0
-Python  - Python outside
-Python  - Python <0
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:88)
-	at Solution.main(Solution.java:14)
+null
 ----------------------------------------
