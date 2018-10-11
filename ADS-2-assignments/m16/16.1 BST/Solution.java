@@ -1,17 +1,20 @@
 public class Solution {
 	public static void main(String[] args) {
-		Key k = new Key("Hello", "Bob Sedgewick", "6000.0");
-		Key k1 = new Key("Python", "eric", "5000");
-		Key k4 = new Key("Algo", "Ajay", "200.0");
-		Key k5 = new Key("Xmas", "Ajay", "200.0");
+		Key k1 = new Key("Harry","JK","600.0,1");
+		Key k2 = new Key("IT","Viswas","400.0");
+		Key k3 = new Key("Street","Kiran","800.0");
+		Key k4 = new Key("Hello","Ajay","200.0");
 
 		BinaryST<Key, Integer> bst = new BinaryST<>();
-		bst.put(k, 1);
-		bst.put(k1, 2);
-		bst.put(k4, 5);
-		bst.put(k5, 6);
-		Key k3 = new Key("Python", "eric", "5000");
-		bst.get(k3);
+		bst.put(k1, 1);
+		bst.put(k2, 2);
+		bst.put(k3, 6);
+		Key g1 = new Key("Hello","Ajay","200.0");
+		bst.get(g1);
+		bst.put(k4,5);
+		bst.put(k4,7);
+		bst.get(g1);
+
 	}
 }
 class BinaryST<Keys extends Comparable<Keys>, Value> {
