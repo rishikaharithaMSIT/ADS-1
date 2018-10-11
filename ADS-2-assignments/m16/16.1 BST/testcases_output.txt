@@ -3,6 +3,10 @@ Expected Output:
 1
 Your Output: 
 1
+---
+null
+BinaryST$Node@ed17bee
+--
 null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -13,6 +17,10 @@ Expected Output:
 2
 Your Output: 
 1
+---
+null
+BinaryST$Node@ed17bee
+--
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -21,5 +29,9 @@ null
 7
 Your Output: 
 1
+---
+null
+BinaryST$Node@ed17bee
+--
 null
 ----------------------------------------
