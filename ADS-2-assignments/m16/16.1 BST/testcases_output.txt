@@ -8,14 +8,11 @@ IT - k
 Harry - parent
 +++
 great
-right - Street - Harry
 ++++
 Street - k
 IT - parent
 +++
 great
-right - Hello - Harry
-left - Hello - IT
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.getParent(Solution.java:74)
 	at BinaryST.put(Solution.java:46)
@@ -34,14 +31,11 @@ IT - k
 Harry - parent
 +++
 great
-right - Street - Harry
 ++++
 Street - k
 IT - parent
 +++
 great
-right - Hello - Harry
-left - Hello - IT
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.getParent(Solution.java:74)
 	at BinaryST.put(Solution.java:46)
@@ -58,14 +52,11 @@ IT - k
 Harry - parent
 +++
 great
-right - Street - Harry
 ++++
 Street - k
 IT - parent
 +++
 great
-right - Hello - Harry
-left - Hello - IT
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryST.getParent(Solution.java:74)
 	at BinaryST.put(Solution.java:46)

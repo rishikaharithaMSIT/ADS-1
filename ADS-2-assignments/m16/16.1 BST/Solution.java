@@ -73,13 +73,13 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 		Node top = root;
 		while (!(top.left == null && top.right == null)) {
 			if (k.compareTo(top.key) < 0) {
-				System.out.println("left - " + k + " - " + top.key);
+				//System.out.println("left - " + k + " - " + top.key);
 				top = top.left;
 			} else if (k.compareTo(top.key) > 0) {
-				System.out.println("right - " + k + " - " + top.key);
+				//System.out.println("right - " + k + " - " + top.key);
 				top = top.right;
 			} else {
-				System.out.println("equal - " + k + " - " + top.key);
+				//System.out.println("equal - " + k + " - " + top.key);
 				return top;
 			}
 		}
