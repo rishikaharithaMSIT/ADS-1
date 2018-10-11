@@ -3,6 +3,7 @@ import java.util.Comparator;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ArrayList;
 class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
 	Key[] keys;
 	Value[] values;
@@ -16,7 +17,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> implements Iterable<Key
 		values = (Value[])new Comparable[len];
 		size = 0;
 	}
-
+	public ArrayList<Key> keys() {
+		ArrayList<Key> ar = new ArrayList<>(Arrays.asList(keys));
+		return ar;
+	}
 	public boolean contains(Key key) {
 		for (int i = 0; i < size; i++) {
 			if (((Comparable<Key>) keys[i]).compareTo(key) == 0) {
