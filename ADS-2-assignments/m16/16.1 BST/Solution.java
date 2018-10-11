@@ -106,7 +106,7 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 				return top.value;
 			}
 		}
-		return null;
+		return top.value;
 
 	}
 }
