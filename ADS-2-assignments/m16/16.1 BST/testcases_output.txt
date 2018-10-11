@@ -3,18 +3,22 @@ Expected Output:
 1
 Your Output: 
 1
----
-Harry
-null
-Street
-null
---
----
-Harry
-null
-Hello
-null
---
+++++
+IT - k
+Harry - parent
++++
+++++
+Street - k
+Harry - parent
++++
+++++
+Hello - k
+Harry - parent
++++
+++++
+Hello - k
+Harry - parent
++++
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -24,18 +28,22 @@ Expected Output:
 2
 Your Output: 
 1
----
-Harry
-null
-Street
-null
---
----
-Harry
-null
-Hello
-null
---
+++++
+IT - k
+Harry - parent
++++
+++++
+Street - k
+Harry - parent
++++
+++++
+Hello - k
+Harry - parent
++++
+++++
+Hello - k
+Harry - parent
++++
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -43,16 +51,20 @@ null
 7
 Your Output: 
 1
----
-Harry
-null
-Street
-null
---
----
-Harry
-null
-Hello
-null
---
+++++
+IT - k
+Harry - parent
++++
+++++
+Street - k
+Harry - parent
++++
+++++
+Hello - k
+Harry - parent
++++
+++++
+Hello - k
+Harry - parent
++++
 ----------------------------------------

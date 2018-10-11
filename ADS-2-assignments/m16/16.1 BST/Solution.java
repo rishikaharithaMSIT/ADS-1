@@ -44,9 +44,10 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			return;
 		}
 		Node parent = getParent(k);
-		// System.out.println("++++");
-		// System.out.println(parent.key);
-		// System.out.println("+++");
+		System.out.println("++++");
+		System.out.println(k + " - k");
+		System.out.println(parent.key + " - parent");
+		System.out.println("+++");
 		if (k.compareTo(parent.key) == 0) {
 			parent = newnode;
 		} else if (k.compareTo(parent.key) < 0) {			
@@ -83,12 +84,12 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 	// }
 	public Value get(Keys k) {
 		Node top = root;
-		System.out.println("---");
-		System.out.println(top.key);
-		System.out.println(top.left);
-		System.out.println(top.right.key);
-		System.out.println(top.right.right);
-		System.out.println("--");
+		// System.out.println("---");
+		// System.out.println(top.key);
+		// System.out.println(top.left);
+		// System.out.println(top.right.key);
+		// System.out.println(top.right.right);
+		// System.out.println("--");
 		while (top.left != null && top.right != null) {
 			if (k.compareTo(top.key) > 0) {
 				top = top.left;
