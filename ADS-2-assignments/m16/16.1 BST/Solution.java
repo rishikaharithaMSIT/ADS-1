@@ -49,16 +49,16 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 		// System.out.println("+++");
 		if (k.compareTo(parent.key) == 0) {
 			parent = newnode;
-		} else if (k.compareTo(parent.key) < 0) {
-			parent.left = newnode;
+		} else if (k.compareTo(parent.key) < 0) {			
 			newnode.left = null;
 			newnode.right = null;
+			parent.left = newnode;
 			size++;
 			return;
-		} else if (k.compareTo(parent.key) > 0) {
-			parent.right = newnode;
+		} else if (k.compareTo(parent.key) > 0) {			
 			newnode.left = null;
 			newnode.right = null;
+			parent.right = newnode;
 			size++;
 			return;
 		}
