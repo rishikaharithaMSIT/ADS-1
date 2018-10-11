@@ -6,6 +6,9 @@ Your Output:
 ++++
 Algorithms Bob Sedgewick
 +++
+++++
+Algorithms Bob Sedgewick
++++
 ---
 null
 BinaryST$Node@de0a01f
@@ -25,6 +28,9 @@ Your Output:
 ++++
 Algorithms Bob Sedgewick
 +++
+++++
+Algorithms Bob Sedgewick
++++
 ---
 null
 BinaryST$Node@de0a01f
@@ -39,6 +45,9 @@ null
 7
 Your Output: 
 1
+++++
+Algorithms Bob Sedgewick
++++
 ++++
 Algorithms Bob Sedgewick
 +++

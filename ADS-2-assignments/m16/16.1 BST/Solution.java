@@ -2,10 +2,12 @@ public class Solution {
 	public static void main(String[] args) {
 		Key k = new Key("Algorithms", "Bob Sedgewick", "6000.0");
 		Key k1 = new Key("Python", "eric", "5000");
+		Key k4 = new Key("Hello","Ajay","200.0");
 
 		BinaryST<Key, Integer> bst = new BinaryST<>();
 		bst.put(k, 1);
 		bst.put(k1, 2);
+		bst.put(k4, 5);
 		Key k3 = new Key("Python", "eric", "5000");
 		System.out.println(bst.get(k3));
 	}
