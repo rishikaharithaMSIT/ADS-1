@@ -52,6 +52,8 @@ class BinaryST<Keys extends Comparable<Keys>, Value> {
 			System.out.println("same");
 			System.out.println(parent.value + " " + newnode.value);
 			parent = newnode;
+			parent.left = null;
+			parent.right = null;
 		} else if (k.compareTo(parent.key) < 0) {
 			System.out.println("less");			
 			newnode.left = null;
