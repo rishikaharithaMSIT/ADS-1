@@ -10,13 +10,19 @@ BinaryST$Node@52d455b8 - parent
 great
 ++++
 Street - k
-BinaryST$Node@4f4a7090 - parent
+BinaryST$Node@52d455b8 - parent
 +++
 great
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.getParent(Solution.java:74)
-	at BinaryST.put(Solution.java:46)
-	at Solution.main(Solution.java:14)
+++++
+Hello - k
+BinaryST$Node@52d455b8 - parent
++++
+great
+++++
+Hello - k
+BinaryST$Node@52d455b8 - parent
++++
+great
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -33,13 +39,19 @@ BinaryST$Node@52d455b8 - parent
 great
 ++++
 Street - k
-BinaryST$Node@4f4a7090 - parent
+BinaryST$Node@52d455b8 - parent
 +++
 great
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.getParent(Solution.java:74)
-	at BinaryST.put(Solution.java:46)
-	at Solution.main(Solution.java:14)
+++++
+Hello - k
+BinaryST$Node@52d455b8 - parent
++++
+great
+++++
+Hello - k
+BinaryST$Node@52d455b8 - parent
++++
+great
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -54,11 +66,17 @@ BinaryST$Node@52d455b8 - parent
 great
 ++++
 Street - k
-BinaryST$Node@4f4a7090 - parent
+BinaryST$Node@52d455b8 - parent
 +++
 great
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.getParent(Solution.java:74)
-	at BinaryST.put(Solution.java:46)
-	at Solution.main(Solution.java:14)
+++++
+Hello - k
+BinaryST$Node@52d455b8 - parent
++++
+great
+++++
+Hello - k
+BinaryST$Node@52d455b8 - parent
++++
+great
 ----------------------------------------
