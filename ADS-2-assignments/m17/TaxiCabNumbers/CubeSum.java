@@ -53,7 +53,7 @@ public class CubeSum implements Comparable<CubeSum> {
                     nm++;
                     m = 1;
                 }
-            }
+            } else m = 1;
             previous = s.sum;
             if (nm == num) {
                 break;
