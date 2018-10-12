@@ -32,7 +32,7 @@ public class CubeSum implements Comparable<CubeSum> {
         Scanner scan = new Scanner(System.in);
         String[] tokens = scan.nextLine().split(" ");
 
-        int n = Integer.parseInt("500");
+        int n = Integer.parseInt("550");
         int mtimes = Integer.parseInt(tokens[1]);
         int num = Integer.parseInt(tokens[0]);
         // initialize priority queue
