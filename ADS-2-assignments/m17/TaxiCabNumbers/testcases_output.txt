@@ -4,17 +4,17 @@ Expected Output:
 Your Output: 
 1729
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 4673088
 Your Output: 
-16387128
+4673088
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 86488136
 Your Output: 
-250000000
+86488136
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -26,5 +26,5 @@ Your Output:
 Expected Output: 
 143604279
 Your Output: 
-46683
+39312
 ----------------------------------------

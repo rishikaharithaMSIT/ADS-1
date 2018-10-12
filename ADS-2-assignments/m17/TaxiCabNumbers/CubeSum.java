@@ -51,7 +51,7 @@ public class CubeSum implements Comparable<CubeSum> {
                 m++;
                 if (m == mtimes) {
                     nm++;
-                    m = 0;
+                    m = 1;
                 }
             }
             previous = s.sum;
