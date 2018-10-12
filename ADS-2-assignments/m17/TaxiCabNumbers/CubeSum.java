@@ -29,9 +29,12 @@ public class CubeSum implements Comparable<CubeSum> {
 
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String[] tokens = scan.nextLine().split(" ");
+
         int n = Integer.parseInt("500");
-        int mtimes = 2;
-        int num = 1;
+        int mtimes = Integer.parseInt(tokens[1]);
+        int num = Integer.parseInt(tokens[0]);
         // initialize priority queue
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>(100);
         for (int i = 0; i <= n; i++) {
