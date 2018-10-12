@@ -32,7 +32,7 @@ public class CubeSum implements Comparable<CubeSum> {
         Scanner scan = new Scanner(System.in);
         String[] tokens = scan.nextLine().split(" ");
 
-        int n = Integer.parseInt("600");
+        int n = Integer.parseInt("500");
         int mtimes = Integer.parseInt(tokens[1]);
         int num = Integer.parseInt(tokens[0]);
         // initialize priority queue
@@ -44,26 +44,21 @@ public class CubeSum implements Comparable<CubeSum> {
         // find smallest sum, print it out, and update
         int previous = -1;
         int m = 1;
-        int nm = 1;
+        int nm = 0;
         while (!pq.isEmpty()) {
-            CubeSum s = pq.delMin();
+            CubeSum s = pq.delMin();            
             if (previous == s.sum) {
                 m++;
                 if (m == mtimes) {
-                    previous = s.sum;
-                    break;
+                    nm++;
+                    m = 1;
                 }
-            } else {
-                if (m == mtimes) {
-                    previous = s.sum;
-                    break;
-                }
-                m = 1;
             }
-
             previous = s.sum;
-
-
+            if (nm == num) {
+                break;
+            }
+            
 
             if (s.j < n)
                 pq.insert(new CubeSum(s.i, s.j + 1));
