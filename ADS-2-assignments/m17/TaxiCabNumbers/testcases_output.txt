@@ -16,15 +16,15 @@ Expected Output:
 Your Output: 
 1729
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 87539319
 Your Output: 
-87539319
+4104
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
 143604279
 Your Output: 
-87539319
+4104
 ----------------------------------------
