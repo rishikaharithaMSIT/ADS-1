@@ -44,16 +44,19 @@ public class CubeSum implements Comparable<CubeSum> {
         // find smallest sum, print it out, and update
         int previous = -1;
         int m = 1;
-        int nm = 0;
+        int nm = 1;
         while (!pq.isEmpty()) {
             CubeSum s = pq.delMin();            
-            if (previous == s.sum) {
+            if (previous == s.sum) {             
+                
                 m++;
-                if (m == mtimes) {
+            } else {
+                m = 1;
+            }
+            if (m == mtimes) {
                     nm++;
                     m = 1;
                 }
-            }
             previous = s.sum;
             if (nm == num) {
                 break;
