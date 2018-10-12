@@ -46,22 +46,22 @@ public class CubeSum implements Comparable<CubeSum> {
         int m = 1;
         int nm = 1;
         while (!pq.isEmpty()) {
-            CubeSum s = pq.delMin();            
-            if (previous == s.sum) {             
-                
+            CubeSum s = pq.delMin();
+            if (m == mtimes) {
+                nm++;
+            }
+            if (previous == s.sum) {
+
                 m++;
             } else {
                 m = 1;
             }
-            if (m == mtimes) {
-                    nm++;
-                    m = 1;
-                }
+
             previous = s.sum;
-            if (nm == num) {
+            if (m == mtimes) {
                 break;
             }
-            
+
 
             if (s.j < n)
                 pq.insert(new CubeSum(s.i, s.j + 1));
