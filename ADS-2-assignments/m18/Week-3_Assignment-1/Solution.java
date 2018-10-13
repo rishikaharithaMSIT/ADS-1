@@ -35,6 +35,7 @@ public class Solution {
 			();
 			System.out.println(s.name + " - " + s.val);
 		}
+		System.out.println();
 		while (!onemin.isEmpty()) {
 			Stock s = onemin.delMin();
 			System.out.println(s.name + " - " + s.val);

@@ -232,6 +232,7 @@ GSK Cons Health - -0.84
 Tasty Bite Eat - -1.23
 Eicher Motors - -1.6
 ICRA - -2.84
+
 ICRA - -2.84
 Eicher Motors - -1.6
 Tasty Bite Eat - -1.23
@@ -407,6 +408,7 @@ NIIT Tech - 0.34
 Fine Organic Industries Ltd. - 0.29
 NIIT Tech - 0.21
 Larsen & Toubro - -4.11
+
 Larsen & Toubro - -4.11
 NIIT Tech - 0.21
 Fine Organic Industries Ltd. - 0.29
@@ -657,6 +659,7 @@ GSK Cons Health - -0.84
 Tasty Bite Eat - -1.23
 Eicher Motors - -1.6
 ICRA - -2.84
+
 ICRA - -2.84
 Eicher Motors - -1.6
 Tasty Bite Eat - -1.23
@@ -837,6 +840,7 @@ NIIT Tech - 0.34
 Fine Organic Industries Ltd. - 0.29
 NIIT Tech - 0.21
 Larsen & Toubro - -4.11
+
 Larsen & Toubro - -4.11
 NIIT Tech - 0.21
 Fine Organic Industries Ltd. - 0.29
@@ -1102,6 +1106,7 @@ Eicher Motors - -1.6
 Eicher Motors - -1.6
 Bharat Rasayan - -2.0
 ICRA - -2.84
+
 ICRA - -2.84
 Bharat Rasayan - -2.0
 Eicher Motors - -1.6
