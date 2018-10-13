@@ -113,6 +113,7 @@ TTK Prestige - 2.15
 Schaeffler India - 2.57
 ICRA - 2.84
 Merck Ltd - 4.83
+
 Merck Ltd - 5.83
 Bajaj Finserv - 5.64
 ICRA - 4.84
@@ -154,6 +155,7 @@ Schaeffler India - 4.59
 ICRA - 4.84
 Bajaj Finserv - 5.64
 Merck Ltd - 5.83
+
 Tasty Bite Eat - 5.23
 Bajaj Finserv - 4.64
 Nestle India - 4.57
@@ -195,6 +197,7 @@ ICRA - 3.84
 Nestle India - 4.57
 Bajaj Finserv - 4.64
 Tasty Bite Eat - 5.23
+
 Merck Ltd - 4.83
 MRF - 3.48
 3M India - 2.56
@@ -236,6 +239,7 @@ Bosch - -0.3
 3M India - 2.56
 MRF - 3.48
 Merck Ltd - 4.83
+
 Merck Ltd - 4.83
 ICRA - 2.84
 Schaeffler India - 2.57
@@ -277,6 +281,7 @@ TTK Prestige - 2.15
 Schaeffler India - 2.57
 ICRA - 2.84
 Merck Ltd - 4.83
+
 ICRA - 5.84
 Lakshmi Machine - 4.7
 Merck Ltd - 3.83
@@ -414,6 +419,7 @@ Fine Organic Industries Ltd. - 2.29
 APL Apollo Tube - 3.18
 Vinati Organics - 4.03
 Larsen & Toubro - 4.11
+
 Larsen & Toubro - 4.08
 Jubilant Food - 4.08
 NIIT Tech - 3.21
@@ -435,6 +441,7 @@ Vinati Organics - 3.03
 NIIT Tech - 3.21
 Jubilant Food - 4.08
 Larsen & Toubro - 4.08
+
 Chola Inv Fin - 4.47
 Jubilant Food - 4.08
 Vinati Organics - 4.03
@@ -456,6 +463,7 @@ Fine Organic Industries Ltd. - 3.29
 Vinati Organics - 4.03
 Jubilant Food - 4.08
 Chola Inv Fin - 4.47
+
 Chola Inv Fin - 3.47
 Fine Organic Industries Ltd. - 3.29
 APL Apollo Tube - 2.18
@@ -477,6 +485,7 @@ Ceat - 1.23
 APL Apollo Tube - 2.18
 Fine Organic Industries Ltd. - 3.29
 Chola Inv Fin - 3.47
+
 Larsen & Toubro - 3.11
 APL Apollo Tube - 2.18
 Jubilant Food - 2.08
@@ -498,6 +507,7 @@ Ceat - 1.23
 Jubilant Food - 2.08
 APL Apollo Tube - 2.18
 Larsen & Toubro - 3.11
+
 Larsen & Toubro - 5.11
 Jubilant Food - 5.08
 Endurance Technologies Ltd. - 4.1
@@ -640,6 +650,7 @@ TTK Prestige - 2.15
 Schaeffler India - 2.57
 ICRA - 2.84
 Merck Ltd - 4.83
+
 Merck Ltd - 5.83
 Bajaj Finserv - 5.64
 ICRA - 4.84
@@ -681,6 +692,7 @@ Schaeffler India - 4.59
 ICRA - 4.84
 Bajaj Finserv - 5.64
 Merck Ltd - 5.83
+
 Tasty Bite Eat - 5.23
 Bajaj Finserv - 4.64
 Nestle India - 4.57
@@ -722,6 +734,7 @@ ICRA - 3.84
 Nestle India - 4.57
 Bajaj Finserv - 4.64
 Tasty Bite Eat - 5.23
+
 Merck Ltd - 4.83
 MRF - 3.48
 3M India - 2.56
@@ -763,6 +776,7 @@ Bosch - -0.3
 3M India - 2.56
 MRF - 3.48
 Merck Ltd - 4.83
+
 Merck Ltd - 4.83
 ICRA - 2.84
 Schaeffler India - 2.57
@@ -804,6 +818,7 @@ TTK Prestige - 2.15
 Schaeffler India - 2.57
 ICRA - 2.84
 Merck Ltd - 4.83
+
 ICRA - 5.84
 Lakshmi Machine - 4.7
 Merck Ltd - 3.83
@@ -946,6 +961,7 @@ Fine Organic Industries Ltd. - 2.29
 APL Apollo Tube - 3.18
 Vinati Organics - 4.03
 Larsen & Toubro - 4.11
+
 Larsen & Toubro - 4.08
 Jubilant Food - 4.08
 NIIT Tech - 3.21
@@ -967,6 +983,7 @@ Vinati Organics - 3.03
 NIIT Tech - 3.21
 Jubilant Food - 4.08
 Larsen & Toubro - 4.08
+
 Chola Inv Fin - 4.47
 Jubilant Food - 4.08
 Vinati Organics - 4.03
@@ -988,6 +1005,7 @@ Fine Organic Industries Ltd. - 3.29
 Vinati Organics - 4.03
 Jubilant Food - 4.08
 Chola Inv Fin - 4.47
+
 Chola Inv Fin - 3.47
 Fine Organic Industries Ltd. - 3.29
 APL Apollo Tube - 2.18
@@ -1009,6 +1027,7 @@ Ceat - 1.23
 APL Apollo Tube - 2.18
 Fine Organic Industries Ltd. - 3.29
 Chola Inv Fin - 3.47
+
 Larsen & Toubro - 3.11
 APL Apollo Tube - 2.18
 Jubilant Food - 2.08
@@ -1030,6 +1049,7 @@ Ceat - 1.23
 Jubilant Food - 2.08
 APL Apollo Tube - 2.18
 Larsen & Toubro - 3.11
+
 Larsen & Toubro - 5.11
 Jubilant Food - 5.08
 Endurance Technologies Ltd. - 4.1
@@ -1187,6 +1207,7 @@ ICRA - 2.15
 TTK Prestige - 2.15
 Schaeffler India - 2.57
 Merck Ltd - 4.83
+
 Bajaj Finserv - 5.64
 Schaeffler India - 4.59
 Sanofi India - 4.0
@@ -1228,6 +1249,7 @@ Nestle India - 4.0
 Sanofi India - 4.0
 Schaeffler India - 4.59
 Bajaj Finserv - 5.64
+
 Tasty Bite Eat - 5.23
 Nestle India - 4.57
 ICRA - 3.84
@@ -1269,6 +1291,7 @@ Lakshmi Machine - 3.7
 ICRA - 3.84
 Nestle India - 4.57
 Tasty Bite Eat - 5.23
+
 Merck Ltd - 4.83
 MRF - 3.48
 3M India - 2.56
@@ -1310,6 +1333,7 @@ Bosch - -0.3
 3M India - 2.56
 MRF - 3.48
 Merck Ltd - 4.83
+
 Merck Ltd - 4.83
 ICRA - 2.84
 Schaeffler India - 2.57
@@ -1351,6 +1375,7 @@ TTK Prestige - 2.15
 Schaeffler India - 2.57
 ICRA - 2.84
 Merck Ltd - 4.83
+
 ICRA - 5.84
 Lakshmi Machine - 4.7
 Merck Ltd - 3.83

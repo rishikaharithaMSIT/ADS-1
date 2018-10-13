@@ -32,6 +32,7 @@ public class Solution {
 				System.out.println(s.name + " - " + s.val);
 			}
 			hours--;
+			System.out.println();
 		}
 		// while (n > 0) {
 		// 	line = scan.nextLine().split(",");
