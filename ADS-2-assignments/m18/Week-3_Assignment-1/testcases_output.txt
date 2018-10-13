@@ -73,6 +73,26 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Bharat Rasayan, Bosch, Eicher Motors, GSK Cons Health, HEG Ltd, ICRA, Lakshmi Machine, MRF, Sanofi India, Tasty Bite Eat, null, null, null, null, null, null]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -149,6 +169,16 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
 
+
+
+
+
+
+
+
+
+
+[Endurance Technologies Ltd., Fine Organic Industries Ltd., Larsen & Toubro, NIIT Tech, Vinati Organics, null, null, null]
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -230,6 +260,26 @@ WABCO India 0.33
 3
 Your Output: 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Bharat Rasayan, Bosch, Eicher Motors, GSK Cons Health, HEG Ltd, ICRA, Lakshmi Machine, MRF, Sanofi India, Tasty Bite Eat, null, null, null, null, null, null]
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -311,6 +361,16 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 
+
+
+
+
+
+
+
+
+
+[Endurance Technologies Ltd., Fine Organic Industries Ltd., Larsen & Toubro, NIIT Tech, Vinati Organics, null, null, null]
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -407,4 +467,24 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Bharat Rasayan, Bosch, Eicher Motors, GSK Cons Health, HEG Ltd, ICRA, Lakshmi Machine, MRF, Sanofi India, Tasty Bite Eat, null, null, null, null, null, null]
 ----------------------------------------

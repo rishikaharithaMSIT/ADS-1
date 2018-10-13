@@ -32,12 +32,13 @@ public class Solution {
 			System.out.println();
 			n--;
 		}
+		System.out.println(Arrays.toString(one.keys));
 	}
 }
 class BinarySearchST<Key extends Comparable<Key>, Value> {
     private static final int INIT_CAPACITY = 2;
-    private Key[] keys;
-    private Value[] vals;
+    Key[] keys;
+    Value[] vals;
     private int n = 0;
 
     /**
