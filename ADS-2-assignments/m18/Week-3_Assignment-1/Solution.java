@@ -71,6 +71,23 @@ public class Solution {
 					}
 					
 				break;
+				case "intersection" :
+					int size1 = maxs.size();
+					int size2 = mins.size();
+					if (size2 > size1) {
+						for(String each: mins.keys()) {
+							if(maxs.contains(each)) {
+								System.out.println(each);
+							}
+						}
+					} else {
+						for(String each: maxs.keys()) {
+							if(mins.contains(each)) {
+								System.out.println(each);
+							}
+						}
+					}
+				break;
 			}
 			// for (String word : maxs.keys()) {
 			// 	System.out.println(word + " - " + maxs.get(word));
