@@ -33,6 +33,7 @@ public class Solution {
 			n--;
 		}
 		System.out.println(Arrays.toString(one.keys));
+		System.out.println(Arrays.toString(one.vals));
 	}
 }
 class BinarySearchST<Key extends Comparable<Key>, Value> {
