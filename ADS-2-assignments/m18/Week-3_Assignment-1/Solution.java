@@ -1,13 +1,20 @@
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 /**
  * Class for solution.
  */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//unused.
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
