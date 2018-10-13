@@ -4,7 +4,6 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
