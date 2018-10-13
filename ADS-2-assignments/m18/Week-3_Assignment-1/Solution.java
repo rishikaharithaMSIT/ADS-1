@@ -9,384 +9,397 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
-		BinarySearchST<String,Double> one = new BinarySearchST<>();
-		BinarySearchST<String,Double> two = new BinarySearchST<>();
-		BinarySearchST<String,Double> three = new BinarySearchST<>();
-		BinarySearchST<String,Double> four = new BinarySearchST<>();
-		BinarySearchST<String,Double> five = new BinarySearchST<>();
-		BinarySearchST<String,Double> six = new BinarySearchST<>();
+		MinPQ<Stock> one = new MinPQ<Stock>();
 		String[] line;
-		while(n > 0) {
-			line = scan.nextLine().split(","); 
-			one.put(line[0],Double.parseDouble(line[1]));
-			line = scan.nextLine().split(","); 
-			two.put(line[0],Double.parseDouble(line[1]));
-			line = scan.nextLine().split(","); 
-			three.put(line[0],Double.parseDouble(line[1]));
-			line = scan.nextLine().split(","); 
-			four.put(line[0],Double.parseDouble(line[1]));
-			line = scan.nextLine().split(","); 
-			five.put(line[0],Double.parseDouble(line[1]));
-			line = scan.nextLine().split(","); 
-			six.put(line[0],Double.parseDouble(line[1]));
-			System.out.println();
+		while (n > 0) {
+			line = scan.nextLine().split(",");
+			one.insert(new Stock(line[0], line[1]));
+			line = scan.nextLine().split(",");
+			line = scan.nextLine().split(",");
+			line = scan.nextLine().split(",");
+			line = scan.nextLine().split(",");
+			line = scan.nextLine().split(",");
 			n--;
 		}
-		System.out.println(Arrays.toString(one.keys));
-		System.out.println(Arrays.toString(one.vals));
+
+		while (!one.isEmpty()) {
+			Stock s = one.delMin();
+			System.out.println(s.name + " - " + s.val);
+		}
+
+
+
 	}
 }
-class BinarySearchST<Key extends Comparable<Key>, Value> {
-    private static final int INIT_CAPACITY = 2;
-    Key[] keys;
-    Value[] vals;
-    private int n = 0;
-
-    /**
-     * Initializes an empty symbol table.
-     */
-    public BinarySearchST() {
-        this(INIT_CAPACITY);
-    }
-
-    /**
-     * Initializes an empty symbol table with the specified initial capacity.
-     * @param capacity the maximum capacity
-     */
-    public BinarySearchST(int capacity) { 
-        keys = (Key[]) new Comparable[capacity]; 
-        vals = (Value[]) new Object[capacity]; 
-    }   
-
-    // resize the underlying arrays
-    private void resize(int capacity) {
-        assert capacity >= n;
-        Key[]   tempk = (Key[])   new Comparable[capacity];
-        Value[] tempv = (Value[]) new Object[capacity];
-        for (int i = 0; i < n; i++) {
-            tempk[i] = keys[i];
-            tempv[i] = vals[i];
-        }
-        vals = tempv;
-        keys = tempk;
-    }
-
-    /**
-     * Returns the number of key-value pairs in this symbol table.
-     *
-     * @return the number of key-value pairs in this symbol table
-     */
-    public int size() {
-        return n;
-    }
-
-    /**
-     * Returns true if this symbol table is empty.
-     *
-     * @return {@code true} if this symbol table is empty;
-     *         {@code false} otherwise
-     */
-    public boolean isEmpty() {
-        return size() == 0;
-    }
-
-
-    /**
-     * Does this symbol table contain the given key?
-     *
-     * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key} and
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public boolean contains(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
-        return get(key) != null;
-    }
-
-    /**
-     * Returns the value associated with the given key in this symbol table.
-     *
-     * @param  key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *         and {@code null} if the key is not in the symbol table
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null"); 
-        if (isEmpty()) return null;
-        int i = rank(key); 
-        if (i < n && keys[i].compareTo(key) == 0) return vals[i];
-        return null;
-    } 
-
-    /**
-     * Returns the number of keys in this symbol table strictly less than {@code key}.
-     *
-     * @param  key the key
-     * @return the number of keys in the symbol table strictly less than {@code key}
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public int rank(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to rank() is null"); 
-
-        int lo = 0, hi = n-1; 
-        while (lo <= hi) { 
-            int mid = lo + (hi - lo) / 2; 
-            int cmp = key.compareTo(keys[mid]);
-            if      (cmp < 0) hi = mid - 1; 
-            else if (cmp > 0) lo = mid + 1; 
-            else return mid; 
-        } 
-        return lo;
-    } 
-
-
-
-    /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old 
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
-     * if the specified value is {@code null}.
-     *
-     * @param  key the key
-     * @param  val the value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public void put(Key key, Value val)  {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null"); 
-
-        if (val == null) {
-            delete(key);
-            return;
-        }
-
-        int i = rank(key);
-
-        // key is already in table
-        if (i < n && keys[i].compareTo(key) == 0) {
-            vals[i] = val;
-            return;
-        }
-
-        // insert new key-value pair
-        if (n == keys.length) resize(2*keys.length);
-
-        for (int j = n; j > i; j--)  {
-            keys[j] = keys[j-1];
-            vals[j] = vals[j-1];
-        }
-        keys[i] = key;
-        vals[i] = val;
-        n++;
-
-        assert check();
-    } 
-
-    /**
-     * Removes the specified key and associated value from this symbol table
-     * (if the key is in the symbol table).
-     *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null"); 
-        if (isEmpty()) return;
-
-        // compute rank
-        int i = rank(key);
-
-        // key not in table
-        if (i == n || keys[i].compareTo(key) != 0) {
-            return;
-        }
-
-        for (int j = i; j < n-1; j++)  {
-            keys[j] = keys[j+1];
-            vals[j] = vals[j+1];
-        }
-
-        n--;
-        keys[n] = null;  // to avoid loitering
-        vals[n] = null;
-
-        // resize if 1/4 full
-        if (n > 0 && n == keys.length/4) resize(keys.length/2);
-
-        assert check();
-    } 
-
-    /**
-     * Removes the smallest key and associated value from this symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
-     */
-    public void deleteMin() {
-        if (isEmpty()) throw new NoSuchElementException("Symbol table underflow error");
-        delete(min());
-    }
-
-    /**
-     * Removes the largest key and associated value from this symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
-     */
-    public void deleteMax() {
-        if (isEmpty()) throw new NoSuchElementException("Symbol table underflow error");
-        delete(max());
-    }
-
-
-   /***************************************************************************
-    *  Ordered symbol table methods.
-    ***************************************************************************/
-
-   /**
-     * Returns the smallest key in this symbol table.
-     *
-     * @return the smallest key in this symbol table
-     * @throws NoSuchElementException if this symbol table is empty
-     */
-    public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("called min() with empty symbol table");
-        return keys[0]; 
-    }
-
-    /**
-     * Returns the largest key in this symbol table.
-     *
-     * @return the largest key in this symbol table
-     * @throws NoSuchElementException if this symbol table is empty
-     */
-    public Key max() {
-        if (isEmpty()) throw new NoSuchElementException("called max() with empty symbol table");
-        return keys[n-1];
-    }
-
-    /**
-     * Return the kth smallest key in this symbol table.
-     *
-     * @param  k the order statistic
-     * @return the {@code k}th smallest key in this symbol table
-     * @throws IllegalArgumentException unless {@code k} is between 0 and
-     *        <em>n</em>–1
-     */
-    public Key select(int k) {
-        if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException("called select() with invalid argument: " + k);
-        }
-        return keys[k];
-    }
-
-    /**
-     * Returns the largest key in this symbol table less than or equal to {@code key}.
-     *
-     * @param  key the key
-     * @return the largest key in this symbol table less than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public Key floor(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to floor() is null"); 
-        int i = rank(key);
-        if (i < n && key.compareTo(keys[i]) == 0) return keys[i];
-        if (i == 0) return null;
-        else return keys[i-1];
-    }
-
-    /**
-     * Returns the smallest key in this symbol table greater than or equal to {@code key}.
-     *
-     * @param  key the key
-     * @return the smallest key in this symbol table greater than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public Key ceiling(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to ceiling() is null"); 
-        int i = rank(key);
-        if (i == n) return null; 
-        else return keys[i];
-    }
-
-    /**
-     * Returns the number of keys in this symbol table in the specified range.
-     *
-     * @param lo minimum endpoint
-     * @param hi maximum endpoint
-     * @return the number of keys in this symbol table between {@code lo} 
-     *         (inclusive) and {@code hi} (inclusive)
-     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
-     *         is {@code null}
-     */
-    public int size(Key lo, Key hi) {
-        if (lo == null) throw new IllegalArgumentException("first argument to size() is null"); 
-        if (hi == null) throw new IllegalArgumentException("second argument to size() is null"); 
-
-        if (lo.compareTo(hi) > 0) return 0;
-        if (contains(hi)) return rank(hi) - rank(lo) + 1;
-        else              return rank(hi) - rank(lo);
-    }
-
-    /**
-     * Returns all keys in this symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
-     *
-     * @return all keys in this symbol table
-     */
-    // public Iterable<Key> keys() {
-    //     return keys(min(), max());
-    // }
-
-    /**
-     * Returns all keys in this symbol table in the given range,
-     * as an {@code Iterable}.
-     *
-     * @param lo minimum endpoint
-     * @param hi maximum endpoint
-     * @return all keys in this symbol table between {@code lo} 
-     *         (inclusive) and {@code hi} (inclusive)
-     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
-     *         is {@code null}
-     */
-    // public Iterable<Key> keys(Key lo, Key hi) {
-    //     if (lo == null) throw new IllegalArgumentException("first argument to keys() is null"); 
-    //     if (hi == null) throw new IllegalArgumentException("second argument to keys() is null"); 
-
-    //     Queue<Key> queue = new Queue<Key>(); 
-    //     if (lo.compareTo(hi) > 0) return queue;
-    //     for (int i = rank(lo); i < rank(hi); i++) 
-    //         queue.enqueue(keys[i]);
-    //     if (contains(hi)) queue.enqueue(keys[rank(hi)]);
-    //     return queue; 
-    // }
-
-
-   /***************************************************************************
-    *  Check internal invariants.
-    ***************************************************************************/
-
-    private boolean check() {
-        return isSorted() && rankCheck();
-    }
-
-    // are the items in the array in ascending order?
-    private boolean isSorted() {
-        for (int i = 1; i < size(); i++)
-            if (keys[i].compareTo(keys[i-1]) < 0) return false;
-        return true;
-    }
-
-    // check that rank(select(i)) = i
-    private boolean rankCheck() {
-        for (int i = 0; i < size(); i++)
-            if (i != rank(select(i))) return false;
-        for (int i = 0; i < size(); i++)
-            if (keys[i].compareTo(select(rank(keys[i]))) != 0) return false;
-        return true;
-    }
-    
+class Stock implements Comparable<Stock> {
+	String name;
+	double val;
+	Stock(String name, String val) {
+		this.name = name;
+		this.val = Double.parseDouble(val);
+	}
+	public int compareTo(Stock that) {
+		if (this.val < that.val) return -1;
+		if (this.val > that.val) return +1;
+		return 0;
+	}
 }
 
+
+/**
+ * Class for minimum pq.
+ *
+ * @param      <Key>  The key
+ */
+class MinPQ<Key> implements Iterable<Key> {
+	/**
+	 * pq array.
+	 */
+	private Key[] pq;                    // store items at indices 1 to n
+	/**
+	 *
+	 */
+	private int n;                       // number of items on priority queue
+	/**
+	 * comparator.
+	 */
+	private Comparator<Key> comparator;  // optional comparator
+
+	/**
+	 * Initializes an empty priority queue with the given initial capacity.
+	 *
+	 * @param      initCapacity  The initialize capacity
+	 */
+	MinPQ(final int initCapacity) {
+		pq = (Key[]) new Object[initCapacity + 1];
+		n = 0;
+	}
+
+	/**
+	 * Initializes an empty priority queue.
+	 */
+	MinPQ() {
+		this(1);
+	}
+
+	/**
+	 * Initializes an empty priority queue with the given initial capacity,
+	 * using the given comparator.
+	 *
+	 * @param      initCapacity  The initialize capacity
+	 * @param      comparator1    The comparator
+	 */
+	MinPQ(final int initCapacity, final Comparator<Key> comparator1) {
+		this.comparator = comparator1;
+		pq = (Key[]) new Object[initCapacity + 1];
+		n = 0;
+	}
+
+	/**
+	 * Initializes an empty priority queue using the given comparator.
+	 *
+	 * @param      comparator1  The comparator
+	 */
+	MinPQ(final Comparator<Key> comparator1) {
+		this(1, comparator1);
+	}
+
+	/**
+	 * Initializes a priority queue from the array of keys.
+	 *
+	 * @param      keys  The keys
+	 */
+	MinPQ(final Key[] keys) {
+		n = keys.length;
+		pq = (Key[]) new Object[keys.length + 1];
+		for (int i = 0; i < n; i++) {
+			pq[i + 1] = keys[i];
+		}
+		for (int k = n / 2; k >= 1; k--) {
+			sink(k);
+		}
+		assert isMinHeap();
+	}
+
+	/**
+	 * Returns true if this priority queue is empty.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @return     True if empty, False otherwise.
+	 */
+	public boolean isEmpty() {
+		return n == 0;
+	}
+
+	/**
+	 * Returns the number of keys on this priority queue.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @return     { description_of_the_return_value }
+	 */
+	public int size() {
+		return n;
+	}
+
+	/**
+	 * Returns a smallest key on this priority queue.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @return     { description_of_the_return_value }
+	 */
+	public Key min() {
+		if (isEmpty()) {
+			throw new NoSuchElementException(
+			    "Priority queue underflow");
+		}
+		return pq[1];
+	}
+
+	/**
+	 * helper function to double the size of the heap array.
+	 * Complexity :
+	 *              Best Case : O(n)
+	 *              Average Case : O(n)
+	 *              Worst Case : O(n)
+	 * @param      capacity  The capacity
+	 */
+	private void resize(final int capacity) {
+		assert capacity > n;
+		Key[] temp = (Key[]) new Object[capacity];
+		for (int i = 1; i <= n; i++) {
+			temp[i] = pq[i];
+		}
+		pq = temp;
+	}
+
+	/**
+	 * Adds a new key to this priority queue.
+	 * Complexity :
+	 *              Best Case : O(logn)
+	 *              Average Case : O(logn)
+	 *              Worst Case : O(logn)
+	 * @param      x     { parameter_description }
+	 */
+	public void insert(final Key x) {
+		// double size of array if necessary
+		if (n == pq.length - 1) {
+			resize(2 * pq.length);
+		}
+
+		// add x, and percolate it up to maintain heap invariant
+		pq[++n] = x;
+		swim(n);
+		assert isMinHeap();
+	}
+
+	/**
+	 * Removes and returns a smallest key on this priority queue.
+	 * Complexity :
+	 *              Best Case : O(logn)
+	 *              Average Case : O(logn)
+	 *              Worst Case : O(logn)
+	 * @return     { description_of_the_return_value }
+	 */
+	public Key delMin() {
+		final int four = 4;
+		if (isEmpty()) {
+			throw new NoSuchElementException(
+			    "Priority queue underflow");
+		}
+		Key min = pq[1];
+		exch(1, n--);
+		sink(1);
+		pq[n + 1] = null;
+		if ((n > 0) && (n == (pq.length - 1) / four)) {
+			resize(pq.length / 2);
+		}
+		assert isMinHeap();
+		return min;
+	}
+
+
+	/**********************************************************************
+	 * Helper functions to restore the heap invariant.
+	 ***********************************************************************/
+	/**
+	 * swim function.
+	 * Complexity :
+	 *              Best Case : O(logn)
+	 *              Average Case : O(logn)
+	 *              Worst Case : O(logn)
+	 * @param      k1     { parameter_description }
+	 */
+	private void swim(final int k1) {
+		int k = k1;
+		while (k > 1 && greater(k / 2, k)) {
+			exch(k, k / 2);
+			k = k / 2;
+		}
+	}
+
+	/**
+	 * Sink Function.
+	 * Complexity :
+	 *              Best Case : O(logn)
+	 *              Average Case : O(logn)
+	 *              Worst Case : O(logn)
+	 * @param      k1     { parameter_description }
+	 */
+	private void sink(final int k1) {
+		int k = k1;
+		while (2 * k <= n) {
+			int j = 2 * k;
+			if (j < n && greater(j, j + 1)) {
+				j++;
+			}
+			if (!greater(k, j)) {
+				break;
+			}
+			exch(k, j);
+			k = j;
+		}
+	}
+
+	/***********************************************************************
+	 * Helper functions for compares and swaps.
+	 ***********************************************************************/
+	/**
+	 * greater function.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private boolean greater(final int i, final int j) {
+		if (comparator == null) {
+			return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
+		} else {
+			return comparator.compare(pq[i], pq[j]) > 0;
+		}
+	}
+
+	/**
+	 * exchange function.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 */
+	private void exch(final int i, final int j) {
+		Key swap = pq[i];
+		pq[i] = pq[j];
+		pq[j] = swap;
+	}
+
+	/**
+	 * Determines if minimum heap.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @return     True if minimum heap, False otherwise.
+	 */
+	private boolean isMinHeap() {
+		return isMinHeap(1);
+	}
+
+	/**
+	 * Determines if minimum heap.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @param      k1     { parameter_description }
+	 *
+	 * @return     True if minimum heap, False otherwise.
+	 */
+	private boolean isMinHeap(final int k1) {
+		int k = k1;
+		if (k > n) {
+			return true;
+		}
+		int left = 2 * k;
+		int right = 2 * k + 1;
+		if (left  <= n && greater(k, left)) {
+			return false;
+		}
+		if (right <= n && greater(k, right)) {
+			return false;
+		}
+		return isMinHeap(left) && isMinHeap(right);
+	}
+
+
+	/**
+	 * Returns an iterator that iterates over the keys on this priority queue
+	 * in ascending order.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Iterator<Key> iterator() {
+		return new HeapIterator();
+	}
+
+	/**
+	 * Class for heap iterator.
+	 */
+	private class HeapIterator implements Iterator<Key> {
+		/**
+		 * create a new pq.
+		 */
+		private MinPQ<Key> copy;
+
+		/**
+		 * add all items to copy of heap.
+		 * takes linear time since already in heap order so no keys move
+		 */
+		HeapIterator() {
+			if (comparator == null) {
+				copy = new MinPQ<Key>(size());
+			} else {
+				copy = new MinPQ<Key>(size(), comparator);
+			}
+			for (int i = 1; i <= n; i++) {
+				copy.insert(pq[i]);
+			}
+		}
+		/**
+		 * Determines if it has next.
+		 *
+		 * @return     True if has next, False otherwise.
+		 */
+		public boolean hasNext() {
+			return !copy.isEmpty();
+		}
+
+		/**
+		 * remove function.
+		 */
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+		/**
+		 * next function.
+		 *
+		 * @return     { description_of_the_return_value }
+		 */
+		public Key next() {
+			if (!hasNext()) {
+				throw new NoSuchElementException();
+			}
+			return copy.delMin();
+		}
+	}
+}
