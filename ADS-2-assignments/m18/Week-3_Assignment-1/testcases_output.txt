@@ -441,19 +441,7 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 
-3M India - 1
-Abbott India - 1
-Bajaj Finserv - 3
-Bharat Rasayan - 2
-Bosch - 1
-ICRA - 5
-Lakshmi Machine - 2
-MRF - 1
-Merck Ltd - 5
-Nestle India - 2
-Schaeffler India - 3
-TTK Prestige - 3
-Tasty Bite Eat - 1
+5
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -605,17 +593,6 @@ NIIT Tech 0.21
 Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
-
-APL Apollo Tube - 4
-Ceat - 2
-Chola Inv Fin - 4
-Endurance Technologies Ltd. - 1
-Fine Organic Industries Ltd. - 3
-Jubilant Food - 4
-Larsen & Toubro - 5
-NIIT Tech - 2
-Nalwa Sons Invst - 1
-Vinati Organics - 4
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -782,19 +759,4 @@ Honeywell Auto -1.08
 Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
-
-3M India - 1
-Abbott India - 1
-Bajaj Finserv - 2
-Bharat Rasayan - 2
-Bosch - 2
-ICRA - 5
-Lakshmi Machine - 2
-MRF - 1
-Merck Ltd - 4
-Nestle India - 2
-Sanofi India - 1
-Schaeffler India - 3
-TTK Prestige - 3
-Tasty Bite Eat - 1
 ----------------------------------------

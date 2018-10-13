@@ -47,11 +47,19 @@ public class Solution {
 		}
 		int comms = Integer.parseInt(scan.nextLine());
 		while (comms > 0) {
-			for (String word : maxs.keys()) {
-				System.out.println(word + " - " + maxs.get(word));
+			String[] tokens = scan.nextLine().split(",");
+			switch(tokens[0]) {
+				case "get" :
+					if(tokens[1].equals("maxST")) {
+						System.out.println(maxs.get(tokens[2]));
+					}
+					
+				break;
 			}
-			break;
-			
+			// for (String word : maxs.keys()) {
+			// 	System.out.println(word + " - " + maxs.get(word));
+			// }
+			 break;			
 		}
 		// String max = "";
 		// maxs.put(max, 0);
