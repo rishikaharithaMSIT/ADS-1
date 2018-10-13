@@ -46,6 +46,7 @@ class Stock implements Comparable<Stock> {
 		this.val = Double.parseDouble(val);
 	}
 	public int compareTo(Stock that) {
+		System.out.println("greater : " + this.val+ " - " + that.val);
 		if (this.val < that.val) return -1;
 		if (this.val > that.val) return +1;
 		return 0;
