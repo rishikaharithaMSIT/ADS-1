@@ -291,6 +291,7 @@ class MinPQ<Key> implements Iterable<Key> {
 		if (comparator == null) {
 			return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
 		} else {
+			System.out.println("greater : " + pq[i] + " - " + pq[j]);
 			return comparator.compare(pq[i], pq[j]) > 0;
 		}
 	}
