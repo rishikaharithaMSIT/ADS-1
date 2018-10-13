@@ -1,14 +1,11 @@
 Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:24:29: '6' is a magic number. [MagicNumber]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:35:35: '5' is a magic number. [MagicNumber]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:47:35: '5' is a magic number. [MagicNumber]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:65: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:69: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:76: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:89: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:95: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:102: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:125: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:67: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:71: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:78: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:91: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:97: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:104: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:127: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 8 errors.

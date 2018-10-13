@@ -17,11 +17,13 @@ public final class Solution {
 	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
+		final int five = 5;
+		final int six = 6;
 		int n = Integer.parseInt(scan.nextLine());
 		BinarySearchST<String, Integer> maxs = new BinarySearchST<>();
 		BinarySearchST<String, Integer> mins = new BinarySearchST<>();
 		String[] line;
-		int hours = 6;
+		int hours = six;
 		while (hours > 0) {
 			int k = n;
 			MinPQ<Stock> onemin = new MinPQ<Stock>();
@@ -32,7 +34,7 @@ public final class Solution {
 				onemax.insert(new Stock(line[0], line[1]));
 				k--;
 			}
-			int top = 5;
+			int top = five;
 			while (top > 0) {
 				Stock s = onemax.delMax();
 				if (maxs.contains(s.name)) {
@@ -44,7 +46,7 @@ public final class Solution {
 				top--;
 			}
 			System.out.println();
-			int low = 5;
+			int low = five;
 			while (low > 0) {
 				Stock s = onemin.delMin();
 				if (mins.contains(s.name)) {
@@ -122,7 +124,8 @@ public final class Solution {
 // 		this.val = Double.parseDouble(val);
 // 	}
 // 	public int compareTo(Stock that) {
-// 		//System.out.println("greater : " + this.val + " - " + that.val);
+// 		//System.out.println("greater : " + 
+// 		this.val + " - " + that.val);
 // 		if (this.val < that.val) return -1;
 // 		if (this.val > that.val) return 1;
 // 		if (this.name.compareTo(that.name) > 0) return 1;
