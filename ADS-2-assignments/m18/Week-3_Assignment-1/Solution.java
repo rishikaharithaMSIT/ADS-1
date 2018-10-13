@@ -25,16 +25,17 @@ public class Solution {
 			int top = 5;
 			while (top > 0) {
 				Stock s = onemax.delMax();
-				System.out.println(s.name + " - " + s.val);
+				System.out.println(s.name + " -" + s.val);
 				top--;
 			}
 			System.out.println();
 			int low = 5;
 			while (low > 0) {
 				Stock s = onemin.delMin();
-				System.out.println(s.name + " - " + s.val);
+				System.out.println(s.name + " -" + s.val);
 				low--;
 			}
+			System.out.println();
 			hours--;
 
 		}
