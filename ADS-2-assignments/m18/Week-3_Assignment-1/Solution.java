@@ -11,14 +11,22 @@ public class Solution {
 		int n = Integer.parseInt(scan.nextLine());
 		MinPQ<Stock> one = new MinPQ<Stock>();
 		String[] line;
-		while (scan.hasNext()) {
+		while (n > 0) {
 			line = scan.nextLine().split(",");
+			System.out.println(line[0] + " - "+ line[1]);
 			one.insert(new Stock(line[0], line[1]));
 			line = scan.nextLine().split(",");
+			System.out.println(line[0] + " - "+ line[1]);
 			line = scan.nextLine().split(",");
+			System.out.println(line[0] + " - "+ line[1]);
 			line = scan.nextLine().split(",");
+			System.out.println(line[0] + " - "+ line[1]);
 			line = scan.nextLine().split(",");
+			System.out.println(line[0] + " - "+ line[1]);
 			line = scan.nextLine().split(",");
+			System.out.println(line[0] + " - "+ line[1]);
+			n--;
+			System.out.println();
 		}
 
 		while (!one.isEmpty()) {
