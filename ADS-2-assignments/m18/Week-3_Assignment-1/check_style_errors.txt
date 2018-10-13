@@ -1,2 +1,12 @@
 Starting audit...
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:140:11: Parameter name1 should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:140:25: Parameter val1 should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:151:26: Parameter that should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:152: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:153: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:154: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:155: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:159:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m18\Week-3_Assignment-1\Solution.java:162:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
+Checkstyle ends with 9 errors.

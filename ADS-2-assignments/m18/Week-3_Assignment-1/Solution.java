@@ -37,24 +37,24 @@ public final class Solution {
             int top = five;
             while (top > 0) {
                 Stock s = onemax.delMax();
-                if (maxs.contains(s.name)) {
-                    maxs.put(s.name, maxs.get(s.name) + 1);
+                if (maxs.contains(s.getName())) {
+                    maxs.put(s.getName(), maxs.get(s.getName()) + 1);
                 } else {
-                    maxs.put(s.name, 1);
+                    maxs.put(s.getName(), 1);
                 }
-                System.out.println(s.name + " " + s.val);
+                System.out.println(s.getName() + " " + s.getVal());
                 top--;
             }
             System.out.println();
             int low = five;
             while (low > 0) {
                 Stock s = onemin.delMin();
-                if (mins.contains(s.name)) {
-                    mins.put(s.name, mins.get(s.name) + 1);
+                if (mins.contains(s.getName())) {
+                    mins.put(s.getName(), mins.get(s.getName()) + 1);
                 } else {
-                    mins.put(s.name, 1);
+                    mins.put(s.getName(), 1);
                 }
-                System.out.println(s.name + " " + s.val);
+                System.out.println(s.getName() + " " + s.getVal());
                 low--;
             }
             System.out.println();
@@ -119,22 +119,47 @@ public final class Solution {
 
     }
 }
-//CLASS in .class file Stock.class
-// class Stock implements Comparable<Stock> {
-//  String name;
-//  double val;
-//  Stock(String name, String val) {
-//      this.name = name;
-//      this.val = Double.parseDouble(val);
-//  }
-//  public int compareTo(Stock that) {
-//      //System.out.println("greater : " +
-//      this.val + " - " + that.val);
-//      if (this.val < that.val) return -1;
-//      if (this.val > that.val) return 1;
-//      if (this.name.compareTo(that.name) > 0) return 1;
-//      if (this.name.compareTo(that.name) < 0) return -1;
+/**
+ * Class for stock.
+ */
+class Stock implements Comparable<Stock> {
+    /**
+     * name.
+     */
+    private String name;
+    /**
+     * values.
+     */
+    private double val;
+    /**
+     * Constructs the object.
+     *
+     * @param      name1  The name 1
+     * @param      val1   The value 1
+     */
+    Stock(String name1, String val1) {
+        this.name = name1;
+        this.val = Double.parseDouble(val1);
+    }
+    /**
+     * compares stock values.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(Stock that) {
+        if (this.val < that.val) return -1;
+        if (this.val > that.val) return 1;
+        if (this.name.compareTo(that.name) > 0) return 1;
+        if (this.name.compareTo(that.name) < 0) return -1;
 
-//      return 0;
-//  }
-// }
+        return 0;
+    }
+    public String getName() {
+        return name;
+    }
+    public double getVal() {
+        return val;
+    }
+}
