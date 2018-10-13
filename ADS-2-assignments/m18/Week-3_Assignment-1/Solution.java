@@ -137,7 +137,7 @@ class Stock implements Comparable<Stock> {
      * @param      name1  The name 1
      * @param      val1   The value 1
      */
-    Stock(String name1, String val1) {
+    Stock(final String name1, final String val1) {
         this.name = name1;
         this.val = Double.parseDouble(val1);
     }
@@ -148,17 +148,35 @@ class Stock implements Comparable<Stock> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(Stock that) {
-        if (this.val < that.val) return -1;
-        if (this.val > that.val) return 1;
-        if (this.name.compareTo(that.name) > 0) return 1;
-        if (this.name.compareTo(that.name) < 0) return -1;
+    public int compareTo(final Stock that) {
+        if (this.val < that.val) {
+            return -1;
+        }
+        if (this.val > that.val) {
+            return 1;
+        }
+        if (this.name.compareTo(that.name) > 0) {
+            return 1;
+        }
+        if (this.name.compareTo(that.name) < 0) {
+            return -1;
+        }
 
         return 0;
     }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return name;
     }
+    /**
+     * Gets the value.
+     *
+     * @return     The value.
+     */
     public double getVal() {
         return val;
     }
