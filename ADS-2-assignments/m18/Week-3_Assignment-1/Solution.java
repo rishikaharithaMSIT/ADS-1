@@ -11,7 +11,7 @@ public class Solution {
 		int n = Integer.parseInt(scan.nextLine());
 		MinPQ<Stock> one = new MinPQ<Stock>();
 		String[] line;
-		while (n > 0) {
+		while (scan.hasNext()) {
 			line = scan.nextLine().split(",");
 			one.insert(new Stock(line[0], line[1]));
 			line = scan.nextLine().split(",");
@@ -19,7 +19,6 @@ public class Solution {
 			line = scan.nextLine().split(",");
 			line = scan.nextLine().split(",");
 			line = scan.nextLine().split(",");
-			n--;
 		}
 
 		while (!one.isEmpty()) {
