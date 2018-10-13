@@ -56,7 +56,12 @@ public class Solution {
 			switch(tokens[0]) {
 				case "get" :
 					if(tokens[1].equals("maxST")) {
-						System.out.println(maxs.get(tokens[2]));
+						if(maxs.contains(tokens[2])) {
+							System.out.println(maxs.get(tokens[2]));
+						}else {
+							System.out.println("0");
+						}
+						
 					} else {
 						System.out.println(mins.get(tokens[2]));
 					}

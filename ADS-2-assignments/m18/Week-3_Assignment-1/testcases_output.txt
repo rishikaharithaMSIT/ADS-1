@@ -600,7 +600,7 @@ Chola Inv Fin 1.47
 2
 null
 4
-null
+0
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -770,7 +770,7 @@ WABCO India 0.33
 
 2
 1
-null
+0
 2
 null
 2
