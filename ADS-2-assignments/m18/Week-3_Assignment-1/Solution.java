@@ -63,7 +63,11 @@ public class Solution {
 						}
 						
 					} else {
-						System.out.println(mins.get(tokens[2]));
+						if(mins.contains(tokens[2])) {
+							System.out.println(mins.get(tokens[2]));
+						}else {
+							System.out.println("0");
+						}
 					}
 					
 				break;
