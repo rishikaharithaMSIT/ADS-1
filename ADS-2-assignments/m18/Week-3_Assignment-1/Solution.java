@@ -38,6 +38,11 @@ public class Solution {
 			int low = 5;
 			while (low > 0) {
 				Stock s = onemin.delMin();
+				if (mins.contains(s.name)) {
+					mins.put(s.name, mins.get(s.name) + 1);
+				} else {
+					mins.put(s.name, 1);
+				}
 				System.out.println(s.name + " " + s.val);
 				low--;
 			}
@@ -52,6 +57,8 @@ public class Solution {
 				case "get" :
 					if(tokens[1].equals("maxST")) {
 						System.out.println(maxs.get(tokens[2]));
+					} else {
+						System.out.println(mins.get(tokens[2]));
 					}
 					
 				break;
