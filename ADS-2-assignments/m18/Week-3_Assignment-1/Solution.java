@@ -22,17 +22,21 @@ public class Solution {
 				onemax.insert(new Stock(line[0], line[1]));
 				k--;
 			}
-			while (!onemax.isEmpty()) {
+			int top = 5;
+			while (top > 0) {
 				Stock s = onemax.delMax();
 				System.out.println(s.name + " - " + s.val);
+				top--;
 			}
 			System.out.println();
-			while (!onemin.isEmpty()) {
+			int low = 5;
+			while (low > 0) {
 				Stock s = onemin.delMin();
 				System.out.println(s.name + " - " + s.val);
+				low--;
 			}
 			hours--;
-			System.out.println();
+
 		}
 		// while (n > 0) {
 		// 	line = scan.nextLine().split(",");
