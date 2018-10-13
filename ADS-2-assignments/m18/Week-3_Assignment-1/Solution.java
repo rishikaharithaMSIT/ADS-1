@@ -21,11 +21,10 @@ public class Solution {
 			line = scan.nextLine().split(",");
 			n--;
 		}
-		int top = 5;
-		while (top > 0) {
+
+		while (!one.isEmpty()) {
 			Stock s = one.delMin();
 			System.out.println(s.name + " - " + s.val);
-			top--;
 		}
 
 
