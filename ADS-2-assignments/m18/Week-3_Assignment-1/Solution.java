@@ -13,18 +13,18 @@ public class Solution {
 		String[] line;
 		while (n > 0) {
 			line = scan.nextLine().split(",");
-			System.out.println(line[0] + " - "+ line[1]);
+			System.out.println(line[0] + " - " + line[1]);
 			one.insert(new Stock(line[0], line[1]));
 			line = scan.nextLine().split(",");
-			System.out.println(line[0] + " - "+ line[1]);
+			System.out.println(line[0] + " - " + line[1]);
 			line = scan.nextLine().split(",");
-			System.out.println(line[0] + " - "+ line[1]);
+			System.out.println(line[0] + " - " + line[1]);
 			line = scan.nextLine().split(",");
-			System.out.println(line[0] + " - "+ line[1]);
+			System.out.println(line[0] + " - " + line[1]);
 			line = scan.nextLine().split(",");
-			System.out.println(line[0] + " - "+ line[1]);
+			System.out.println(line[0] + " - " + line[1]);
 			line = scan.nextLine().split(",");
-			System.out.println(line[0] + " - "+ line[1]);
+			System.out.println(line[0] + " - " + line[1]);
 			n--;
 			System.out.println();
 		}
@@ -46,9 +46,12 @@ class Stock implements Comparable<Stock> {
 		this.val = Double.parseDouble(val);
 	}
 	public int compareTo(Stock that) {
-		System.out.println("greater : " + this.val+ " - " + that.val);
+		System.out.println("greater : " + this.val + " - " + that.val);
 		if (this.val < that.val) return -1;
-		if (this.val > that.val) return +1;
+		if (this.val > that.val) return 1;
+		if(this.name.compareTo(that.name) > 0) return 1;
+		if(this.name.compareTo(that.name) < 0) return -1;
+
 		return 0;
 	}
 }

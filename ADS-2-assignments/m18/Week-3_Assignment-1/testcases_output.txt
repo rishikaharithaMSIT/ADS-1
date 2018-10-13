@@ -1468,16 +1468,15 @@ greater : 2.61 - 2.15
 GSK Cons Health - 1.84
 greater : 2.15 - 2.15
 greater : 4.0 - 2.15
-greater : 2.61 - 3.48
-greater : 4.0 - 2.61
 Bharat Rasayan - 2.0
-greater : 2.61 - 2.15
+greater : 2.15 - 4.0
 greater : 3.48 - 2.15
-ICRA - 2.15
-greater : 2.61 - 3.48
-greater : 4.0 - 2.61
+greater : 3.48 - 2.61
 Bosch - 2.15
-greater : 3.48 - 4.0
+greater : 2.61 - 4.0
+greater : 3.48 - 2.61
+ICRA - 2.15
+greater : 4.0 - 3.48
 HEG Ltd - 2.61
 MRF - 3.48
 Sanofi India - 4.0
