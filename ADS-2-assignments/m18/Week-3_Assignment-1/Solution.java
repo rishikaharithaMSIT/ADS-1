@@ -66,7 +66,7 @@ public class Solution {
 			// for (String word : maxs.keys()) {
 			// 	System.out.println(word + " - " + maxs.get(word));
 			// }
-			 break;			
+					
 		}
 		// String max = "";
 		// maxs.put(max, 0);
