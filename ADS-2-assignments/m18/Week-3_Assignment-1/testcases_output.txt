@@ -80,7 +80,6 @@ Bosch - 0.3
 Nestle India - 1.57
 
 Tasty Bite Eat - 1.23
-greater : 0.48 - 1.23
 Abbott India - 0.46
 GSK Cons Health - 0.84
 WABCO India - 1.33
@@ -88,7 +87,6 @@ Sanofi India - 1.21
 TTK Prestige - 2.15
 
 Lakshmi Machine - 0.7
-greater : 0.48 - 0.7
 Bajaj Finserv - 0.64
 Bharat Rasayan - 2
 Schaeffler India - 2.57
@@ -96,7 +94,6 @@ HEG Ltd - 1.61
 Oracle Fin - 0.52
 
 ICRA - 2.84
-greater : 1.23 - 2.84
 Merck Ltd - 4.83
 MRF - 3.48
 3M India - 2.56
@@ -104,7 +101,6 @@ Eicher Motors - 0.6
 Honeywell Auto - -1.08
 
 Bosch - 1.3
-greater : 1.23 - 1.3
 Nestle India - 4.57
 Tasty Bite Eat - 2.23
 Abbott India - 1.46
@@ -112,7 +108,6 @@ GSK Cons Health - 0.84
 WABCO India - 0.33
 
 Sanofi India - 2.21
-greater : 0.7 - 2.21
 TTK Prestige - 0.15
 Lakshmi Machine - 1.7
 Bajaj Finserv - 5.64
@@ -120,7 +115,6 @@ Bharat Rasayan - 2
 Schaeffler India - 4.59
 
 HEG Ltd - 2.61
-greater : 0.7 - 2.61
 Oracle Fin - 1.52
 ICRA - 4.84
 Merck Ltd - 5.83
@@ -128,8 +122,6 @@ MRF - 1.48
 3M India - 1.56
 
 Eicher Motors - 1.6
-greater : 2.84 - 1.6
-greater : 1.23 - 1.6
 Honeywell Auto - 1.08
 Bosch - 2.3
 Nestle India - 4.57
@@ -137,9 +129,6 @@ Tasty Bite Eat - 5.23
 Abbott India - 0.46
 
 GSK Cons Health - -0.84
-greater : 1.6 - -0.84
-greater : 1.23 - -0.84
-greater : 0.48 - -0.84
 WABCO India - -1.33
 Sanofi India - -1.21
 TTK Prestige - 2.15
@@ -147,7 +136,6 @@ Lakshmi Machine - 3.7
 Bajaj Finserv - 4.64
 
 Bharat Rasayan - 2
-greater : 1.3 - 2.0
 Schaeffler India - 2.57
 HEG Ltd - 1.61
 Oracle Fin - 0.52
@@ -155,7 +143,6 @@ ICRA - 3.84
 Merck Ltd - 1.83
 
 MRF - 3.48
-greater : 1.3 - 3.48
 3M India - 2.56
 Eicher Motors - -1.6
 Honeywell Auto - -1.08
@@ -163,9 +150,6 @@ Bosch - -0.3
 Nestle India - -1.57
 
 Tasty Bite Eat - -1.23
-greater : 2.21 - -1.23
-greater : 0.7 - -1.23
-greater : -0.84 - -1.23
 Abbott India - -0.46
 GSK Cons Health - -0.84
 WABCO India - -1.33
@@ -173,8 +157,6 @@ Sanofi India - -1.21
 TTK Prestige - -2.15
 
 Lakshmi Machine - -0.7
-greater : 0.7 - -0.7
-greater : -0.84 - -0.7
 Bajaj Finserv - -0.64
 Bharat Rasayan - -2
 Schaeffler India - -2.57
@@ -182,9 +164,6 @@ HEG Ltd - -1.61
 Oracle Fin - -0.52
 
 ICRA - -2.84
-greater : 2.61 - -2.84
-greater : -0.84 - -2.84
-greater : -1.23 - -2.84
 Merck Ltd - 4.83
 MRF - 0.48
 3M India - 1.56
@@ -192,7 +171,6 @@ Eicher Motors - 1.6
 Honeywell Auto - 1.08
 
 Bosch - 0.3
-greater : -0.84 - 0.3
 Nestle India - 1.57
 Tasty Bite Eat - 1.23
 Abbott India - 0.46
@@ -200,9 +178,6 @@ GSK Cons Health - 0.84
 WABCO India - 1.33
 
 Sanofi India - 1.21
-greater : 2.84 - 1.21
-greater : 1.23 - 1.21
-greater : 0.48 - 1.21
 TTK Prestige - 2.15
 Lakshmi Machine - 0.7
 Bajaj Finserv - 0.64
@@ -210,7 +185,6 @@ Bharat Rasayan - 2
 Schaeffler India - 2.57
 
 HEG Ltd - 1.61
-greater : 1.23 - 1.61
 Oracle Fin - 0.52
 ICRA - 2.84
 Merck Ltd - 4.83
@@ -218,10 +192,6 @@ MRF - 1.48
 3M India - 1.56
 
 Eicher Motors - -1.6
-greater : 1.6 - -1.6
-greater : 1.21 - -1.6
-greater : 0.48 - -1.6
-greater : -2.84 - -1.6
 Honeywell Auto - -1.08
 Bosch - 0.34
 Nestle India - 1.57
@@ -229,7 +199,6 @@ Tasty Bite Eat - 0.23
 Abbott India - 1.46
 
 GSK Cons Health - 1.84
-greater : 1.21 - 1.84
 WABCO India - 0.33
 Sanofi India - 0.21
 TTK Prestige - 3.15
@@ -237,116 +206,29 @@ Lakshmi Machine - 4.7
 Bajaj Finserv - 3.64
 
 Bharat Rasayan - 2
-greater : 2.0 - 2.0
 Schaeffler India - 1.57
 HEG Ltd - 1.61
 Oracle Fin - 1.52
 ICRA - 5.84
 Merck Ltd - 3.83
 
-greater : -1.6 - -1.23
-greater : 2.0 - -1.6
-greater : 0.48 - 1.3
-greater : 2.0 - 0.48
-greater : 1.23 - 1.21
-greater : 2.0 - 1.21
-greater : 1.6 - 1.84
-greater : 2.0 - 1.6
 ICRA - -2.84
-greater : 0.48 - -1.23
-greater : 1.84 - -1.23
-greater : -0.7 - -0.84
-greater : 1.84 - -0.84
-greater : 2.61 - 0.3
-greater : 1.84 - 0.3
 Eicher Motors - -1.6
-greater : 0.48 - -0.84
-greater : 2.0 - -0.84
-greater : -0.7 - 0.3
-greater : 2.0 - -0.7
-greater : 2.21 - 0.7
-greater : 2.0 - 0.7
 Tasty Bite Eat - -1.23
-greater : 0.48 - -0.7
-greater : 1.61 - -0.7
-greater : 0.7 - 0.3
-greater : 1.61 - 0.3
-greater : 2.61 - 1.84
-greater : 1.61 - 1.84
 GSK Cons Health - -0.84
-greater : 0.48 - 0.3
-greater : 2.84 - 0.3
-greater : 0.7 - 1.61
-greater : 2.84 - 0.7
-greater : 2.21 - 2.0
-greater : 2.84 - 2.0
 Lakshmi Machine - -0.7
-greater : 0.48 - 0.7
-greater : 1.84 - 0.48
-greater : 1.21 - 1.3
-greater : 1.84 - 1.21
-greater : 1.23 - 1.6
-greater : 1.84 - 1.23
 Bosch - 0.3
-greater : 1.21 - 0.7
-greater : 2.61 - 0.7
-greater : 2.0 - 1.61
-greater : 2.61 - 1.61
 MRF - 0.48
-greater : 1.21 - 1.61
-greater : 2.84 - 1.21
-greater : 1.23 - 1.3
-greater : 2.84 - 1.23
-greater : 1.84 - 1.6
-greater : 2.84 - 1.6
 Lakshmi Machine - 0.7
-greater : 1.23 - 1.61
-greater : 2.21 - 1.23
-greater : 1.6 - 1.3
-greater : 2.21 - 1.3
-greater : 2.0 - 3.48
-greater : 2.21 - 2.0
 Sanofi India - 1.21
-greater : 1.3 - 1.61
-greater : 3.48 - 1.3
-greater : 1.6 - 2.0
-greater : 3.48 - 1.6
-greater : 1.84 - 2.84
-greater : 3.48 - 1.84
 Tasty Bite Eat - 1.23
-greater : 1.6 - 1.61
-greater : 2.21 - 1.6
-greater : 1.84 - 2.0
-greater : 2.21 - 1.84
-greater : 3.48 - 2.84
-greater : 2.21 - 2.84
 Bosch - 1.3
-greater : 1.84 - 1.61
-greater : 2.84 - 1.61
-greater : 2.0 - 2.61
-greater : 2.84 - 2.0
 Eicher Motors - 1.6
-greater : 1.84 - 2.0
-greater : 3.48 - 1.84
-greater : 2.21 - 2.0
-greater : 3.48 - 2.0
 HEG Ltd - 1.61
-greater : 2.0 - 2.0
-greater : 2.61 - 2.0
-greater : 2.21 - 3.48
-greater : 2.61 - 2.21
 GSK Cons Health - 1.84
-greater : 2.21 - 2.0
-greater : 2.84 - 2.0
 Bharat Rasayan - 2.0
-greater : 2.21 - 2.84
-greater : 3.48 - 2.21
-greater : 3.48 - 2.61
 Bharat Rasayan - 2.0
-greater : 2.61 - 2.84
-greater : 3.48 - 2.61
 Sanofi India - 2.21
-greater : 2.84 - 3.48
 HEG Ltd - 2.61
 ICRA - 2.84
 MRF - 3.48
@@ -433,7 +315,6 @@ Endurance Technologies Ltd. - 0.1
 Nalwa Sons Invst - -0.06
 
 NIIT Tech - 0.21
-greater : 4.11 - 0.21
 Chola Inv Fin - 1.47
 Fine Organic Industries Ltd. - 2.29
 Ceat - 0.23
@@ -441,7 +322,6 @@ Larsen & Toubro - 4.08
 APL Apollo Tube - 2.18
 
 Vinati Organics - 3.03
-greater : 0.21 - 3.03
 Jubilant Food - 4.08
 Endurance Technologies Ltd. - 1.1
 Nalwa Sons Invst - -0.06
@@ -449,8 +329,6 @@ NIIT Tech - 3.21
 Chola Inv Fin - 2.47
 
 Fine Organic Industries Ltd. - 1.29
-greater : 4.11 - 1.29
-greater : 0.21 - 1.29
 Ceat - -0.06
 Larsen & Toubro - 1.11
 APL Apollo Tube - 0.18
@@ -458,8 +336,6 @@ Vinati Organics - 4.03
 Jubilant Food - 4.08
 
 Endurance Technologies Ltd. - 1.1
-greater : 1.29 - 1.1
-greater : 0.21 - 1.1
 Nalwa Sons Invst - -0.06
 NIIT Tech - 0.21
 Chola Inv Fin - 4.47
@@ -467,8 +343,6 @@ Fine Organic Industries Ltd. - 3.29
 Ceat - 0.23
 
 Larsen & Toubro - -4.11
-greater : 3.03 - -4.11
-greater : 0.21 - -4.11
 APL Apollo Tube - 2.18
 Vinati Organics - 1.03
 Jubilant Food - 0.08
@@ -476,7 +350,6 @@ Endurance Technologies Ltd. - -0.1
 Nalwa Sons Invst - -0.1
 
 NIIT Tech - 0.34
-greater : 0.21 - 0.34
 Chola Inv Fin - 3.47
 Fine Organic Industries Ltd. - 3.29
 Ceat - 1.23
@@ -484,9 +357,6 @@ Larsen & Toubro - 3.11
 APL Apollo Tube - 2.18
 
 Vinati Organics - 1.03
-greater : 4.11 - 1.03
-greater : 1.1 - 1.03
-greater : -4.11 - 1.03
 Jubilant Food - 2.08
 Endurance Technologies Ltd. - 1.1
 Nalwa Sons Invst - -2.06
@@ -494,9 +364,6 @@ NIIT Tech - 1.21
 Chola Inv Fin - 0.47
 
 Fine Organic Industries Ltd. - 0.29
-greater : 1.1 - 0.29
-greater : 1.03 - 0.29
-greater : -4.11 - 0.29
 Ceat - 1.23
 Larsen & Toubro - 5.11
 APL Apollo Tube - 2.18
@@ -504,47 +371,19 @@ Vinati Organics - 1.03
 Jubilant Food - 5.08
 
 Endurance Technologies Ltd. - 4.1
-greater : 1.29 - 4.1
 Nalwa Sons Invst - 4.06
 NIIT Tech - 0.21
 Chola Inv Fin - 1.47
 Fine Organic Industries Ltd. - 0.29
 Ceat - -1.23
 
-greater : 0.29 - 0.21
-greater : 4.1 - 0.21
-greater : 3.03 - 0.34
-greater : 4.1 - 0.34
 Larsen & Toubro - -4.11
-greater : 0.29 - 0.34
-greater : 1.1 - 0.29
-greater : 1.03 - 1.29
-greater : 1.1 - 1.03
-greater : 1.1 - 4.11
 NIIT Tech - 0.21
-greater : 1.03 - 0.34
-greater : 4.11 - 0.34
-greater : 3.03 - 4.1
-greater : 4.11 - 3.03
 Fine Organic Industries Ltd. - 0.29
-greater : 1.03 - 3.03
-greater : 4.1 - 1.03
-greater : 1.1 - 1.29
-greater : 4.1 - 1.1
 NIIT Tech - 0.34
-greater : 1.1 - 3.03
-greater : 4.11 - 1.1
-greater : 4.1 - 1.29
-greater : 4.11 - 1.29
 Vinati Organics - 1.03
-greater : 1.29 - 3.03
-greater : 4.11 - 1.29
-greater : 4.11 - 4.1
 Endurance Technologies Ltd. - 1.1
-greater : 4.1 - 3.03
-greater : 4.11 - 3.03
 Fine Organic Industries Ltd. - 1.29
-greater : 4.11 - 4.1
 Vinati Organics - 3.03
 Endurance Technologies Ltd. - 4.1
 Larsen & Toubro - 4.11
@@ -636,7 +475,6 @@ Bosch - 0.3
 Nestle India - 1.57
 
 Tasty Bite Eat - 1.23
-greater : 0.48 - 1.23
 Abbott India - 0.46
 GSK Cons Health - 0.84
 WABCO India - 1.33
@@ -644,7 +482,6 @@ Sanofi India - 1.21
 TTK Prestige - 2.15
 
 Lakshmi Machine - 0.7
-greater : 0.48 - 0.7
 Bajaj Finserv - 0.64
 Bharat Rasayan - 2
 Schaeffler India - 2.57
@@ -652,7 +489,6 @@ HEG Ltd - 1.61
 Oracle Fin - 0.52
 
 ICRA - 2.84
-greater : 1.23 - 2.84
 Merck Ltd - 4.83
 MRF - 3.48
 3M India - 2.56
@@ -660,7 +496,6 @@ Eicher Motors - 0.6
 Honeywell Auto - -1.08
 
 Bosch - 1.3
-greater : 1.23 - 1.3
 Nestle India - 4.57
 Tasty Bite Eat - 2.23
 Abbott India - 1.46
@@ -668,7 +503,6 @@ GSK Cons Health - 0.84
 WABCO India - 0.33
 
 Sanofi India - 2.21
-greater : 0.7 - 2.21
 TTK Prestige - 0.15
 Lakshmi Machine - 1.7
 Bajaj Finserv - 5.64
@@ -676,7 +510,6 @@ Bharat Rasayan - 2
 Schaeffler India - 4.59
 
 HEG Ltd - 2.61
-greater : 0.7 - 2.61
 Oracle Fin - 1.52
 ICRA - 4.84
 Merck Ltd - 5.83
@@ -684,8 +517,6 @@ MRF - 1.48
 3M India - 1.56
 
 Eicher Motors - 1.6
-greater : 2.84 - 1.6
-greater : 1.23 - 1.6
 Honeywell Auto - 1.08
 Bosch - 2.3
 Nestle India - 4.57
@@ -693,9 +524,6 @@ Tasty Bite Eat - 5.23
 Abbott India - 0.46
 
 GSK Cons Health - -0.84
-greater : 1.6 - -0.84
-greater : 1.23 - -0.84
-greater : 0.48 - -0.84
 WABCO India - -1.33
 Sanofi India - -1.21
 TTK Prestige - 2.15
@@ -703,7 +531,6 @@ Lakshmi Machine - 3.7
 Bajaj Finserv - 4.64
 
 Bharat Rasayan - 2
-greater : 1.3 - 2.0
 Schaeffler India - 2.57
 HEG Ltd - 1.61
 Oracle Fin - 0.52
@@ -711,7 +538,6 @@ ICRA - 3.84
 Merck Ltd - 1.83
 
 MRF - 3.48
-greater : 1.3 - 3.48
 3M India - 2.56
 Eicher Motors - -1.6
 Honeywell Auto - -1.08
@@ -719,9 +545,6 @@ Bosch - -0.3
 Nestle India - -1.57
 
 Tasty Bite Eat - -1.23
-greater : 2.21 - -1.23
-greater : 0.7 - -1.23
-greater : -0.84 - -1.23
 Abbott India - -0.46
 GSK Cons Health - -0.84
 WABCO India - -1.33
@@ -729,8 +552,6 @@ Sanofi India - -1.21
 TTK Prestige - -2.15
 
 Lakshmi Machine - -0.7
-greater : 0.7 - -0.7
-greater : -0.84 - -0.7
 Bajaj Finserv - -0.64
 Bharat Rasayan - -2
 Schaeffler India - -2.57
@@ -738,9 +559,6 @@ HEG Ltd - -1.61
 Oracle Fin - -0.52
 
 ICRA - -2.84
-greater : 2.61 - -2.84
-greater : -0.84 - -2.84
-greater : -1.23 - -2.84
 Merck Ltd - 4.83
 MRF - 0.48
 3M India - 1.56
@@ -748,7 +566,6 @@ Eicher Motors - 1.6
 Honeywell Auto - 1.08
 
 Bosch - 0.3
-greater : -0.84 - 0.3
 Nestle India - 1.57
 Tasty Bite Eat - 1.23
 Abbott India - 0.46
@@ -756,9 +573,6 @@ GSK Cons Health - 0.84
 WABCO India - 1.33
 
 Sanofi India - 1.21
-greater : 2.84 - 1.21
-greater : 1.23 - 1.21
-greater : 0.48 - 1.21
 TTK Prestige - 2.15
 Lakshmi Machine - 0.7
 Bajaj Finserv - 0.64
@@ -766,7 +580,6 @@ Bharat Rasayan - 2
 Schaeffler India - 2.57
 
 HEG Ltd - 1.61
-greater : 1.23 - 1.61
 Oracle Fin - 0.52
 ICRA - 2.84
 Merck Ltd - 4.83
@@ -774,10 +587,6 @@ MRF - 1.48
 3M India - 1.56
 
 Eicher Motors - -1.6
-greater : 1.6 - -1.6
-greater : 1.21 - -1.6
-greater : 0.48 - -1.6
-greater : -2.84 - -1.6
 Honeywell Auto - -1.08
 Bosch - 0.34
 Nestle India - 1.57
@@ -785,7 +594,6 @@ Tasty Bite Eat - 0.23
 Abbott India - 1.46
 
 GSK Cons Health - 1.84
-greater : 1.21 - 1.84
 WABCO India - 0.33
 Sanofi India - 0.21
 TTK Prestige - 3.15
@@ -793,116 +601,29 @@ Lakshmi Machine - 4.7
 Bajaj Finserv - 3.64
 
 Bharat Rasayan - 2
-greater : 2.0 - 2.0
 Schaeffler India - 1.57
 HEG Ltd - 1.61
 Oracle Fin - 1.52
 ICRA - 5.84
 Merck Ltd - 3.83
 
-greater : -1.6 - -1.23
-greater : 2.0 - -1.6
-greater : 0.48 - 1.3
-greater : 2.0 - 0.48
-greater : 1.23 - 1.21
-greater : 2.0 - 1.21
-greater : 1.6 - 1.84
-greater : 2.0 - 1.6
 ICRA - -2.84
-greater : 0.48 - -1.23
-greater : 1.84 - -1.23
-greater : -0.7 - -0.84
-greater : 1.84 - -0.84
-greater : 2.61 - 0.3
-greater : 1.84 - 0.3
 Eicher Motors - -1.6
-greater : 0.48 - -0.84
-greater : 2.0 - -0.84
-greater : -0.7 - 0.3
-greater : 2.0 - -0.7
-greater : 2.21 - 0.7
-greater : 2.0 - 0.7
 Tasty Bite Eat - -1.23
-greater : 0.48 - -0.7
-greater : 1.61 - -0.7
-greater : 0.7 - 0.3
-greater : 1.61 - 0.3
-greater : 2.61 - 1.84
-greater : 1.61 - 1.84
 GSK Cons Health - -0.84
-greater : 0.48 - 0.3
-greater : 2.84 - 0.3
-greater : 0.7 - 1.61
-greater : 2.84 - 0.7
-greater : 2.21 - 2.0
-greater : 2.84 - 2.0
 Lakshmi Machine - -0.7
-greater : 0.48 - 0.7
-greater : 1.84 - 0.48
-greater : 1.21 - 1.3
-greater : 1.84 - 1.21
-greater : 1.23 - 1.6
-greater : 1.84 - 1.23
 Bosch - 0.3
-greater : 1.21 - 0.7
-greater : 2.61 - 0.7
-greater : 2.0 - 1.61
-greater : 2.61 - 1.61
 MRF - 0.48
-greater : 1.21 - 1.61
-greater : 2.84 - 1.21
-greater : 1.23 - 1.3
-greater : 2.84 - 1.23
-greater : 1.84 - 1.6
-greater : 2.84 - 1.6
 Lakshmi Machine - 0.7
-greater : 1.23 - 1.61
-greater : 2.21 - 1.23
-greater : 1.6 - 1.3
-greater : 2.21 - 1.3
-greater : 2.0 - 3.48
-greater : 2.21 - 2.0
 Sanofi India - 1.21
-greater : 1.3 - 1.61
-greater : 3.48 - 1.3
-greater : 1.6 - 2.0
-greater : 3.48 - 1.6
-greater : 1.84 - 2.84
-greater : 3.48 - 1.84
 Tasty Bite Eat - 1.23
-greater : 1.6 - 1.61
-greater : 2.21 - 1.6
-greater : 1.84 - 2.0
-greater : 2.21 - 1.84
-greater : 3.48 - 2.84
-greater : 2.21 - 2.84
 Bosch - 1.3
-greater : 1.84 - 1.61
-greater : 2.84 - 1.61
-greater : 2.0 - 2.61
-greater : 2.84 - 2.0
 Eicher Motors - 1.6
-greater : 1.84 - 2.0
-greater : 3.48 - 1.84
-greater : 2.21 - 2.0
-greater : 3.48 - 2.0
 HEG Ltd - 1.61
-greater : 2.0 - 2.0
-greater : 2.61 - 2.0
-greater : 2.21 - 3.48
-greater : 2.61 - 2.21
 GSK Cons Health - 1.84
-greater : 2.21 - 2.0
-greater : 2.84 - 2.0
 Bharat Rasayan - 2.0
-greater : 2.21 - 2.84
-greater : 3.48 - 2.21
-greater : 3.48 - 2.61
 Bharat Rasayan - 2.0
-greater : 2.61 - 2.84
-greater : 3.48 - 2.61
 Sanofi India - 2.21
-greater : 2.84 - 3.48
 HEG Ltd - 2.61
 ICRA - 2.84
 MRF - 3.48
@@ -994,7 +715,6 @@ Endurance Technologies Ltd. - 0.1
 Nalwa Sons Invst - -0.06
 
 NIIT Tech - 0.21
-greater : 4.11 - 0.21
 Chola Inv Fin - 1.47
 Fine Organic Industries Ltd. - 2.29
 Ceat - 0.23
@@ -1002,7 +722,6 @@ Larsen & Toubro - 4.08
 APL Apollo Tube - 2.18
 
 Vinati Organics - 3.03
-greater : 0.21 - 3.03
 Jubilant Food - 4.08
 Endurance Technologies Ltd. - 1.1
 Nalwa Sons Invst - -0.06
@@ -1010,8 +729,6 @@ NIIT Tech - 3.21
 Chola Inv Fin - 2.47
 
 Fine Organic Industries Ltd. - 1.29
-greater : 4.11 - 1.29
-greater : 0.21 - 1.29
 Ceat - -0.06
 Larsen & Toubro - 1.11
 APL Apollo Tube - 0.18
@@ -1019,8 +736,6 @@ Vinati Organics - 4.03
 Jubilant Food - 4.08
 
 Endurance Technologies Ltd. - 1.1
-greater : 1.29 - 1.1
-greater : 0.21 - 1.1
 Nalwa Sons Invst - -0.06
 NIIT Tech - 0.21
 Chola Inv Fin - 4.47
@@ -1028,8 +743,6 @@ Fine Organic Industries Ltd. - 3.29
 Ceat - 0.23
 
 Larsen & Toubro - -4.11
-greater : 3.03 - -4.11
-greater : 0.21 - -4.11
 APL Apollo Tube - 2.18
 Vinati Organics - 1.03
 Jubilant Food - 0.08
@@ -1037,7 +750,6 @@ Endurance Technologies Ltd. - -0.1
 Nalwa Sons Invst - -0.1
 
 NIIT Tech - 0.34
-greater : 0.21 - 0.34
 Chola Inv Fin - 3.47
 Fine Organic Industries Ltd. - 3.29
 Ceat - 1.23
@@ -1045,9 +757,6 @@ Larsen & Toubro - 3.11
 APL Apollo Tube - 2.18
 
 Vinati Organics - 1.03
-greater : 4.11 - 1.03
-greater : 1.1 - 1.03
-greater : -4.11 - 1.03
 Jubilant Food - 2.08
 Endurance Technologies Ltd. - 1.1
 Nalwa Sons Invst - -2.06
@@ -1055,9 +764,6 @@ NIIT Tech - 1.21
 Chola Inv Fin - 0.47
 
 Fine Organic Industries Ltd. - 0.29
-greater : 1.1 - 0.29
-greater : 1.03 - 0.29
-greater : -4.11 - 0.29
 Ceat - 1.23
 Larsen & Toubro - 5.11
 APL Apollo Tube - 2.18
@@ -1065,47 +771,19 @@ Vinati Organics - 1.03
 Jubilant Food - 5.08
 
 Endurance Technologies Ltd. - 4.1
-greater : 1.29 - 4.1
 Nalwa Sons Invst - 4.06
 NIIT Tech - 0.21
 Chola Inv Fin - 1.47
 Fine Organic Industries Ltd. - 0.29
 Ceat - -1.23
 
-greater : 0.29 - 0.21
-greater : 4.1 - 0.21
-greater : 3.03 - 0.34
-greater : 4.1 - 0.34
 Larsen & Toubro - -4.11
-greater : 0.29 - 0.34
-greater : 1.1 - 0.29
-greater : 1.03 - 1.29
-greater : 1.1 - 1.03
-greater : 1.1 - 4.11
 NIIT Tech - 0.21
-greater : 1.03 - 0.34
-greater : 4.11 - 0.34
-greater : 3.03 - 4.1
-greater : 4.11 - 3.03
 Fine Organic Industries Ltd. - 0.29
-greater : 1.03 - 3.03
-greater : 4.1 - 1.03
-greater : 1.1 - 1.29
-greater : 4.1 - 1.1
 NIIT Tech - 0.34
-greater : 1.1 - 3.03
-greater : 4.11 - 1.1
-greater : 4.1 - 1.29
-greater : 4.11 - 1.29
 Vinati Organics - 1.03
-greater : 1.29 - 3.03
-greater : 4.11 - 1.29
-greater : 4.11 - 4.1
 Endurance Technologies Ltd. - 1.1
-greater : 4.1 - 3.03
-greater : 4.11 - 3.03
 Fine Organic Industries Ltd. - 1.29
-greater : 4.11 - 4.1
 Vinati Organics - 3.03
 Endurance Technologies Ltd. - 4.1
 Larsen & Toubro - 4.11
@@ -1212,7 +890,6 @@ Bosch - 0.3
 Nestle India - 1.57
 
 Tasty Bite Eat - 1.23
-greater : 0.48 - 1.23
 Abbott India - 0.48
 GSK Cons Health - 0.84
 WABCO India - 1.33
@@ -1220,7 +897,6 @@ Sanofi India - 1.21
 TTK Prestige - 2.15
 
 Lakshmi Machine - 0.7
-greater : 0.48 - 0.7
 Bajaj Finserv - 0.64
 Bharat Rasayan - 2
 Schaeffler India - 2.57
@@ -1228,7 +904,6 @@ HEG Ltd - 1.61
 Oracle Fin - 0.52
 
 ICRA - 2.15
-greater : 1.23 - 2.15
 Merck Ltd - 4.83
 MRF - 3.48
 3M India - 2.56
@@ -1236,7 +911,6 @@ Eicher Motors - 0
 Honeywell Auto - -1.08
 
 Bosch - 2.15
-greater : 1.23 - 2.15
 Nestle India - 4
 Tasty Bite Eat - 2.23
 Abbott India - 0
@@ -1244,7 +918,6 @@ GSK Cons Health - 0.84
 WABCO India - 0.33
 
 Sanofi India - 4
-greater : 0.7 - 4.0
 TTK Prestige - 0
 Lakshmi Machine - 1.75
 Bajaj Finserv - 5.64
@@ -1252,7 +925,6 @@ Bharat Rasayan - 2
 Schaeffler India - 4.59
 
 HEG Ltd - 2.61
-greater : 0.7 - 2.61
 Oracle Fin - 1.52
 ICRA - 4.0
 Merck Ltd - -5.83
@@ -1260,9 +932,6 @@ MRF - 1.48
 3M India - -1.56
 
 Eicher Motors - -1.6
-greater : 2.15 - -1.6
-greater : 1.23 - -1.6
-greater : 0.48 - -1.6
 Honeywell Auto - -1.08
 Bosch - 2.3
 Nestle India - 4.57
@@ -1270,9 +939,6 @@ Tasty Bite Eat - 5.23
 Abbott India - 0.46
 
 GSK Cons Health - -0.84
-greater : 1.23 - -0.84
-greater : 0.48 - -0.84
-greater : -1.6 - -0.84
 WABCO India - -1.33
 Sanofi India - -1.21
 TTK Prestige - 2.15
@@ -1280,9 +946,6 @@ Lakshmi Machine - 3.7
 Bajaj Finserv - -4.64
 
 Bharat Rasayan - -2
-greater : 2.15 - -2.0
-greater : -0.84 - -2.0
-greater : -1.6 - -2.0
 Schaeffler India - -2.57
 HEG Ltd - -1.61
 Oracle Fin - -1.61
@@ -1290,7 +953,6 @@ ICRA - 3.84
 Merck Ltd - -1.61
 
 MRF - 3.48
-greater : -0.84 - 3.48
 3M India - 2.56
 Eicher Motors - -1.6
 Honeywell Auto - -1.08
@@ -1298,9 +960,6 @@ Bosch - -0.3
 Nestle India - -1.57
 
 Tasty Bite Eat - -1.23
-greater : 4.0 - -1.23
-greater : 0.7 - -1.23
-greater : -2.0 - -1.23
 Abbott India - -0.46
 GSK Cons Health - -0.84
 WABCO India - -1.33
@@ -1308,8 +967,6 @@ Sanofi India - -1.21
 TTK Prestige - -2.15
 
 Lakshmi Machine - -0.7
-greater : 0.7 - -0.7
-greater : -1.23 - -0.7
 Bajaj Finserv - -0.64
 Bharat Rasayan - -2
 Schaeffler India - -2.57
@@ -1317,9 +974,6 @@ HEG Ltd - -1.61
 Oracle Fin - -0.52
 
 ICRA - -2.84
-greater : 2.61 - -2.84
-greater : -1.23 - -2.84
-greater : -2.0 - -2.84
 Merck Ltd - 4.83
 MRF - 0.48
 3M India - 1.56
@@ -1327,7 +981,6 @@ Eicher Motors - 1.6
 Honeywell Auto - 1.08
 
 Bosch - 0.3
-greater : -1.23 - 0.3
 Nestle India - 1.57
 Tasty Bite Eat - 1.23
 Abbott India - 0.46
@@ -1335,8 +988,6 @@ GSK Cons Health - 0.84
 WABCO India - 1.33
 
 Sanofi India - 1.21
-greater : 2.15 - 1.21
-greater : 0.48 - 1.21
 TTK Prestige - 2.15
 Lakshmi Machine - 0.7
 Bajaj Finserv - 0.64
@@ -1344,7 +995,6 @@ Bharat Rasayan - 2
 Schaeffler India - 2.57
 
 HEG Ltd - 1.61
-greater : 1.21 - 1.61
 Oracle Fin - 0.52
 ICRA - 2.84
 Merck Ltd - 4.83
@@ -1352,9 +1002,6 @@ MRF - 1.48
 3M India - 1.56
 
 Eicher Motors - -1.6
-greater : 1.23 - -1.6
-greater : 0.48 - -1.6
-greater : -1.6 - -1.6
 Honeywell Auto - -1.08
 Bosch - 0.34
 Nestle India - 1.57
@@ -1362,7 +1009,6 @@ Tasty Bite Eat - 0.23
 Abbott India - 1.46
 
 GSK Cons Health - 1.84
-greater : 0.48 - 1.84
 WABCO India - 0.33
 Sanofi India - 0.21
 TTK Prestige - 3.15
@@ -1370,113 +1016,29 @@ Lakshmi Machine - 4.7
 Bajaj Finserv - 3.64
 
 Bharat Rasayan - 2
-greater : 2.15 - 2.0
-greater : -0.84 - 2.0
 Schaeffler India - 1.57
 HEG Ltd - 1.61
 Oracle Fin - 1.52
 ICRA - 5.84
 Merck Ltd - 3.83
 
-greater : -1.6 - -2.0
-greater : 2.15 - -2.0
-greater : -0.7 - -1.23
-greater : 2.15 - -1.23
-greater : 2.61 - 0.3
-greater : 2.15 - 0.3
 ICRA - -2.84
-greater : -1.6 - -1.23
-greater : 1.84 - -1.6
-greater : -1.6 - -0.84
-greater : 1.84 - -1.6
-greater : 1.21 - 0.48
-greater : 1.84 - 0.48
-greater : 1.84 - 1.23
 Bharat Rasayan - -2.0
-greater : -1.6 - -1.23
-greater : 1.84 - -1.6
-greater : 0.48 - -0.84
-greater : 1.84 - -0.84
-greater : 2.0 - 3.48
-greater : 1.84 - 2.0
 Eicher Motors - -1.6
-greater : -0.84 - -1.23
-greater : 1.61 - -1.23
-greater : -0.7 - 0.3
-greater : 1.61 - -0.7
-greater : 4.0 - 0.7
-greater : 1.61 - 0.7
 Eicher Motors - -1.6
-greater : -0.84 - -0.7
-greater : 2.15 - -0.84
-greater : 0.48 - 1.84
-greater : 2.15 - 0.48
-greater : 1.21 - 1.23
-greater : 2.15 - 1.21
 Tasty Bite Eat - -1.23
-greater : 0.48 - -0.7
-greater : 2.15 - -0.7
-greater : 0.7 - 0.3
-greater : 2.15 - 0.3
-greater : 2.15 - 2.61
 GSK Cons Health - -0.84
-greater : 0.48 - 0.3
-greater : 2.61 - 0.3
-greater : 0.7 - 2.15
-greater : 2.61 - 0.7
-greater : 4.0 - 1.61
-greater : 2.61 - 1.61
 Lakshmi Machine - -0.7
-greater : 0.48 - 0.7
-greater : 2.61 - 0.48
-greater : 1.21 - 1.84
-greater : 2.61 - 1.21
-greater : 2.15 - 1.23
-greater : 2.61 - 1.23
 Bosch - 0.3
-greater : 1.21 - 0.7
-greater : 4.0 - 0.7
-greater : 1.61 - 2.15
-greater : 4.0 - 1.61
 MRF - 0.48
-greater : 1.21 - 1.61
-greater : 3.48 - 1.21
-greater : 1.23 - 1.84
-greater : 3.48 - 1.23
-greater : 2.15 - 2.61
-greater : 3.48 - 2.15
 Lakshmi Machine - 0.7
-greater : 1.23 - 1.61
-greater : 2.0 - 1.23
-greater : 2.15 - 1.84
-greater : 2.0 - 1.84
 Sanofi India - 1.21
-greater : 1.84 - 1.61
-greater : 2.61 - 1.61
-greater : 4.0 - 2.15
-greater : 2.61 - 2.15
 Tasty Bite Eat - 1.23
-greater : 1.84 - 2.15
-greater : 3.48 - 1.84
-greater : 2.15 - 2.0
-greater : 3.48 - 2.0
 HEG Ltd - 1.61
-greater : 2.0 - 2.15
-greater : 2.61 - 2.0
-greater : 2.15 - 3.48
-greater : 2.61 - 2.15
 GSK Cons Health - 1.84
-greater : 2.15 - 2.15
-greater : 4.0 - 2.15
 Bharat Rasayan - 2.0
-greater : 2.15 - 4.0
-greater : 3.48 - 2.15
-greater : 3.48 - 2.61
 Bosch - 2.15
-greater : 2.61 - 4.0
-greater : 3.48 - 2.61
 ICRA - 2.15
-greater : 4.0 - 3.48
 HEG Ltd - 2.61
 MRF - 3.48
 Sanofi India - 4.0
