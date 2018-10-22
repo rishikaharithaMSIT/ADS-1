@@ -1,13 +1,12 @@
 Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:20: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:26: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:27: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:31: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:42: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:47: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:52: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:52:52: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:28:54: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:30:44: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:35:50: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:47:50: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:53:50: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:58:52: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:59:53: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 9 errors.
