@@ -212,7 +212,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		return test.key;
 	}
 	public class count { 
-        int c = 0; 
+        int c = 1; 
     } 
   
     // utility function to find kth largest no in  
