@@ -15,7 +15,7 @@ public class Solution {
 		System.out.println();
 		Key min = tree.min();
 		System.out.println(min.author);
-		Key k5 = new Key("Qn", "eric", "5000.0");
+		Key k5 = new Key("Jn", "eric", "5000.0");
 		System.out.println(tree.get(k5));
 		tree.put(k4, "2");
 		Key floor = tree.floor(k5);
@@ -135,7 +135,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	public Key floor(Key key) {
 		Key maxSmall = null;
 		Node start = top;
-		if((key.compareTo(start.key) <= 0 &&start.left != null)) {
+		if((key.compareTo(start.key) <= 0 && start.left != null)) {
 			maxSmall = start.left.key;
 		}
 		else {
@@ -147,8 +147,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 					maxSmall = start.key;
 				}
 				start = start.left;
-			} else if(key.compareTo(start.key) > 0) {
-				
+			} else if(key.compareTo(start.key) > 0) {				
 				start = start.right;
 			}
 			else {
