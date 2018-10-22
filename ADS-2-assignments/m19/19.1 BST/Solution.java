@@ -101,7 +101,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     	while(start.right != null) {
     		start = start.right;
     	}
-    	return start.key;
+    	return start.right.key;
     }
 	public boolean isEmpty() {
 		return size == 0;
