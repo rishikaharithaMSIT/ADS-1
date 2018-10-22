@@ -148,9 +148,6 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 				}
 				start = start.left;
 			} else if (key.compareTo(start.key) > 0) {
-				if (maxSmall.compareTo(start.key) < 0) {
-					maxSmall = start.key;
-				}
 				start = start.right;
 			} else {
 				return start.key;
