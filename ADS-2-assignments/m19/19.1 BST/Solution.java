@@ -65,26 +65,99 @@ public class Solution {
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
-	Node top;
-	int size;
+	private Node head;
+	/**
+	 * { size value }.
+	 */
+	private int size;
+	/**
+	 * Class for node.
+	 */
 	class Node {
-		Node left;
-		Node right;
+		/**
+		 * { key }.
+		 */
 		Key key;
+		/**
+		 * { value }.
+		 */
 		Value value;
-		Node(Key data, Value value) {
-			this.key = data;
-			this.value = value;
+		/**
+		 * { left }.
+		 */
+		Node left;
+		/**
+		 * { right }.
+		 */
+		Node right;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      keyval  The keyval
+		 * @param      val     The value
+		 */
+		Node(Key keyval, Value val) {
+			this.key = keyval;
+			this.value = val;
 		}
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	/**
+	 * { get function }.
+	 * Complexities:
+	 *              Best case: O(logN)
+	 *              Worst case: O(N)
+	 *              Average case: O(logN)
+	 * @param      item  The item
+	 *
+	 * @return     { Value }
+	 */
+	public Value get(Key item) {
+		if (isEmpty()) {
+			return null;
+		}
+		Node test = head;
+		while (test != null) {
+			if (item.compareTo(test.key) == 0) {
+				return test.value;
+			} else if (item.compareTo(test.key) > 0) {
+				if (test.right == null) {
+					return null;
+				}
+				test = test.right;
+			} else {
+				if (test.left == null) {
+					return null;
+				}
+				test = test.left;
+			}
+		}
+		return null;
+	}
+	/**
+	 * { put function }.
+	 * Complexities:
+	 *              Best case: O(logN)
+	 *              Worst case: O(N)
+	 *              Average case: O(logN)
+	 * @param      item     The item
+	 * @param      itemval  The itemval
+	 */
 	public void put(Key item, Value itemval) {
 		Node newnode = new Node(item, itemval);
 		if (isEmpty()) {
-			top = newnode;
+			head = newnode;
 			size++;
 			return;
 		}
-		Node test = top;
+		Node test = head;
 		while (!(test.left == null && test.right == null)) {
 			if (item.compareTo(test.key) > 0) {
 				if (test.right == null) {
@@ -111,81 +184,49 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			test.value = newnode.value;
 		}
 	}
-	public Value get(Key item) {
-		if (isEmpty()) {
-			return null;
-		}
-		Node test =top;
-		while (test != null) {
-			if (item.compareTo(test.key) == 0) {
-				return test.value;
-			} else if (item.compareTo(test.key) > 0) {
-				if (test.right == null) {
-					return null;
-				}
-				test = test.right;
-			} else {
-				if (test.left == null) {
-					return null;
-				}
-				test = test.left;
-			}
-		}
-		return null;
-	}
-	//========================================to check op ==================
-	void printLevelOrder() {
-		int h = height(top);
-		int i;
-		for (i = 1; i <= h; i++)
-			printGivenLevel(top, i);
-	}
-
-	/* Compute the "height" of a tree -- the number of
-	nodes along the longest path from the root node
-	down to the farthest leaf node.*/
-	int height(Node root) {
-		if (root == null)
-			return 0;
-		else {
-			/* compute  height of each subtree */
-			int lheight = height(root.left);
-			int rheight = height(root.right);
-
-			/* use the larger one */
-			if (lheight > rheight)
-				return (lheight + 1);
-			else return (rheight + 1);
-		}
-	}
-	void printGivenLevel (Node root , int level) {
-		if (root == null)
-			return;
-		if (level == 1)
-			System.out.print(root.value + " ");
-		else if (level > 1) {
-			printGivenLevel(root.left, level - 1);
-			printGivenLevel(root.right, level - 1);
-		}
-	}
-	//========================================to check op ==================
-	public Key max() {
-		Node start = top;
-		while (start.right != null) {
-			start = start.right;
-		}
-		return start.key;
-	}
+	/**
+	 * { min function }.
+	 * Complexities:
+	 *              Best case: O(1)
+	 *              Worst case: O(N)
+	 *              Average case: O(logN)
+	 *
+	 * @return     { Key }
+	 */
 	public Key min() {
-		Node start = top;
-		while (start.left != null) {
-			start = start.left;
+		Node test = head;
+		while (test.left != null) {
+			test = test.left;
 		}
-		return start.key;
-
+		return test.key;
 	}
+	/**
+	 * { max function }.
+	 * Complexities:
+	 *              Best case: O(1)
+	 *              Worst case: O(N)
+	 *              Average case: O(logN)
+	 * @return     { Key }
+	 */
+	public Key max() {
+		Node test = head;
+		while (test.right != null) {
+			test = test.right;
+		}
+		return test.key;
+	}
+	/**
+	 * { floor }.
+	 *Complexities:
+	 *              Best case: O(logN)
+	 *              Worst case: O(logN)
+	 *              Average case: O(logN)
+	 * @param      item  The item
+	 *
+	 * @return     { Key }
+	 */
 	public Key floor(Key item) {
-		Node test = top;
+		Node test = head;
 		while (true) {
 			if (item.compareTo(test.key) > 0) {
 				if (test.right == null) {
@@ -203,8 +244,18 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 		return test.key;
 	}
+	/**
+	 * { ceiling function }.
+	 * Complexities:
+	 *              Best case: O(logN)
+	 *              Worst case: O(logN)
+	 *              Average case: O(logN)
+	 * @param      item  The item
+	 *
+	 * @return     { Key }
+	 */
 	public Key ceiling(Key item) {
-		Node test = top;
+		Node test = head;
 		while (true) {
 			if (item.compareTo(test.key) > 0) {
 				if (test.right == null) {
@@ -222,11 +273,21 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 		return test.key;
 	}
+	/**
+	 * { select function }.
+	 * Complexities:
+	 *              Best case: O(logN)
+	 *              Worst case: O(logN)
+	 *              Average case: O(logN)
+	 * @param      val   The value
+	 *
+	 * @return     { Key value }
+	 */
 	public Key select(int val) {
 		int count = 0;
 		int index = 0;
 		Key[] keyarr = (Key[])new Comparable[100];
-		Node test = top;
+		Node test = head;
 		Node temp = null;
 		while (count != val + 1) {
 			if (test.left == null) {
@@ -257,10 +318,6 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 		return test.key;
 	}
-	public boolean isEmpty() {
-		return size == 0;
-	}
-
 }
 class Key implements Comparable<Key> {
 	String name;
