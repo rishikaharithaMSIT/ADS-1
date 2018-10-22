@@ -46,6 +46,9 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:127:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:135:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:135:26: Parameter key should be final. [FinalParameters]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:146: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:146: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:146:43: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:159:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:164: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:165:9: Missing a Javadoc comment. [JavadocVariable]
@@ -66,4 +69,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:174: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:175: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 66 errors.
+Checkstyle ends with 69 errors.
