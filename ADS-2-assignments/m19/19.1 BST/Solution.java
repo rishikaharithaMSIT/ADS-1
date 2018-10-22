@@ -1,8 +1,10 @@
 public class Solution {
 	public static void main(String[] args) {
 		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		Key k2 = new Key("Python","eric","5000");
 		BinaryST<Key, String> tree = new BinaryST<>();
 		tree.put(k1, "1");
+		tree.put(k2,"2");
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
