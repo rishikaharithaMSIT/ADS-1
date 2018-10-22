@@ -4,6 +4,7 @@ public class Solution {
 		Key k2 = new Key("Python","eric","5000");
 		BinaryST<Key, String> tree = new BinaryST<>();
 		tree.put(k1, "1");
+		System.out.println();
 		tree.put(k2,"2");
 	}
 }
