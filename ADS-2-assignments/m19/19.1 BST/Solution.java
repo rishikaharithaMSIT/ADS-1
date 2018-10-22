@@ -1,7 +1,7 @@
 public class Solution {
 	public static void main(String[] args) {
 		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
-		Key k2 = new Key("Python","eric","5000");
+		Key k2 = new Key("Python","eric","5000.0");
 		Key k3 = new Key("Hello", "Ajay", "8000.0");
 		BinaryST<Key, String> tree = new BinaryST<>();
 		tree.put(k1, "1");
@@ -101,7 +101,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     	while(start.right != null) {
     		start = start.right;
     	}
-    	return start.right.key;
+    	return start.key;
     }
 	public boolean isEmpty() {
 		return size == 0;
