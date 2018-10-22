@@ -133,29 +133,24 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
 	}
 	public Key floor(Key key) {
-		Key maxSmall = null;
 		Node start = top;
-		if ((key.compareTo(start.key) <= 0 && start.left != null)) {
-			maxSmall = start.left.key;
-		} else {
-			maxSmall = start.key;
+		Key k = start.key;
+		if(key.compareTo(start.key) < 0) {
+			k = start.left.key;
 		}
-		while (start != null) {
-			if (key.compareTo(start.key) < 0) {
+		while(start.left != null) {
+			if(key.compareTo(start.key) < 0) {				
 				start = start.left;
-			} else if (key.compareTo(start.key) > 0) {
+			}
+			else if(key.compareTo(start.key) > 0) {
+				k = start.key;
 				start = start.right;
-				if (start != null) {
-					if (maxSmall.compareTo(start.key) < 0 && key.compareTo(start.key) < 0) {
-						maxSmall = start.key;
-					}
-
-				}
-			} else {
+			}
+			else {
 				return start.key;
 			}
 		}
-		return maxSmall;
+		return k;
 
 
 	}
