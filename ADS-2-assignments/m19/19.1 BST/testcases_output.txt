@@ -55,7 +55,7 @@ Your Output:
 Harry, JK, 600.0
 Harry, JK, 600.0
 Street, Kiran, 800.0
+null
 Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.get(Solution.java:117)
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:53)
 ----------------------------------------

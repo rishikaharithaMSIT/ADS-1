@@ -109,22 +109,27 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			test.value = newnode.value;
 		}
 	}
-	public Value get(Key key) {
-		// if (isEmpty()) {
-
-		// }
-		Node start = top;
-		while (start.left != null || start.right != null) {
-			if (key.compareTo(start.key) > 0) {
-				start = start.right;
-			} else if (key.compareTo(start.key) < 0) {
-				start = start.left;
+	public Value get(Key item) {
+		if (isEmpty()) {
+			return null;
+		}
+		Node test =top;
+		while (test != null) {
+			if (item.compareTo(test.key) == 0) {
+				return test.value;
+			} else if (item.compareTo(test.key) > 0) {
+				if (test.right == null) {
+					return null;
+				}
+				test = test.right;
 			} else {
-				break;
+				if (test.left == null) {
+					return null;
+				}
+				test = test.left;
 			}
 		}
-		return start.value;
-
+		return null;
 	}
 	//========================================to check op ==================
 	void printLevelOrder() {
