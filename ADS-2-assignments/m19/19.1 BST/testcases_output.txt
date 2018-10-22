@@ -56,6 +56,8 @@ Harry, JK, 600.0
 Harry, JK, 600.0
 Street, Kiran, 800.0
 null
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:53)
+Street, Kiran, 800.0
+Harry, JK, 600.0
+Street, Kiran, 800.0
+7
 ----------------------------------------

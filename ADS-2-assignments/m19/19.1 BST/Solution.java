@@ -50,7 +50,9 @@ public class Solution {
 				case "ceiling":
 					Key ceilKey = new Key(tokens[1],tokens[2],tokens[3]);
 					Key ceil = tree.floor(ceilKey);
-					System.out.println(ceil.name +", "+ceil.author+", "+ceil.price);
+					if(ceil != null) {
+						System.out.println(ceil.name +", "+ceil.author+", "+ceil.price);
+					}					
 					break;
 				case "select":
 					int kth = Integer.parseInt(tokens[1]);
