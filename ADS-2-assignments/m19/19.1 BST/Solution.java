@@ -140,17 +140,20 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     }
     public Key floor(Key key){
     	Node start = top;
+    	Key k = top.key;
 		while (start.left != null || start.right != null) {
 			if (key.compareTo(start.key) > 0) {
 				start = start.right;
+				k = start.key;
 			} else if (key.compareTo(start.key) < 0) {
 				start = start.left;
+				k = start.key;
 			}
 			else {
-				break;
+				return start.key;
 			}
 		}
-		return start.key;
+		return k;		
     }
 	public boolean isEmpty() {
 		return size == 0;
