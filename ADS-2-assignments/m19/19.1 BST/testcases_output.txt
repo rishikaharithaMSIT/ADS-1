@@ -13,8 +13,9 @@ Your Output:
 1 3 2 eric
 
 Bob Sedgewick
-2
-1 3 2 2 IT
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.get(Solution.java:72)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -34,8 +35,9 @@ Your Output:
 1 3 2 eric
 
 Bob Sedgewick
-2
-1 3 2 2 IT
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.get(Solution.java:72)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -54,6 +56,7 @@ Your Output:
 1 3 2 eric
 
 Bob Sedgewick
-2
-1 3 2 2 IT
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.get(Solution.java:72)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
