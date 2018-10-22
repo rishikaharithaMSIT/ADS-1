@@ -14,9 +14,7 @@ Your Output:
 
 Bob Sedgewick
 2
-1 3 2 2 Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.floor(Solution.java:144)
-	at Solution.main(Solution.java:21)
+1 3 2 2 Bn
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -37,9 +35,7 @@ Your Output:
 
 Bob Sedgewick
 2
-1 3 2 2 Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.floor(Solution.java:144)
-	at Solution.main(Solution.java:21)
+1 3 2 2 Bn
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -59,7 +55,5 @@ Your Output:
 
 Bob Sedgewick
 2
-1 3 2 2 Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.floor(Solution.java:144)
-	at Solution.main(Solution.java:21)
+1 3 2 2 Bn
 ----------------------------------------
