@@ -31,6 +31,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			newnode.right = null;
 			top = newnode;
 			size++;
+			System.out.println();
 			printInorder(top);
 			return;
 		}
@@ -45,10 +46,12 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		if (key.compareTo(start.key) > 0) {
 			start.right = newnode;
 			size++;
+			System.out.println();
 			printInorder(top);
 		} else if (key.compareTo(start.key) <= 0) {
 			start.left = newnode;
 			size++;
+			System.out.println();
 			printInorder(top);
 		}
 
