@@ -83,7 +83,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			newnode.right = null;
 			top = newnode;
 			size++;
-			printLevelOrder();
+			//printLevelOrder();
 			return;
 		}
 		Node start = top;
@@ -97,11 +97,11 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		if (key.compareTo(start.key) > 0) {
 			start.right = newnode;
 			size++;
-			printLevelOrder();
+			//printLevelOrder();
 		} else if (key.compareTo(start.key) <= 0) {
 			start.left = newnode;
 			size++;
-			printLevelOrder();
+			//printLevelOrder();
 		}
 
 	}
