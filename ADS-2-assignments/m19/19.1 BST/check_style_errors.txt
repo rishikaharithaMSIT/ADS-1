@@ -57,6 +57,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:53:88: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:53:92: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:53:93: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:57:66: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:57:67: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:58: Line is longer than 80 characters (found 101). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:58:70: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:58:74: '+' is not preceded with whitespace. [WhitespaceAround]
@@ -180,4 +182,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:266: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m19\19.1 BST\Solution.java:267: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 180 errors.
+Checkstyle ends with 182 errors.
