@@ -31,8 +31,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			newnode.right = null;
 			top = newnode;
 			size++;
-			System.out.println();
-			printInorder(top);
+			printLevelOrder();
 			return;
 		}
 		Node start = top;
@@ -46,30 +45,53 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		if (key.compareTo(start.key) > 0) {
 			start.right = newnode;
 			size++;
-			System.out.println();
-			printInorder(top);
+			printLevelOrder();
 		} else if (key.compareTo(start.key) <= 0) {
 			start.left = newnode;
 			size++;
-			System.out.println();
-			printInorder(top);
+			printLevelOrder();
 		}
 
 	}
-	void printInorder(Node node) {
-		if (node == null)
-			return;
-
-		/* first recur on left child */
-		printInorder(node.left);
-
-		/* then print the data of node */
-		System.out.print(node.value + " ");
-
-		/* now recur on right child */
-		printInorder(node.right);
-	}
-
+	void printLevelOrder() 
+    { 
+        int h = height(top); 
+        int i; 
+        for (i=1; i<=h; i++) 
+            printGivenLevel(top, i); 
+    } 
+  
+    /* Compute the "height" of a tree -- the number of 
+    nodes along the longest path from the root node 
+    down to the farthest leaf node.*/
+    int height(Node root) 
+    { 
+        if (root == null) 
+           return 0; 
+        else
+        { 
+            /* compute  height of each subtree */
+            int lheight = height(root.left); 
+            int rheight = height(root.right); 
+              
+            /* use the larger one */
+            if (lheight > rheight) 
+                return(lheight+1); 
+            else return(rheight+1);  
+        } 
+    } 
+    void printGivenLevel (Node root ,int level) 
+    { 
+        if (root == null) 
+            return; 
+        if (level == 1) 
+            System.out.print(root.value + " "); 
+        else if (level > 1) 
+        { 
+            printGivenLevel(root.left, level-1); 
+            printGivenLevel(root.right, level-1); 
+        } 
+    } 
 
 	public boolean isEmpty() {
 		return size == 0;
