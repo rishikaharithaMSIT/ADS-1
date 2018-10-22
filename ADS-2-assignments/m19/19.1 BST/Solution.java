@@ -1,6 +1,6 @@
 public class Solution {
 	public static void main(String[] args) {
-		Key k1 = new Key("zlgorithms", "Bob Sedgewick", "6000.0");
+		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
 		Key k2 = new Key("Python","eric","5000.0");
 		Key k3 = new Key("Hello", "Ajay", "8000.0");
 		BinaryST<Key, String> tree = new BinaryST<>();
@@ -14,6 +14,7 @@ public class Solution {
 		System.out.println();
 		Key min = tree.min();
 		System.out.println(min.author);
+		System.out.println(tree.get(k1));
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
@@ -56,6 +57,24 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			size++;
 			printLevelOrder();
 		}
+
+	}
+	public Value get(Key key) {
+		// if (isEmpty()) {
+			
+		// }
+		Node start = top;
+		while (start.left != null || start.right != null) {
+			if (key.compareTo(start.key) > 0) {
+				start = start.right;
+			} else if (key.compareTo(start.key) < 0) {
+				start = start.left;
+			}
+			else {
+				break;
+			}
+		}
+		return start.value;
 
 	}
 	//========================================to check op ==================
