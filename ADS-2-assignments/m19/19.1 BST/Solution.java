@@ -3,11 +3,11 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+public final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	Solution() {
+	private Solution() {
 		//unused
 	}
 	/**
@@ -48,7 +48,8 @@ class Solution {
 				System.out.println(bstobj.ceiling(newkey));
 				break;
 			case "select":
-				System.out.println(bstobj.select(Integer.parseInt(tokens[1])));
+				System.out.println(bstobj.select
+				                   (Integer.parseInt(tokens[1])));
 				break;
 			default:
 			}
