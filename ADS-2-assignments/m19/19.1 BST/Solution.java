@@ -9,6 +9,8 @@ public class Solution {
 		tree.put(k2,"3");
 		System.out.println();
 		tree.put(k3,"2");
+		Key m = tree.max();
+		System.out.println(m.author);
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
