@@ -75,35 +75,39 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			this.value = value;
 		}
 	}
-	public void put(Key key, Value value) {
-		Node newnode = new Node(key, value);
+	public void put(Key item, Value itemval) {
+		Node newnode = new Node(item, itemval);
 		if (isEmpty()) {
-			newnode.left = null;
-			newnode.right = null;
 			top = newnode;
 			size++;
-			//printLevelOrder();
-			
 			return;
 		}
-		Node start = top;
-		while (start.left != null || start.right != null) {
-			if (key.compareTo(start.key) > 0) {
-				start = start.right;
-			} else if (key.compareTo(start.key) <= 0) {
-				start = start.left;
+		Node test = top;
+		while (!(test.left == null && test.right == null)) {
+			if (item.compareTo(test.key) > 0) {
+				if (test.right == null) {
+					break;
+				}
+				test = test.right;
+			} else if (item.compareTo(test.key) < 0) {
+				if (test.left == null) {
+					break;
+				}
+				test = test.left;
+			} else {
+				test.value = newnode.value;
+				return;
 			}
 		}
-		if (key.compareTo(start.key) > 0) {
-			start.right = newnode;
+		if (item.compareTo(test.key) > 0) {
+			test.right = newnode;
 			size++;
-			//printLevelOrder();
-		} else if (key.compareTo(start.key) <= 0) {
-			start.left = newnode;
+		} else if (item.compareTo(test.key) < 0) {
+			test.left = newnode;
 			size++;
-			//printLevelOrder();
+		} else {
+			test.value = newnode.value;
 		}
-
 	}
 	public Value get(Key key) {
 		// if (isEmpty()) {
