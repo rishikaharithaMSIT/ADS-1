@@ -14,7 +14,8 @@ public class Solution {
 		System.out.println();
 		Key min = tree.min();
 		System.out.println(min.author);
-		System.out.println(tree.get(k1));
+		Key k4 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		System.out.println(tree.get(k4));
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
