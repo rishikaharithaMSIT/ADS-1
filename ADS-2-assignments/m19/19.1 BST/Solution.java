@@ -2,10 +2,13 @@ public class Solution {
 	public static void main(String[] args) {
 		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
 		Key k2 = new Key("Python","eric","5000");
+		Key k3 = new Key("Hello", "Ajay", "200.0");
 		BinaryST<Key, String> tree = new BinaryST<>();
 		tree.put(k1, "1");
 		System.out.println();
 		tree.put(k2,"2");
+		System.out.println();
+		tree.put(k3,"3");
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
