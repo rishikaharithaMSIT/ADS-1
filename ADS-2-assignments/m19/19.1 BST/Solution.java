@@ -145,6 +145,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 				if (start.right == null) {
 					start = start.right;
 				} else {
+					k = start.key;
 					break;
 				}
 			} else {
