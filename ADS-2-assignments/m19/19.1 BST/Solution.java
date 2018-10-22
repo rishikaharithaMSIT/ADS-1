@@ -32,7 +32,7 @@ public class Solution {
 					break;
 				case "get":
 					Key getKey = new Key(tokens[1],tokens[2],tokens[3]);
-					tree.get(getKey);
+					System.out.println(tree.get(getKey));
 					break;
 				case "max":
 					Key max = tree.max();
