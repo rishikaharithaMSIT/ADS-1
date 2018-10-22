@@ -14,7 +14,7 @@ public class Solution {
 		System.out.println();
 		Key min = tree.min();
 		System.out.println(min.author);
-		Key k4 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		Key k4 = new Key("Python","eric","5000.0");
 		System.out.println(tree.get(k4));
 	}
 }
