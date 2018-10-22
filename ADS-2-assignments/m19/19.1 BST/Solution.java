@@ -24,15 +24,14 @@ public final class Solution {
 			switch (tokens[0]) {
 			case "put":
 				Key newkey = new Key(tokens[1], tokens[2],
-				                     Float.parseFloat
-				                     (tokens[2 + 1]));
-				bstobj.put(newkey, Integer.parseInt
-				           (tokens[2 + 2]));
+				                     Float.parseFloat(
+				                         tokens[2 + 1]));
+				bstobj.put(newkey, Integer.parseInt(tokens[2 + 2]));
 				break;
 			case "get":
 				newkey = new Key(tokens[1], tokens[2],
-				                 Float.parseFloat
-				                 (tokens[2 + 1]));
+				                 Float.parseFloat(
+				                     tokens[2 + 1]));
 				System.out.println(bstobj.get(newkey));
 				break;
 			case "min":
@@ -43,20 +42,20 @@ public final class Solution {
 				break;
 			case "floor":
 				newkey = new Key(tokens[1], tokens[2],
-				                 Float.parseFloat
-				                 (tokens[2 + 1]));
+				                 Float.parseFloat(
+				                     tokens[2 + 1]));
 				System.out.println(bstobj.floor(newkey));
 				break;
 			case "ceiling":
 				newkey = new Key(tokens[1], tokens[2],
-				                 Float.parseFloat
-				                 (tokens[2 + 1]));
+				                 Float.parseFloat(
+				                     tokens[2 + 1]));
 				System.out.println(bstobj.ceiling(newkey));
 				break;
 			case "select":
 				System.out.println(bstobj.select
-				                   (Integer.parseInt
-				                    (tokens[1])));
+				                   (Integer.parseInt(
+				                        tokens[1])));
 				break;
 			default:
 			}
