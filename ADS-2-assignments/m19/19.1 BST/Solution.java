@@ -16,7 +16,7 @@ public class Solution {
 		Key min = tree.min();
 		System.out.println(min.author);
 		Key k5 = new Key("Qn", "eric", "5000.0");
-		System.out.println(tree.get(k5));
+		//System.out.println(tree.get(k5));
 		tree.put(k4, "2");
 		Key floor = tree.floor(k5);
 		System.out.println(floor.name);
