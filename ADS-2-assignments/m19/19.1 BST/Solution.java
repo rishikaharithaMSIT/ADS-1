@@ -54,7 +54,7 @@ public class Solution {
 					break;
 				case "select":
 					int kth = Integer.parseInt(tokens[1]);
-					Key sel = tree.select(kth+1);
+					Key sel = tree.select(kth-1);
 					System.out.println(sel.name +", "+sel.author+", "+sel.price);
 					break;
 				default:
