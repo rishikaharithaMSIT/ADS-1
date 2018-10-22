@@ -3,6 +3,7 @@ public class Solution {
 		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
 		Key k2 = new Key("Python","eric","5000.0");
 		Key k3 = new Key("Hello", "Ajay", "8000.0");
+		Key k4 = new Key("IT","Viswas","400.0");
 		BinaryST<Key, String> tree = new BinaryST<>();
 		tree.put(k1, "1");
 		System.out.println();
@@ -14,8 +15,11 @@ public class Solution {
 		System.out.println();
 		Key min = tree.min();
 		System.out.println(min.author);
-		Key k4 = new Key("Python","eric","5000.0");
-		System.out.println(tree.get(k4));
+		Key k5 = new Key("Python","eric","5000.0");
+		System.out.println(tree.get(k5));
+		tree.put(k4,"2");
+		Key floor = tree.floor(k1);
+		System.out.println(floor.name);
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
@@ -133,6 +137,20 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     	}
     	return start.key;
 
+    }
+    public Key floor(Key key){
+    	Node start = top;
+		while (start.left != null || start.right != null) {
+			if (key.compareTo(start.key) > 0) {
+				start = start.right;
+			} else if (key.compareTo(start.key) < 0) {
+				start = start.left;
+			}
+			else {
+				break;
+			}
+		}
+		return start.left.key;
     }
 	public boolean isEmpty() {
 		return size == 0;
