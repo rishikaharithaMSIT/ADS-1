@@ -1,25 +1,65 @@
+import java.util.Scanner;
 public class Solution {
 	public static void main(String[] args) {
-		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
-		Key k2 = new Key("Python", "eric", "5000.0");
-		Key k3 = new Key("Hello", "Ajay", "8000.0");
-		Key k4 = new Key("IT", "Viswas", "400.0");
+		// Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
+		// Key k2 = new Key("Python", "eric", "5000.0");
+		// Key k3 = new Key("Hello", "Ajay", "8000.0");
+		// Key k4 = new Key("IT", "Viswas", "400.0");
+		// BinaryST<Key, String> tree = new BinaryST<>();
+		// tree.put(k1, "1");
+		// System.out.println();
+		// tree.put(k2, "3");
+		// System.out.println();
+		// tree.put(k3, "2");
+		// Key m = tree.max();
+		// System.out.println(m.author);
+		// System.out.println();
+		// Key min = tree.min();
+		// System.out.println(min.author);
+		// Key k5 = new Key("Algorithms", "eric", "5000.0");
+		// //System.out.println(tree.get(k5));
+		// tree.put(k4, "2");
+		// Key floor = tree.floor(k5);
+		// System.out.println(floor.name);
+		Scanner scan = new Scanner(System.in);
 		BinaryST<Key, String> tree = new BinaryST<>();
-		tree.put(k1, "1");
-		System.out.println();
-		tree.put(k2, "3");
-		System.out.println();
-		tree.put(k3, "2");
-		Key m = tree.max();
-		System.out.println(m.author);
-		System.out.println();
-		Key min = tree.min();
-		System.out.println(min.author);
-		Key k5 = new Key("Algorithms", "eric", "5000.0");
-		//System.out.println(tree.get(k5));
-		tree.put(k4, "2");
-		Key floor = tree.floor(k5);
-		System.out.println(floor.name);
+		while(scan.hasNext()) {
+			String[] tokens = scan.nextLine().split(",");
+			switch(tokens[0]) {
+				case "put":
+					Key k1 = new Key(tokens[1],tokens[2],tokens[3]);
+					tree.put(k1,tokens[4]);
+					break;
+				case "get":
+					Key getKey = new Key(tokens[1],tokens[2],tokens[3]);
+					tree.get(getKey);
+					break;
+				case "max":
+					Key max = tree.max();
+					System.out.println(max.name +", "+max.author+", "+max.price);
+					break;
+				case "min":
+					Key min = tree.min();
+					System.out.println(min.name +", "+min.author+", "+min.price);
+					break;
+				case "floor":
+					Key floorKey = new Key(tokens[1],tokens[2],tokens[3]);
+					Key floor = tree.floor(floorKey);
+					System.out.println(floor.name +", "+floor.author+", "+floor.price);
+					break;
+				case "ceiling":
+					Key ceilKey = new Key(tokens[1],tokens[2],tokens[3]);
+					Key ceil = tree.floor(ceilKey);
+					System.out.println(ceil.name +", "+ceil.author+", "+ceil.price);
+					break;
+				case "select":
+					int kth = Integer.parseInt(tokens[1]);
+					Key sel = tree.select(kth);
+					System.out.println(sel.name +", "+sel.author+", "+sel.price);
+					break;
+				default:
+			}
+		}
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
