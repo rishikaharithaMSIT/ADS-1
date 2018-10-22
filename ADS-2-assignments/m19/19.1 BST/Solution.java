@@ -11,6 +11,9 @@ public class Solution {
 		tree.put(k3,"2");
 		Key m = tree.max();
 		System.out.println(m.author);
+		System.out.println();
+		Key min = tree.min();
+		System.out.println(min.author);
 	}
 }
 class BinaryST<Key extends Comparable<Key>, Value> {
@@ -102,6 +105,14 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     		start = start.right;
     	}
     	return start.key;
+    }
+    public Key min(){
+    	Node start = top;
+    	while(start.left != null) {
+    		start = start.left;
+    	}
+    	return start.key;
+
     }
 	public boolean isEmpty() {
 		return size == 0;
