@@ -53,6 +53,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 
 	}
+	//========================================to check op ==================
 	void printLevelOrder() 
     { 
         int h = height(top); 
@@ -92,7 +93,14 @@ class BinaryST<Key extends Comparable<Key>, Value> {
             printGivenLevel(root.right, level-1); 
         } 
     } 
-
+    //========================================to check op ==================
+    public Key max() {
+    	Node start = top;
+    	while(start.right != null) {
+    		start = start.right;
+    	}
+    	return start.key;
+    }
 	public boolean isEmpty() {
 		return size == 0;
 	}
