@@ -135,7 +135,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	public Key floor(Key key) {
 		Key maxSmall = null;
 		Node start = top;
-		if((key.compareTo(start.key) <= 0 &&start.left != null)&& key.compareTo(start.left.key) < 0 ) {
+		if((key.compareTo(start.key) <= 0 &&start.left != null)) {
 			maxSmall = start.left.key;
 		}
 		else {
