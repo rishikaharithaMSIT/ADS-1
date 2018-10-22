@@ -150,7 +150,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 				break;
 			}
 		}
-		return start.left.key;
+		return start.key;
     }
 	public boolean isEmpty() {
 		return size == 0;
