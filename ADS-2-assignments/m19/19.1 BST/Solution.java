@@ -143,11 +143,11 @@ class BinaryST<Key extends Comparable<Key>, Value> {
     	Key k = top.key;
 		while (start.left != null || start.right != null) {
 			if (key.compareTo(start.key) > 0) {
-				start = start.right;
 				k = start.key;
+				start = start.right;				
 			} else if (key.compareTo(start.key) < 0) {
-				start = start.left;
 				k = start.key;
+				start = start.left;				
 			}
 			else {
 				return start.key;
