@@ -65,7 +65,6 @@ public class Solution {
 class BinaryST<Key extends Comparable<Key>, Value> {
 	Node top;
 	int size;
-	Key kthLarge;
 	class Node {
 		Node left;
 		Node right;
@@ -84,6 +83,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			top = newnode;
 			size++;
 			//printLevelOrder();
+			
 			return;
 		}
 		Node start = top;
@@ -211,43 +211,41 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 		return test.key;
 	}
-	public class count { 
-        int c = 0; 
-    } 
-  
-    // utility function to find kth largest no in  
-    // a given tree 
-    void kthLargestUtil(Node node, int k, count C) 
-    { 
-        // Base cases, the second condition is important to 
-        // avoid unnecessary recursive calls 
-        if (node == null || C.c >= k) 
-            return; 
-          
-        // Follow reverse inorder traversal so that the 
-        // largest element is visited first 
-        this.kthLargestUtil(node.right, k, C);  
-          
-        // Increment count of visited nodes 
-        C.c++; 
-          
-        // If c becomes k now, then this is the k'th largest  
-        if (C.c == k) { 
-            kthLarge = node.key; 
-            return; 
-        } 
-          
-        // Recur for left subtree 
-        this.kthLargestUtil(node.left, k, C);  
-    } 
-  
-    // Method to find the kth largest no in given BST 
-    Key select(int k) 
-    { 
-        count c = new count(); // object of class count 
-        this.kthLargestUtil(this.top, k, c);
-        return kthLarge; 
-    } 
+	public Key select(int val) {
+		int count = 0;
+		int index = 0;
+		Key[] keyarr = (Key[])new Comparable[100];
+		Node test = top;
+		Node temp = null;
+		while (count != val + 1) {
+			if (test.left == null) {
+				++count;
+				if (count == val + 1) {
+					return test.key;
+				}
+				if (index != 0) {
+					int req = val + 1 - count;
+					if (req <= index) {
+						return keyarr[index - req];
+					}
+					index = 0;
+					test =  temp.right;
+				} else {
+					if (test.right == null) {
+						break;
+					}
+					test = test.right;
+				}
+			} else {
+				if (index == 0) {
+					temp = test;
+				}
+				keyarr[index++] = test.key;
+				test = test.left;
+			}
+		}
+		return test.key;
+	}
 	public boolean isEmpty() {
 		return size == 0;
 	}
