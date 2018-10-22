@@ -35,7 +35,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			return;
 		}
 		Node start = top;
-		while (start.left != null && start.right != null) {
+		while (start.left != null || start.right != null) {
 			if (key.compareTo(start.key) > 0) {
 				start = start.right;
 			} else if (key.compareTo(start.key) <= 0) {
