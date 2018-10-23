@@ -30,8 +30,12 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:44:34: Parameter value should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:59:61: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:62:61: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:68:65: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:73:63: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:68: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:68:68: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:68:69: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:68:95: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:73: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:73:94: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:81:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:93:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:93:26: Parameter node should be final. [FinalParameters]
@@ -56,4 +60,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:138:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:138:30: Parameter other should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 56 errors.
+Checkstyle ends with 60 errors.
