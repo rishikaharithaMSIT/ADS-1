@@ -5,13 +5,13 @@ public class Solution {
 		Key k3 = new Key("Hello", "Ajay", "8000.0");
 		Key k4 = new Key("IT", "Viswas", "400.0");
 		BinaryST<Key, String> tree = new BinaryST<>();
-		tree.put(k1, "1");
+		tree.put(k1, "Algorithms");
 		System.out.println();
-		tree.put(k2, "3");
+		tree.put(k2, "Python");
 		System.out.println();
-		tree.put(k3, "2");
+		tree.put(k3, "Hello");
 		System.out.println();
-		tree.put(k4, "5");
+		tree.put(k4, "IT");
 		// Key m = tree.max();
 		// System.out.println(m.author);
 		// System.out.println();
@@ -87,7 +87,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 	}
 	public int count(Node node) {
-		if (node == null) return 1;
+		if (node == null) return 0;
 		return node.count;
 		// int c = 0;
 		// Node start = node;
@@ -123,9 +123,9 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	//+++++++++++++print+++++++++++++++
 }
 class Key implements Comparable<Key> {
-	String name;
-	String author;
-	double price;
+	public String name;
+	public String author;
+	public double price;
 	Key(String name, String author, String price) {
 		this.name = name;
 		this.author = author;

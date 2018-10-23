@@ -9,10 +9,10 @@ IT, Viswas, 400.0
 null
 null
 Your Output: 
-- 1 1 -
-- 1 2 -- 3 1 -
-- 1 3 -- 2 0 -- 3 2 -
-- 1 4 -- 2 0 -- 5 0 -- 3 3 -
+- Algorithms 1 -
+- Algorithms 2 -- Python 1 -
+- Algorithms 3 -- Hello 0 -- Python 2 -
+- Algorithms 4 -- Hello 0 -- IT 0 -- Python 3 -
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -29,10 +29,10 @@ Mental, Robert, 1800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-- 1 1 -
-- 1 2 -- 3 1 -
-- 1 3 -- 2 0 -- 3 2 -
-- 1 4 -- 2 0 -- 5 0 -- 3 3 -
+- Algorithms 1 -
+- Algorithms 2 -- Python 1 -
+- Algorithms 3 -- Hello 0 -- Python 2 -
+- Algorithms 4 -- Hello 0 -- IT 0 -- Python 3 -
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -48,8 +48,8 @@ TheBook, Joy, 24000.0
 Street, Kiran, 800.0
 null
 Your Output: 
-- 1 1 -
-- 1 2 -- 3 1 -
-- 1 3 -- 2 0 -- 3 2 -
-- 1 4 -- 2 0 -- 5 0 -- 3 3 -
+- Algorithms 1 -
+- Algorithms 2 -- Python 1 -
+- Algorithms 3 -- Hello 0 -- Python 2 -
+- Algorithms 4 -- Hello 0 -- IT 0 -- Python 3 -
 ----------------------------------------
