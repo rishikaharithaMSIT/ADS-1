@@ -9,10 +9,10 @@ IT, Viswas, 400.0
 null
 null
 Your Output: 
-- Algorithms 0 -
-- Algorithms 0 -- Python 0 -
-- Algorithms 0 -- Hello 0 -- Python 0 -
-- Algorithms 0 -- Hello 0 -- IT 0 -- Python 0 -
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.printInorder(Solution.java:130)
+	at BinaryST.put(Solution.java:51)
+	at Solution.main(Solution.java:8)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -29,10 +29,10 @@ Mental, Robert, 1800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-- Algorithms 0 -
-- Algorithms 0 -- Python 0 -
-- Algorithms 0 -- Hello 0 -- Python 0 -
-- Algorithms 0 -- Hello 0 -- IT 0 -- Python 0 -
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.printInorder(Solution.java:130)
+	at BinaryST.put(Solution.java:51)
+	at Solution.main(Solution.java:8)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -48,8 +48,8 @@ TheBook, Joy, 24000.0
 Street, Kiran, 800.0
 null
 Your Output: 
-- Algorithms 0 -
-- Algorithms 0 -- Python 0 -
-- Algorithms 0 -- Hello 0 -- Python 0 -
-- Algorithms 0 -- Hello 0 -- IT 0 -- Python 0 -
+Exception in thread "main" java.lang.NullPointerException
+	at BinaryST.printInorder(Solution.java:130)
+	at BinaryST.put(Solution.java:51)
+	at Solution.main(Solution.java:8)
 ----------------------------------------
