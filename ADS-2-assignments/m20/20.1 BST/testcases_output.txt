@@ -9,22 +9,16 @@ IT, Viswas, 400.0
 null
 null
 Your Output: 
-- right :null + BinaryST$Node@4b6995df - 1 + null -
+Algorithms - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@2fc14f68 - 1 + null -
+Python - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 1 + null -
+Hello - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + BinaryST$Node@66048bfd -
-- right :null + BinaryST$Node@66048bfd - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+IT - 1
 --------
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -42,22 +36,16 @@ Mental, Robert, 1800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-- right :null + BinaryST$Node@4b6995df - 1 + null -
+Algorithms - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@2fc14f68 - 1 + null -
+Python - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 1 + null -
+Hello - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + BinaryST$Node@66048bfd -
-- right :null + BinaryST$Node@66048bfd - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+IT - 1
 --------
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -74,21 +62,15 @@ TheBook, Joy, 24000.0
 Street, Kiran, 800.0
 null
 Your Output: 
-- right :null + BinaryST$Node@4b6995df - 1 + null -
+Algorithms - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@2fc14f68 - 1 + null -
+Python - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 1 + null -
+Hello - 1
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + BinaryST$Node@66048bfd -
-- right :null + BinaryST$Node@66048bfd - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+IT - 1
 --------
 ----------------------------------------
