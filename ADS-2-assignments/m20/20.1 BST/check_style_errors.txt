@@ -28,7 +28,7 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:44:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:44:25: Parameter key should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:44:34: Parameter value should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:58: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:58: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:80: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:85: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:92: Line has trailing spaces. [RegexpSingleline]
