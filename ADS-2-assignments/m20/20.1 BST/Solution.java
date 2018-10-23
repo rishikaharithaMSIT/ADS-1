@@ -76,6 +76,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			printInorder(top);
 			System.out.println("--------");
 		}
+		top.count = count(top.right) + count(top.left) + 1;
 
 	}
 		// if (key.compareTo(start.key) > 0) {
