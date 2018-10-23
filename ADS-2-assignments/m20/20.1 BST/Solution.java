@@ -132,11 +132,12 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		printInorder(node.left);
 
 		/* then print the data of node */
-		node.count = count(node);
+		
 		System.out.print("- " + node.value + " " + node.count + " -");
 
 		/* now recur on right child */
 		printInorder(node.right);
+		node.count = count(node);
 	}
 	//+++++++++++++print+++++++++++++++
 }
