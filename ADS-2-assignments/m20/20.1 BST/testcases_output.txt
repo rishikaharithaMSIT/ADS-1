@@ -12,7 +12,7 @@ Your Output:
 - Algorithms 1 -
 - Algorithms 1 -- Python 1 -
 - Algorithms 2 -- Hello 1 -- Python 1 -
-- Algorithms 3 -- Hello 1 -- IT 1 -- Python 2 -
+- Algorithms 2 -- Hello 1 -- IT 1 -- Python 2 -
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -32,7 +32,7 @@ Your Output:
 - Algorithms 1 -
 - Algorithms 1 -- Python 1 -
 - Algorithms 2 -- Hello 1 -- Python 1 -
-- Algorithms 3 -- Hello 1 -- IT 1 -- Python 2 -
+- Algorithms 2 -- Hello 1 -- IT 1 -- Python 2 -
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -51,5 +51,5 @@ Your Output:
 - Algorithms 1 -
 - Algorithms 1 -- Python 1 -
 - Algorithms 2 -- Hello 1 -- Python 1 -
-- Algorithms 3 -- Hello 1 -- IT 1 -- Python 2 -
+- Algorithms 2 -- Hello 1 -- IT 1 -- Python 2 -
 ----------------------------------------

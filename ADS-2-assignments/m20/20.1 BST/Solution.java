@@ -56,10 +56,10 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		while (start.left != null || start.right != null) {
 
 			if (key.compareTo(start.key) > 0) {
-				start.count = count(start) +1;
+				start.count = count(start.left) + count(start.right) +1;
 				start = start.right;
 			} else if (key.compareTo(start.key) <= 0) {
-				start.count = count(start) +1;
+				start.count = count(start.left) + count(start.right) +1;
 				start = start.left;
 			}
 		}
