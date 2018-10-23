@@ -63,11 +63,13 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			}
 		}
 		if (key.compareTo(start.key) > 0) {
-			start.right = newnode;
+			start = start.right;
+			start = newnode;
 			size++;
 
 		} else if (key.compareTo(start.key) <= 0) {
-			start.left = newnode;
+			start = start.left;
+			start = newnode;
 			size++;
 		}
 		start.count = count(start.left) + count(start.right) + 1;
