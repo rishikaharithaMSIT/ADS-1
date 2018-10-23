@@ -10,9 +10,9 @@ null
 null
 Your Output: 
 - Algorithms 1 -
-- Algorithms 2 -- Python 1 -
-- Algorithms 3 -- Hello 0 -- Python 2 -
-- Algorithms 4 -- Hello 0 -- IT 0 -- Python 3 -
+- Algorithms 1 -- Python 0 -
+- Algorithms 2 -- Hello 0 -- Python 0 -
+- Algorithms 3 -- Hello 0 -- IT 0 -- Python 1 -
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -30,9 +30,9 @@ IT, Viswas, 400.0
 2
 Your Output: 
 - Algorithms 1 -
-- Algorithms 2 -- Python 1 -
-- Algorithms 3 -- Hello 0 -- Python 2 -
-- Algorithms 4 -- Hello 0 -- IT 0 -- Python 3 -
+- Algorithms 1 -- Python 0 -
+- Algorithms 2 -- Hello 0 -- Python 0 -
+- Algorithms 3 -- Hello 0 -- IT 0 -- Python 1 -
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -49,7 +49,7 @@ Street, Kiran, 800.0
 null
 Your Output: 
 - Algorithms 1 -
-- Algorithms 2 -- Python 1 -
-- Algorithms 3 -- Hello 0 -- Python 2 -
-- Algorithms 4 -- Hello 0 -- IT 0 -- Python 3 -
+- Algorithms 1 -- Python 0 -
+- Algorithms 2 -- Hello 0 -- Python 0 -
+- Algorithms 3 -- Hello 0 -- IT 0 -- Python 1 -
 ----------------------------------------
