@@ -69,8 +69,23 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		}
 
 	}
-	public int count(Node start) {
-		return 0;
+	public int count(Node node) {
+		int c = 0;
+		Node start = node;
+		while(start.left != null) {
+			if(start.left != null) {
+				start = start.left;
+				c++;
+			}
+		}
+		start = node;
+		while(start.right != null) {
+			if(start.right != null) {
+				start = start.right;
+				c++;
+			}
+		}
+		return c;
 	}
 	//+++++++++++++print+++++++++++++++
 	void printInorder(Node node) 
@@ -82,7 +97,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         printInorder(node.left); 
   
         /* then print the data of node */
-        System.out.print(node.value + " "); 
+        System.out.print("- " +node.value + " " +node.count +" -"); 
   
         /* now recur on right child */
         printInorder(node.right); 
