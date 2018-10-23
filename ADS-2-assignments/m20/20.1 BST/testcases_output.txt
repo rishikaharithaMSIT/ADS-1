@@ -12,19 +12,19 @@ Your Output:
 - right :null + BinaryST$Node@4b6995df - 1 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@2fc14f68 - 1 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@2fc14f68 - 0 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@591f989e - 0 + null -
+- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 0 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 3 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 2 + BinaryST$Node@66048bfd -
-- right :null + BinaryST$Node@66048bfd - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@591f989e - 0 + BinaryST$Node@66048bfd -
+- right :null + BinaryST$Node@66048bfd - 0 + null -
+- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 1 + null -
 --------
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -45,19 +45,19 @@ Your Output:
 - right :null + BinaryST$Node@4b6995df - 1 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@2fc14f68 - 1 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@2fc14f68 - 0 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@591f989e - 0 + null -
+- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 0 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 3 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 2 + BinaryST$Node@66048bfd -
-- right :null + BinaryST$Node@66048bfd - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@591f989e - 0 + BinaryST$Node@66048bfd -
+- right :null + BinaryST$Node@66048bfd - 0 + null -
+- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 1 + null -
 --------
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -77,18 +77,18 @@ Your Output:
 - right :null + BinaryST$Node@4b6995df - 1 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@2fc14f68 - 1 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@2fc14f68 - 0 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 2 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@591f989e - 0 + null -
+- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 0 + null -
 --------
 
-- right :null + BinaryST$Node@4b6995df - 3 + BinaryST$Node@2fc14f68 -
-- right :null + BinaryST$Node@591f989e - 2 + BinaryST$Node@66048bfd -
-- right :null + BinaryST$Node@66048bfd - 1 + null -
-- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 2 + null -
+- right :null + BinaryST$Node@4b6995df - 1 + BinaryST$Node@2fc14f68 -
+- right :null + BinaryST$Node@591f989e - 0 + BinaryST$Node@66048bfd -
+- right :null + BinaryST$Node@66048bfd - 0 + null -
+- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 - 1 + null -
 --------
 ----------------------------------------

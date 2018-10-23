@@ -49,7 +49,6 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			newnode.count = 1;
 			top = newnode;
 			size++;
-			//System.out.println(top.value + " - " + top.count);
 			printInorder(top);
 			System.out.println("--------");
 			return;
@@ -64,24 +63,16 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			}
 		}
 		if (key.compareTo(start.key) > 0) {
-
 			start.right = newnode;
-			start.right.count = count(start.left) + count(start.right) + 1;
-			start.count = count(start.left) + count(start.right) + 1;
 			size++;
 			printInorder(top);
-			//System.out.println(start.right.value + " - " + start.right.count +  " - "+start.count);
 			System.out.println("--------");
 		} else if (key.compareTo(start.key) <= 0) {
 			start.left = newnode;
-			start.left.count = count(start.left) + count(start.right) + 1;
-			start.count = count(start.left) + count(start.right) + 1;
 			size++;
 			printInorder(top);
-			//System.out.println(start.left.value + " - " + start.left.count);
 			System.out.println("--------");
 		}
-		top.count = count(top.right) + count(top.left) + 1;
 
 	}
 		// if (key.compareTo(start.key) > 0) {
