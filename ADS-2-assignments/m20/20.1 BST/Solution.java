@@ -55,22 +55,20 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		Node start = top;
 		while (true) {
 			if (key.compareTo(start.key) > 0) {
-				start.count = count(start.left) + count(start.right) + 1;
+				//start.count = count(start.left) + count(start.right) + 1;
 				if (start.right == null) {
 					start.right = newnode;					
-					start.right.count = count(start.right.left) + count(start.right.right) + 1;
-					start.count = count(start.left) + count(start.right) + 1;
+					//start.right.count = count(start.right.left) + count(start.right.right) + 1;
 					size++;
 					printInorder(top);
 					return;
 				}
 				start = start.right;
 			} else if (key.compareTo(start.key) <= 0) {
-				start.count = count(start.left) + count(start.right) + 1;
+				//start.count = count(start.left) + count(start.right) + 1;
 				if (start.left == null) {
 					start.left = newnode;
-					start.left.count = count(start.left.left) + count(start.left.right) + 1;
-					start.count = count(start.left) + count(start.right) + 1;
+					//start.left.count = count(start.left.left) + count(start.left.right) + 1;
 					size++;
 					printInorder(top);
 					return;
@@ -134,6 +132,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		printInorder(node.left);
 
 		/* then print the data of node */
+		node.count = count(node);
 		System.out.print("- " + node.value + " " + node.count + " -");
 
 		/* now recur on right child */
