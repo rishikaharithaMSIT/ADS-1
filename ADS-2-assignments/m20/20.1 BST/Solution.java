@@ -74,7 +74,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			size++;
 
 		}
-		//count();
+		count();
 		printInorder(top);
 
 	}
