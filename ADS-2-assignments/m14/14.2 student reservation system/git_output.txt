@@ -1,0 +1,7 @@
+[master d460c9d] "ads1_m14_a2: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 93 insertions(+), 24 deletions(-)
+ rewrite ADS-2-assignments/m14/14.2 student reservation system/check_style_errors.txt (98%)
+ rewrite ADS-2-assignments/m14/14.2 student reservation system/result/score.json (76%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/rishikaharithaMSIT/ADS-1.git
+   5db481c..d460c9d  master -> master

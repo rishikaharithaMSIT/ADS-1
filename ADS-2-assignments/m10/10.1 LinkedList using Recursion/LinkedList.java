@@ -10,7 +10,7 @@ class LinkedList {
 	/**
 	 * Class for node.
 	 */
-	class Node {		
+	class Node {
 		Node next;
 		int data;
 		Node(int data) {
@@ -57,7 +57,7 @@ class LinkedList {
 	 *Time Complexity :
 	 * Best : O(1)
 	 * Worst : O(N)
-	 * Average : O(N) 
+	 * Average : O(N)
 	 *
 	 * @throws     Exception  { exception_description }
 	 */

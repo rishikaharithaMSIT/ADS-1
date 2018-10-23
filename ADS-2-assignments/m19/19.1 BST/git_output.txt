@@ -1,0 +1,7 @@
+[master f66a944] "ads1_m19_a1: 3/3 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 68 insertions(+), 72 deletions(-)
+ rewrite ADS-2-assignments/m19/19.1 BST/Solution.java (94%)
+ rewrite ADS-2-assignments/m19/19.1 BST/check_style_errors.txt (95%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/rishikaharithaMSIT/ADS-1.git
+   47fa75d..f66a944  master -> master

@@ -1,0 +1,45 @@
+warning: LF will be replaced by CRLF in ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/problem_id.txt.
+The file will have its original line endings in your working directory.
+[master 18ad6e3] "ads1_m14_a1: 2/4 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 38 files changed, 625592 insertions(+)
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/IndexMaxPQ$HeapIterator.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/IndexMaxPQ.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/IndexMinPQ$HeapIterator.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/IndexMinPQ.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MaxHeap.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MaxPQ$HeapIterator.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MaxPQ.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MaxPQ.java
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MinHeap.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MinHeap.java
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MinPQ$HeapIterator.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/MinPQ.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/Solution.class
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/Solution.java
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/check_style_errors.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/git_output.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/input000.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/input001.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/input002.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/input003.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/output000.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/output001.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/output002.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/output003.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/problem_id.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/md5/score.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/readme.docx
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/result/score.json
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/input000.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/input001.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/input002.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/input003.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/output000.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/output001.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/output002.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/output003.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases/problem_id.txt
+ create mode 100644 ADS-2-assignments/m14/14.1 Dynamic Median Finding - Copy/testcases_output.txt
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/rishikaharithaMSIT/ADS-1.git
+   8c2f713..18ad6e3  master -> master

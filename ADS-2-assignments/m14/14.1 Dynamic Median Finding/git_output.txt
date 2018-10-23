@@ -1,0 +1,8 @@
+[master f5f80ac] "ads1_m14_a1: 4/4 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 267 insertions(+), 282 deletions(-)
+ rewrite ADS-2-assignments/m14/14.1 Dynamic Median Finding/Solution.java (90%)
+ rewrite ADS-2-assignments/m14/14.1 Dynamic Median Finding/check_style_errors.txt (98%)
+ rewrite ADS-2-assignments/m14/14.1 Dynamic Median Finding/result/score.json (70%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/rishikaharithaMSIT/ADS-1.git
+   5fa663a..f5f80ac  master -> master
