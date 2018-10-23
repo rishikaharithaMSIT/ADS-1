@@ -8,9 +8,5 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:615: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:620: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:625: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:698: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:720: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:725: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:775: Line is longer than 80 characters (found 125). [LineLength]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 9 errors.
