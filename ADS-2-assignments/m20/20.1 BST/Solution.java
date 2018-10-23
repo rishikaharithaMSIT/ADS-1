@@ -2,7 +2,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Key k1 = new Key("Algorithms", "Bob Sedgewick", "6000.0");
 		Key k2 = new Key("Python", "eric", "5000.0");
-		Key k3 = new Key("Zello", "Ajay", "8000.0");
+		Key k3 = new Key("Hello", "Ajay", "8000.0");
 		Key k4 = new Key("IT", "Viswas", "400.0");
 		BinaryST<Key, String> tree = new BinaryST<>();
 		tree.put(k1, "1");
