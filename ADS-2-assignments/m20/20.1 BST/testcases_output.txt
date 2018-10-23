@@ -9,10 +9,10 @@ IT, Viswas, 400.0
 null
 null
 Your Output: 
-- right :null + Key@4b6995df 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@591f989e 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@66048bfd 0 + null -- right :BinaryST$Node@61443d8f + Key@591f989e 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@66048bfd 0 + BinaryST$Node@445b84c0 -- right :null + Key@61a52fbd 0 + null -- right :BinaryST$Node@61443d8f + Key@591f989e 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@2fc14f68 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@591f989e 0 + null -- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@591f989e 0 + BinaryST$Node@66048bfd -- right :null + BinaryST$Node@66048bfd 0 + null -- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 0 + null -
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -29,10 +29,10 @@ Mental, Robert, 1800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-- right :null + Key@4b6995df 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@591f989e 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@66048bfd 0 + null -- right :BinaryST$Node@61443d8f + Key@591f989e 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@66048bfd 0 + BinaryST$Node@445b84c0 -- right :null + Key@61a52fbd 0 + null -- right :BinaryST$Node@61443d8f + Key@591f989e 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@2fc14f68 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@591f989e 0 + null -- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@591f989e 0 + BinaryST$Node@66048bfd -- right :null + BinaryST$Node@66048bfd 0 + null -- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 0 + null -
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -48,8 +48,8 @@ TheBook, Joy, 24000.0
 Street, Kiran, 800.0
 null
 Your Output: 
-- right :null + Key@4b6995df 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@591f989e 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@66048bfd 0 + null -- right :BinaryST$Node@61443d8f + Key@591f989e 0 + null -
-- right :null + Key@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + Key@66048bfd 0 + BinaryST$Node@445b84c0 -- right :null + Key@61a52fbd 0 + null -- right :BinaryST$Node@61443d8f + Key@591f989e 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@2fc14f68 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@591f989e 0 + null -- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 0 + null -
+- right :null + BinaryST$Node@4b6995df 0 + BinaryST$Node@2fc14f68 -- right :null + BinaryST$Node@591f989e 0 + BinaryST$Node@66048bfd -- right :null + BinaryST$Node@66048bfd 0 + null -- right :BinaryST$Node@591f989e + BinaryST$Node@2fc14f68 0 + null -
 ----------------------------------------
