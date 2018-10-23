@@ -82,7 +82,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
         printInorder(node.left); 
   
         /* then print the data of node */
-        System.out.print(node.key + " "); 
+        System.out.print(node.value + " "); 
   
         /* now recur on right child */
         printInorder(node.right); 

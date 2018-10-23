@@ -9,9 +9,9 @@ IT, Viswas, 400.0
 null
 null
 Your Output: 
-Key@12bc6874 
-Key@12bc6874 Key@de0a01f 
-Key@12bc6874 Key@4c75cab9 Key@de0a01f
+1 
+1 3 
+1 2 3
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -28,9 +28,9 @@ Mental, Robert, 1800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-Key@12bc6874 
-Key@12bc6874 Key@de0a01f 
-Key@12bc6874 Key@4c75cab9 Key@de0a01f
+1 
+1 3 
+1 2 3
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -46,7 +46,7 @@ TheBook, Joy, 24000.0
 Street, Kiran, 800.0
 null
 Your Output: 
-Key@12bc6874 
-Key@12bc6874 Key@de0a01f 
-Key@12bc6874 Key@4c75cab9 Key@de0a01f
+1 
+1 3 
+1 2 3
 ----------------------------------------
