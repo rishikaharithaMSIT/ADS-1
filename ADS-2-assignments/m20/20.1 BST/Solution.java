@@ -597,7 +597,8 @@ final class Solution {
 				break;
 			case "get":
 				book = new Book(tokens[1], tokens[2],
-				                Float.parseFloat(tokens[2 + 1]));
+				                Float.parseFloat(
+				                    tokens[2 + 1]));
 				System.out.println(bst.get(book));
 				break;
 			case "max":
@@ -608,21 +609,25 @@ final class Solution {
 				break;
 			case "select":
 				System.out.println(bst.select(
-				                       Integer.parseInt(tokens[1])));
+				                       Integer.parseInt(
+				                           tokens[1])));
 				break;
 			case "floor":
 				book = new Book(tokens[1], tokens[2],
-				                Float.parseFloat(tokens[2 + 1]));
+				                Float.parseFloat(
+				                    tokens[2 + 1]));
 				System.out.println(bst.floor(book));
 				break;
 			case "ceiling":
 				book = new Book(tokens[1], tokens[2],
-				                Float.parseFloat(tokens[2 + 1]));
+				                Float.parseFloat(
+				                    tokens[2 + 1]));
 				System.out.println(bst.ceiling(book));
 				break;
 			case "delete":
 				book = new Book(tokens[1], tokens[2],
-				                Float.parseFloat(tokens[2 + 1]));
+				                Float.parseFloat(
+				                    tokens[2 + 1]));
 				bst.delete(book);
 				break;
 			case "deleteMin":
