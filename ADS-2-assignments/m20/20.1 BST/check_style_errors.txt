@@ -30,7 +30,9 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:44:34: Parameter value should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:59: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:69: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:72: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:72: Line is longer than 80 characters (found 111). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:72:98: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:72:99: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:76: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:79: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:87: Line is longer than 80 characters (found 96). [LineLength]
@@ -69,4 +71,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:158:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m20\20.1 BST\Solution.java:158:30: Parameter other should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 69 errors.
+Checkstyle ends with 71 errors.
