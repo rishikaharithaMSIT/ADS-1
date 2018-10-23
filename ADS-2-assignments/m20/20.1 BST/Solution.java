@@ -40,11 +40,11 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		return size == 0;
 	}
 	public void put(Key key, Value value) {
-		Node newnode = new Node(key,value);
-		if(isEmpty()){
+		Node newnode = new Node(key, value);
+		if (isEmpty()) {
 			newnode.left = null;
-			newnode.right = null;			
-			newnode.count = count(newnode);
+			newnode.right = null;
+			newnode.count = count(newnode) + 1;
 			top = newnode;
 			size++;
 			printInorder(top);
@@ -53,15 +53,15 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		Node start = top;
 		while (start.left != null || start.right != null) {
 			if (key.compareTo(start.key) > 0) {
-				start.count = count(start);
+				start.count = count(start) + 1;
 				start = start.right;
 			} else if (key.compareTo(start.key) <= 0) {
-				start.count = count(start);
+				start.count = count(start) + 1;
 				start = start.left;
 			}
 		}
-		if (key.compareTo(start.key) > 0) {			
-			start.right = newnode;			
+		if (key.compareTo(start.key) > 0) {
+			start.right = newnode;
 			size++;
 			printInorder(top);
 		} else if (key.compareTo(start.key) <= 0) {
@@ -74,15 +74,15 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	public int count(Node node) {
 		int c = 0;
 		Node start = node;
-		while(start.left != null) {
-			if(start.left != null) {
+		while (start.left != null) {
+			if (start.left != null) {
 				start = start.left;
 				c++;
 			}
 		}
 		start = node;
-		while(start.right != null) {
-			if(start.right != null) {
+		while (start.right != null) {
+			if (start.right != null) {
 				start = start.right;
 				c++;
 			}
@@ -90,20 +90,19 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		return c;
 	}
 	//+++++++++++++print+++++++++++++++
-	void printInorder(Node node) 
-    { 
-        if (node == null) 
-            return; 
-  
-        /* first recur on left child */
-        printInorder(node.left); 
-  
-        /* then print the data of node */
-        System.out.print("- " +node.value + " " +node.count +" -"); 
-  
-        /* now recur on right child */
-        printInorder(node.right); 
-    } 
+	void printInorder(Node node) {
+		if (node == null)
+			return;
+
+		/* first recur on left child */
+		printInorder(node.left);
+
+		/* then print the data of node */
+		System.out.print("- " + node.value + " " + node.count + " -");
+
+		/* now recur on right child */
+		printInorder(node.right);
+	}
 	//+++++++++++++print+++++++++++++++
 }
 class Key implements Comparable<Key> {
