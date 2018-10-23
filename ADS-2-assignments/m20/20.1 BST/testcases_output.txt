@@ -9,10 +9,10 @@ IT, Viswas, 400.0
 null
 null
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.printInorder(Solution.java:130)
-	at BinaryST.put(Solution.java:51)
-	at Solution.main(Solution.java:8)
+- right :null + Algorithms 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Python 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Hello 0 + null -- right :BinaryST$Node@2fc14f68 + Python 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Hello 0 + BinaryST$Node@591f989e -- right :null + IT 0 + null -- right :BinaryST$Node@2fc14f68 + Python 0 + null -
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -29,10 +29,10 @@ Mental, Robert, 1800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.printInorder(Solution.java:130)
-	at BinaryST.put(Solution.java:51)
-	at Solution.main(Solution.java:8)
+- right :null + Algorithms 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Python 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Hello 0 + null -- right :BinaryST$Node@2fc14f68 + Python 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Hello 0 + BinaryST$Node@591f989e -- right :null + IT 0 + null -- right :BinaryST$Node@2fc14f68 + Python 0 + null -
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -48,8 +48,8 @@ TheBook, Joy, 24000.0
 Street, Kiran, 800.0
 null
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BinaryST.printInorder(Solution.java:130)
-	at BinaryST.put(Solution.java:51)
-	at Solution.main(Solution.java:8)
+- right :null + Algorithms 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Python 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Hello 0 + null -- right :BinaryST$Node@2fc14f68 + Python 0 + null -
+- right :null + Algorithms 0 + BinaryST$Node@4b6995df -- right :null + Hello 0 + BinaryST$Node@591f989e -- right :null + IT 0 + null -- right :BinaryST$Node@2fc14f68 + Python 0 + null -
 ----------------------------------------
