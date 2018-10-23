@@ -59,6 +59,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 				if (start.right == null) {
 					start.right = newnode;					
 					start.right.count = count(start.right.left) + count(start.right.right) + 1;
+					start.count = count(start.left) + count(start.right) + 1;
 					size++;
 					printInorder(top);
 					return;
@@ -69,6 +70,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 				if (start.left == null) {
 					start.left = newnode;
 					start.left.count = count(start.left.left) + count(start.left.right) + 1;
+					start.count = count(start.left) + count(start.right) + 1;
 					size++;
 					printInorder(top);
 					return;
