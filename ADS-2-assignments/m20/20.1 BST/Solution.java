@@ -80,6 +80,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			start.count = count(start) + 1;
 			start = start.right;
 		}
+		start.count = count(start) + 1;
 		start = top.left;
 		while (start != null) {
 			start.count = count(start) + 1;
