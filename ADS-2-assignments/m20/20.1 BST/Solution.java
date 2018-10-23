@@ -77,12 +77,12 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	public void count() {
 		Node start = top;
 		while (start != null) {
-			start.count = count(start);
+			start.count = count(start) + 1;
 			start = start.right;
 		}
 		start = top;
 		while (start != null) {
-			start.count = count(start);
+			start.count = count(start) + 1;
 			start = start.left;
 		}
 	}
