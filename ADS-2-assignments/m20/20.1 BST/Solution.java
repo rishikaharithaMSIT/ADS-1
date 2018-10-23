@@ -63,7 +63,9 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 			}
 		}
 		if (key.compareTo(start.key) > 0) {
+
 			start.right = newnode;
+			start.right.count = count(start.left) + count(start.right) + 1;
 			size++;
 			printInorder(top);
 			System.out.println("--------");
@@ -132,7 +134,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 
 		/* then print the data of node */
 		node.count = count(node);
-		System.out.println("- right :"+node.left+" + " + node + " " + node.count +" + "+node.right+ " -");
+		System.out.println("- right :"+node.left+" + " + node + " - "  + node.count +" + "+node.right+ " -");
 
 		/* now recur on right child */
 		printInorder(node.right);
