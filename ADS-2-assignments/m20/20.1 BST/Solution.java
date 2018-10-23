@@ -36,6 +36,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		Node(Key data, Value value) {
 			this.key = data;
 			this.value = value;
+			this.count = 0;
 		}
 	}
 	public boolean isEmpty() {
@@ -77,12 +78,12 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	public void count() {
 		Node start = top;
 		while (start.right != null) {
-			start.count = count(start.left) + count(start.right) + 1;
+			start.count = count(start) + 1;
 			start = start.right;
 		}
 		start = top;
 		while (start.left != null) {
-			start.count = count(start.left) + count(start.right) + 1;
+			start.count = count(start) + 1;
 			start = start.left;
 		}
 	}
