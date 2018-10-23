@@ -46,7 +46,7 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 		if (isEmpty()) {
 			newnode.left = null;
 			newnode.right = null;
-			newnode.count = 0;
+			newnode.count = 1;
 			top = newnode;
 			size++;
 			printInorder(top);
@@ -77,12 +77,12 @@ class BinaryST<Key extends Comparable<Key>, Value> {
 	public void count() {
 		Node start = top;
 		while (start != null) {
-			start.count = count(start) + 1;
+			start.count = count(start);
 			start = start.right;
 		}
 		start = top;
 		while (start != null) {
-			start.count = count(start) + 1;
+			start.count = count(start);
 			start = start.left;
 		}
 	}
