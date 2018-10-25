@@ -157,8 +157,13 @@ public class Solution {
         String[] ransom = scan.nextLine().split(" ");
         
         for (int i = 0; i < ransom.length; i++) {
-            String key = ransom[i];            
-            st.put(key, 1);
+            String key = ransom[i];
+            if(st.contains(key)){
+                st.put(key, st.get(key)+1);
+            }else {
+                st.put(key, 1);
+            }            
+            
         }
         for (int i = 0; i < magzine.length; i++) {
             String key = magzine[i];
