@@ -1,95 +1,36 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-grand 2
-today 2
-give 2
-one 2
 Yes
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 No
 Your Output: 
-two 2
-four 2
-is 2
-times 2
 Yes
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No
 Your Output: 
 No
-some 1
-got 2
-ive 2
-coconuts 2
-Yes
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
 No
 Your Output: 
-x 2
-rkjq 3
-arq 3
-y 4
-fvjqx 4
-ieqym 3
-i 3
-q 4
-tidi 3
-su 3
-xb 4
-tv 4
-zmah 2
-wi 4
-z 3
-ptkq 5
-zl 4
-mnrvx 5
-dwuu 4
-tho 4
-gr 3
-qrd 4
-tvic 2
-ojckw 2
-bcco 4
-ujj 4
-nstms 2
-xe 3
-iv 2
-diz 3
-ty 2
-u 2
-e 3
-dnapw 3
-we 3
-fl 2
-rim 4
-w 2
-achkt 2
-zmqu 2
-ne 2
-yvrd 4
-ebixk 3
 Yes
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-ghq 2
-h 4
 Yes
 ----------------------------------------
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-aabza 20004
 Yes
 ----------------------------------------

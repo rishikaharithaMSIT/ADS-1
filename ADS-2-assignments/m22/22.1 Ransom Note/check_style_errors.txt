@@ -55,7 +55,6 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:167: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:168: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:173:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:175: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:183: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:184:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:185:5: Missing a Javadoc comment. [JavadocVariable]
@@ -134,4 +133,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:436: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:438: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 134 errors.
+Checkstyle ends with 133 errors.
