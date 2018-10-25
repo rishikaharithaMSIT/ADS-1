@@ -159,16 +159,16 @@ public class Solution {
         for (int i = 0; i < ransom.length; i++) {
             String key = ransom[i];
             if(st.contains(key)){
-                st.put(key, st.get(key)+1);
+                st.put(key, st.get(key));
             }else {
-                st.put(key, 1);
+                st.put(key, i);
             }            
             
         }
         for (int i = 0; i < magzine.length; i++) {
             String key = magzine[i];
             if(st.contains(key)){
-                st.put(key, st.get(key)+1);
+                st.put(key, st.get(key));
             }            
             
         }
