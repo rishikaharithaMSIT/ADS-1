@@ -175,7 +175,7 @@ public class Solution {
 
         // print keys
         for (String s : st.keys()) {
-            if(st.get(s) <= 0) {
+            if(st.get(s) > 0) {
                 System.out.println("No");
                 
             }
