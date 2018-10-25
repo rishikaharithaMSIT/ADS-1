@@ -153,17 +153,20 @@ public class Solution {
         SeparateChainingHashST<String, Integer> st = new SeparateChainingHashST<String, Integer>();
         Scanner scan = new Scanner(System.in);
         String[] sizes = scan.nextLine().split(" ");
-        String[] ransom = scan.nextLine().split(" ");
         String[] magzine = scan.nextLine().split(" ");
+        String[] ransom = scan.nextLine().split(" ");
         
         for (int i = 0; i < ransom.length; i++) {
             String key = ransom[i];            
-            st.put(key, i);
+            st.put(key, 1);
         }
-        // for (int i = 0; i < magzine.length; i++) {
-        //     String key = magzine[i];            
-        //     st.put(key, i);
-        // }
+        for (int i = 0; i < magzine.length; i++) {
+            String key = magzine[i];
+            if(st.contains(key)){
+                st.put(key, st.get(key)+1);
+            }            
+            
+        }
 
         // print keys
         for (String s : st.keys())
