@@ -177,9 +177,9 @@ public class Solution {
         for (String s : st.keys()) {
             if(st.get(s) % 2 != 0) {
                 System.out.println("No");
-                return;
+                //return;
             }
-            //System.out.println(s + " " + st.get(s));
+            System.out.println(s + " " + st.get(s));
         }
         System.out.println("Yes");
 
