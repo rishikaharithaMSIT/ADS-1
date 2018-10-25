@@ -155,16 +155,15 @@ public class Solution {
         String[] sizes = scan.nextLine().split(" ");
         String[] ransom = scan.nextLine().split(" ");
         String[] magzine = scan.nextLine().split(" ");
-        System.out.println(Arrays.toString(ransom));
-        System.out.println(Arrays.toString(magzine));
-        // for (int i = 0; !StdIn.isEmpty(); i++) {
-        //     String key = StdIn.readString();
-        //     st.put(key, i);
-        // }
+        
+        for (int i = 0; i < ransom.length; i++) {
+            String key = ransom[i];            
+            st.put(key, i);
+        }
 
-        // // print keys
-        // for (String s : st.keys())
-        //     StdOut.println(s + " " + st.get(s));
+        // print keys
+        for (String s : st.keys())
+            System.out.println(s + " " + st.get(s));
 
     }
 }
