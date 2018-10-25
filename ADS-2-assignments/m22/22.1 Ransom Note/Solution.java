@@ -155,27 +155,29 @@ public class Solution {
         String[] sizes = scan.nextLine().split(" ");
         String[] magzine = scan.nextLine().split(" ");
         String[] ransom = scan.nextLine().split(" ");
-
+        
         for (int i = 0; i < ransom.length; i++) {
             String key = ransom[i];
-            if (st.contains(key)) {
-                st.put(key, st.get(key));
-            } else {
-                st.put(key, i);
-            }
-
+            if(st.contains(key)){
+                st.put(key, st.get(key)+1);
+            }else {
+                st.put(key, 1);
+            }            
+            
         }
         for (int i = 0; i < magzine.length; i++) {
             String key = magzine[i];
-            st.put(key, i);
-
+            if(st.contains(key)){
+                st.put(key, st.get(key)-1);
+            }            
+            
         }
 
         // print keys
         for (String s : st.keys()) {
-            if (st.get(s) % 2 != 0) {
+            if(st.get(s) % 2 != 0) {
                 System.out.println("No");
-                //return;
+                
             }
             System.out.println(s + " " + st.get(s));
         }
@@ -247,7 +249,7 @@ class SequentialSearchST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        if (key == null) throw new IllegalArgumentException("argument to get() is null"); 
         for (Node x = first; x != null; x = x.next) {
             if (key.equals(x.key))
                 return x.val;
@@ -256,7 +258,7 @@ class SequentialSearchST<Key, Value> {
     }
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
+     * Inserts the specified key-value pair into the symbol table, overwriting the old 
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
@@ -266,7 +268,7 @@ class SequentialSearchST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(Key key, Value val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+        if (key == null) throw new IllegalArgumentException("first argument to put() is null"); 
         if (val == null) {
             delete(key);
             return;
@@ -283,14 +285,14 @@ class SequentialSearchST<Key, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
+     * Removes the specified key and its associated value from this symbol table     
+     * (if the key is in this symbol table).    
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
+        if (key == null) throw new IllegalArgumentException("argument to delete() is null"); 
         first = delete(first, key);
     }
 
@@ -413,7 +415,7 @@ class Queue<Item> implements Iterable<Item> {
             s.append(' ');
         }
         return s.toString();
-    }
+    } 
 
     /**
      * Returns an iterator that iterates over the items in this queue in FIFO order.
@@ -421,7 +423,7 @@ class Queue<Item> implements Iterable<Item> {
      * @return an iterator that iterates over the items in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator<Item>(first);
+        return new ListIterator<Item>(first);  
     }
 
     // an iterator, doesn't implement remove() since it's optional
@@ -438,7 +440,7 @@ class Queue<Item> implements Iterable<Item> {
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
-            current = current.next;
+            current = current.next; 
             return item;
         }
     }
