@@ -169,8 +169,14 @@ public class Solution {
         }
 
         // print keys
-        for (String s : st.keys())
-            System.out.println(s + " " + st.get(s));
+        for (String s : st.keys()) {
+            if(st.get(s) % 2 != 0) {
+                System.out.println("NO");
+                return;
+            }
+            //System.out.println(s + " " + st.get(s));
+        }
+        System.out.println("YES");
 
     }
 }
