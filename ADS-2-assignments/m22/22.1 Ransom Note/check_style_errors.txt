@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:3:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:4:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:20:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m22\22.1 Ransom Note\Solution.java:21: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.

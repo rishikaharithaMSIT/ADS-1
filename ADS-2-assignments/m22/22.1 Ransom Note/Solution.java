@@ -1,7 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
 /**
  * Class for solution.
  */
@@ -17,8 +14,9 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
-        SeparateChainingHashST<String, Integer> st = new SeparateChainingHashST<String, Integer>();
+    public static void main(final String[] args) {
+        SeparateChainingHashST<String, Integer> st
+            = new SeparateChainingHashST<String, Integer>();
         Scanner scan = new Scanner(System.in);
         String[] sizes = scan.nextLine().split(" ");
         String[] magzine = scan.nextLine().split(" ");
