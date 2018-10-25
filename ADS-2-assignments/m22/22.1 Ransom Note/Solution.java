@@ -160,10 +160,10 @@ public class Solution {
             String key = ransom[i];            
             st.put(key, i);
         }
-        for (int i = 0; i < magzine.length; i++) {
-            String key = magzine[i];            
-            st.put(key, i);
-        }
+        // for (int i = 0; i < magzine.length; i++) {
+        //     String key = magzine[i];            
+        //     st.put(key, i);
+        // }
 
         // print keys
         for (String s : st.keys())
