@@ -170,13 +170,13 @@ public class Solution {
 
         // print keys
         for (String s : st.keys()) {
-            if(st.get(s) % 2 != 0) {
-                System.out.println("NO");
+            if(st.get(s) <= 1) {
+                System.out.println("No");
                 return;
             }
             //System.out.println(s + " " + st.get(s));
         }
-        System.out.println("YES");
+        System.out.println("Yes");
 
     }
 }
