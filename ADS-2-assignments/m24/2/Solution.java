@@ -48,12 +48,17 @@ public class Solution {
 
 	}
 }
-class Student {
+class Student implements Comparable<Student>{
 	String name;
 	double marks;
 	Student(String n, String m) {
 		this.name  = n;
 		this.marks = Double.parseDouble(m);
+	}
+	public int compareTo(Student other) {
+		if(this.marks > other.marks) return 1;
+		if(this.marks < other.marks) return 1;
+		return 0;
 	}
 }
 class RedBlackBST<Key extends Comparable<Key>, Value> {
