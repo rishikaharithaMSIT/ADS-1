@@ -23,10 +23,10 @@ public class Solution {
 				//int key = Integer.parseInt(tokens[1]);
 				double lower = Double.parseDouble(tokens[1]);
 				double upper = Double.parseDouble(tokens[2]);
-				System.out.println("here");
+				//System.out.println("here");
 				for (Student each : student.keys()) {
-					System.out.println("hi");
-					System.out.println(each);
+					//System.out.println("hi");
+					//System.out.println(each);
 					if (each.marks >= lower && each.marks <= upper) {
 						System.out.println(each.name);
 					}
