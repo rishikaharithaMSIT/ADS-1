@@ -24,7 +24,7 @@ public class Solution {
 				System.out.println("here");
 				for (Student each : student.keys()) {
 					System.out.println("hi");
-					System.out.println(each.marks);
+					System.out.println(each);
 					if (each.marks >= lower && each.marks <= upper) {
 						System.out.println(each.name);
 					}
