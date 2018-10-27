@@ -50,7 +50,8 @@ public final class Solution {
 				double limit = Double.parseDouble(tokens[1]);
 				for (Student each : student.keys()) {
 					if (each.getMarks() <= limit) {
-						System.out.println(each.getName());
+						System.out.println(
+						    each.getName());
 					}
 				}
 				//System.out.println("----");
@@ -58,7 +59,8 @@ public final class Solution {
 				double limit = Double.parseDouble(tokens[1]);
 				for (Student each : student.keys()) {
 					if (each.getMarks() >= limit) {
-						System.out.println(each.getName());
+						System.out.println(
+						    each.getName());
 					}
 				}
 				//System.out.println("----");
@@ -105,10 +107,18 @@ class Student implements Comparable<Student> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int compareTo(Student other) {
-		if (this.marks > other.marks) return 1;
-		if (this.marks < other.marks) return -1;
-		if (this.roll > other.roll) return 1;
-		if (this.roll < other.roll) return -1;
+		if (this.marks > other.marks) {
+			return 1;
+		}
+		if (this.marks < other.marks) {
+			return -1;
+		}
+		if (this.roll > other.roll) {
+			return 1;
+		}
+		if (this.roll < other.roll) {
+			return -1;
+		}
 
 		return 0;
 	}
