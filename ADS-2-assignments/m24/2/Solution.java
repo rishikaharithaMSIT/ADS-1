@@ -40,7 +40,8 @@ public final class Solution {
 					//System.out.println(each);
 					if (each.getMarks() >= lower
 					        && each.getMarks() <= upper) {
-						System.out.println(each.getName());
+						System.out.println(
+						    each.getName());
 					}
 				}
 				//System.out.println("----");
