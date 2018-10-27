@@ -12,7 +12,7 @@ public class Solution {
 			String[] line = scan.nextLine().split(",");
 			s = new Student(line[1], line[2]);
 			student.put(s, Integer.parseInt(line[0]));
-
+			System.out.println(student.get(s));
 			datalen--;
 		}
 		for (Student each : student.keys()) {
