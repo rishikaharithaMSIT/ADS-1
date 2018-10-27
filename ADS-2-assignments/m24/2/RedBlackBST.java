@@ -667,17 +667,17 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Return the number of keys in 
+     * Return the number of keys in
      * the symbol table strictly less than {@code key}.
      * @param key the key
-     * @return the number of keys in 
+     * @return the number of keys in
      * the symbol table strictly less than {@code key}
-     * @throws IllegalArgumentException 
+     * @throws IllegalArgumentException
      * if {@code key} is {@code null}
      */
     public int rank(Key key) {
         if (key == null) throw new IllegalArgumentException(
-            "argument to rank() is null");
+                "argument to rank() is null");
         return rank(key, root);
     }
 
@@ -692,20 +692,24 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     private int rank(Key key, Node x) {
         if (x == null) return 0;
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) return rank(key, x.left);
-        else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
-        else              return size(x.left);
+        if      (cmp < 0) {
+            return rank(key, x.left);
+        } else if (cmp > 0) {
+            return 1 + size(x.left) + rank(key, x.right);
+        } else {
+            return size(x.left);
+        }
     }
 
-    /***************************************************************************
-     *  Range count and range search.
-     ***************************************************************************/
-
     /**
-     * Returns all keys in the symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
-     * @return all keys in the symbol table as an {@code Iterable}
+     * Returns all keys in the symbol
+     * table as an {@code Iterable}.
+     * To iterate over all of the keys
+     * in the symbol table named {@code st},
+     * use the foreach notation: {@code
+     * for (Key key : st.keys())}.
+     * @return all keys in the symbol
+     * table as an {@code Iterable}
      */
     public Iterable<Key> keys() {
         if (isEmpty()) return new Queue<Key>();
@@ -713,19 +717,25 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns all keys in the symbol table in the given range,
+     * Returns all keys in the symbol
+     * table in the given range,
      * as an {@code Iterable}.
      *
      * @param  lo minimum endpoint
      * @param  hi maximum endpoint
-     * @return all keys in the sybol table between {@code lo}
-     *    (inclusive) and {@code hi} (inclusive) as an {@code Iterable}
-     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
+     * @return all keys in the sybol
+     * table between {@code lo}
+     *    (inclusive) and {@code hi}
+     *    (inclusive) as an {@code Iterable}
+     * @throws IllegalArgumentException
+     * if either {@code lo} or {@code hi}
      *    is {@code null}
      */
     public Iterable<Key> keys(Key lo, Key hi) {
-        if (lo == null) throw new IllegalArgumentException("first argument to keys() is null");
-        if (hi == null) throw new IllegalArgumentException("second argument to keys() is null");
+        if (lo == null) throw new IllegalArgumentException(
+                "first argument to keys() is null");
+        if (hi == null) throw new IllegalArgumentException(
+                "second argument to keys() is null");
 
         Queue<Key> queue = new Queue<Key>();
         // if (isEmpty() || lo.compareTo(hi) > 0) return queue;
@@ -751,35 +761,54 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the number of keys in the symbol table in the given range.
+     * Returns the number of keys in the symbol table in the
+     * given range.
      *
      * @param  lo minimum endpoint
      * @param  hi maximum endpoint
-     * @return the number of keys in the sybol table between {@code lo}
+     * @return the number of keys in the sybol table
+     * between {@code lo}
      *    (inclusive) and {@code hi} (inclusive)
-     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
+     * @throws IllegalArgumentException if
+     * either {@code lo} or {@code hi}
      *    is {@code null}
      */
     public int size(Key lo, Key hi) {
-        if (lo == null) throw new IllegalArgumentException("first argument to size() is null");
-        if (hi == null) throw new IllegalArgumentException("second argument to size() is null");
-
-        if (lo.compareTo(hi) > 0) return 0;
-        if (contains(hi)) return rank(hi) - rank(lo) + 1;
-        else              return rank(hi) - rank(lo);
+        if (lo == null) {
+            throw new IllegalArgumentException(
+                "first argument to size() is null");
+        }
+        if (hi == null) {
+            throw new IllegalArgumentException(
+                "second argument to size() is null");
+        }
+        if (lo.compareTo(hi) > 0) {
+            return 0;
+        }
+        if (contains(hi)) {
+            return rank(hi) - rank(lo) + 1;
+        } else {
+            return rank(hi) - rank(lo);
+        }
     }
-
-
     /**
      * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
     private boolean check() {
-        if (!isBST())            System.out.println("Not in symmetric order");
-        if (!isSizeConsistent()) System.out.println("Subtree counts not consistent");
-        if (!isRankConsistent()) System.out.println("Ranks not consistent");
-        if (!is23())             System.out.println("Not a 2-3 tree");
+        if (!isBST()) {
+            System.out.println("Not in symmetric order");
+        }
+        if (!isSizeConsistent()) {
+            System.out.println("Subtree counts not consistent");
+        }
+        if (!isRankConsistent()) {
+            System.out.println("Ranks not consistent");
+        }
+        if (!is23()) {
+            System.out.println("Not a 2-3 tree");
+        }
         if (!isBalanced())       System.out.println("Not balanced");
         return isBST() && isSizeConsistent() && isRankConsistent() && is23() && isBalanced();
     }
