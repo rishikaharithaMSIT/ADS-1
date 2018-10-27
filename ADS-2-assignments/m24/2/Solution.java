@@ -68,8 +68,7 @@ class Student implements Comparable<Student>{
 	public int compareTo(Student other) {
 		if (this.marks > other.marks) return 1;
 		if (this.marks < other.marks) return -1;
-		if (this.name.compareTo(other.name) > 0) return 1;
-		if (this.name.compareTo(other.name) < 0) return -1;
+		
 		if (this.roll < other.roll) return 1;
 		if (this.roll > other.roll) return -1;
 		return 0;
