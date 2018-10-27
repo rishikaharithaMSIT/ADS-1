@@ -59,7 +59,7 @@ public class Solution {
 
 	}
 }
-class Student implements Comparable<Student> {
+class Student implements Comparable<Student>{
 	String name;
 	double marks;
 	Student(String n, String m) {

@@ -7,6 +7,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:36: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:62: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:62:45: '>' is followed by an illegal character. [GenericWhitespace]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:62:45: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:63:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:63:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:64:9: Missing a Javadoc comment. [JavadocVariable]
@@ -316,4 +318,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:824:17: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:825: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 316 errors.
+Checkstyle ends with 318 errors.
