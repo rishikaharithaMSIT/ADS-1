@@ -809,8 +809,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         if (!is23()) {
             System.out.println("Not a 2-3 tree");
         }
-        if (!isBalanced())       System.out.println("Not balanced");
-        return isBST() && isSizeConsistent() && isRankConsistent() && is23() && isBalanced();
+        if (!isBalanced()) {
+            System.out.println("Not balanced");
+        }
+        return isBST()
+               && isSizeConsistent()
+               && isRankConsistent()
+               && is23()
+               && isBalanced();
     }
 
     /**
@@ -832,18 +838,28 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * @return     True if bst, False otherwise.
      */
     private boolean isBST(Node x, Key min, Key max) {
-        if (x == null) return true;
-        if (min != null && x.key.compareTo(min) <= 0) return false;
-        if (max != null && x.key.compareTo(max) >= 0) return false;
-        return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
+        if (x == null) {
+            return true;
+        }
+        if (min != null && x.key.compareTo(min) <= 0) {
+            return false;
+        }
+        if (max != null && x.key.compareTo(max) >= 0) {
+            return false;
+        }
+        return isBST(x.left, min, x.key)
+               && isBST(x.right, x.key, max);
     }
 
     /**
      * Determines if size consistent.
      *
-     * @return     True if size consistent, False otherwise.
+     * @return     True if size
+     * consistent, False otherwise.
      */
-    private boolean isSizeConsistent() { return isSizeConsistent(root); }
+    private boolean isSizeConsistent() {
+        return isSizeConsistent(root);
+    }
     /**
      * Determines if size consistent.
      *
@@ -852,9 +868,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * @return     True if size consistent, False otherwise.
      */
     private boolean isSizeConsistent(Node x) {
-        if (x == null) return true;
-        if (x.size != size(x.left) + size(x.right) + 1) return false;
-        return isSizeConsistent(x.left) && isSizeConsistent(x.right);
+        if (x == null) {
+            return true;
+        }
+        if (x.size != size(x.left) + size(x.right) + 1) {
+            return false;
+        }
+        return isSizeConsistent(x.left)
+               && isSizeConsistent(x.right);
     }
 
     /**
@@ -864,9 +885,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      */
     private boolean isRankConsistent() {
         for (int i = 0; i < size(); i++)
-            if (i != rank(select(i))) return false;
+            if (i != rank(select(i))) {
+                return false;
+            }
         for (Key key : keys())
-            if (key.compareTo(select(rank(key))) != 0) return false;
+            if (key.compareTo(select(rank(key))) != 0) {
+                return false;
+            }
         return true;
     }
 
@@ -875,7 +900,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      *
      * @return     True if 23, False otherwise.
      */
-    private boolean is23() { return is23(root); }
+    private boolean is23() {
+        return is23(root);
+    }
     /**
      * Determines if 23.
      *
@@ -884,11 +911,17 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * @return     True if 23, False otherwise.
      */
     private boolean is23(Node x) {
-        if (x == null) return true;
-        if (isRed(x.right)) return false;
-        if (x != root && isRed(x) && isRed(x.left))
+        if (x == null) {
+            return true;
+        }
+        if (isRed(x.right)) {
             return false;
-        return is23(x.left) && is23(x.right);
+        }
+        if (x != root && isRed(x) && isRed(x.left)) {
+            return false;
+        }
+        return is23(x.left)
+               && is23(x.right);
     }
 
     /**
@@ -897,10 +930,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * @return     True if balanced, False otherwise.
      */
     private boolean isBalanced() {
-        int black = 0;     // number of black links on path from root to min
+        int black = 0;
         Node x = root;
         while (x != null) {
-            if (!isRed(x)) black++;
+            if (!isRed(x)) {
+                black++;
+            }
             x = x.left;
         }
         return isBalanced(root, black);
@@ -915,8 +950,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * @return     True if balanced, False otherwise.
      */
     private boolean isBalanced(Node x, int black) {
-        if (x == null) return black == 0;
-        if (!isRed(x)) black--;
-        return isBalanced(x.left, black) && isBalanced(x.right, black);
+        if (x == null) {
+            return black == 0;
+        }
+        if (!isRed(x)) {
+            black--;
+        }
+        return isBalanced(x.left, black)
+               && isBalanced(x.right, black);
     }
 }
