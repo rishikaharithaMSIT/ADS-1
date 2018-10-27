@@ -3,6 +3,12 @@ import java.util.Scanner;
  * Class for solution.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int datalen = Integer.parseInt(scan.nextLine());
@@ -70,6 +76,11 @@ class Student {
     public String getName() {
         return name;
     }
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
     public Double getMarks() {
         return marks;
     }
