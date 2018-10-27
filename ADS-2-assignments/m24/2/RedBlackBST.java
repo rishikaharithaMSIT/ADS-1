@@ -1,58 +1,20 @@
 import java.util.NoSuchElementException;
-/**
- * Class for red black bst.
- *
- * @param      <Key>    The key
- * @param      <Value>  The value
- */
 class RedBlackBST<Key extends Comparable<Key>, Value> {
-    /**
-     * { var_description }.
-     */
+
     private static final boolean RED   = true;
-    /**
-     * { var_description }.
-     */
     private static final boolean BLACK = false;
-    /**
-     * { var_description }.
-     */
+
     private Node root;     // root of the BST
 
-    /**
-     * Class for node.
-     */
+    // BST helper node data type
     private class Node {
-        /**
-         * { var_description }.
-         */
         private Key key;           // key
-        /**
-         * { var_description }.
-         */
         private Value val;         // associated data
-        /**
-         * { item_description }.
-         */
-        private Node left, right;
-        /**
-         * { var_description }.
-         */
+        private Node left, right;  // links to left and right subtrees
         private boolean color;     // color of parent link
-        /**
-         * { var_description }.
-         */
         private int size;          // subtree count
-        /**
-         * Constructs the object.
-         *
-         * @param      key    The key
-         * @param      val    The value
-         * @param      color  The color
-         * @param      size   The size
-         */
-        public Node(final Key key, final Value val,
-                    final boolean color, final int size) {
+
+        public Node(Key key, Value val, boolean color, int size) {
             this.key = key;
             this.val = val;
             this.color = color;
@@ -66,76 +28,56 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     public RedBlackBST() {
     }
 
-
-    /**
-     * Determines if red.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     True if red, False otherwise.
-     */
+   /***************************************************************************
+    *  Node helper methods.
+    ***************************************************************************/
+    // is node x red; false if x is null ?
     private boolean isRed(Node x) {
         if (x == null) return false;
         return x.color == RED;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // number of node in subtree rooted at x; 0 if x is null
     private int size(Node x) {
         if (x == null) return 0;
         return x.size;
-    }
+    } 
 
 
     /**
-     * Returns the number of key-value pairs
-     * in this symbol table.
-     * @return the number of key-value pairs
-     * in this symbol table
+     * Returns the number of key-value pairs in this symbol table.
+     * @return the number of key-value pairs in this symbol table
      */
     public int size() {
         return size(root);
     }
 
-    /**
-      * Is this symbol table empty?
-      * @return {@code true} if this symbol table
-      * is empty and {@code false} otherwise
-      */
+   /**
+     * Is this symbol table empty?
+     * @return {@code true} if this symbol table is empty and {@code false} otherwise
+     */
     public boolean isEmpty() {
         return root == null;
     }
 
+
+   /***************************************************************************
+    *  Standard BST search.
+    ***************************************************************************/
+
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the
-     * given key if the key is in the symbol table
-     *     and {@code null} if the key is not
-     *     in the symbol table
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @return the value associated with the given key if the key is in the symbol table
+     *     and {@code null} if the key is not in the symbol table
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(Key key) {
-        if (key == null)
-            throw new IllegalArgumentException(
-                "argument to get() is null");
+        if (key == null) throw new IllegalArgumentException("argument to get() is null");
         return get(root, key);
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // value associated with the given key in subtree rooted at x; null if no such key
     private Value get(Node x, Key key) {
         while (x != null) {
             int cmp = key.compareTo(x.key);
@@ -149,33 +91,30 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * Does this symbol table contain the given key?
      * @param key the key
-     * @return {@code true} if this
-     * symbol table contains {@code key} and
+     * @return {@code true} if this symbol table contains {@code key} and
      *     {@code false} otherwise
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(Key key) {
         return get(key) != null;
     }
 
+   /***************************************************************************
+    *  Red-black tree insertion.
+    ***************************************************************************/
+
     /**
-     * Inserts the specified key-value pair
-     * into the symbol table, overwriting the old
-     * value with the new value if the symbol
-     * table already contains the specified key.
-     * Deletes the specified key (and its associated
-     * value) from this symbol table
+     * Inserts the specified key-value pair into the symbol table, overwriting the old 
+     * value with the new value if the symbol table already contains the specified key.
+     * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
      *
      * @param key the key
      * @param val the value
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(Key key, Value val) {
-        if (key == null) throw new IllegalArgumentException(
-                "first argument to put() is null");
+        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
         if (val == null) {
             delete(key);
             return;
@@ -186,47 +125,34 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         // assert check();
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     * @param      key   The key
-     * @param      val   The value
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node put(Node h, Key key, Value val) {
+    // insert the key-value pair in the subtree rooted at h
+    private Node put(Node h, Key key, Value val) { 
         if (h == null) return new Node(key, val, RED, 1);
 
         int cmp = key.compareTo(h.key);
-        if      (cmp < 0) h.left  = put(h.left,  key, val);
-        else if (cmp > 0) h.right = put(h.right, key, val);
+        if      (cmp < 0) h.left  = put(h.left,  key, val); 
+        else if (cmp > 0) h.right = put(h.right, key, val); 
         else              h.val   = val;
 
         // fix-up any right-leaning links
-        if (isRed(h.right) && !isRed(h.left))      {
-            h = rotateLeft(h);
-        }
-        if (isRed(h.left)  &&  isRed(h.left.left)) {
-            h = rotateRight(h);
-        }
-        if (isRed(h.left)  &&  isRed(h.right))     {
-            flipColors(h);
-        }
+        if (isRed(h.right) && !isRed(h.left))      h = rotateLeft(h);
+        if (isRed(h.left)  &&  isRed(h.left.left)) h = rotateRight(h);
+        if (isRed(h.left)  &&  isRed(h.right))     flipColors(h);
         h.size = size(h.left) + size(h.right) + 1;
+
         return h;
     }
 
+   /***************************************************************************
+    *  Red-black tree deletion.
+    ***************************************************************************/
 
     /**
-     * Removes the smallest key and associated
-     * value from the symbol table.
-     * @throws NoSuchElementException
-     * if the symbol table is empty
+     * Removes the smallest key and associated value from the symbol table.
+     * @throws NoSuchElementException if the symbol table is empty
      */
     public void deleteMin() {
-        if (isEmpty()) throw new NoSuchElementException(
-                "BST underflow");
+        if (isEmpty()) throw new NoSuchElementException("BST underflow");
 
         // if both children of root are black, set root to red
         if (!isRed(root.left) && !isRed(root.right))
@@ -237,14 +163,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         // assert check();
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node deleteMin(Node h) {
+    // delete the key-value pair with the minimum key rooted at h
+    private Node deleteMin(Node h) { 
         if (h.left == null)
             return null;
 
@@ -257,14 +177,11 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 
 
     /**
-     * Removes the largest key and associated value
-     * from the symbol table.
-     * @throws NoSuchElementException
-     * if the symbol table is empty
+     * Removes the largest key and associated value from the symbol table.
+     * @throws NoSuchElementException if the symbol table is empty
      */
     public void deleteMax() {
-        if (isEmpty()) throw new NoSuchElementException(
-                "BST underflow");
+        if (isEmpty()) throw new NoSuchElementException("BST underflow");
 
         // if both children of root are black, set root to red
         if (!isRed(root.left) && !isRed(root.right))
@@ -275,14 +192,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         // assert check();
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node deleteMax(Node h) {
+    // delete the key-value pair with the maximum key rooted at h
+    private Node deleteMax(Node h) { 
         if (isRed(h.left))
             h = rotateRight(h);
 
@@ -298,17 +209,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Removes the specified key and its associated
-     * value from this symbol table
-     * (if the key is in this symbol table).
+     * Removes the specified key and its associated value from this symbol table     
+     * (if the key is in this symbol table).    
      *
      * @param  key the key
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException(
-                "argument to delete() is null");
+    public void delete(Key key) { 
+        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
         if (!contains(key)) return;
 
         // if both children of root are black, set root to red
@@ -320,26 +228,19 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         // assert check();
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node delete(Node h, Key key) {
+    // delete the key-value pair with the given key rooted at h
+    private Node delete(Node h, Key key) { 
         // assert get(h, key) != null;
 
         if (key.compareTo(h.key) < 0)  {
             if (!isRed(h.left) && !isRed(h.left.left))
                 h = moveRedLeft(h);
             h.left = delete(h.left, key);
-        } else {
+        }
+        else {
             if (isRed(h.left))
                 h = rotateRight(h);
-            if (key.compareTo(h.key) == 0
-                    && (h.right == null))
+            if (key.compareTo(h.key) == 0 && (h.right == null))
                 return null;
             if (!isRed(h.right) && !isRed(h.right.left))
                 h = moveRedRight(h);
@@ -350,17 +251,17 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
                 // h.val = get(h.right, min(h.right).key);
                 // h.key = min(h.right).key;
                 h.right = deleteMin(h.right);
-            } else h.right = delete(h.right, key);
+            }
+            else h.right = delete(h.right, key);
         }
         return balance(h);
     }
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+
+   /***************************************************************************
+    *  Red-black tree helper functions.
+    ***************************************************************************/
+
+    // make a left-leaning link lean to the right
     private Node rotateRight(Node h) {
         // assert (h != null) && isRed(h.left);
         Node x = h.left;
@@ -373,13 +274,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         return x;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // make a right-leaning link lean to the left
     private Node rotateLeft(Node h) {
         // assert (h != null) && isRed(h.right);
         Node x = h.right;
@@ -392,39 +287,25 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         return x;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     */
+    // flip the colors of a node and its two children
     private void flipColors(Node h) {
-        // h must have opposite
-        // color of its two children
-        // assert (h != null) &&
-        // (h.left != null) && (h.right != null);
-        // assert (!isRed(h) &&  isRed(h.left)
-        // &&  isRed(h.right))
-        //    || (isRed(h)  && !isRed(h.left)
-        //    && !isRed(h.right));
+        // h must have opposite color of its two children
+        // assert (h != null) && (h.left != null) && (h.right != null);
+        // assert (!isRed(h) &&  isRed(h.left) &&  isRed(h.right))
+        //    || (isRed(h)  && !isRed(h.left) && !isRed(h.right));
         h.color = !h.color;
         h.left.color = !h.left.color;
         h.right.color = !h.right.color;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // Assuming that h is red and both h.left and h.left.left
+    // are black, make h.left or one of its children red.
     private Node moveRedLeft(Node h) {
         // assert (h != null);
-        // assert isRed(h) && !isRed(h.left)
-        // && !isRed(h.left.left);
+        // assert isRed(h) && !isRed(h.left) && !isRed(h.left.left);
 
         flipColors(h);
-        if (isRed(h.right.left)) {
+        if (isRed(h.right.left)) { 
             h.right = rotateRight(h.right);
             h = rotateLeft(h);
             flipColors(h);
@@ -432,284 +313,195 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         return h;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // Assuming that h is red and both h.right and h.right.left
+    // are black, make h.right or one of its children red.
     private Node moveRedRight(Node h) {
         // assert (h != null);
-        // assert isRed(h) && !isRed(h.right)
-        // && !isRed(h.right.left);
+        // assert isRed(h) && !isRed(h.right) && !isRed(h.right.left);
         flipColors(h);
-        if (isRed(h.left.left)) {
+        if (isRed(h.left.left)) { 
             h = rotateRight(h);
             flipColors(h);
         }
         return h;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      h     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // restore red-black tree invariant
     private Node balance(Node h) {
         // assert (h != null);
 
-        if (isRed(h.right)) {
-            h = rotateLeft(h);
-        }
-        if (isRed(h.left) && isRed(h.left.left)) {
-            h = rotateRight(h);
-        }
-        if (isRed(h.left) && isRed(h.right)) {
-            flipColors(h);
-        }
+        if (isRed(h.right))                      h = rotateLeft(h);
+        if (isRed(h.left) && isRed(h.left.left)) h = rotateRight(h);
+        if (isRed(h.left) && isRed(h.right))     flipColors(h);
 
         h.size = size(h.left) + size(h.right) + 1;
         return h;
     }
 
 
+   /***************************************************************************
+    *  Utility functions.
+    ***************************************************************************/
+
     /**
-     * Returns the height of
-     * the BST (for debugging).
-     * @return the height of
-     * the BST (a 1-node tree has height 0)
+     * Returns the height of the BST (for debugging).
+     * @return the height of the BST (a 1-node tree has height 0)
      */
     public int height() {
         return height(root);
     }
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
     private int height(Node x) {
         if (x == null) return -1;
         return 1 + Math.max(height(x.left), height(x.right));
     }
-    /**
-     * Returns the smallest
-     * key in the symbol table.
-     * @return the smallest
-     * key in the symbol table
-     * @throws NoSuchElementException
-     * if the symbol table is empty
-     */
-    public Key min() {
-        if (isEmpty()) throw new NoSuchElementException(
-                "calls min() with empty symbol table");
-        return min(root).key;
-    }
+
+   /***************************************************************************
+    *  Ordered symbol table methods.
+    ***************************************************************************/
 
     /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * Returns the smallest key in the symbol table.
+     * @return the smallest key in the symbol table
+     * @throws NoSuchElementException if the symbol table is empty
      */
-    private Node min(Node x) {
+    public Key min() {
+        if (isEmpty()) throw new NoSuchElementException("calls min() with empty symbol table");
+        return min(root).key;
+    } 
+
+    // the smallest key in subtree rooted at x; null if no such key
+    private Node min(Node x) { 
         // assert x != null;
-        if (x.left == null) return x;
-        else                return min(x.left);
-    }
+        if (x.left == null) return x; 
+        else                return min(x.left); 
+    } 
 
     /**
      * Returns the largest key in the symbol table.
      * @return the largest key in the symbol table
-     * @throws NoSuchElementException
-     * if the symbol table is empty
+     * @throws NoSuchElementException if the symbol table is empty
      */
     public Key max() {
-        if (isEmpty()) throw new NoSuchElementException(
-                "calls max() with empty symbol table");
+        if (isEmpty()) throw new NoSuchElementException("calls max() with empty symbol table");
         return max(root).key;
-    }
+    } 
 
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node max(Node x) {
+    // the largest key in the subtree rooted at x; null if no such key
+    private Node max(Node x) { 
         // assert x != null;
-        if (x.right == null) return x;
-        else                 return max(x.right);
-    }
+        if (x.right == null) return x; 
+        else                 return max(x.right); 
+    } 
 
 
     /**
-     * Returns the largest key in the
-     * symbol table less than or equal to {@code key}.
+     * Returns the largest key in the symbol table less than or equal to {@code key}.
      * @param key the key
-     * @return the largest key in the symbol table
-     * less than or equal to {@code key}
-     * @throws NoSuchElementException
-     * if there is no such key
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @return the largest key in the symbol table less than or equal to {@code key}
+     * @throws NoSuchElementException if there is no such key
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Key floor(Key key) {
-        if (key == null) throw new IllegalArgumentException(
-                "argument to floor() is null");
-        if (isEmpty()) throw new NoSuchElementException(
-                "calls floor() with empty symbol table");
+        if (key == null) throw new IllegalArgumentException("argument to floor() is null");
+        if (isEmpty()) throw new NoSuchElementException("calls floor() with empty symbol table");
         Node x = floor(root, key);
         if (x == null) return null;
         else           return x.key;
-    }
+    }    
 
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // the largest key in the subtree rooted at x less than or equal to the given key
     private Node floor(Node x, Key key) {
         if (x == null) return null;
         int cmp = key.compareTo(x.key);
         if (cmp == 0) return x;
         if (cmp < 0)  return floor(x.left, key);
         Node t = floor(x.right, key);
-        if (t != null) return t;
+        if (t != null) return t; 
         else           return x;
     }
 
     /**
-     * Returns the smallest key in the
-     * symbol table greater than or equal to {@code key}.
+     * Returns the smallest key in the symbol table greater than or equal to {@code key}.
      * @param key the key
-     * @return the smallest key in the
-     * symbol table greater than or equal to {@code key}
-     * @throws NoSuchElementException
-     * if there is no such key
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @return the smallest key in the symbol table greater than or equal to {@code key}
+     * @throws NoSuchElementException if there is no such key
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Key ceiling(Key key) {
-        if (key == null) throw new IllegalArgumentException(
-                "argument to ceiling() is null");
-        if (isEmpty()) throw new NoSuchElementException(
-                "calls ceiling() with empty symbol table");
+        if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
+        if (isEmpty()) throw new NoSuchElementException("calls ceiling() with empty symbol table");
         Node x = ceiling(root, key);
         if (x == null) return null;
-        else           return x.key;
+        else           return x.key;  
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node ceiling(Node x, Key key) {
+    // the smallest key in the subtree rooted at x greater than or equal to the given key
+    private Node ceiling(Node x, Key key) {  
         if (x == null) return null;
         int cmp = key.compareTo(x.key);
         if (cmp == 0) return x;
         if (cmp > 0)  return ceiling(x.right, key);
         Node t = ceiling(x.left, key);
-        if (t != null) return t;
+        if (t != null) return t; 
         else           return x;
     }
 
     /**
-     * Return the key in the symbol
-     * table whose rank is {@code k}.
-     * This is the (k+1)st smallest
-     * key in the symbol table.
+     * Return the key in the symbol table whose rank is {@code k}.
+     * This is the (k+1)st smallest key in the symbol table. 
      *
      * @param  k the order statistic
-     * @return the key in the symbol table
-     * of rank {@code k}
-     * @throws IllegalArgumentException
-     * unless {@code k} is between 0 and
+     * @return the key in the symbol table of rank {@code k}
+     * @throws IllegalArgumentException unless {@code k} is between 0 and
      *        <em>n</em>–1
      */
     public Key select(int k) {
         if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException(
-                "argument to select() is invalid: " + k);
+            throw new IllegalArgumentException("argument to select() is invalid: " + k);
         }
         Node x = select(root, k);
         return x.key;
     }
 
-    /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // the key of rank k in the subtree rooted at x
     private Node select(Node x, int k) {
         // assert x != null;
         // assert k >= 0 && k < size(x);
-        int t = size(x.left);
-        if      (t > k) return select(x.left,  k);
-        else if (t < k) return select(x.right, k - t - 1);
-        else            return x;
-    }
+        int t = size(x.left); 
+        if      (t > k) return select(x.left,  k); 
+        else if (t < k) return select(x.right, k-t-1); 
+        else            return x; 
+    } 
 
     /**
-     * Return the number of keys in
-     * the symbol table strictly less than {@code key}.
+     * Return the number of keys in the symbol table strictly less than {@code key}.
      * @param key the key
-     * @return the number of keys in
-     * the symbol table strictly less than {@code key}
-     * @throws IllegalArgumentException
-     * if {@code key} is {@code null}
+     * @return the number of keys in the symbol table strictly less than {@code key}
+     * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public int rank(Key key) {
-        if (key == null) throw new IllegalArgumentException(
-                "argument to rank() is null");
+        if (key == null) throw new IllegalArgumentException("argument to rank() is null");
         return rank(key, root);
-    }
+    } 
 
-    /**
-     * { function_description }.
-     *
-     * @param      key   The key
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+    // number of keys less than key in the subtree rooted at x
     private int rank(Key key, Node x) {
-        if (x == null) return 0;
-        int cmp = key.compareTo(x.key);
-        if      (cmp < 0) {
-            return rank(key, x.left);
-        } else if (cmp > 0) {
-            return 1 + size(x.left) + rank(key, x.right);
-        } else {
-            return size(x.left);
-        }
-    }
+        if (x == null) return 0; 
+        int cmp = key.compareTo(x.key); 
+        if      (cmp < 0) return rank(key, x.left); 
+        else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right); 
+        else              return size(x.left); 
+    } 
+
+   /***************************************************************************
+    *  Range count and range search.
+    ***************************************************************************/
 
     /**
-     * Returns all keys in the symbol
-     * table as an {@code Iterable}.
-     * To iterate over all of the keys
-     * in the symbol table named {@code st},
-     * use the foreach notation: {@code
-     * for (Key key : st.keys())}.
-     * @return all keys in the symbol
-     * table as an {@code Iterable}
+     * Returns all keys in the symbol table as an {@code Iterable}.
+     * To iterate over all of the keys in the symbol table named {@code st},
+     * use the foreach notation: {@code for (Key key : st.keys())}.
+     * @return all keys in the symbol table as an {@code Iterable}
      */
     public Iterable<Key> keys() {
         if (isEmpty()) return new Queue<Key>();
@@ -717,246 +509,131 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns all keys in the symbol
-     * table in the given range,
+     * Returns all keys in the symbol table in the given range,
      * as an {@code Iterable}.
      *
      * @param  lo minimum endpoint
      * @param  hi maximum endpoint
-     * @return all keys in the sybol
-     * table between {@code lo}
-     *    (inclusive) and {@code hi}
-     *    (inclusive) as an {@code Iterable}
-     * @throws IllegalArgumentException
-     * if either {@code lo} or {@code hi}
+     * @return all keys in the sybol table between {@code lo} 
+     *    (inclusive) and {@code hi} (inclusive) as an {@code Iterable}
+     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *    is {@code null}
      */
     public Iterable<Key> keys(Key lo, Key hi) {
-        if (lo == null) throw new IllegalArgumentException(
-                "first argument to keys() is null");
-        if (hi == null) throw new IllegalArgumentException(
-                "second argument to keys() is null");
+        if (lo == null) throw new IllegalArgumentException("first argument to keys() is null");
+        if (hi == null) throw new IllegalArgumentException("second argument to keys() is null");
 
         Queue<Key> queue = new Queue<Key>();
         // if (isEmpty() || lo.compareTo(hi) > 0) return queue;
         keys(root, queue, lo, hi);
         return queue;
-    }
+    } 
+
+    // add the keys between lo and hi in the subtree rooted at x
+    // to the queue
+    private void keys(Node x, Queue<Key> queue, Key lo, Key hi) { 
+        if (x == null) return; 
+        int cmplo = lo.compareTo(x.key); 
+        int cmphi = hi.compareTo(x.key); 
+        if (cmplo < 0) keys(x.left, queue, lo, hi); 
+        if (cmplo <= 0 && cmphi >= 0) queue.enqueue(x.key); 
+        if (cmphi > 0) keys(x.right, queue, lo, hi); 
+    } 
 
     /**
-     * { function_description }.
-     *
-     * @param      x      { parameter_description }
-     * @param      queue  The queue
-     * @param      lo     The lower
-     * @param      hi     The higher
-     */
-    private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
-        if (x == null) return;
-        int cmplo = lo.compareTo(x.key);
-        int cmphi = hi.compareTo(x.key);
-        if (cmplo < 0) keys(x.left, queue, lo, hi);
-        if (cmplo <= 0 && cmphi >= 0) queue.enqueue(x.key);
-        if (cmphi > 0) keys(x.right, queue, lo, hi);
-    }
-
-    /**
-     * Returns the number of keys in the symbol table in the
-     * given range.
+     * Returns the number of keys in the symbol table in the given range.
      *
      * @param  lo minimum endpoint
      * @param  hi maximum endpoint
-     * @return the number of keys in the sybol table
-     * between {@code lo}
+     * @return the number of keys in the sybol table between {@code lo} 
      *    (inclusive) and {@code hi} (inclusive)
-     * @throws IllegalArgumentException if
-     * either {@code lo} or {@code hi}
+     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *    is {@code null}
      */
     public int size(Key lo, Key hi) {
-        if (lo == null) {
-            throw new IllegalArgumentException(
-                "first argument to size() is null");
-        }
-        if (hi == null) {
-            throw new IllegalArgumentException(
-                "second argument to size() is null");
-        }
-        if (lo.compareTo(hi) > 0) {
-            return 0;
-        }
-        if (contains(hi)) {
-            return rank(hi) - rank(lo) + 1;
-        } else {
-            return rank(hi) - rank(lo);
-        }
-    }
-    /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private boolean check() {
-        if (!isBST()) {
-            System.out.println("Not in symmetric order");
-        }
-        if (!isSizeConsistent()) {
-            System.out.println("Subtree counts not consistent");
-        }
-        if (!isRankConsistent()) {
-            System.out.println("Ranks not consistent");
-        }
-        if (!is23()) {
-            System.out.println("Not a 2-3 tree");
-        }
-        if (!isBalanced()) {
-            System.out.println("Not balanced");
-        }
-        return isBST()
-               && isSizeConsistent()
-               && isRankConsistent()
-               && is23()
-               && isBalanced();
+        if (lo == null) throw new IllegalArgumentException("first argument to size() is null");
+        if (hi == null) throw new IllegalArgumentException("second argument to size() is null");
+
+        if (lo.compareTo(hi) > 0) return 0;
+        if (contains(hi)) return rank(hi) - rank(lo) + 1;
+        else              return rank(hi) - rank(lo);
     }
 
-    /**
-     * Determines if bst.
-     *
-     * @return     True if bst, False otherwise.
-     */
+
+   /***************************************************************************
+    *  Check integrity of red-black tree data structure.
+    ***************************************************************************/
+    private boolean check() {
+        if (!isBST())            System.out.println("Not in symmetric order");
+        if (!isSizeConsistent()) System.out.println("Subtree counts not consistent");
+        if (!isRankConsistent()) System.out.println("Ranks not consistent");
+        if (!is23())             System.out.println("Not a 2-3 tree");
+        if (!isBalanced())       System.out.println("Not balanced");
+        return isBST() && isSizeConsistent() && isRankConsistent() && is23() && isBalanced();
+    }
+
+    // does this binary tree satisfy symmetric order?
+    // Note: this test also ensures that data structure is a binary tree since order is strict
     private boolean isBST() {
         return isBST(root, null, null);
     }
 
-    /**
-     * Determines if bst.
-     *
-     * @param      x     { parameter_description }
-     * @param      min   The minimum
-     * @param      max   The maximum
-     *
-     * @return     True if bst, False otherwise.
-     */
+    // is the tree rooted at x a BST with all keys strictly between min and max
+    // (if min or max is null, treat as empty constraint)
+    // Credit: Bob Dondero's elegant solution
     private boolean isBST(Node x, Key min, Key max) {
-        if (x == null) {
-            return true;
-        }
-        if (min != null && x.key.compareTo(min) <= 0) {
-            return false;
-        }
-        if (max != null && x.key.compareTo(max) >= 0) {
-            return false;
-        }
-        return isBST(x.left, min, x.key)
-               && isBST(x.right, x.key, max);
-    }
+        if (x == null) return true;
+        if (min != null && x.key.compareTo(min) <= 0) return false;
+        if (max != null && x.key.compareTo(max) >= 0) return false;
+        return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
+    } 
 
-    /**
-     * Determines if size consistent.
-     *
-     * @return     True if size
-     * consistent, False otherwise.
-     */
-    private boolean isSizeConsistent() {
-        return isSizeConsistent(root);
-    }
-    /**
-     * Determines if size consistent.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     True if size consistent, False otherwise.
-     */
+    // are the size fields correct?
+    private boolean isSizeConsistent() { return isSizeConsistent(root); }
     private boolean isSizeConsistent(Node x) {
-        if (x == null) {
-            return true;
-        }
-        if (x.size != size(x.left) + size(x.right) + 1) {
-            return false;
-        }
-        return isSizeConsistent(x.left)
-               && isSizeConsistent(x.right);
-    }
+        if (x == null) return true;
+        if (x.size != size(x.left) + size(x.right) + 1) return false;
+        return isSizeConsistent(x.left) && isSizeConsistent(x.right);
+    } 
 
-    /**
-     * Determines if rank consistent.
-     *
-     * @return     True if rank consistent, False otherwise.
-     */
+    // check that ranks are consistent
     private boolean isRankConsistent() {
         for (int i = 0; i < size(); i++)
-            if (i != rank(select(i))) {
-                return false;
-            }
+            if (i != rank(select(i))) return false;
         for (Key key : keys())
-            if (key.compareTo(select(rank(key))) != 0) {
-                return false;
-            }
+            if (key.compareTo(select(rank(key))) != 0) return false;
         return true;
     }
 
-    /**
-     * Determines if 23.
-     *
-     * @return     True if 23, False otherwise.
-     */
-    private boolean is23() {
-        return is23(root);
-    }
-    /**
-     * Determines if 23.
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     True if 23, False otherwise.
-     */
+    // Does the tree have no red right links, and at most one (left)
+    // red links in a row on any path?
+    private boolean is23() { return is23(root); }
     private boolean is23(Node x) {
-        if (x == null) {
-            return true;
-        }
-        if (isRed(x.right)) {
+        if (x == null) return true;
+        if (isRed(x.right)) return false;
+        if (x != root && isRed(x) && isRed(x.left))
             return false;
-        }
-        if (x != root && isRed(x) && isRed(x.left)) {
-            return false;
-        }
-        return is23(x.left)
-               && is23(x.right);
-    }
+        return is23(x.left) && is23(x.right);
+    } 
 
-    /**
-     * Determines if balanced.
-     *
-     * @return     True if balanced, False otherwise.
-     */
-    private boolean isBalanced() {
-        int black = 0;
+    // do all paths from root to leaf have same number of black edges?
+    private boolean isBalanced() { 
+        int black = 0;     // number of black links on path from root to min
         Node x = root;
         while (x != null) {
-            if (!isRed(x)) {
-                black++;
-            }
+            if (!isRed(x)) black++;
             x = x.left;
         }
         return isBalanced(root, black);
     }
 
-    /**
-     * Determines if balanced.
-     *
-     * @param      x      { parameter_description }
-     * @param      black  The black
-     *
-     * @return     True if balanced, False otherwise.
-     */
+    // does every path from the root to a leaf have the given number of black links?
     private boolean isBalanced(Node x, int black) {
-        if (x == null) {
-            return black == 0;
-        }
-        if (!isRed(x)) {
-            black--;
-        }
-        return isBalanced(x.left, black)
-               && isBalanced(x.right, black);
-    }
+        if (x == null) return black == 0;
+        if (!isRed(x)) black--;
+        return isBalanced(x.left, black) && isBalanced(x.right, black);
+    } 
+
+
+    
 }
