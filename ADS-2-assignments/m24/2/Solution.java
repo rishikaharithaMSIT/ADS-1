@@ -38,7 +38,8 @@ public final class Solution {
 				for (Student each : student.keys()) {
 					//System.out.println("hi");
 					//System.out.println(each);
-					if (each.getMarks() >= lower && each.getMarks() <= upper) {
+					if (each.getMarks() >= lower
+					        && each.getMarks() <= upper) {
 						System.out.println(each.getName());
 					}
 				}
@@ -90,7 +91,7 @@ class Student implements Comparable<Student> {
 	 * @param      m     { parameter_description }
 	 * @param      r     { parameter_description }
 	 */
-	Student(String n, String m, String r) {
+	Student(final String n, final String m, final String r) {
 		this.name  = n;
 		this.marks = Double.parseDouble(m);
 		this.roll = Integer.parseInt(r);
