@@ -9,6 +9,11 @@ public final class Solution {
     private Solution() {
 
     }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int datalen = Integer.parseInt(scan.nextLine());
