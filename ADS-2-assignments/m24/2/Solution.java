@@ -69,8 +69,9 @@ class Student implements Comparable<Student>{
 		if (this.marks > other.marks) return 1;
 		if (this.marks < other.marks) return -1;
 		
-		if (this.roll < other.roll) return 1;
-		if (this.roll > other.roll) return -1;
+		if (this.roll > other.roll) return 1;
+		if (this.roll < other.roll) return -1;
+
 		return 0;
 	}
 }
