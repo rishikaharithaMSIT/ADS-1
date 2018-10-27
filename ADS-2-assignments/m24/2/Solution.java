@@ -6,12 +6,12 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int datalen = Integer.parseInt(scan.nextLine());
-		RedBlackBST<Integer, Student> student = new RedBlackBST<>();
+		RedBlackBST<Student, Integer> student = new RedBlackBST<>();
 		Student s = null;
 		while (datalen > 0) {
 			String[] line = scan.nextLine().split(",");
 			s = new Student(line[1], line[2]);
-			student.put(Integer.parseInt(line[0]), s);
+			student.put(s,Integer.parseInt(line[0]));
 			datalen--;
 		}
 		int testcases = Integer.parseInt(scan.nextLine());
@@ -21,24 +21,24 @@ public class Solution {
 				//int key = Integer.parseInt(tokens[1]);
 				double lower = Double.parseDouble(tokens[1]);
 				double upper = Double.parseDouble(tokens[2]);
-				for (Integer each : student.keys()) {
-					if (student.get(each).marks >= lower && student.get(each).marks <= upper) {
-						System.out.println(student.get(each).name);
+				for (Student each : student.keys()) {
+					if (each.marks >= lower && each.marks <= upper) {
+						System.out.println(each.name);
 					}
 				}
 
 			} else if (tokens[0].equals("LE")) {
 				double limit = Double.parseDouble(tokens[1]);
-				for (Integer each : student.keys()) {
-					if (student.get(each).marks <= limit) {
-						System.out.println(student.get(each).name);
+				for (Student each : student.keys()) {
+					if (each.marks <= limit) {
+						System.out.println(each.name);
 					}
 				}
 			} else if (tokens[0].equals("GE")) {
 				double limit = Double.parseDouble(tokens[1]);
-				for (Integer each : student.keys()) {
-					if (student.get(each).marks >= limit) {
-						System.out.println(student.get(each).name);
+				for (Student each : student.keys()) {
+					if (each.marks >= limit) {
+						System.out.println(each.name);
 					}
 				}
 			}

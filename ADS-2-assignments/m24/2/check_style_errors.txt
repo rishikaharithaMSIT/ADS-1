@@ -5,10 +5,8 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:25: Line is longer than 80 characters (found 115). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:26: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:34: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:41: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:14:39: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:25: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:51: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:51:45: '>' is followed by an illegal character. [GenericWhitespace]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:51:45: '{' is not preceded with whitespace. [WhitespaceAround]
@@ -363,4 +361,4 @@ Starting audit...
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:815:17: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\Users\ravit\Desktop\MSIT\ADS-1\ADS-2-assignments\m24\2\Solution.java:816: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 363 errors.
+Checkstyle ends with 361 errors.
