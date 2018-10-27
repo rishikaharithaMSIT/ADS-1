@@ -17,7 +17,7 @@ public class Solution {
 		int testcases = Integer.parseInt(scan.nextLine());
 		while (testcases > 0) {
 			String[] tokens = scan.nextLine().split(" ");
-			if (tokens[2].equals("BE")) {
+			if (tokens[0].equals("BE")) {
 				//int key = Integer.parseInt(tokens[1]);
 				double lower = Double.parseDouble(tokens[1]);
 				double upper = Double.parseDouble(tokens[2]);
@@ -27,14 +27,14 @@ public class Solution {
 					}
 				}
 
-			} else if (tokens[2].equals("LE")) {
+			} else if (tokens[0].equals("LE")) {
 				double limit = Double.parseDouble(tokens[1]);
 				for (Integer each : student.keys()) {
 					if (student.get(each).marks <= limit) {
 						System.out.println(student.get(each).name);
 					}
 				}
-			} else if (tokens[2].equals("GE")) {
+			} else if (tokens[0].equals("GE")) {
 				double limit = Double.parseDouble(tokens[1]);
 				for (Integer each : student.keys()) {
 					if (student.get(each).marks >= limit) {
