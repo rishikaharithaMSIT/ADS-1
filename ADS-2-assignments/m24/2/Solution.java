@@ -22,6 +22,7 @@ public class Solution {
 				double lower = Double.parseDouble(tokens[1]);
 				double upper = Double.parseDouble(tokens[2]);
 				for (Student each : student.keys()) {
+					System.out.println(each.marks);
 					if (each.marks >= lower && each.marks <= upper) {
 						System.out.println(each.name);
 					}
