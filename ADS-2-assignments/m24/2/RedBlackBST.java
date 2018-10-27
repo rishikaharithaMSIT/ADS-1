@@ -1,19 +1,56 @@
 import java.util.NoSuchElementException;
+/**
+ * Class for red black bst.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class RedBlackBST<Key extends Comparable<Key>, Value> {
-
+	/**
+	 * { var_description }.
+	 */
 	private static final boolean RED   = true;
+	/**
+	 * { var_description }.
+	 */
 	private static final boolean BLACK = false;
-
+	/**
+	 * { var_description }.
+	 */
 	private Node root;     // root of the BST
 
-	// BST helper node data type
+	/**
+	 * Class for node.
+	 */
 	private class Node {
+		/**
+		 * { var_description }.
+		 */
 		private Key key;           // key
+		/**
+		 * { var_description }.
+		 */
 		private Value val;         // associated data
+		/**
+		 * { item_description }.
+		 */
 		private Node left, right;  // links to left and right subtrees
+		/**
+		 * { var_description }.
+		 */
 		private boolean color;     // color of parent link
+		/**
+		 * { var_description }.
+		 */
 		private int size;          // subtree count
-
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      key    The key
+		 * @param      val    The value
+		 * @param      color  The color
+		 * @param      size   The size
+		 */
 		public Node(Key key, Value val, boolean color, int size) {
 			this.key = key;
 			this.val = val;
