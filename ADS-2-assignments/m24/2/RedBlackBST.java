@@ -69,13 +69,25 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	/***************************************************************************
 	 *  Node helper methods.
 	 ***************************************************************************/
-	// is node x red; false if x is null ?
+	/**
+	 * Determines if red.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     True if red, False otherwise.
+	 */
 	private boolean isRed(Node x) {
 		if (x == null) return false;
 		return x.color == RED;
 	}
 
-	// number of node in subtree rooted at x; 0 if x is null
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private int size(Node x) {
 		if (x == null) return 0;
 		return x.size;
@@ -115,7 +127,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return get(root, key);
 	}
 
-	// value associated with the given key in subtree rooted at x; null if no such key
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Value get(Node x, Key key) {
 		while (x != null) {
 			int cmp = key.compareTo(x.key);
@@ -163,7 +182,15 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// assert check();
 	}
 
-	// insert the key-value pair in the subtree rooted at h
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 * @param      key   The key
+	 * @param      val   The value
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node put(Node h, Key key, Value val) {
 		if (h == null) return new Node(key, val, RED, 1);
 
@@ -201,7 +228,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// assert check();
 	}
 
-	// delete the key-value pair with the minimum key rooted at h
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node deleteMin(Node h) {
 		if (h.left == null)
 			return null;
@@ -230,7 +263,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// assert check();
 	}
 
-	// delete the key-value pair with the maximum key rooted at h
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node deleteMax(Node h) {
 		if (isRed(h.left))
 			h = rotateRight(h);
@@ -266,7 +305,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// assert check();
 	}
 
-	// delete the key-value pair with the given key rooted at h
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node delete(Node h, Key key) {
 		// assert get(h, key) != null;
 
@@ -297,7 +343,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 *  Red-black tree helper functions.
 	 ***************************************************************************/
 
-	// make a left-leaning link lean to the right
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node rotateRight(Node h) {
 		// assert (h != null) && isRed(h.left);
 		Node x = h.left;
@@ -310,7 +362,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return x;
 	}
 
-	// make a right-leaning link lean to the left
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node rotateLeft(Node h) {
 		// assert (h != null) && isRed(h.right);
 		Node x = h.right;
@@ -323,7 +381,11 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return x;
 	}
 
-	// flip the colors of a node and its two children
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 */
 	private void flipColors(Node h) {
 		// h must have opposite color of its two children
 		// assert (h != null) && (h.left != null) && (h.right != null);
@@ -334,8 +396,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		h.right.color = !h.right.color;
 	}
 
-	// Assuming that h is red and both h.left and h.left.left
-	// are black, make h.left or one of its children red.
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node moveRedLeft(Node h) {
 		// assert (h != null);
 		// assert isRed(h) && !isRed(h.left) && !isRed(h.left.left);
@@ -349,8 +416,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return h;
 	}
 
-	// Assuming that h is red and both h.right and h.right.left
-	// are black, make h.right or one of its children red.
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node moveRedRight(Node h) {
 		// assert (h != null);
 		// assert isRed(h) && !isRed(h.right) && !isRed(h.right.left);
@@ -362,7 +434,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return h;
 	}
 
-	// restore red-black tree invariant
+	/**
+	 * { function_description }.
+	 *
+	 * @param      h     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node balance(Node h) {
 		// assert (h != null);
 
@@ -386,6 +464,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	public int height() {
 		return height(root);
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private int height(Node x) {
 		if (x == null) return -1;
 		return 1 + Math.max(height(x.left), height(x.right));
@@ -405,7 +490,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return min(root).key;
 	}
 
-	// the smallest key in subtree rooted at x; null if no such key
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node min(Node x) {
 		// assert x != null;
 		if (x.left == null) return x;
@@ -422,7 +513,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return max(root).key;
 	}
 
-	// the largest key in the subtree rooted at x; null if no such key
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node max(Node x) {
 		// assert x != null;
 		if (x.right == null) return x;
@@ -445,7 +542,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		else           return x.key;
 	}
 
-	// the largest key in the subtree rooted at x less than or equal to the given key
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node floor(Node x, Key key) {
 		if (x == null) return null;
 		int cmp = key.compareTo(x.key);
@@ -471,7 +575,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		else           return x.key;
 	}
 
-	// the smallest key in the subtree rooted at x greater than or equal to the given key
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node ceiling(Node x, Key key) {
 		if (x == null) return null;
 		int cmp = key.compareTo(x.key);
@@ -499,7 +610,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return x.key;
 	}
 
-	// the key of rank k in the subtree rooted at x
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      k     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private Node select(Node x, int k) {
 		// assert x != null;
 		// assert k >= 0 && k < size(x);
@@ -520,7 +638,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return rank(key, root);
 	}
 
-	// number of keys less than key in the subtree rooted at x
+	/**
+	 * { function_description }.
+	 *
+	 * @param      key   The key
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private int rank(Key key, Node x) {
 		if (x == null) return 0;
 		int cmp = key.compareTo(x.key);
@@ -565,8 +690,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return queue;
 	}
 
-	// add the keys between lo and hi in the subtree rooted at x
-	// to the queue
+	/**
+	 * { function_description }.
+	 *
+	 * @param      x      { parameter_description }
+	 * @param      queue  The queue
+	 * @param      lo     The lower
+	 * @param      hi     The higher
+	 */
 	private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 		if (x == null) return;
 		int cmplo = lo.compareTo(x.key);
@@ -596,9 +727,11 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 
-	/***************************************************************************
-	 *  Check integrity of red-black tree data structure.
-	 ***************************************************************************/
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private boolean check() {
 		if (!isBST())            System.out.println("Not in symmetric order");
 		if (!isSizeConsistent()) System.out.println("Subtree counts not consistent");
@@ -608,15 +741,24 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return isBST() && isSizeConsistent() && isRankConsistent() && is23() && isBalanced();
 	}
 
-	// does this binary tree satisfy symmetric order?
-	// Note: this test also ensures that data structure is a binary tree since order is strict
+	/**
+	 * Determines if bst.
+	 *
+	 * @return     True if bst, False otherwise.
+	 */
 	private boolean isBST() {
 		return isBST(root, null, null);
 	}
 
-	// is the tree rooted at x a BST with all keys strictly between min and max
-	// (if min or max is null, treat as empty constraint)
-	// Credit: Bob Dondero's elegant solution
+	/**
+	 * Determines if bst.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      min   The minimum
+	 * @param      max   The maximum
+	 *
+	 * @return     True if bst, False otherwise.
+	 */
 	private boolean isBST(Node x, Key min, Key max) {
 		if (x == null) return true;
 		if (min != null && x.key.compareTo(min) <= 0) return false;
@@ -624,15 +766,30 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
 	}
 
-	// are the size fields correct?
+	/**
+	 * Determines if size consistent.
+	 *
+	 * @return     True if size consistent, False otherwise.
+	 */
 	private boolean isSizeConsistent() { return isSizeConsistent(root); }
+	/**
+	 * Determines if size consistent.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     True if size consistent, False otherwise.
+	 */
 	private boolean isSizeConsistent(Node x) {
 		if (x == null) return true;
 		if (x.size != size(x.left) + size(x.right) + 1) return false;
 		return isSizeConsistent(x.left) && isSizeConsistent(x.right);
 	}
 
-	// check that ranks are consistent
+	/**
+	 * Determines if rank consistent.
+	 *
+	 * @return     True if rank consistent, False otherwise.
+	 */
 	private boolean isRankConsistent() {
 		for (int i = 0; i < size(); i++)
 			if (i != rank(select(i))) return false;
@@ -641,9 +798,19 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return true;
 	}
 
-	// Does the tree have no red right links, and at most one (left)
-	// red links in a row on any path?
+	/**
+	 * Determines if 23.
+	 *
+	 * @return     True if 23, False otherwise.
+	 */
 	private boolean is23() { return is23(root); }
+	/**
+	 * Determines if 23.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     True if 23, False otherwise.
+	 */
 	private boolean is23(Node x) {
 		if (x == null) return true;
 		if (isRed(x.right)) return false;
@@ -652,7 +819,11 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return is23(x.left) && is23(x.right);
 	}
 
-	// do all paths from root to leaf have same number of black edges?
+	/**
+	 * Determines if balanced.
+	 *
+	 * @return     True if balanced, False otherwise.
+	 */
 	private boolean isBalanced() {
 		int black = 0;     // number of black links on path from root to min
 		Node x = root;
@@ -663,13 +834,17 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		return isBalanced(root, black);
 	}
 
-	// does every path from the root to a leaf have the given number of black links?
+	/**
+	 * Determines if balanced.
+	 *
+	 * @param      x      { parameter_description }
+	 * @param      black  The black
+	 *
+	 * @return     True if balanced, False otherwise.
+	 */
 	private boolean isBalanced(Node x, int black) {
 		if (x == null) return black == 0;
 		if (!isRed(x)) black--;
 		return isBalanced(x.left, black) && isBalanced(x.right, black);
 	}
-
-
-
 }
