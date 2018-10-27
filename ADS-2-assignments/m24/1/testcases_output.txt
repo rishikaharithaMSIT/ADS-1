@@ -36,9 +36,9 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
 	at Queue.enqueue(Solution.java:383)
-	at SequentialSearchST.keys(Solution.java:315)
-	at SeparateChainingHashST.resize(Solution.java:66)
-	at SeparateChainingHashST.put(Solution.java:144)
+	at SequentialSearchST.keys(Solution.java:318)
+	at SeparateChainingHashST.resize(Solution.java:69)
+	at SeparateChainingHashST.put(Solution.java:147)
 	at Solution.main(Solution.java:11)
 Caused by: java.lang.ClassNotFoundException: Queue$Node
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
@@ -68,9 +68,9 @@ Student doesn't exists...
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
 	at Queue.enqueue(Solution.java:383)
-	at SequentialSearchST.keys(Solution.java:315)
-	at SeparateChainingHashST.resize(Solution.java:66)
-	at SeparateChainingHashST.put(Solution.java:144)
+	at SequentialSearchST.keys(Solution.java:318)
+	at SeparateChainingHashST.resize(Solution.java:69)
+	at SeparateChainingHashST.put(Solution.java:147)
 	at Solution.main(Solution.java:11)
 Caused by: java.lang.ClassNotFoundException: Queue$Node
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
@@ -583,9 +583,9 @@ John Hale
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
 	at Queue.enqueue(Solution.java:383)
-	at SequentialSearchST.keys(Solution.java:315)
-	at SeparateChainingHashST.resize(Solution.java:66)
-	at SeparateChainingHashST.put(Solution.java:144)
+	at SequentialSearchST.keys(Solution.java:318)
+	at SeparateChainingHashST.resize(Solution.java:69)
+	at SeparateChainingHashST.put(Solution.java:147)
 	at Solution.main(Solution.java:11)
 Caused by: java.lang.ClassNotFoundException: Queue$Node
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)

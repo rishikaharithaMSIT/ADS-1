@@ -8,17 +8,20 @@ public class Solution {
 		while (datalen > 0) {
 			String[] line = scan.nextLine().split(",");
 			s = new Student(line[1], line[2]);
-			student.put(Integer.parseInt(line[0]),s);
+			student.put(Integer.parseInt(line[0]), s);
 			datalen--;
 		}
 		int testcases = Integer.parseInt(scan.nextLine());
-		while(testcases > 0) {
+		while (testcases > 0) {
 			String[] tokens = scan.nextLine().split(" ");
-			if(tokens[2].equals("1")) {
-				int key = Integer.parseInt(tokens[1]); 
+			if (tokens[2].equals("1")) {
+				int key = Integer.parseInt(tokens[1]);
 				System.out.println(student.get(key).name);
-			} 
-			
+			} else if (tokens[2].equals("2")) {
+				int key = Integer.parseInt(tokens[1]);
+				System.out.println(student.get(key).marks);
+			}
+
 			testcases--;
 		}
 
