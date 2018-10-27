@@ -19,10 +19,19 @@ public class Solution {
 			String[] tokens = scan.nextLine().split(" ");
 			if (tokens[2].equals("1")) {
 				int key = Integer.parseInt(tokens[1]);
-				System.out.println(student.get(key).name);
+				if(student.contains(key)) {
+					System.out.println(student.get(key).name);
+				}else {
+					System.out.println("Student doesn't exists...");
+				}
+				
 			} else if (tokens[2].equals("2")) {
 				int key = Integer.parseInt(tokens[1]);
-				System.out.println(student.get(key).marks);
+				if(student.contains(key)) {
+					System.out.println(student.get(key).marks);
+				}else {
+					System.out.println("Student doesn't exists...");
+				}
 			}
 
 			testcases--;
