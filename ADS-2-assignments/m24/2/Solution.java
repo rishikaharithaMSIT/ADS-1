@@ -31,7 +31,7 @@ public class Solution {
 						System.out.println(each.name);
 					}
 				}
-				System.out.println("----");
+				//System.out.println("----");
 
 			} else if (tokens[0].equals("LE")) {
 				double limit = Double.parseDouble(tokens[1]);
@@ -40,7 +40,7 @@ public class Solution {
 						System.out.println(each.name);
 					}
 				}
-				System.out.println("----");
+				//System.out.println("----");
 			} else if (tokens[0].equals("GE")) {
 				double limit = Double.parseDouble(tokens[1]);
 				for (Student each : student.keys()) {
@@ -48,7 +48,7 @@ public class Solution {
 						System.out.println(each.name);
 					}
 				}
-				System.out.println("----");
+				//System.out.println("----");
 			}
 
 			testcases--;
