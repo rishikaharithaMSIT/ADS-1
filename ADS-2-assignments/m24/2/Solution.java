@@ -15,13 +15,7 @@ public class Solution {
 
 			datalen--;
 		}
-		for (Student each : student.keys()) {
-			System.out.println("hi");
-			System.out.println(each);
-			// if (each.marks >= lower && each.marks <= upper) {
-			// 	System.out.println(each.name);
-			// }
-		}
+		
 		int testcases = Integer.parseInt(scan.nextLine());
 		while (testcases > 0) {
 			String[] tokens = scan.nextLine().split(" ");
