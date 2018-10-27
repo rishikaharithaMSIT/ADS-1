@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Clark
 Rivest
@@ -8,9 +8,11 @@ Your Output:
 Clark
 Rivest
 Dan
+----
 Abegg
+----
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Clark
 Rhian Cahill
@@ -58,6 +60,7 @@ Tim Cahill
 Abegg
 Brian Caffrey
 Your Output: 
+----
 Clark
 Rhian Cahill
 Cozbi A. Cabrera
@@ -78,6 +81,7 @@ Charles
 Bob
 Knuth
 Maria Cabezas
+----
 Steve Cafferty
 Hank
 Deborah Cadbury
@@ -103,8 +107,9 @@ John
 Tim Cahill
 Abegg
 Brian Caffrey
+----
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 Steve Cafferty
 Hank
@@ -194,6 +199,7 @@ John
 Tim Cahill
 Abegg
 Brian Caffrey
+----
 Steve Cafferty
 Hank
 Deborah Cadbury
@@ -224,6 +230,7 @@ Rhian Cahill
 Cozbi A. Cabrera
 Sasha Cagen
 Rivest
+----
 Steve Cafferty
 Hank
 Deborah Cadbury
@@ -231,6 +238,7 @@ Dan Caddy
 Neil Cadigan
 Megon
 Meili Cady
+----
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -961,6 +969,7 @@ Sammy Hagar
 Keith Habersberger
 Yamile Saied Méndez
 Namita Jain
+----
 Ed J. Paine
 Jimmy Palmiotti
 Macky Pamintuan
@@ -1154,6 +1163,7 @@ Charles B. Macdonald
 Greg Page
 Andrew Macdonald
 Alex James
+----
 Fiona MacKenzie
 Mark Haddon
 Julie Mac
@@ -1255,6 +1265,7 @@ Sammy Hagar
 Keith Habersberger
 Yamile Saied Méndez
 Namita Jain
+----
 Ed J. Paine
 Jimmy Palmiotti
 Macky Pamintuan
@@ -1292,6 +1303,7 @@ Rebecca Pacheco
 Pamela Palmer
 Parker J. Palmer
 Scott Palmer
+----
 Christopher N. Page
 Ellie Macdonald
 Portia MacIntosh
@@ -1444,6 +1456,7 @@ Sammy Hagar
 Keith Habersberger
 Yamile Saied Méndez
 Namita Jain
+----
 Ruby Jackson
 Charles B. Macdonald
 Greg Page
@@ -1454,6 +1467,7 @@ David Jacobs
 Jeannette Haien
 Daniel Hahn
 Sara Palacios
+----
 Ed J. Paine
 Jimmy Palmiotti
 Macky Pamintuan
@@ -1543,6 +1557,7 @@ Kevin MacAllister
 Cynthia Jabar
 Howard Jacobson
 D. J. MacHale
+----
 Charles Panati
 Fiona MacKenzie
 Mark Haddon
@@ -1580,6 +1595,7 @@ Kinley MacGregor
 Liza Palmer
 Libby Jackson
 Kristin Halbrook
+----
 Ed J. Paine
 Jimmy Palmiotti
 Macky Pamintuan
@@ -1647,6 +1663,7 @@ Richard Jackson
 Carrington MacDuffie
 Katherine Hall Page
 Chuck Hagel
+----
 Auston Habershaw
 Chris Packham
 Nafisa Haji
@@ -1663,4 +1680,5 @@ Daniel Palmer
 Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
+----
 ----------------------------------------
