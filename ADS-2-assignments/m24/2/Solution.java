@@ -26,7 +26,7 @@ public final class Solution {
 
 			datalen--;
 		}
-		
+
 		int testcases = Integer.parseInt(scan.nextLine());
 		while (testcases > 0) {
 			String[] tokens = scan.nextLine().split(" ");
@@ -70,7 +70,7 @@ public final class Solution {
 /**
  * Class for student.
  */
-class Student implements Comparable<Student>{
+class Student implements Comparable<Student> {
 	/**
 	 * name.
 	 */
@@ -104,7 +104,7 @@ class Student implements Comparable<Student>{
 	 */
 	public int compareTo(Student other) {
 		if (this.marks > other.marks) return 1;
-		if (this.marks < other.marks) return -1;		
+		if (this.marks < other.marks) return -1;
 		if (this.roll > other.roll) return 1;
 		if (this.roll < other.roll) return -1;
 
@@ -115,7 +115,7 @@ class Student implements Comparable<Student>{
 	 *
 	 * @return     The name.
 	 */
-	public String getName(){
+	public String getName() {
 		return name;
 	}
 	/**
